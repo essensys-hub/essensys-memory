@@ -1,0 +1,19 @@
+schema: spec-driven
+
+context: |
+  ESSENSYS-BRAIN — vault Obsidian + OpenSpec pour mémoire persistante du projet Essensys.
+  Domaine: domotique résidentielle, firmware PIC/ColdFire, backends Go, frontends React,
+  migration legacy ASP.NET/MQX → Go/React/Raspberry.
+  Monorepo parent: /Users/nrineau/ESSENSYS (~40 dépôts Git).
+  Conventions: wikilinks [[Title Case]], frontmatter YAML, raw/ immuable, OpenSpec = roadmap.
+  Jumeaux UI/backends: essensys-server-* ↔ essensys-user-portal-* (sync obligatoire).
+  Protocole legacy IoT: NE JAMAIS MODIFIER endpoints /api/serverinfos, mystatus, myactions, done.
+
+rules:
+  proposal:
+    - Mentionner impact legacy vs modern et table d'échange si applicable
+    - Lier aux entités wiki existantes quand possible
+  design:
+    - Documenter décisions firmware/backend/infra séparément si cross-cutting
+  tasks:
+    - Inclure tâche "mettre à jour essensys-memory" quand le change touche l'architecture

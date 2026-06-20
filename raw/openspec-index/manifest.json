@@ -1,0 +1,71 @@
+{
+  "generated": "2026-06-21",
+  "essensys_root": "/Users/nrineau/ESSENSYS",
+  "changes": [
+    {
+      "change": "essensys-cloud-sync-scheduler",
+      "repo": "essensys-memory",
+      "path": "essensys-memory/openspec/changes/essensys-cloud-sync-scheduler",
+      "created": "2026-06-20",
+      "schema": "spec-driven",
+      "artifacts": {
+        "proposal": true,
+        "design": true,
+        "tasks": true,
+        "spec_count": 4
+      }
+    },
+    {
+      "change": "essensys-scenario-management",
+      "repo": "essensys-memory",
+      "path": "essensys-memory/openspec/changes/essensys-scenario-management",
+      "created": "2026-06-20",
+      "schema": "spec-driven",
+      "artifacts": {
+        "proposal": true,
+        "design": true,
+        "tasks": true,
+        "spec_count": 10
+      }
+    },
+    {
+      "change": "essensys-second-brain",
+      "repo": "essensys-memory",
+      "path": "essensys-memory/openspec/changes/essensys-second-brain",
+      "created": "2026-06-20",
+      "schema": "spec-driven",
+      "artifacts": {
+        "proposal": true,
+        "design": true,
+        "tasks": true,
+        "spec_count": 6
+      }
+    },
+    {
+      "change": "essensys-gateway-dual-nic",
+      "repo": "essensys-raspberry-gateway",
+      "path": "essensys-raspberry-gateway/openspec/changes/essensys-gateway-dual-nic",
+      "created": "2026-05-14",
+      "schema": "spec-driven",
+      "artifacts": {
+        "proposal": true,
+        "design": true,
+        "tasks": true,
+        "spec_count": 5
+      }
+    },
+    {
+      "change": "essensys-gateway-nixos",
+      "repo": "essensys-raspberry-gateway",
+      "path": "essensys-raspberry-gateway/openspec/changes/essensys-gateway-nixos",
+      "created": "2026-05-31",
+      "schema": "spec-driven",
+      "artifacts": {
+        "proposal": true,
+        "design": true,
+        "tasks": true,
+        "spec_count": 10
+      }
+    }
+  ]
+}
