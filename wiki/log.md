@@ -3618,3 +3618,6 @@ Generated 38 timeline files in `wiki/timeline/` (limit=100 commits each).
 
 ## [2026-06-21] roadmap | OpenSpec index updated
 Regenerated `wiki/roadmap/index.md` and change pages from manifest.
+
+## [2026-06-21] synthesis | Root hub pages
+Rédigé `Platform Overview.md` et `Gateway Exchange.md` (racine vault) à partir de `wiki/synthesis/platform-overview.md`, `wiki/concepts/gateway-exchange.md`, `raw/protocol/TableEchange.h`, `tcp-single-packet.md`. Corrigé typo `x` dans `wiki/synthesis/platform-overview.md`. Transports documentés : HTTP/TCP eth1 (legacy), HTTPS cloudsync ; todos explicites pour mTLS/MQTT/RS485 non confirmés.

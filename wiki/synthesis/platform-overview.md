@@ -5,7 +5,7 @@ created: 2026-06-20
 updated: 2026-06-20
 era: modern
 ---
-x
+
 # Platform Overview
 
 Essensys est une **solution domotique résidentielle** : alarme, chauffage, éclairage, volets, arrosage, cumulus, détection de fuite.
