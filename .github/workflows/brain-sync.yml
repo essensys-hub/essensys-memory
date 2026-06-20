@@ -1,0 +1,63 @@
+name: Brain sync
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'wiki/**'
+      - 'raw/**'
+      - 'openspec/**'
+      - 'scripts/**'
+  workflow_dispatch:
+  schedule:
+    # Weekly timeline refresh (Mon 06:00 UTC)
+    - cron: '0 6 * * 1'
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: .
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Checkout ESSENSYS monorepo (sibling)
+        uses: actions/checkout@v4
+        with:
+          repository: essensys-hub/ESSENSYS
+          path: essensys-monorepo
+          token: ${{ secrets.GITHUB_TOKEN }}
+        continue-on-error: true
+
+      - name: Sync sources (architecture only if monorepo present)
+        env:
+          ESSENSYS_ROOT: ${{ github.workspace }}/essensys-monorepo
+        run: |
+          if [[ -d "$ESSENSYS_ROOT/docs/architecture" ]]; then
+            ./scripts/sync-sources.sh
+            ./scripts/sync-protocol-docs.sh || true
+            ./scripts/extract-git-history.sh || true
+          else
+            echo "Monorepo not available — skipping cross-repo sync"
+            ./scripts/update-roadmap.sh
+          fi
+
+      - name: Lint wiki
+        run: python3 scripts/lint-wiki.py
+
+      - name: Commit refreshed artifacts (if changed)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add wiki/timeline/ wiki/roadmap/ raw/ wiki/log.md 2>/dev/null || true
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore(brain): auto-sync timeline and roadmap"
+            git push
+          fi
+        continue-on-error: true

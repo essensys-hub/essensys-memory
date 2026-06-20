@@ -1,0 +1,219 @@
+{
+  "main": {
+    "id": "614746b7bcd52b58",
+    "type": "split",
+    "children": [
+      {
+        "id": "5a29951b53a1f246",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "88dd99fb17cdaacb",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1189c25d3b73b944",
+    "type": "split",
+    "children": [
+      {
+        "id": "48b30168a3f6d4e6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c28f91894b09bca6",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "5da8ebe070d3cc66",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "sce",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "6d24b70ee96ec52a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "9f39a07de5b06e3c",
+    "type": "split",
+    "children": [
+      {
+        "id": "7a9cc194fd393417",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "db120266cf8e0cda",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "579e55e62c1c37fc",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "4a344915a4783ea8",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "ddfeab9b50b1be9a",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "c8a55fb1c6c19c0c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "88dd99fb17cdaacb",
+  "lastOpenFiles": [
+    "Untitled 1.canvas",
+    "2026-06-21.md",
+    "Untitled 1.base",
+    "openspec/changes/essensys-scenario-management/proposal.md",
+    "wiki/concepts/scenarios-domotique.md",
+    "openspec/changes/essensys-scenario-management/audit-protocol.md",
+    "openspec/changes/essensys-scenario-management/tasks.md",
+    "openspec/changes/essensys-scenario-management/specs/gateway-exchange-push/spec.md",
+    "openspec/changes/essensys-scenario-management/specs/gateway-exchange-push",
+    "openspec/changes/essensys-cloud-sync-scheduler/tasks.md",
+    "openspec/changes/essensys-scenario-management/specs/sync-profile-config/spec.md",
+    "openspec/changes/essensys-scenario-management/specs/sync-profile-config",
+    "openspec/changes/essensys-scenario-management/specs/scenario-memory-wiki/spec.md",
+    "openspec/changes/essensys-scenario-management/specs/scenario-memory-wiki",
+    "openspec/changes/essensys-scenario-management/specs/scenario-cloud-sync/spec.md",
+    "openspec/changes/essensys-scenario-management/specs/scenario-cloud-sync",
+    "openspec/changes/essensys-scenario-management/specs/scenario-ui-editor/spec.md",
+    "openspec/changes/essensys-scenario-management/specs/scenario-ui-editor",
+    "Untitled.base",
+    "openspec/changes/essensys-scenario-management/specs/scenario-ui-dashboard/spec.md",
+    "openspec/changes/essensys-scenario-management/specs/scenario-ui-dashboard",
+    "openspec/changes/essensys-scenario-management/specs/scenario-crud-api/spec.md",
+    "openspec/changes/essensys-scenario-management/specs/scenario-crud-api",
+    "openspec/changes/essensys-scenario-management/specs/scenario-definition-model/spec.md",
+    "openspec/changes/essensys-scenario-management/specs/scenario-definition-model",
+    "Untitled.canvas",
+    "openspec/changes/essensys-scenario-management/specs/scenario-launch-modes/spec.md",
+    "2026-06-20.md",
+    "openspec/changes/essensys-scenario-management/specs/scenario-protocol-map/spec.md",
+    "openspec/changes/essensys-scenario-management/design.md",
+    "ESSENSYS Memory.md",
+    "raw/architecture/README.md",
+    "Platform Overview.md",
+    "raw/architecture/repos/client-essensys-legacy.md",
+    "wiki/roadmap/changes/essensys-scenario-management.md",
+    "wiki/entities/essensys-board-SC944D.md",
+    "wiki/entities/essensys-ansible.md"
+  ]
+}
