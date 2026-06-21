@@ -164,3 +164,4 @@ You have access to these CLI tools — use them when appropriate:
 15. Do not duplicate full source code in wiki — use `## Code pointers` with repo-relative paths only.
 16. When updating dual-protocol or table d'échange docs, update [[Dual Protocol]] and [[Table D Echange]] concept pages.
 17. UI twins (`essensys-server-frontend` / `essensys-user-portal-frontend`) and backend twins must stay synchronized in wiki entity pages.
+18. **Roadmap site public** : après chaque exec queue OpenSpec, exécuter `./scripts/publish-roadmap-public.sh` — voir `.cursor/rules/essensys-roadmap-site.mdc` et `prompts/roadmap-site.md` (change **2026-06.005**).

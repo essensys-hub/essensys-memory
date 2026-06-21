@@ -1,0 +1,14 @@
+
+body { font-family: system-ui, sans-serif; max-width: 960px; margin: 0 auto; padding: 1rem 1.5rem; line-height: 1.5; color: #1a1a1a; }
+header { margin-bottom: 1.5rem; padding-bottom: .5rem; border-bottom: 1px solid #ddd; }
+header a { color: #0d9488; text-decoration: none; font-weight: 600; }
+h1 { color: #0f766e; }
+h2 { margin-top: 2rem; color: #115e59; }
+table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+th, td { text-align: left; padding: .5rem .75rem; border-bottom: 1px solid #e5e7eb; }
+.badge { display: inline-block; padding: .15rem .5rem; border-radius: 4px; font-size: .85rem; font-weight: 600; }
+.badge-active { background: #fef3c7; color: #92400e; }
+.badge-completed { background: #d1fae5; color: #065f46; }
+.badge-planned { background: #e0e7ff; color: #3730a3; }
+.change-detail pre { white-space: pre-wrap; background: #f9fafb; padding: 1rem; border-radius: 6px; }
+footer { margin-top: 3rem; font-size: .85rem; color: #6b7280; }

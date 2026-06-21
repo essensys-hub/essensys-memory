@@ -29,7 +29,7 @@ File d'exécution **ordonnée** des changes OpenSpec produit. Chaque epic a un i
 | **2026-06.002** | [[Essensys Install Doc Platform]] | essensys-memory | Phase 0 | completed | 001 |
 | **2026-06.003** | [[Essensys Second Brain]] | essensys-memory | Fondation | completed | — |
 | **2026-06.004** | [[Essensys Product Roadmap]] | essensys-memory | Living | active | 001, 002 |
-| **2026-06.005** | [[Essensys Roadmap Site 2026 06.005]] | essensys-memory | Now | planned | 004 |
+| **2026-06.005** | [[Essensys Roadmap Site 2026 06.005]] | essensys-memory | Now | planned | 004, 007 |
 | **2026-06.006** | [[Essensys Scenario Management]] | essensys-memory | Now | active | 001 |
 | **2026-06.007** | [[Essensys Doc Site]] | essensys-memory | Now | completed | 001, 002 |
 | **2026-06.008** | [[Essensys Doc Site Dns 2026 06.008]] | essensys-memory | Now | planned | 007 |

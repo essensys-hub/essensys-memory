@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Essensys Gateway Dual Nic — Essensys Roadmap</title>
+  <link rel="stylesheet" href="/style.css"/>
+</head>
+<body>
+  <header><a href="/">← Roadmap Essensys</a></header>
+  <main><h1>Essensys Gateway Dual Nic</h1>
+<p><span class="badge badge-active">active</span>
+ · ID <strong>2026-06.010</strong></p>
+<p><strong>Dépôt :</strong> essensys-raspberry-gateway</p>
+<h2>Pourquoi</h2>
+<div class="change-detail"><pre>The Essensys gateway must physically isolate user-facing traffic (LAN/HTTPS on eth0) from equipment bus traffic (armoire/HTTP on eth1) while retaining full backward compatibility with the legacy BP_MQX_ETH firmware client. A Raspberry Pi CM5 is now the target hardware, adding NVMe storage that must absorb write-heavy workloads (logs, TSDB, caches) to prevent premature eMMC wear-out.</pre></div>
+</main>
+  <footer><p>Source : essensys-memory OpenSpec — généré automatiquement</p></footer>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Essensys Scenario Management — Essensys Roadmap</title>
+  <link rel="stylesheet" href="/style.css"/>
+</head>
+<body>
+  <header><a href="/">← Roadmap Essensys</a></header>
+  <main><h1>Essensys Scenario Management</h1>
+<p><span class="badge badge-active">active</span>
+ · ID <strong>2026-06.006</strong></p>
+<p><strong>Dépôt :</strong> essensys-memory</p>
+<h2>Pourquoi</h2>
+<div class="change-detail"><pre>Les scénarios domotiques (Je sors, vacances, Personnalisé 1/2, etc.) sont **implémentés dans le firmware** BP_MQX_ETH (8 slots × 41 paramètres, indices **590–919**) et éditables depuis l&#x27;écran IHM legacy, mais **absents des UIs modernes** Go/React. Aujourd&#x27;hui :
+
+- seul le **bloc partiel 605–622 + trigger 590=1** est géré par `ActionService` / `ExpandLegacyScenarioBlock` (actions lumières/volets immédiates) ;
+- le **lancement par bouton** (`590=2..8`) existe dans le MCP mais pas dans les frontends ;
+- il n&#x27;existe **aucun CRUD** de définitions scénario ni **sync cloud** des slots Scenario1–8, alors que `essensys-cloud-sync-scheduler` fournit déjà l&#x27;infrastructure pull/push par profils.
+
+Les utilisateurs ne peuvent pas reproduire depuis le portail ou l&#x27;UI locale ce que l&#x27;IHM armoire propose </pre></div>
+</main>
+  <footer><p>Source : essensys-memory OpenSpec — généré automatiquement</p></footer>
+</body>
+</html>

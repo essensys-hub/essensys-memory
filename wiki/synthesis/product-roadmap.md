@@ -11,7 +11,7 @@ era: modern
 Priorisation produit **vivante** — delta par rapport à [[Platform Overview]] et [[Migration Legacy To Modern]].
 
 > **Rubrique** : [[Product Roadmap Rubric]]  
-> **Dernière revue** : 2026-06-21 — file OpenSpec [[OpenSpec Queue 2026 06]] (`2026-06.001`…`023`)  
+> **Dernière revue** : 2026-06-22 — revue queue 004 (005 promu, dep 007 retirée)  
 > **Gate Phase 0** : **levée** — [[Essensys Centralized Doc Maintenance]] completed ; [[Essensys Install Doc Platform]] completed (tâche ingest optionnelle 3.2 différée).
 
 ## Matrice gap
@@ -21,7 +21,8 @@ Priorisation produit **vivante** — delta par rapport à [[Platform Overview]] 
 | Brain / ingest | Vault, 40 entités, lint | qmd index | Ingest auto post-merge | [[Essensys Second Brain]] completed | Contexte agent stale |
 | Doc centralisée | Rules + concept wiki | Adoption PR | Mesure conformité rules | [[Essensys Centralized Doc Maintenance]] completed | Doc divergente dépôts/brain |
 | Doc install | Index brain + rules | Excerpt `wiki/sources/` | Ingest playbooks | [[Essensys Install Doc Platform]] completed | Wizard futur sans base |
-| **Doc publique users** | MkDocs `essensys-doc`, CI, role Ansible | DNS `docs.essensys.fr` | Deploy prod + lien support-site | [[Essensys Doc Site]] active → archiver | Users sans URL doc unifiee |
+| **Doc publique users** | MkDocs OVH `/docs/` | DNS `docs.essensys.fr` | Deploy prod + lien support-site | [[Essensys Doc Site]] completed | Users sans URL doc unifiee |
+| **Roadmap publique** | Queue brain OpenSpec | Site + blog | `roadmap.essensys.fr`, `/blog` | [[Essensys Roadmap Site 2026 06.005]] planned | Communaute sans visibilite avancees |
 | Cloud sync profils | Scheduler 3 h, 6 profils seed | UI admin Sync Cloud support-site | — | [[Essensys Cloud Sync Scheduler]] completed | Cache cloud obsolète |
 | Scénarios domotique | UI jumeaux, API, sync, `test_chb3.py` | PG option 2.5 | Archiver change | [[Essensys Scenario Management]] active | Régression Mode A |
 | Gateway ↔ cloud auth | HTTPS, token+MAC | [[Gateway PKI]] doc | mTLS enrollment, TPM | [[Essensys Gateway Mtls]] active | Token exfiltré |
@@ -37,6 +38,7 @@ Priorisation produit **vivante** — delta par rapport à [[Platform Overview]] 
 
 | ID | Objectif | Change | DoD |
 |----|----------|--------|-----|
+| 2026-06.005 | Site roadmap public | [[Essensys Roadmap Site 2026 06.005]] | roadmap.essensys.fr + mon.essensys.fr/blog |
 | 2026-06.008 | DNS doc dediee | [[Essensys Doc Site Dns 2026 06.008]] | `docs.essensys.fr` 200 HTTPS |
 | 2026-06.006 | Cloture scenarios | [[Essensys Scenario Management]] | archiver change |
 | 2026-06.009 | mTLS phase 1 | [[Essensys Gateway Mtls]] | 2.1–2.3 enrollment |
@@ -95,7 +97,8 @@ Priorisation produit **vivante** — delta par rapport à [[Platform Overview]] 
 ## Voir aussi
 
 - [[Roadmap OpenSpec]]
-- [[OpenSpec Queue 2026 06]] — file ordonnée 2026-06.001…023
+- [[OpenSpec Queue 2026 06]] — file ordonnée 2026-06.001…024
+- Prompt site roadmap : `prompts/roadmap-site.md`
 - [[Product Roadmap Rubric]]
 - [[Centralized Documentation]]
 - [[Install Documentation]]

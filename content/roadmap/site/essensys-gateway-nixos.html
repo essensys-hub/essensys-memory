@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Essensys Gateway Nixos — Essensys Roadmap</title>
+  <link rel="stylesheet" href="/style.css"/>
+</head>
+<body>
+  <header><a href="/">← Roadmap Essensys</a></header>
+  <main><h1>Essensys Gateway Nixos</h1>
+<p><span class="badge badge-active">active</span>
+ · ID <strong>2026-06.011</strong></p>
+<p><strong>Dépôt :</strong> essensys-raspberry-gateway</p>
+<h2>Pourquoi</h2>
+<div class="change-detail"><pre>The Essensys gateway CM5 needs a **declarative, reproducible deployment path** alongside the existing Ansible stack. NixOS on a dedicated `nixos` branch offers atomic upgrades, pinned dependencies, and module-based configuration for the full dual-NIC gateway (eth0 user HTTPS, eth1 armoire HTTP/DHCP/DNS) while preserving functional parity with `prompts/Gateway.md` and the Ansible change `essensys-gateway-dual-nic`. CM5 support is feasible via community flakes (not upstream-official), making this the right time to scaffold before hardware rollout.</pre></div>
+</main>
+  <footer><p>Source : essensys-memory OpenSpec — généré automatiquement</p></footer>
+</body>
+</html>

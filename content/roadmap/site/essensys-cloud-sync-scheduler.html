@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Essensys Cloud Sync Scheduler — Essensys Roadmap</title>
+  <link rel="stylesheet" href="/style.css"/>
+</head>
+<body>
+  <header><a href="/">← Roadmap Essensys</a></header>
+  <main><h1>Essensys Cloud Sync Scheduler</h1>
+<p><span class="badge badge-completed">completed</span>
+ · ID <strong>2026-06.024</strong></p>
+<p><strong>Dépôt :</strong> essensys-memory</p>
+<h2>Pourquoi</h2>
+<div class="change-detail"><pre>La table d&#x27;échange domotique (indices **13–348** planning chauffage, **566–589** volets, **349–352** modes immédiats, etc.) n&#x27;est **pas remontée automatiquement** par le cycle firmware `serverinfos → mystatus` : le BP_MQX_ETH limite à **30 indices** par requête. Aujourd&#x27;hui :
+
+- le cache Redis gateway et le cache cloud `gateway_exchange_cache` ne contiennent que les indices déjà injectés ou listés dans `serverinfos` ;
+- la **sync manuelle** (bouton « Sync armoire » chauffage) fonctionne mais n&#x27;est pas planifiée ;
+- `cloudsync` pousse une liste **hardcodée** (`exchangePushIndices()` dans [[Essensys Server Backend]]) toutes les ~5 s sans **pull armoire** préalable pour les plages 13–348.
+
+Résultat : sur `mon.essensys.fr/portal/heating`, **SDB1** affichait du Confort alors que l&#x27;armoire était</pre></div>
+</main>
+  <footer><p>Source : essensys-memory OpenSpec — généré automatiquement</p></footer>
+</body>
+</html>
