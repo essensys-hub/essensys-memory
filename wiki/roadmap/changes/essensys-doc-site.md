@@ -3,7 +3,7 @@ tags: [roadmap, openspec]
 sources: [manifest.json]
 created: 2026-06-21
 updated: 2026-06-21
-status: active
+status: completed
 host_repo: essensys-memory
 ---
 
@@ -11,7 +11,7 @@ host_repo: essensys-memory
 
 **Host repo:** [[ESSENSYS Memory]]
 **Path:** `essensys-memory/openspec/changes/essensys-doc-site`
-**Status:** active
+**Status:** completed
 **OpenSpec created:** 2026-06-21
 
 ## Why

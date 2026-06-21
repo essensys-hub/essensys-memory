@@ -21,7 +21,7 @@ Priorisation produit **vivante** — delta par rapport à [[Platform Overview]] 
 | Brain / ingest | Vault, 40 entités, lint | qmd index | Ingest auto post-merge | [[Essensys Second Brain]] completed | Contexte agent stale |
 | Doc centralisée | Rules + concept wiki | Adoption PR | Mesure conformité rules | [[Essensys Centralized Doc Maintenance]] completed | Doc divergente dépôts/brain |
 | Doc install | Index brain + rules | Excerpt `wiki/sources/` | Ingest playbooks | [[Essensys Install Doc Platform]] completed | Wizard futur sans base |
-| **Doc publique users** | `essensys-doc` GitHub ; Pages raspberry-install | MkDocs ansible/support gh-deploy | **Site OVH unifié** | [[Essensys Doc Site]] active | Users bloqués sur GitHub ; pas de trust domaine Essensys |
+| **Doc publique users** | MkDocs `essensys-doc`, CI, role Ansible | DNS `docs.essensys.fr` | Deploy prod + lien support-site | [[Essensys Doc Site]] active → archiver | Users sans URL doc unifiee |
 | Cloud sync profils | Scheduler 3 h, 6 profils seed | UI admin Sync Cloud support-site | — | [[Essensys Cloud Sync Scheduler]] completed | Cache cloud obsolète |
 | Scénarios domotique | UI jumeaux, API, sync, `test_chb3.py` | PG option 2.5 | Archiver change | [[Essensys Scenario Management]] active | Régression Mode A |
 | Gateway ↔ cloud auth | HTTPS, token+MAC | [[Gateway PKI]] doc | mTLS enrollment, TPM | [[Essensys Gateway Mtls]] active | Token exfiltré |
@@ -37,7 +37,8 @@ Priorisation produit **vivante** — delta par rapport à [[Platform Overview]] 
 
 | Objectif | Change | DoD |
 |----------|--------|-----|
-| Clôture scénarios | [[Essensys Scenario Management]] | 1.5 `test_chb3.py` + Mode A 590=2 **done** ; archiver change |
+| Deploy doc publique OVH | [[Essensys Doc Site]] | DNS + `ansible-playbook support-site.yml` ; curl docs.essensys.fr 200 |
+| Clôture scénarios | [[Essensys Scenario Management]] | 1.5 done ; archiver change |
 | mTLS phase 1 (enrollment) | [[Essensys Gateway Mtls]] | 2.1–2.3 : PG fingerprint + CSR admin + Ansible cert |
 | Living roadmap | [[Essensys Product Roadmap]] | Cette page + revue trimestrielle process |
 
@@ -47,7 +48,6 @@ Priorisation produit **vivante** — delta par rapport à [[Platform Overview]] 
 
 | Objectif | Change | Dépendances |
 |----------|--------|-------------|
-| **Doc publique OVH** | [[Essensys Doc Site]] | MkDocs hub, CI, Nginx `docs.essensys.fr`, lien support-site |
 | mTLS phase 2–3 | [[Essensys Gateway Mtls]] | Phase 1 + nginx OVH |
 | Trusted devices (iPad mural) | `essensys-trusted-devices` (à créer) | HTTPS local strategy |
 | Prod CM5 : Ansible vs NixOS | [[Essensys Gateway Nixos]] ou clôture dual-nic | Matériel + ops |

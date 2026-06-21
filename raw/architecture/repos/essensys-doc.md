@@ -28,7 +28,7 @@ Il couvre notamment :
 - `newsletters/` — contenu de newsletters (ex. `2026-06-volets`).
 
 ## Build / Publication (générateur, hébergement)
-**Aucun générateur de site statique** : le dépôt est un ensemble de fichiers Markdown destinés à être lus directement sur GitHub (rendu Mermaid natif + images PNG pré-générées dans `archi/img/`). Pas de `mkdocs.yml`, de workflow GitHub Actions ni de configuration Docusaurus/Astro. La publication se fait par simple consultation du dépôt `github.com/essensys-hub/essensys-doc`.
+**MkDocs Material** dans `essensys-doc` (`mkdocs.yml`, `scripts/prepare-docs.sh`, CI `.github/workflows/docs-site.yml`). Site public cible : **`https://docs.essensys.fr`** — static Nginx sur VPS OVH (role Ansible `docs_site`, `support-site.yml`). Contenu : subset `archi/`, guides install vendus depuis `essensys-ansible`. GitHub reste la source de contribution ; voir [[User Documentation Site]].
 
 ## Intégrations
 - Documente l'ensemble des dépôts `essensys-hub` (backend Go, frontend React, control-plane, Ansible, raspberry-install, images nginx/traefik/redis/mosquitto, support-site, client-essensys-legacy).

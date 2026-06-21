@@ -11,7 +11,6 @@ Index des changes OpenSpec connus du monorepo ESSENSYS. Regénérer via `scripts
 
 ## Active
 
-- [[Essensys Doc Site]] — essensys-memory (active)
 - [[Essensys Gateway Mtls]] — essensys-memory (active)
 - [[Essensys Product Roadmap]] — essensys-memory (active)
 - [[Essensys Scenario Management]] — essensys-memory (active)
@@ -27,6 +26,7 @@ _Aucun_
 
 - [[Essensys Centralized Doc Maintenance]] — essensys-memory (completed)
 - [[Essensys Cloud Sync Scheduler]] — essensys-memory (completed)
+- [[Essensys Doc Site]] — essensys-memory (completed)
 - [[Essensys Install Doc Platform]] — essensys-memory (completed)
 - [[Essensys Second Brain]] — essensys-memory (completed)
 

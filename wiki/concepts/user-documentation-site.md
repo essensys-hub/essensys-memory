@@ -22,12 +22,14 @@ Facade **publique** de la documentation Essensys, hébergée sur le **VPS OVH** 
 ## Stack cible (MVP)
 
 - **MkDocs Material** + build CI (aligné `essensys-raspberry-install`)
-- Static **Nginx** sur OVH — pas de Node en prod
-- Contenu : subset `essensys-doc`, guides install Ansible, HTTPS `.local`
+- Static **Nginx** sur OVH — `/opt/essensys/docs-site/`
+- Contenu : subset `essensys-doc/archi`, guides install vendus depuis `essensys-ansible`
+- Deploy : role Ansible `docs_site` dans `support-site.yml`
+- Lien SPA : `VITE_DOCS_URL` / navbar « Documentation »
 
 ## OpenSpec
 
-[[Essensys Doc Site]] — change actif, priorité **Next** dans [[Product Roadmap]].
+[[Essensys Doc Site]] — change **completed** (2026-06-21). Deploy prod : DNS `docs.essensys.fr` → VPS puis `ansible-playbook support-site.yml`.
 
 ## Voir aussi
 
