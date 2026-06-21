@@ -13,7 +13,7 @@
 - [x] 1.2 `ExpandModeB` (592–632 option full) + tests table-driven
 - [x] 1.3 Batch inject writer (2 actions × 30 params max) pour écriture slot
 - [x] 1.4 Miroir domain dans `essensys-user-portal-backend/internal/domain/scenario/`
-- [ ] 1.5 Tests non-régression `test_chb3.py` et Mode A launch 590=2
+- [x] 1.5 Tests non-régression `test_chb3.py` et Mode A launch 590=2
 
 ## Phase 2 — API
 

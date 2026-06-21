@@ -86,6 +86,7 @@ Sources : `wiki/entities/essensys-raspberry-gateway.md`, `wiki/entities/client-e
 - [[Table D Echange]] — contrat k/v (indices absolus, ex. 590, 605–622, 591–919 scénarios)
 - [[Cloud Relay]] — cas d'usage utilisateur NAT traversal
 - [[Gateway Exchange]] — contrat API technique gateway ↔ hub
+- [[Gateway PKI]] — mTLS / TPM (cible identité gateway)
 - [[Migration Legacy To Modern]] — état de la bascule ASP.NET/MQX → Go/React/PostgreSQL
 - [[Scénarios domotique]] — slots mémorisés firmware (juin 2026)
 
@@ -99,8 +100,8 @@ Sources : `wiki/entities/essensys-raspberry-gateway.md`, `wiki/entities/client-e
 | Portail utilisateur | HTTPS | JWT (support-site) | `JWT_SECRET` partagé portail/support | `wiki/entities/essensys-user-portal-backend.md` |
 | Ordres alarme | AES propriétaire (legacy) | Clé machine `Pkey` | — | `wiki/concepts/table-d-echange.md` |
 
-> [!todo] **mTLS** gateway ↔ cloud : non documenté dans le code actuel — authentification par token + MAC uniquement.
-> [!todo] **Certificat d'identité matérielle** (TPM / certificat client gateway) : non implémenté ; ancrage identité = **triplet MAC + gateway_id + token** enregistré côté OVH.
+**Renforcement identité (cible)** : mTLS client + TPM — voir [[Gateway PKI]] (non déployé juin 2026).
+
 > [!todo] Rotation coordonnée `JWT_SECRET` / `ADMIN_TOKEN` entre support-site et portail consolidé.
 
 ## Migration legacy → modern

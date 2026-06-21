@@ -83,7 +83,7 @@ Constantes Go alignées : `IndexScenario=590`, `IndexLightStart=605`, `IndexLigh
 | État / sync | `POST /api/gateway/exchange`, `GET /api/gateway/sync-config` | idem |
 | Auth | `Authorization: Bearer <gateway_token>`, `X-Gateway-ID`, MAC eth0/eth1 | `essensys-ansible/docs/install-gateway.md` |
 
-> [!todo] **MQTT/gRPC/mTLS** entre gateway et cloud : non présent dans les implémentations documentées (`internal/cloudsync/` = client HTTP Go).
+> [!todo] **MQTT/gRPC** entre gateway et cloud : non présent dans les implémentations documentées (`internal/cloudsync/` = client HTTP Go). **mTLS client** : cible [[Gateway PKI]], non déployé.
 
 ## Relais et mapping entre protocoles
 
@@ -149,7 +149,7 @@ LAN admin : `/api/admin/heating/sync`, `/api/admin/scenarios/sync`, `/api/scenar
 |------|-------------|-------------|
 | eth1 armoire | HTTP clair, réseau isolé | > [!todo] TLS local ou VPN si menace intra-segment |
 | eth0 → OVH | HTTPS obligatoire | OK — `hub_url` https:// |
-| Identité gateway | Token + MAC en base | > [!todo] Certificat client / rotation automatique token |
+| Identité gateway | Token + MAC en base | Cible mTLS + TPM : [[Gateway PKI]] |
 | Intégrité ordres | AES alarme uniquement (legacy) | > [!todo] Signature ordres non-alarme |
 | Secrets déploiement | Ansible vault, `.env` hors git | `wiki/entities/essensys-ansible.md` |
 
@@ -159,5 +159,6 @@ LAN admin : `/api/admin/heating/sync`, `/api/admin/scenarios/sync`, `/api/scenar
 
 - [[Cloud Relay]] — vue cas d'usage
 - [[Dual Protocol]] — contraintes legacy
+- [[Gateway PKI]] — identité cryptographique gateway (mTLS, TPM)
 - [[Scénarios domotique]] — plage 591–919
 - OpenSpec : `essensys-cloud-sync-scheduler`, `essensys-scenario-management`

@@ -128,6 +128,9 @@ with open(index_path, "w") as f:
     f.write("\n".join(planned) if planned else "_Aucun_\n")
     f.write("\n\n## Completed\n\n")
     f.write("\n".join(completed) if completed else "_Aucun_\n")
+    f.write("\n\n## Roadmap produit\n\n")
+    f.write("- [[Product Roadmap Rubric]] — découpage phases, gate Phase 0 doc/install\n")
+    f.write("- [[Product Roadmap]] — priorités Now / Next / Later (`wiki/synthesis/product-roadmap.md`)\n")
     f.write("\n")
 
 print(f"Updated {len(manifest.get('changes', []))} change pages + index", flush=True)

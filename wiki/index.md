@@ -59,15 +59,20 @@ Master catalog of all wiki pages. Updated on every ingest.
 - [[Scénarios domotique]] — 8 slots mémorisés (590–919), Mode A/B, sync cloud
 - [[Cloud Relay]] — pilotage distant cloud via polling sortant NAT traversal
 - [[Gateway Exchange]] — endpoints /api/gateway/exchange et pending-actions
+- [[Gateway PKI]] — identité gateway mTLS / TPM (conception, non déployé)
+- [[Centralized Documentation]] — gouvernance doc centralisée (Phase 0a)
+- [[Install Documentation]] — index procédures install gateway (Phase 0b)
 
 ## Synthesis
 
 - [[Platform Overview]] — vue d'ensemble domotique Essensys (4 couches, 40 dépôts)
 - [[Migration Legacy To Modern]] — migration ASP.NET/MQX → Go/React/Raspberry
+- [[Product Roadmap]] — priorités Now / Next / Later (vivante)
 
 ## Roadmap
 
 - [[Roadmap OpenSpec]] — index des changes OpenSpec (gateway, brain, …)
+- [[Product Roadmap Rubric]] — découpage phases, gate Phase 0, rules doc/install
 - [[Essensys Cloud Backend Consolidation]] — planned
 - [[Essensys Remote User Interface]] — planned
 

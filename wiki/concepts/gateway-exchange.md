@@ -51,7 +51,15 @@ Option v1.1 : `cron_expression` sur profil (ex. `0 */3 * * *`) à la place de `i
 - Temps de course volets (566–589) — commit 2026-06-11 backend
 - Planning chauffage 13–348 par zones (profils seed)
 - **Scénarios 591–919** (profil Scénarios ; trigger 590 exclu du push)
-- Identité gateway : MAC + token (poll OVH hub)
+- Identité gateway : MAC + token (poll OVH hub) — voir [[Gateway PKI]] pour mTLS / TPM (cible)
+
+## Authentification gateway
+
+| Mécanisme | État | Détail |
+|-----------|------|--------|
+| HTTPS sortant eth0 | Production | `cloudsync.validateHubURL` |
+| Bearer + `X-Gateway-*` | Production | `GatewayAuth`, table `gateway_sessions` |
+| mTLS cert client | **Non déployé** | [[Gateway PKI]], OpenSpec [[Essensys Gateway Mtls]] |
 
 ## Relation [[Cloud Relay]]
 

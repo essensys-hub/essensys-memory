@@ -24,7 +24,7 @@ Voir [[Gateway Exchange]] pour le détail des routes `/api/gateway/*`.
 ## Prérequis
 
 - Liaison armoire validée par admin (`link_requests`)
-- Identité gateway (MAC, token) — cf. `cloudsync` dans [[Essensys Server Backend]]
+- Identité gateway (MAC, token) — cf. `cloudsync` dans [[Essensys Server Backend]] ; renforcement cible : [[Gateway PKI]]
 
 ## OpenSpec liés
 

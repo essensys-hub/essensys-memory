@@ -3621,3 +3621,91 @@ Regenerated `wiki/roadmap/index.md` and change pages from manifest.
 
 ## [2026-06-21] synthesis | Root hub pages
 Rédigé `Platform Overview.md` et `Gateway Exchange.md` (racine vault) à partir de `wiki/synthesis/platform-overview.md`, `wiki/concepts/gateway-exchange.md`, `raw/protocol/TableEchange.h`, `tcp-single-packet.md`. Corrigé typo `x` dans `wiki/synthesis/platform-overview.md`. Transports documentés : HTTP/TCP eth1 (legacy), HTTPS cloudsync ; todos explicites pour mTLS/MQTT/RS485 non confirmés.
+
+## [2026-06-21] sync | Sources synchronized
+Architecture docs from `docs/architecture/` and OpenSpec manifest regenerated.
+ESSENSYS_ROOT: `/Users/nrineau/ESSENSYS`
+
+## [2026-06-21] sync | Protocol docs
+Copied legacy protocol + TableEchange.h + MCP index reference to `raw/protocol/`.
+
+## [2026-06-21] timeline | Git history extracted
+Generated 38 timeline files in `wiki/timeline/` (limit=100 commits each).
+
+## [2026-06-21] roadmap | OpenSpec index updated
+Regenerated `wiki/roadmap/index.md` and change pages from manifest.
+
+## [2026-06-21] sync | Sources synchronized
+Architecture docs from `docs/architecture/` and OpenSpec manifest regenerated.
+ESSENSYS_ROOT: `/Users/nrineau/ESSENSYS`
+
+## [2026-06-21] sync | Protocol docs
+Copied legacy protocol + TableEchange.h + MCP index reference to `raw/protocol/`.
+
+## [2026-06-21] timeline | Git history extracted
+Generated 38 timeline files in `wiki/timeline/` (limit=100 commits each).
+
+## [2026-06-21] roadmap | OpenSpec index updated
+Regenerated `wiki/roadmap/index.md` and change pages from manifest.
+
+## [2026-06-21] concept | Gateway PKI
+Créé `wiki/concepts/gateway-pki.md` (auth token+MAC vérifiée, cible mTLS/TPM 3 phases). Backlinks Platform Overview, Gateway Exchange, Cloud Relay, Index. OpenSpec scaffold `essensys-gateway-mtls`. Pas de brouillon `gateway-pki.md` séparé dans le vault — synthèse depuis code + gaps sécurité existants.
+
+## [2026-06-21] sync | Sources synchronized
+Architecture docs from `docs/architecture/` and OpenSpec manifest regenerated.
+ESSENSYS_ROOT: `/Users/nrineau/ESSENSYS`
+
+## [2026-06-21] sync | Protocol docs
+Copied legacy protocol + TableEchange.h + MCP index reference to `raw/protocol/`.
+
+## [2026-06-21] timeline | Git history extracted
+Generated 38 timeline files in `wiki/timeline/` (limit=100 commits each).
+
+## [2026-06-21] roadmap | OpenSpec index updated
+Regenerated `wiki/roadmap/index.md` and change pages from manifest.
+
+## [2026-06-21] sync | Sources synchronized
+Architecture docs from `docs/architecture/` and OpenSpec manifest regenerated.
+ESSENSYS_ROOT: `/Users/nrineau/ESSENSYS`
+
+## [2026-06-21] roadmap | OpenSpec index updated
+Regenerated `wiki/roadmap/index.md` and change pages from manifest.
+
+## [2026-06-21] roadmap | Product rubric + Phase 0 OpenSpec
+Rubrique `wiki/roadmap/product-roadmap-rubric.md`, synthesis `product-roadmap.md`, changes OpenSpec essensys-product-roadmap / centralized-doc-maintenance / install-doc-platform. Rules `essensys-centralized-doc.mdc`, `essensys-install-doc.mdc`. Prompt `roadmap-product.md` réécrit (workflow OpenSpec, gate Phase 0).
+
+## [2026-06-21] sync | Sources synchronized
+Architecture docs from `docs/architecture/` and OpenSpec manifest regenerated.
+ESSENSYS_ROOT: `/Users/nrineau/ESSENSYS`
+
+## [2026-06-21] roadmap | OpenSpec index updated
+Regenerated `wiki/roadmap/index.md` and change pages from manifest.
+
+## [2026-06-21] synthesis | Product roadmap revue
+Exécution `prompts/roadmap-product.md` : matrice gap 13 domaines, gate Phase 0 levée, Now = scénarios clôture + mTLS phase 1. Install-doc-platform → completed.
+
+## [2026-06-21] sync | Sources synchronized
+Architecture docs from `docs/architecture/` and OpenSpec manifest regenerated.
+ESSENSYS_ROOT: `/Users/nrineau/ESSENSYS`
+
+## [2026-06-21] sync | Protocol docs
+Copied legacy protocol + TableEchange.h + MCP index reference to `raw/protocol/`.
+
+## [2026-06-21] timeline | Git history extracted
+Generated 38 timeline files in `wiki/timeline/` (limit=100 commits each).
+
+## [2026-06-21] roadmap | OpenSpec index updated
+Regenerated `wiki/roadmap/index.md` and change pages from manifest.
+
+## [2026-06-21] sync | Sources synchronized
+Architecture docs from `docs/architecture/` and OpenSpec manifest regenerated.
+ESSENSYS_ROOT: `/Users/nrineau/ESSENSYS`
+
+## [2026-06-21] sync | Protocol docs
+Copied legacy protocol + TableEchange.h + MCP index reference to `raw/protocol/`.
+
+## [2026-06-21] timeline | Git history extracted
+Generated 38 timeline files in `wiki/timeline/` (limit=100 commits each).
+
+## [2026-06-21] roadmap | OpenSpec index updated
+Regenerated `wiki/roadmap/index.md` and change pages from manifest.

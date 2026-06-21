@@ -3,6 +3,19 @@
   "essensys_root": "/Users/nrineau/ESSENSYS",
   "changes": [
     {
+      "change": "essensys-centralized-doc-maintenance",
+      "repo": "essensys-memory",
+      "path": "essensys-memory/openspec/changes/essensys-centralized-doc-maintenance",
+      "created": "2026-06-21",
+      "schema": "spec-driven",
+      "artifacts": {
+        "proposal": true,
+        "design": true,
+        "tasks": true,
+        "spec_count": 1
+      }
+    },
+    {
       "change": "essensys-cloud-sync-scheduler",
       "repo": "essensys-memory",
       "path": "essensys-memory/openspec/changes/essensys-cloud-sync-scheduler",
@@ -13,6 +26,45 @@
         "design": true,
         "tasks": true,
         "spec_count": 4
+      }
+    },
+    {
+      "change": "essensys-gateway-mtls",
+      "repo": "essensys-memory",
+      "path": "essensys-memory/openspec/changes/essensys-gateway-mtls",
+      "created": "2026-06-21",
+      "schema": "spec-driven",
+      "artifacts": {
+        "proposal": true,
+        "design": true,
+        "tasks": true,
+        "spec_count": 0
+      }
+    },
+    {
+      "change": "essensys-install-doc-platform",
+      "repo": "essensys-memory",
+      "path": "essensys-memory/openspec/changes/essensys-install-doc-platform",
+      "created": "2026-06-21",
+      "schema": "spec-driven",
+      "artifacts": {
+        "proposal": true,
+        "design": true,
+        "tasks": true,
+        "spec_count": 1
+      }
+    },
+    {
+      "change": "essensys-product-roadmap",
+      "repo": "essensys-memory",
+      "path": "essensys-memory/openspec/changes/essensys-product-roadmap",
+      "created": "2026-06-21",
+      "schema": "spec-driven",
+      "artifacts": {
+        "proposal": true,
+        "design": true,
+        "tasks": true,
+        "spec_count": 1
       }
     },
     {
