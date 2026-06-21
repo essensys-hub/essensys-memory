@@ -11,7 +11,7 @@ era: modern
 Priorisation produit **vivante** — delta par rapport à [[Platform Overview]] et [[Migration Legacy To Modern]].
 
 > **Rubrique** : [[Product Roadmap Rubric]]  
-> **Dernière revue** : 2026-06-21 (doc publique OVH — MkDocs hub `docs.essensys.fr`)  
+> **Dernière revue** : 2026-06-21 — file OpenSpec [[OpenSpec Queue 2026 06]] (`2026-06.001`…`023`)  
 > **Gate Phase 0** : **levée** — [[Essensys Centralized Doc Maintenance]] completed ; [[Essensys Install Doc Platform]] completed (tâche ingest optionnelle 3.2 différée).
 
 ## Matrice gap
@@ -35,33 +35,37 @@ Priorisation produit **vivante** — delta par rapport à [[Platform Overview]] 
 
 ## Now (0–3 mois)
 
-| Objectif | Change | DoD |
-|----------|--------|-----|
-| Deploy doc publique OVH | [[Essensys Doc Site]] | DNS + `ansible-playbook support-site.yml` ; curl docs.essensys.fr 200 |
-| Clôture scénarios | [[Essensys Scenario Management]] | 1.5 done ; archiver change |
-| mTLS phase 1 (enrollment) | [[Essensys Gateway Mtls]] | 2.1–2.3 : PG fingerprint + CSR admin + Ansible cert |
-| Living roadmap | [[Essensys Product Roadmap]] | Cette page + revue trimestrielle process |
+| ID | Objectif | Change | DoD |
+|----|----------|--------|-----|
+| 2026-06.008 | DNS doc dediee | [[Essensys Doc Site Dns 2026 06.008]] | `docs.essensys.fr` 200 HTTPS |
+| 2026-06.006 | Cloture scenarios | [[Essensys Scenario Management]] | archiver change |
+| 2026-06.009 | mTLS phase 1 | [[Essensys Gateway Mtls]] | 2.1–2.3 enrollment |
+| 2026-06.004 | Living roadmap | [[Essensys Product Roadmap]] | queue + revue trimestrielle |
 
 > Phase 0 doc/install : **done** — rules `essensys-centralized-doc.mdc`, `essensys-install-doc.mdc` en vigueur.
 
 ## Next (3–9 mois)
 
-| Objectif | Change | Dépendances |
-|----------|--------|-------------|
-| mTLS phase 2–3 | [[Essensys Gateway Mtls]] | Phase 1 + nginx OVH |
-| Trusted devices (iPad mural) | `essensys-trusted-devices` (à créer) | HTTPS local strategy |
-| Prod CM5 : Ansible vs NixOS | [[Essensys Gateway Nixos]] ou clôture dual-nic | Matériel + ops |
-| Ingest install excerpts | [[Essensys Install Doc Platform]] tâche 3.2 | Optionnel ; alimente aussi doc-site |
+| ID | Objectif | Change | Dépendances |
+|----|----------|--------|-------------|
+| 2026-06.009 | mTLS phase 2–3 | [[Essensys Gateway Mtls]] | phase 1 |
+| 2026-06.013 | Trusted devices | [[Essensys Trusted Devices 2026 06.013]] | 009 |
+| 2026-06.012 | Prod CM5 decision | [[Essensys Gateway Prod Decision 2026 06.012]] | 010, 011 |
+| 2026-06.014 | Ingest install | [[Essensys Install Doc Ingest 2026 06.014]] | 002 |
+| 2026-06.015 | Portail distant | [[Essensys Remote User Interface 2026 06.015]] | — |
 
 ## Later
 
-| Objectif | Change prévu |
-|----------|--------------|
-| Wizard install grand public | `essensys-install-wizard` |
-| IAM LAN complet | `essensys-lan-iam` |
-| Fleet / remote diagnostics | `essensys-gateway-fleet` (à définir) |
-| Migration PG scénarios cache | [[Essensys Scenario Management]] 2.5 optionnel |
-| Doc site Docusaurus / thème React | extension [[Essensys Doc Site]] si parité UI dashboard |
+| ID | Objectif | Change prévu |
+|----|----------|--------------|
+| 2026-06.016 | Wizard install | [[Essensys Install Wizard 2026 06.016]] |
+| 2026-06.017 | IAM LAN | [[Essensys Lan Iam 2026 06.017]] |
+| 2026-06.018 | Recovery gateway | [[Essensys Gateway Recovery 2026 06.018]] |
+| 2026-06.019 | Fleet diagnostics | [[Essensys Gateway Fleet 2026 06.019]] |
+| 2026-06.020 | PG scenarios | [[Essensys Scenario Pg Cache 2026 06.020]] |
+| 2026-06.021 | Doc Docusaurus | [[Essensys Doc Docusaurus 2026 06.021]] |
+| 2026-06.022 | Brain ingest auto | [[Essensys Brain Ingest Auto 2026 06.022]] |
+| 2026-06.023 | CI doc conformance | [[Essensys Doc Ci Conformance 2026 06.023]] |
 | RGPD / licensing / multi-foyer | > [!todo] non specifié vault |
 
 ## Décisions à trancher
@@ -91,6 +95,7 @@ Priorisation produit **vivante** — delta par rapport à [[Platform Overview]] 
 ## Voir aussi
 
 - [[Roadmap OpenSpec]]
+- [[OpenSpec Queue 2026 06]] — file ordonnée 2026-06.001…023
 - [[Product Roadmap Rubric]]
 - [[Centralized Documentation]]
 - [[Install Documentation]]

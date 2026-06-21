@@ -1,7 +1,20 @@
 {
-  "generated": "2026-06-21",
+  "generated": "2026-06-22",
   "essensys_root": "/Users/nrineau/ESSENSYS",
   "changes": [
+    {
+      "change": "essensys-brain-ingest-auto-2026-06.022",
+      "repo": "essensys-memory",
+      "path": "essensys-memory/openspec/changes/essensys-brain-ingest-auto-2026-06.022",
+      "created": "2026-06-21",
+      "schema": "spec-driven",
+      "artifacts": {
+        "proposal": true,
+        "design": true,
+        "tasks": true,
+        "spec_count": 1
+      }
+    },
     {
       "change": "essensys-centralized-doc-maintenance",
       "repo": "essensys-memory",
@@ -29,9 +42,61 @@
       }
     },
     {
+      "change": "essensys-doc-ci-conformance-2026-06.023",
+      "repo": "essensys-memory",
+      "path": "essensys-memory/openspec/changes/essensys-doc-ci-conformance-2026-06.023",
+      "created": "2026-06-21",
+      "schema": "spec-driven",
+      "artifacts": {
+        "proposal": true,
+        "design": true,
+        "tasks": true,
+        "spec_count": 1
+      }
+    },
+    {
+      "change": "essensys-doc-docusaurus-2026-06.021",
+      "repo": "essensys-memory",
+      "path": "essensys-memory/openspec/changes/essensys-doc-docusaurus-2026-06.021",
+      "created": "2026-06-21",
+      "schema": "spec-driven",
+      "artifacts": {
+        "proposal": true,
+        "design": true,
+        "tasks": true,
+        "spec_count": 1
+      }
+    },
+    {
       "change": "essensys-doc-site",
       "repo": "essensys-memory",
       "path": "essensys-memory/openspec/changes/essensys-doc-site",
+      "created": "2026-06-21",
+      "schema": "spec-driven",
+      "artifacts": {
+        "proposal": true,
+        "design": true,
+        "tasks": true,
+        "spec_count": 1
+      }
+    },
+    {
+      "change": "essensys-doc-site-dns-2026-06.008",
+      "repo": "essensys-memory",
+      "path": "essensys-memory/openspec/changes/essensys-doc-site-dns-2026-06.008",
+      "created": "2026-06-21",
+      "schema": "spec-driven",
+      "artifacts": {
+        "proposal": true,
+        "design": true,
+        "tasks": true,
+        "spec_count": 1
+      }
+    },
+    {
+      "change": "essensys-gateway-fleet-2026-06.019",
+      "repo": "essensys-memory",
+      "path": "essensys-memory/openspec/changes/essensys-gateway-fleet-2026-06.019",
       "created": "2026-06-21",
       "schema": "spec-driven",
       "artifacts": {
@@ -55,9 +120,74 @@
       }
     },
     {
+      "change": "essensys-gateway-prod-decision-2026-06.012",
+      "repo": "essensys-memory",
+      "path": "essensys-memory/openspec/changes/essensys-gateway-prod-decision-2026-06.012",
+      "created": "2026-06-21",
+      "schema": "spec-driven",
+      "artifacts": {
+        "proposal": true,
+        "design": true,
+        "tasks": true,
+        "spec_count": 1
+      }
+    },
+    {
+      "change": "essensys-gateway-recovery-2026-06.018",
+      "repo": "essensys-memory",
+      "path": "essensys-memory/openspec/changes/essensys-gateway-recovery-2026-06.018",
+      "created": "2026-06-21",
+      "schema": "spec-driven",
+      "artifacts": {
+        "proposal": true,
+        "design": true,
+        "tasks": true,
+        "spec_count": 1
+      }
+    },
+    {
+      "change": "essensys-install-doc-ingest-2026-06.014",
+      "repo": "essensys-memory",
+      "path": "essensys-memory/openspec/changes/essensys-install-doc-ingest-2026-06.014",
+      "created": "2026-06-21",
+      "schema": "spec-driven",
+      "artifacts": {
+        "proposal": true,
+        "design": true,
+        "tasks": true,
+        "spec_count": 1
+      }
+    },
+    {
       "change": "essensys-install-doc-platform",
       "repo": "essensys-memory",
       "path": "essensys-memory/openspec/changes/essensys-install-doc-platform",
+      "created": "2026-06-21",
+      "schema": "spec-driven",
+      "artifacts": {
+        "proposal": true,
+        "design": true,
+        "tasks": true,
+        "spec_count": 1
+      }
+    },
+    {
+      "change": "essensys-install-wizard-2026-06.016",
+      "repo": "essensys-memory",
+      "path": "essensys-memory/openspec/changes/essensys-install-wizard-2026-06.016",
+      "created": "2026-06-21",
+      "schema": "spec-driven",
+      "artifacts": {
+        "proposal": true,
+        "design": true,
+        "tasks": true,
+        "spec_count": 1
+      }
+    },
+    {
+      "change": "essensys-lan-iam-2026-06.017",
+      "repo": "essensys-memory",
+      "path": "essensys-memory/openspec/changes/essensys-lan-iam-2026-06.017",
       "created": "2026-06-21",
       "schema": "spec-driven",
       "artifacts": {
@@ -81,6 +211,32 @@
       }
     },
     {
+      "change": "essensys-remote-user-interface-2026-06.015",
+      "repo": "essensys-memory",
+      "path": "essensys-memory/openspec/changes/essensys-remote-user-interface-2026-06.015",
+      "created": "2026-06-21",
+      "schema": "spec-driven",
+      "artifacts": {
+        "proposal": true,
+        "design": true,
+        "tasks": true,
+        "spec_count": 1
+      }
+    },
+    {
+      "change": "essensys-roadmap-queue-2026-06",
+      "repo": "essensys-memory",
+      "path": "essensys-memory/openspec/changes/essensys-roadmap-queue-2026-06",
+      "created": "2026-06-21",
+      "schema": "spec-driven",
+      "artifacts": {
+        "proposal": true,
+        "design": true,
+        "tasks": true,
+        "spec_count": 1
+      }
+    },
+    {
       "change": "essensys-scenario-management",
       "repo": "essensys-memory",
       "path": "essensys-memory/openspec/changes/essensys-scenario-management",
@@ -94,6 +250,19 @@
       }
     },
     {
+      "change": "essensys-scenario-pg-cache-2026-06.020",
+      "repo": "essensys-memory",
+      "path": "essensys-memory/openspec/changes/essensys-scenario-pg-cache-2026-06.020",
+      "created": "2026-06-21",
+      "schema": "spec-driven",
+      "artifacts": {
+        "proposal": true,
+        "design": true,
+        "tasks": true,
+        "spec_count": 1
+      }
+    },
+    {
       "change": "essensys-second-brain",
       "repo": "essensys-memory",
       "path": "essensys-memory/openspec/changes/essensys-second-brain",
@@ -104,6 +273,19 @@
         "design": true,
         "tasks": true,
         "spec_count": 6
+      }
+    },
+    {
+      "change": "essensys-trusted-devices-2026-06.013",
+      "repo": "essensys-memory",
+      "path": "essensys-memory/openspec/changes/essensys-trusted-devices-2026-06.013",
+      "created": "2026-06-21",
+      "schema": "spec-driven",
+      "artifacts": {
+        "proposal": true,
+        "design": true,
+        "tasks": true,
+        "spec_count": 1
       }
     },
     {

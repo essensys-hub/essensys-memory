@@ -3744,3 +3744,19 @@ Regenerated `wiki/roadmap/index.md` and change pages from manifest.
 
 ## [2026-06-21] roadmap | OpenSpec index updated
 Regenerated `wiki/roadmap/index.md` and change pages from manifest.
+
+## [2026-06-22] roadmap | OpenSpec queue 2026-06.001…023
+File ordonnée `wiki/roadmap/openspec-queue-2026-06.md` ; 13 scaffolds planned (008, 012–023) ; `roadmap_id` sur changes 001–011 ; manifest 24 entrées ; lint wiki OK.
+
+## [2026-06-22] sync | Sources synchronized
+Architecture docs from `docs/architecture/` and OpenSpec manifest regenerated.
+ESSENSYS_ROOT: `/Users/nrineau/ESSENSYS`
+
+## [2026-06-22] sync | Protocol docs
+Copied legacy protocol + TableEchange.h + MCP index reference to `raw/protocol/`.
+
+## [2026-06-22] timeline | Git history extracted
+Generated 38 timeline files in `wiki/timeline/` (limit=100 commits each).
+
+## [2026-06-22] roadmap | OpenSpec index updated
+Regenerated `wiki/roadmap/index.md` and change pages from manifest.
