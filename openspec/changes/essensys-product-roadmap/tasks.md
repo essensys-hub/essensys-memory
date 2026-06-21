@@ -15,7 +15,7 @@
 - [x] 1.1 Remplir matrice gap depuis vault (première exécution prompt — 2026-06-21)
 - [x] 1.2 Lier chaque ligne Now à un change OpenSpec existant ou planned
 - [x] 1.2b Intégrer doc publique OVH ([[Essensys Doc Site]]) en Next — revue 2026-06-21
-- [ ] 1.3 Revue trimestrielle : horizons + statuts changes
+- [x] 1.3 Revue trimestrielle : horizons + statuts changes (mini-revue 2026-06-22 — queue 005, doc-site completed)
 
 ## Gate
 
