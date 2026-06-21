@@ -4,7 +4,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 VAULT_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 ESSENSYS_ROOT="${ESSENSYS_ROOT:-$(cd "$VAULT_ROOT/.." && pwd)}"
 SRC="$VAULT_ROOT/content/blog"
-DEST="$ESSENSYS_ROOT/essensys-support-site/site/public/blog"
+DEST="$ESSENSYS_ROOT/essensys-support-site/site/public/blog-data"
 mkdir -p "$DEST"
 
 python3 << PY
