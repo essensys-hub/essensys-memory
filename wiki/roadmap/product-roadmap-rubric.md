@@ -51,6 +51,7 @@ Chaque ligne **Now** ou **Next** de [[Product Roadmap]] doit pointer vers **un s
 
 - [[Essensys Scenario Management]]
 - [[Essensys Gateway Mtls]] — [[Gateway PKI]]
+- [[Essensys Doc Site]] — doc publique OVH (MkDocs)
 - [[Essensys Gateway Dual Nic]], [[Essensys Gateway Nixos]]
 
 ### Epics typiques **Later** (créer change au passage en Next)
@@ -59,6 +60,7 @@ Chaque ligne **Now** ou **Next** de [[Product Roadmap]] doit pointer vers **un s
 - Install wizard particulier (`essensys-install-wizard` — à créer)
 - IAM LAN / RBAC complet
 - Fleet / remote diagnostics
+- Doc site Docusaurus / thème React (extension doc-site)
 
 ## Workflow dev
 

@@ -3709,3 +3709,19 @@ Generated 38 timeline files in `wiki/timeline/` (limit=100 commits each).
 
 ## [2026-06-21] roadmap | OpenSpec index updated
 Regenerated `wiki/roadmap/index.md` and change pages from manifest.
+
+## [2026-06-21] roadmap | Doc publique OVH (essensys-doc-site)
+Revue product-roadmap : hub MkDocs sur VPS OVH (`docs.essensys.fr`), change OpenSpec `essensys-doc-site` (active), concept [[User Documentation Site]], prompt roadmap-product.md §5. Scénarios 1.5 marqué done en Now.
+
+## [2026-06-21] sync | Sources synchronized
+Architecture docs from `docs/architecture/` and OpenSpec manifest regenerated.
+ESSENSYS_ROOT: `/Users/nrineau/ESSENSYS`
+
+## [2026-06-21] sync | Protocol docs
+Copied legacy protocol + TableEchange.h + MCP index reference to `raw/protocol/`.
+
+## [2026-06-21] timeline | Git history extracted
+Generated 38 timeline files in `wiki/timeline/` (limit=100 commits each).
+
+## [2026-06-21] roadmap | OpenSpec index updated
+Regenerated `wiki/roadmap/index.md` and change pages from manifest.

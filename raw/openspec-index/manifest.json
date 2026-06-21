@@ -29,6 +29,19 @@
       }
     },
     {
+      "change": "essensys-doc-site",
+      "repo": "essensys-memory",
+      "path": "essensys-memory/openspec/changes/essensys-doc-site",
+      "created": "2026-06-21",
+      "schema": "spec-driven",
+      "artifacts": {
+        "proposal": true,
+        "design": true,
+        "tasks": true,
+        "spec_count": 1
+      }
+    },
+    {
       "change": "essensys-gateway-mtls",
       "repo": "essensys-memory",
       "path": "essensys-memory/openspec/changes/essensys-gateway-mtls",

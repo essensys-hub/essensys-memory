@@ -32,6 +32,7 @@ Fichier monorepo : `.cursor/rules/essensys-centralized-doc.mdc`
 | UI domotique | server-frontend, portal-frontend | rules jumeaux ; wiki si nouveau concept UX |
 | Nouveau OpenSpec | hôte + memory | `update-roadmap.sh`, page `wiki/roadmap/changes/` |
 | Architecture dépôt | `docs/architecture/` | sync-sources + entité `wiki/entities/` |
+| Doc publique users | `essensys-doc`, ansible install | [[User Documentation Site]], change [[Essensys Doc Site]] |
 | Sécurité gateway cloud | backend + ansible | [[Gateway PKI]], concept concerné |
 
 ## Triggers obligatoires

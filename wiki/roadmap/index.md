@@ -7,10 +7,11 @@ updated: 2026-06-21
 
 Index des changes OpenSpec connus du monorepo ESSENSYS. Regénérer via `scripts/update-roadmap.sh` après sync.
 
-**Dernière mise à jour:** 2026-06-21 · **Changes:** 9
+**Dernière mise à jour:** 2026-06-21 · **Changes:** 10
 
 ## Active
 
+- [[Essensys Doc Site]] — essensys-memory (active)
 - [[Essensys Gateway Mtls]] — essensys-memory (active)
 - [[Essensys Product Roadmap]] — essensys-memory (active)
 - [[Essensys Scenario Management]] — essensys-memory (active)

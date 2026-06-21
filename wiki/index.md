@@ -62,6 +62,7 @@ Master catalog of all wiki pages. Updated on every ingest.
 - [[Gateway PKI]] — identité gateway mTLS / TPM (conception, non déployé)
 - [[Centralized Documentation]] — gouvernance doc centralisée (Phase 0a)
 - [[Install Documentation]] — index procédures install gateway (Phase 0b)
+- [[User Documentation Site]] — facade publique OVH (MkDocs hub)
 
 ## Synthesis
 
