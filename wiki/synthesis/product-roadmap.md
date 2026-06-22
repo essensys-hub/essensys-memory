@@ -29,7 +29,8 @@ Priorisation produit **vivante** — delta par rapport à [[Platform Overview]] 
 | Dual-NIC CM5 | eth0 WAN / eth1 armoire doc | Prod Ansible vs NixOS | Décision prod | [[Essensys Gateway Dual Nic]], [[Essensys Gateway Nixos]] | Dette deploy |
 | Portail distant | LinkGate, inject, `/portal/` | Parité jumeaux continue | — | [[Essensys Remote User Interface]] (prompt) | Régression miroir |
 | IAM / sessions LAN | Basic Auth optionnelle | — | Comptes, RBAC LAN | > [!todo] `essensys-lan-iam` | Pas multi-utilisateur local |
-| HTTPS local `.local` | Traefik LE + CA locale | Safari/iPad trust | Trusted devices | > [!todo] `essensys-trusted-devices` | UX iPad mural |
+| HTTPS local `.local` | Traefik LE + CA locale | Safari/iPad trust | Trusted devices | [[Essensys Trusted Devices 2026 06.013]] planned | UX iPad mural |
+| **Panneaux MCU LAN** | — | — | ESP32/Pico boutons scénarios + chauffage | [[Essensys Lan Mcu Panels 2026 06.025]] planned | Pas de boutons physiques LAN |
 | Install particulier | Ansible `install-gateway.md` | — | Wizard UX | > [!todo] `essensys-install-wizard` | Non techniciens bloqués |
 | Recovery gateway | API `gateways/register` | — | UX remplacement | Later (après install-wizard) | Support coûteux |
 | Observabilité | New Relic partiel | Prometheus stub | Fleet health | Later | Pannes silencieuses |
@@ -52,6 +53,7 @@ Priorisation produit **vivante** — delta par rapport à [[Platform Overview]] 
 |----|----------|--------|-------------|
 | 2026-06.009 | mTLS phase 2–3 | [[Essensys Gateway Mtls]] | phase 1 |
 | 2026-06.013 | Trusted devices | [[Essensys Trusted Devices 2026 06.013]] | 009 |
+| 2026-06.025 | Boutons MCU LAN (ESP32/Pico) | [[Essensys Lan Mcu Panels 2026 06.025]] | 013 |
 | 2026-06.012 | Prod CM5 decision | [[Essensys Gateway Prod Decision 2026 06.012]] | 010, 011 |
 | 2026-06.014 | Ingest install | [[Essensys Install Doc Ingest 2026 06.014]] | 002 |
 | 2026-06.015 | Portail distant | [[Essensys Remote User Interface 2026 06.015]] | — |

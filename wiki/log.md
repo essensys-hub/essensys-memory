@@ -3748,7 +3748,9 @@ Regenerated `wiki/roadmap/index.md` and change pages from manifest.
 ## [2026-06-22] roadmap | Revue OpenSpec 004 (product-roadmap)
 Mini-revue trimestrielle : queue 005, doc-site completed, publish-roadmap-public.
 
-## [2026-06-22] roadmap | OpenSpec 005 roadmap-site — impl MVP
+## [2026-06-22] openspec | Propose essensys-lan-mcu-panels-2026-06.025
+Panneaux ESP32/Pico : boutons scénarios + chauffage, LAN .local only, dep 013.
+
 Site HTML statique, blog support-site, role Ansible roadmap_site, dep 007 retirée.
 
 ## [2026-06-22] sync | Sources synchronized
@@ -3760,6 +3762,9 @@ Copied legacy protocol + TableEchange.h + MCP index reference to `raw/protocol/`
 
 ## [2026-06-22] timeline | Git history extracted
 Generated 38 timeline files in `wiki/timeline/` (limit=100 commits each).
+
+## [2026-06-22] roadmap | OpenSpec index updated
+Regenerated `wiki/roadmap/index.md` and change pages from manifest.
 
 ## [2026-06-22] roadmap | OpenSpec index updated
 Regenerated `wiki/roadmap/index.md` and change pages from manifest.

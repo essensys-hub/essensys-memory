@@ -7,7 +7,7 @@ updated: 2026-06-22
 
 Index des changes OpenSpec connus du monorepo ESSENSYS. Regénérer via `scripts/update-roadmap.sh` après sync.
 
-**Dernière mise à jour:** 2026-06-22 · **Changes:** 25
+**Dernière mise à jour:** 2026-06-22 · **Changes:** 26
 
 ## Active
 
@@ -24,6 +24,7 @@ Index des changes OpenSpec connus du monorepo ESSENSYS. Regénérer via `scripts
 - [[Essensys Install Doc Ingest 2026 06.014]] — essensys-memory (active)
 - [[Essensys Install Wizard 2026 06.016]] — essensys-memory (active)
 - [[Essensys Lan Iam 2026 06.017]] — essensys-memory (active)
+- [[Essensys Lan Mcu Panels 2026 06.025]] — essensys-memory (active)
 - [[Essensys Remote User Interface 2026 06.015]] — essensys-memory (active)
 - [[Essensys Roadmap Queue 2026 06]] — essensys-memory (active)
 - [[Essensys Roadmap Site 2026 06.005]] — essensys-memory (active)

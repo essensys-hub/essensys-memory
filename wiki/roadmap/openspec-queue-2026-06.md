@@ -49,6 +49,7 @@ File d'exécution **ordonnée** des changes OpenSpec produit. Chaque epic a un i
 | **2026-06.022** | [[Essensys Brain Ingest Auto 2026 06.022]] | essensys-memory | Later | planned | 003 |
 | **2026-06.023** | [[Essensys Doc Ci Conformance 2026 06.023]] | essensys-memory | Later | planned | 001 |
 | **2026-06.024** | [[Essensys Cloud Sync Scheduler]] | essensys-memory | — | completed | — |
+| **2026-06.025** | [[Essensys Lan Mcu Panels 2026 06.025]] | essensys-memory | Next | planned | 013 |
 
 ## Règles
 

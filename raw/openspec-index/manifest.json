@@ -224,6 +224,19 @@
       }
     },
     {
+      "change": "essensys-lan-mcu-panels-2026-06.025",
+      "repo": "essensys-memory",
+      "path": "essensys-memory/openspec/changes/essensys-lan-mcu-panels-2026-06.025",
+      "created": "2026-06-22",
+      "schema": "spec-driven",
+      "artifacts": {
+        "proposal": true,
+        "design": true,
+        "tasks": true,
+        "spec_count": 1
+      }
+    },
+    {
       "change": "essensys-product-roadmap",
       "repo": "essensys-memory",
       "path": "essensys-memory/openspec/changes/essensys-product-roadmap",
