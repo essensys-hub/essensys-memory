@@ -3748,6 +3748,9 @@ Regenerated `wiki/roadmap/index.md` and change pages from manifest.
 ## [2026-06-22] roadmap | Revue OpenSpec 004 (product-roadmap)
 Mini-revue trimestrielle : queue 005, doc-site completed, publish-roadmap-public.
 
+## [2026-06-22] openspec | Propose essensys-ui-e2e-playwright-2026-06.026
+Mode test dry-run (pas d'envoi armoire), Playwright local/remote/demo, non-régression UI.
+
 ## [2026-06-22] openspec | Propose essensys-lan-mcu-panels-2026-06.025
 Panneaux ESP32/Pico : boutons scénarios + chauffage, LAN .local only, dep 013.
 
