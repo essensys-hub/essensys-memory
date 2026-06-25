@@ -3786,3 +3786,9 @@ Regenerated `wiki/roadmap/index.md` and change pages from manifest.
 
 ## [2026-06-22] roadmap | OpenSpec index updated
 Regenerated `wiki/roadmap/index.md` and change pages from manifest.
+
+## [2026-06-25] roadmap | OpenSpec index updated
+Regenerated `wiki/roadmap/index.md` and change pages from manifest.
+
+## [2026-06-25] openspec | essensys-secrets-sops-migration-2026-06-028 implemented (MVP cloud)
+SOPS + age dans `essensys-ansible` : `secrets/cloud/essensys.sops.yaml`, rôle `sops_load`, docs/secrets.md, wiki [[Secrets Management]].

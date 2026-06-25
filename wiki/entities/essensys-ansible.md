@@ -58,7 +58,7 @@ _… voir source complète dans raw/_
 ## Points d'attention
 
 - **Cutover backend cloud :** deux modes coexistent, pilotés par `cloud_backend_consolidated` et `cloud_backend_legacy_mode` (group_vars `main.yml`). `support-site.yml` choisit dynamiquement entre les rôles consolidés (`cloud_backend` / `cloud_nginx`) et legacy (`backend` / `portal_backend` / `portal_nginx`). Vérifier ces flags avant tout déploiement cloud.
-- **Secrets :** `group_vars/essensys/vault.yml` (Ansible Vault) et `config/.env` contiennent des secrets — non détaillés ici. Présence d'exemples (`database.example.yml`, `newrelic.vars.example.yml`, `.env.example`).
+- **Secrets :** `secrets/cloud/essensys.sops.yaml` (SOPS + age, versionné chiffré) ; rôle `sops_load`. Legacy : `group_vars/essensys/vault.yml` (Ansible Vault, gitignored — rollback). Gateway phase 2 : `host_vars/*/secrets.sops.yaml`. Doc : `docs/secrets.md`, [[Secrets Management]].
 - **Étapes manuelles CM5 non automatisables** (cf. `roles/raspberry_gateway_network/README.md`) : flash eMMC via `rpiboot`, activation PCIe/NVMe dans `/boot/firmware/config.txt`, relevé des adresses MAC eth0/eth1 à renseigner dans l'inventaire **avant** le premier run.
 - **Versions hétérogènes :** `install.*.yml` utilisent Go 1.23.4 et `essensys_version V.1.3.0`, mais `update.raspberrypi.yml` référence encore `backend_version V.1.2.2` et Go 1.21.5 — désalignement à surveiller.
 - **Playbooks destructifs** protégés par des gardes (`confirm_uninstall`, `confirm_cm5_uninstall`, `confirm_cm5_nixos_prep`) à passer explici
