@@ -1,3 +1,7 @@
 schema: spec-driven
 created: 2026-06-21
+updated: 2026-06-26
 roadmap_id: 2026-06.017
+depends_on_recommended:
+  - essensys-trusted-devices-2026-06.013
+  - essensys-install-wizard-2026-06.016

@@ -60,6 +60,7 @@ _… voir source complète dans raw/_
 - **Génération de bloc complet 605–622** : le firmware ignore une action lumière/volet si un seul indice du bloc manque ; le serveur complète automatiquement (+ index 590=1 comme déclencheur de scénario, jamais fusionné).
 - **Désaccord README vs code** : le `README.md` décrit une ancienne version store-mémoire ; les dépendances réelles (Redis, Postgres, MQTT, MCP, UniFi, cloudsync) ne s'y trouvent pas. Documentation à jour côté `docs/` et code.
 - **[[Security Gate]] (2026-06-26, branche `V.1.3.0`) :** bootstrap [[Essensys Feature Lifecycle]] ; CVE Go/npm corrigées (PR #2–#6), Dockerfile non-root, `.gitleaks.toml` allowlist doc, tests Go recompilés (PR #7, 11 `t.Skip` tests obsolètes auth passive / log `[GO]`).
+- **[[LAN IAM]] (OpenSpec 2026-06.017, impl. 2026-06-26) :** package `internal/laniam`, table `lan_users`, sessions cookie 7j, routes `/api/admin/lan-users/*` ; activer `lan_iam.enabled` + migration SQL `003_lan_users`.
 - **Cloudsync** : agent `internal/cloudsync` poll `GET /api/gateway/pending-actions` sur `mon.essensys.fr` ; requiert `cloud.enabled: true` + credentials dans le **bon** `config.yaml` (voir [[Essensys Ansible]]).
 - **Dégradation gracieuse** : si PostgreSQL est injoignable,
 

@@ -66,6 +66,7 @@ Master catalog of all wiki pages. Updated on every ingest.
 - [[Secrets Management]] — SOPS + age + Ansible (secrets cloud/gateway, change 2026-06.028)
 - [[Feature Lifecycle]] — process pilotage Jira + OpenSpec + gates CI + deploy
 - [[Security Gate]] — gitleaks + Trivy + Dependabot bloquant PR (Critical/High)
+- [[LAN IAM]] — comptes locaux mon.essensys.local, table lan_users, sessions 7j
 - [[User Documentation Site]] — facade publique OVH (MkDocs hub)
 
 ## Synthesis

@@ -3809,9 +3809,12 @@ ESSENSYS_ROOT: `/Users/nrineau/ESSENSYS`
 ## [2026-06-26] timeline | Git history extracted
 Generated 39 timeline files in `wiki/timeline/` (limit=100 commits each).
 
-## [2026-06-26] sync | Sources synchronized
+## [2026-06-26] openspec | essensys-lan-iam-2026-06.017 implementation (phase 1–2 partial)
+Change **active** : table `lan_users`, session 7j, backend `internal/laniam`, frontend login gate (`VITE_LAN_IAM`), Ansible `lan_iam.yml`. Wiki [[LAN IAM]].
+
+## [2026-06-27] sync | Sources synchronized
 Architecture docs from `docs/architecture/` and OpenSpec manifest regenerated.
 ESSENSYS_ROOT: `/Users/nrineau/ESSENSYS`
 
-## [2026-06-26] timeline | Git history extracted
-Generated 39 timeline files in `wiki/timeline/` (limit=100 commits each).
+## [2026-06-27] openspec | essensys-lan-iam-2026-06.017 phase 2–3
+Pages `/settings/account`, `/settings/users` ; doc install LAN IAM ; note Traefik sans double Basic Auth LAN.
