@@ -3818,3 +3818,6 @@ ESSENSYS_ROOT: `/Users/nrineau/ESSENSYS`
 
 ## [2026-06-27] openspec | essensys-lan-iam-2026-06.017 phase 2–3
 Pages `/settings/account`, `/settings/users` ; doc install LAN IAM ; note Traefik sans double Basic Auth LAN.
+
+## [2026-06-27] openspec | essensys-lan-iam-2026-06.017 ansible hardening
+Rôle `raspberry_postgresql`, dedupe config YAML, vars monitoring/traefik ; tâche 0.2 validée CM5.

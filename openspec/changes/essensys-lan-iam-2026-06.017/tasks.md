@@ -5,7 +5,7 @@
 ## Phase 0 — Validation (gate)
 
 - [x] 0.1 Revue autocritique D1–D8 avec produit / ops
-- [ ] 0.2 Confirmer PostgreSQL actif sur CM5 prod (prérequis auth)
+- [x] 0.2 Confirmer PostgreSQL actif sur CM5 prod (prérequis auth) — PG 17 installé 2026-06-27, rôle `raspberry_postgresql`
 - [x] 0.3 **Décision : table `lan_users` dédiée** (pas legacy `users`)
 - [x] 0.4 **Décision : `lan_guest` = pilotage LAN identique à `lan_user`**, sans admin users
 - [x] 0.5 **Décision : session TTL 7 jours** (168 h, sliding)
@@ -37,6 +37,8 @@
 - [x] 3.1 Tâche génération token bootstrap + block config `lan_iam` (`lan_iam.yml`)
 - [x] 3.2 Doc install : premier login `lan_admin`, rotation mot de passe
 - [x] 3.3 Vérifier profil Traefik : pas de double basicauth dashboard
+- [x] 3.4 Rôle `raspberry_postgresql` + migrations auto + dedupe config YAML
+- [x] 3.5 Vars monitoring/nginx/traefik dans `update.raspberrypi.yml` ; build frontend `VITE_LAN_IAM` si LAN IAM
 
 ## Phase 4 — Intégration changes liés
 
@@ -54,15 +56,15 @@
 cd essensys-memory && openspec validate essensys-lan-iam-2026-06.017
 cd essensys-server-backend && go test ./internal/laniam/... && go build ./cmd/server
 cd essensys-server-frontend && VITE_LAN_IAM=true npm run build
-# Migration manuelle gateway :
-psql -f migrations/003_lan_users.up.sql
-# Activer : lan_iam.enabled: true dans config.yaml
+# Gateway CM5 (LAN IAM) :
+ansible-playbook -i inventory.gateway update.raspberrypi.yml -e lan_iam_enabled=true
+# Migration 003 incluse dans le rôle backend si PG actif
 ```
 
 ## Definition of Done
 
-- [ ] Bootstrap `lan_admin` via Ansible sur CM5 vierge
-- [ ] Login/logout UI sur `mon.essensys.local` (nécessite `VITE_LAN_IAM=true` au build)
+- [x] Bootstrap `lan_admin` via Ansible sur CM5 vierge (2026-06-27 — admin@essensys.local)
+- [x] Login/logout UI sur `mon.essensys.local` (build `VITE_LAN_IAM=true` sur CM5)
 - [ ] CRUD users admin fonctionnel (API OK ; UI admin 2.4 livrée — validation prod pending)
 - [x] Legacy `/api/mystatus` vert sans session (router allowlist)
 - [ ] Security gate vert sur backend + frontend après merge
