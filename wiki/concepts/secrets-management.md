@@ -2,7 +2,7 @@
 tags: [concept, security, infra, ansible, sops]
 sources: [secrets.md, prompts/vault.md, essensys-secrets-sops-migration-2026-06-028]
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-06-26
 era: modern
 ---
 
@@ -30,6 +30,21 @@ Runtime cloud **inchangé en MVP** : templates Jinja2 → `.env` systemd (`Envir
 | Gateway CM5 | `host_vars/<hostname>/secrets.sops.yaml` | `install.gateway.yml` (phase 2) |
 
 Rôle Ansible : **`sops_load`** (`community.sops` lookup).
+
+## Clés process & agents (2026-06-26)
+
+| Clé SOPS | Usage |
+|----------|--------|
+| `JIRA_SECRET` | API token Atlassian — `post_security_gate_to_jira.py`, subagents remediation |
+| `gitguardian_token` | Optionnel — `ggshield` local / dashboard GitGuardian (non bloquant gate) |
+
+Extraction opérateur :
+
+```bash
+cd essensys-ansible
+export SOPS_AGE_KEY_FILE="$PWD/.age/keys.txt"
+export JIRA_SECRET="$(sops -d --extract '["JIRA_SECRET"]' secrets/cloud/essensys.sops.yaml)"
+```
 
 ## Doc canonique
 

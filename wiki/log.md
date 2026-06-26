@@ -3792,3 +3792,26 @@ Regenerated `wiki/roadmap/index.md` and change pages from manifest.
 
 ## [2026-06-25] openspec | essensys-secrets-sops-migration-2026-06-028 implemented (MVP cloud)
 SOPS + age dans `essensys-ansible` : `secrets/cloud/essensys.sops.yaml`, rôle `sops_load`, docs/secrets.md, wiki [[Secrets Management]].
+
+## [2026-06-26] ingest | Feature Lifecycle + Security Gate + CVE V.1.3.0
+- Nouveau dépôt [[Essensys Feature Lifecycle]] : process Jira SCRUM, gates gitleaks/Trivy/Dependabot, scripts `post_security_gate_to_jira.py`.
+- Concepts wiki : [[Feature Lifecycle]], [[Security Gate]].
+- Remediation CVE backend (`essensys-server-backend` PR #2–#7) et frontend (PR #2–#4, react-router 7.18, Dockerfile non-root).
+- Bootstrap gates sur portail backend/frontend (scan vert).
+- Ansible : `deploy-portal-stack.yml`, `update.raspberrypi.yml` V.1.3.0, fix cloudsync CM5 (`-config` central).
+- Secrets SOPS : `JIRA_SECRET`, `gitguardian_token` documentés dans [[Secrets Management]].
+- Tickets ouverts : SCRUM-15 (image Docker backend arm64), SCRUM-16 (playbook gateway dédié).
+
+## [2026-06-26] sync | Sources synchronized
+Architecture docs from `docs/architecture/` and OpenSpec manifest regenerated.
+ESSENSYS_ROOT: `/Users/nrineau/ESSENSYS`
+
+## [2026-06-26] timeline | Git history extracted
+Generated 39 timeline files in `wiki/timeline/` (limit=100 commits each).
+
+## [2026-06-26] sync | Sources synchronized
+Architecture docs from `docs/architecture/` and OpenSpec manifest regenerated.
+ESSENSYS_ROOT: `/Users/nrineau/ESSENSYS`
+
+## [2026-06-26] timeline | Git history extracted
+Generated 39 timeline files in `wiki/timeline/` (limit=100 commits each).

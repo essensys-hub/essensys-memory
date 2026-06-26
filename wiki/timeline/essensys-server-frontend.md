@@ -1,17 +1,26 @@
 ---
 tags: [timeline, git]
 repo: essensys-server-frontend
-updated: 2026-06-21
-total_commits: 36
+updated: 2026-06-26
+total_commits: 45
 shown_commits: 100
 ---
 
 # Timeline — essensys-server-frontend
 
-**First commit:** 0669921 2025-12-18 · **Latest:** 0e6368e 2026-06-21 · **Total:** 36
+**First commit:** 0669921 2025-12-18 · **Latest:** a7aaccb 2026-06-22 · **Total:** 45
 
 ## Commits (newest first, limit 100)
 
+- **2026-06-22** `a7aaccb` — fix(ui): mode test ne bloque plus l'éclairage en silence (rhinosys)
+- **2026-06-22** `9307c7d` — fix(demo): TestModeProvider requis pour MainLayout / page régression (rhinosys)
+- **2026-06-22** `b3e9a23` — fix(regression): tests chevet PC3 dry-run sans scénario Je sors (rhinosys)
+- **2026-06-22** `9739c08` — feat(admin): page tests non-régression dry-run dans le menu Administration (rhinosys)
+- **2026-06-22** `544db38` — feat(ui): mode test + Playwright E2E demo (OpenSpec 026) (rhinosys)
+- **2026-06-22** `96822ad` — fix(demo): mocks API scénarios pour la démo statique (rhinosys)
+- **2026-06-22** `e7d1d54` — chore: ignorer artefacts design-sync dans .gitignore (rhinosys)
+- **2026-06-22** `6dd688e` — feat(demo): build racine pour demo.essensys.fr (VITE_DEMO_ROOT) (rhinosys)
+- **2026-06-22** `44462db` — fix(demo): basename /demo en mode VITE_DEMO_MODE (rhinosys)
 - **2026-06-21** `0e6368e` — feat(scenario): page /scenarios, éditeur et toggle sync cloud. (rhinosys)
 - **2026-06-20** `0346e46` — feat(heating): planning hebdomadaire avec inject batch (rhinosys)
 - **2026-06-11** `e678a05` — feat(volets): reglage du temps de course par volet (secondes) (rhinosys)

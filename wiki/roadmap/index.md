@@ -1,13 +1,13 @@
 ---
 tags: [roadmap, openspec, index]
-updated: 2026-06-22
+updated: 2026-06-25
 ---
 
 # Roadmap OpenSpec
 
 Index des changes OpenSpec connus du monorepo ESSENSYS. Regénérer via `scripts/update-roadmap.sh` après sync.
 
-**Dernière mise à jour:** 2026-06-22 · **Changes:** 26
+**Dernière mise à jour:** 2026-06-25 · **Changes:** 26
 
 ## Active
 

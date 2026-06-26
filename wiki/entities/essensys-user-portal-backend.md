@@ -2,7 +2,7 @@
 tags: [entity, repo, legacy, backend]
 sources: [essensys-user-portal-backend.md]
 created: 2026-06-20
-updated: 2026-06-20
+updated: 2026-06-26
 era: legacy
 repo: essensys-user-portal-backend
 ---
@@ -71,6 +71,8 @@ _… voir source complète dans raw/_
 - **Modèle pull/push gateway** : la latence de pilotage dépend de l'intervalle de polling de la gateway et du TTL `EXC
 
 _… voir source complète dans raw/_
+
+- **[[Feature Lifecycle]] bootstrap (2026-06-26, `main`) :** gates `feature-gate.yml` + `security-gate.yml`, scripts `feature_lifecycle/`, `.gitleaks.toml`. Premier scan security gate **vert** (0 HIGH/CRITICAL). Deploy Ansible : `deploy-portal-stack.yml`.
 
 ## Liens
 

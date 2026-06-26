@@ -2,7 +2,7 @@
 tags: [synthesis, platform, architecture]
 sources: [README.md, architecture-readme.md]
 created: 2026-06-20
-updated: 2026-06-20
+updated: 2026-06-26
 era: modern
 ---
 
@@ -23,6 +23,8 @@ Essensys est une **solution domotique résidentielle** : alarme, chauffage, écl
 - [[Table D Echange]] — contrat k/v armoire ↔ serveur
 - [[Cloud Relay]] — pilotage distant NAT traversal
 - [[Gateway Exchange]] — API sync passerelle ↔ hub
+- [[Feature Lifecycle]] — process Jira → OpenSpec → gates CI → deploy
+- [[Security Gate]] — gitleaks + Trivy + Dependabot (bloquant PR)
 - [[Migration Legacy To Modern]] — ASP.NET/MQX → Go/React/Raspberry
 
 ## Mémoire projet
@@ -42,7 +44,7 @@ Index complet dans [[Index]] section Entities. Catégories :
 | Cloud | user-portal-*, support-site |
 | Infra | ansible, traefik, nginx, redis, mosquitto |
 | Legacy | client-essensys-legacy, essensys-web-legacy |
-| Outillage | essensys-gcc, essensys-mcp, essensys-memory |
+| Outillage | essensys-gcc, essensys-mcp, essensys-memory, **essensys-feature-lifecycle** |
 | HAL (connexe) | hal-home-intercom, hal-home-assitant |
 
 ## Sources

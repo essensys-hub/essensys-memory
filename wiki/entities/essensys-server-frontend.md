@@ -2,7 +2,7 @@
 tags: [entity, repo, legacy, frontend]
 sources: [essensys-server-frontend.md]
 created: 2026-06-20
-updated: 2026-06-20
+updated: 2026-06-26
 era: legacy
 repo: essensys-server-frontend
 ---
@@ -14,8 +14,8 @@ repo: essensys-server-frontend
 | | |
 |---|---|
 | **Catégorie** | Frontend (SPA web responsive) |
-| **Stack** | React 19, TypeScript 5.9, Vite 7, React Router 7, Tailwind CSS 4, Heroicons |
-| **Statut** | actif (réécriture moderne de l'interface web legacy, v1.2.0) |
+| **Stack** | React 19, TypeScript 5.9, Vite 7, React Router **7.18+**, Tailwind CSS 4, Heroicons |
+| **Statut** | actif — `V.1.3.0`, bootstrap [[Security Gate]] (2026-06-26) |
 | **Era** | legacy |
 
 ## Rôle
@@ -59,6 +59,8 @@ _… voir source complète dans raw/_
 - **Logs verbeux en co
 
 _… voir source complète dans raw/_
+
+- **[[Security Gate]] (2026-06-26, `V.1.3.0`) :** `react-router` 7.11→7.18 (6 CVE HIGH, PR #2), Dockerfile non-root DS-0002 (PR #3), `.gitleaks.toml` allowlist artefacts `.design-sync/` et `ds-bundle/` (PR #4). Jumeau : [[Essensys User Portal Frontend]].
 
 ## Liens
 

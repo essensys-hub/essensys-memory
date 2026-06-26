@@ -1,17 +1,20 @@
 ---
 tags: [timeline, git]
 repo: essensys-doc
-updated: 2026-06-21
-total_commits: 17
+updated: 2026-06-26
+total_commits: 20
 shown_commits: 100
 ---
 
 # Timeline — essensys-doc
 
-**First commit:** a4d821d 2026-02-28 · **Latest:** f6f0279 2026-06-14 · **Total:** 17
+**First commit:** a4d821d 2026-02-28 · **Latest:** 8cef2fe 2026-06-21 · **Total:** 20
 
 ## Commits (newest first, limit 100)
 
+- **2026-06-21** `8cef2fe` — feat(skills): ajoute execute-github-project et plan-to-github-tasks (rhinosys)
+- **2026-06-21** `1bdbb96` — fix(docs): site_url mon.essensys.fr/docs/ en attendant DNS docs.essensys.fr (rhinosys)
+- **2026-06-21** `52e284b` — feat(docs): site MkDocs Material pour publication OVH (rhinosys)
 - **2026-06-14** `f6f0279` — docs(newsletter): ajoute la release V.1.3.0 volets (juin 2026) (rhinosys)
 - **2026-06-11** `e114781` — docs(archi): temps d'action volets detailles + correction decalage +8 des indices scenario (rhinosys)
 - **2026-03-01** `8e043de` — docs(skills): ajoute skill mcf52259-mqx-expert corrige dans le depot (rhinosys)

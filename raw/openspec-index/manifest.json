@@ -1,7 +1,33 @@
 {
-  "generated": "2026-06-22",
+  "generated": "2026-06-26",
   "essensys_root": "/Users/nrineau/ESSENSYS",
   "changes": [
+    {
+      "change": "migrate-security-gate-to-dependabot",
+      "repo": "essensys-feature-lifecycle",
+      "path": "essensys-feature-lifecycle/openspec/changes/migrate-security-gate-to-dependabot",
+      "created": "2026-06-23",
+      "schema": "spec-driven",
+      "artifacts": {
+        "proposal": true,
+        "design": true,
+        "tasks": true,
+        "spec_count": 1
+      }
+    },
+    {
+      "change": "essensys-admin-user-forbid-delete-2026-06-027",
+      "repo": "essensys-memory",
+      "path": "essensys-memory/openspec/changes/essensys-admin-user-forbid-delete-2026-06-027",
+      "created": "2026-06-25",
+      "schema": "spec-driven",
+      "artifacts": {
+        "proposal": true,
+        "design": true,
+        "tasks": true,
+        "spec_count": 1
+      }
+    },
     {
       "change": "essensys-brain-ingest-auto-2026-06.022",
       "repo": "essensys-memory",
@@ -94,19 +120,6 @@
       }
     },
     {
-      "change": "essensys-gateway-dual-nic",
-      "repo": "essensys-raspberry-gateway",
-      "path": "essensys-raspberry-gateway/openspec/changes/essensys-gateway-dual-nic",
-      "created": "2026-05-14",
-      "schema": "spec-driven",
-      "artifacts": {
-        "proposal": true,
-        "design": true,
-        "tasks": true,
-        "spec_count": 5
-      }
-    },
-    {
       "change": "essensys-gateway-fleet-2026-06.019",
       "repo": "essensys-memory",
       "path": "essensys-memory/openspec/changes/essensys-gateway-fleet-2026-06.019",
@@ -130,19 +143,6 @@
         "design": true,
         "tasks": true,
         "spec_count": 0
-      }
-    },
-    {
-      "change": "essensys-gateway-nixos",
-      "repo": "essensys-raspberry-gateway",
-      "path": "essensys-raspberry-gateway/openspec/changes/essensys-gateway-nixos",
-      "created": "2026-05-31",
-      "schema": "spec-driven",
-      "artifacts": {
-        "proposal": true,
-        "design": true,
-        "tasks": true,
-        "spec_count": 10
       }
     },
     {
@@ -328,6 +328,19 @@
       }
     },
     {
+      "change": "essensys-secrets-sops-migration-2026-06-028",
+      "repo": "essensys-memory",
+      "path": "essensys-memory/openspec/changes/essensys-secrets-sops-migration-2026-06-028",
+      "created": "2026-06-25",
+      "schema": "spec-driven",
+      "artifacts": {
+        "proposal": true,
+        "design": true,
+        "tasks": true,
+        "spec_count": 2
+      }
+    },
+    {
       "change": "essensys-trusted-devices-2026-06.013",
       "repo": "essensys-memory",
       "path": "essensys-memory/openspec/changes/essensys-trusted-devices-2026-06.013",
@@ -338,6 +351,45 @@
         "design": true,
         "tasks": true,
         "spec_count": 1
+      }
+    },
+    {
+      "change": "essensys-ui-e2e-playwright-2026-06.026",
+      "repo": "essensys-memory",
+      "path": "essensys-memory/openspec/changes/essensys-ui-e2e-playwright-2026-06.026",
+      "created": "2026-06-22",
+      "schema": "spec-driven",
+      "artifacts": {
+        "proposal": true,
+        "design": true,
+        "tasks": true,
+        "spec_count": 2
+      }
+    },
+    {
+      "change": "essensys-gateway-dual-nic",
+      "repo": "essensys-raspberry-gateway",
+      "path": "essensys-raspberry-gateway/openspec/changes/essensys-gateway-dual-nic",
+      "created": "2026-05-14",
+      "schema": "spec-driven",
+      "artifacts": {
+        "proposal": true,
+        "design": true,
+        "tasks": true,
+        "spec_count": 5
+      }
+    },
+    {
+      "change": "essensys-gateway-nixos",
+      "repo": "essensys-raspberry-gateway",
+      "path": "essensys-raspberry-gateway/openspec/changes/essensys-gateway-nixos",
+      "created": "2026-05-31",
+      "schema": "spec-driven",
+      "artifacts": {
+        "proposal": true,
+        "design": true,
+        "tasks": true,
+        "spec_count": 10
       }
     }
   ]

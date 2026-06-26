@@ -1,17 +1,18 @@
 ---
 tags: [timeline, git]
 repo: essensys-server-backend
-updated: 2026-06-21
-total_commits: 66
+updated: 2026-06-26
+total_commits: 67
 shown_commits: 100
 ---
 
 # Timeline — essensys-server-backend
 
-**First commit:** 5fde95f 2025-12-07 · **Latest:** 75c0d6e 2026-06-21 · **Total:** 66
+**First commit:** 5fde95f 2025-12-07 · **Latest:** 432f87e 2026-06-22 · **Total:** 67
 
 ## Commits (newest first, limit 100)
 
+- **2026-06-22** `432f87e` — feat(api): mode test dry-run sans enqueue armoire (rhinosys)
 - **2026-06-21** `75c0d6e` — fix(test): simuler acquittement client legacy dans test_chb3 (rhinosys)
 - **2026-06-21** `563891c` — feat(scenario): API scénarios, sync cloud et package domain. (rhinosys)
 - **2026-06-20** `250ef3f` — fix(api): guard serverinfos against firmware 30-index limit (rhinosys)

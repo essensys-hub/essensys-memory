@@ -2,7 +2,7 @@
 tags: [entity, repo, legacy, backend]
 sources: [essensys-server-backend.md]
 created: 2026-06-20
-updated: 2026-06-20
+updated: 2026-06-26
 era: legacy
 repo: essensys-server-backend
 ---
@@ -14,7 +14,7 @@ repo: essensys-server-backend
 | | |
 |---|---|
 | **Catégorie** | Service backend (gateway domotique on-premise / Raspberry) |
-| **Stack** | Go 1.23, Redis, PostgreSQL (sqlx + lib/pq), MQTT (paho), Prometheus, MCP (mark3labs/mcp-go), API HTTP `net/http` |
+| **Stack** | Go **1.25+**, Redis, PostgreSQL (sqlx + lib/pq), MQTT (paho), Prometheus, MCP (mark3labs/mcp-go), API HTTP `net/http` |
 | **Statut** | actif (cœur de la migration depuis le legacy .NET) |
 | **Era** | legacy |
 
@@ -59,6 +59,8 @@ _… voir source complète dans raw/_
 - **Serveur HTTP custom** (`internal/server`) : `LegacyHTTPServer` + `LoggingListener` tolèrent l'HTTP non conforme des clients. Ne pas remplacer par un `http.Server` standard sans précaution.
 - **Génération de bloc complet 605–622** : le firmware ignore une action lumière/volet si un seul indice du bloc manque ; le serveur complète automatiquement (+ index 590=1 comme déclencheur de scénario, jamais fusionné).
 - **Désaccord README vs code** : le `README.md` décrit une ancienne version store-mémoire ; les dépendances réelles (Redis, Postgres, MQTT, MCP, UniFi, cloudsync) ne s'y trouvent pas. Documentation à jour côté `docs/` et code.
+- **[[Security Gate]] (2026-06-26, branche `V.1.3.0`) :** bootstrap [[Essensys Feature Lifecycle]] ; CVE Go/npm corrigées (PR #2–#6), Dockerfile non-root, `.gitleaks.toml` allowlist doc, tests Go recompilés (PR #7, 11 `t.Skip` tests obsolètes auth passive / log `[GO]`).
+- **Cloudsync** : agent `internal/cloudsync` poll `GET /api/gateway/pending-actions` sur `mon.essensys.fr` ; requiert `cloud.enabled: true` + credentials dans le **bon** `config.yaml` (voir [[Essensys Ansible]]).
 - **Dégradation gracieuse** : si PostgreSQL est injoignable,
 
 _… voir source complète dans raw/_

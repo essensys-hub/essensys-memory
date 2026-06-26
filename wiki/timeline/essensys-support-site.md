@@ -1,17 +1,32 @@
 ---
 tags: [timeline, git]
 repo: essensys-support-site
-updated: 2026-06-21
-total_commits: 146
+updated: 2026-06-26
+total_commits: 161
 shown_commits: 100
 ---
 
 # Timeline — essensys-support-site
 
-**First commit:** 8b77523 2026-01-07 · **Latest:** 7a0e356 2026-06-16 · **Total:** 146
+**First commit:** 8b77523 2026-01-07 · **Latest:** a4525ab 2026-06-25 · **Total:** 161
 
 ## Commits (newest first, limit 100)
 
+- **2026-06-25** `a4525ab` — security: fail-closed secrets + move OAuth token to URL fragment (rhinosys)
+- **2026-06-25** `e92c7fb` — feat(admin): UI interdire/supprimer utilisateurs et redirect maintenance (rhinosys)
+- **2026-06-22** `7351c0c` — fix(demo): rebuild après TestModeProvider sur démo statique (rhinosys)
+- **2026-06-22** `e2a1a75` — fix(demo): rebuild démo tests chevet PC3 dry-run sécurisés (rhinosys)
+- **2026-06-22** `5b07908` — feat(demo): rebuild démo avec page tests non-régression admin (rhinosys)
+- **2026-06-22** `6c6a9f7` — fix(demo): rebuild démo avec mocks scénarios (rhinosys)
+- **2026-06-22** `665b160` — feat(demo): artefacts demo.essensys.fr (public/demo/root) (rhinosys)
+- **2026-06-22** `600aaa5` — refactor(demo): URL canonique /demo/dashboard (rhinosys)
+- **2026-06-22** `6b7c933` — feat(demo): resync server-frontend mock + nginx /dashboard alias (rhinosys)
+- **2026-06-22** `227b76a` — fix(nginx): SPA fallback /blog + retrait public/blog (rhinosys)
+- **2026-06-22** `3e0109b` — fix(site): blog-data path pour eviter 403 nginx sur /blog (rhinosys)
+- **2026-06-22** `87f0ead` — feat(site): rubrique blog /blog pour avancement OpenSpec (rhinosys)
+- **2026-06-21** `7e2790b` — feat(admin): onglet Sync Cloud pour admin_global (rhinosys)
+- **2026-06-21** `1ae8a70` — fix(nginx): servir doc MkDocs sous /docs/ sur mon.essensys.fr (rhinosys)
+- **2026-06-21** `a2f9838` — feat(ui): lien Documentation vers docs.essensys.fr (rhinosys)
 - **2026-06-16** `7a0e356` — feat(admin): onglet modèles email et renvoi manuel (rhinosys)
 - **2026-06-16** `35aab68` — fix(security): remplacer secrets et tokens d'exemple par des placeholders (rhinosys)
 - **2026-06-15** `3caebde` — fix(nginx): conserver HTTP port 80 pour API firmware legacy (rhinosys)
@@ -97,18 +112,3 @@ shown_commits: 100
 - **2026-01-17** `0039f48` — fix: remove unused ctx variable in apple oauth handler (rhinosys)
 - **2026-01-16** `fb712f0` — config: expose full .well-known for apple verification (rhinosys)
 - **2026-01-16** `00066d0` — feat: add apple sign-in support (rhinosys)
-- **2026-01-16** `9eb12c9` — feat: implement google oauth in backend and frontend (rhinosys)
-- **2026-01-16** `f057153` — fix: add missing dependencies in go.mod and run tidy in update script (rhinosys)
-- **2026-01-16** `8b8e0e0` — feat: add google oauth support (rhinosys)
-- **2026-01-16** `b398c72` — feat: add manage_ssl.sh and prevent update.sh from overwriting nginx config (rhinosys)
-- **2026-01-15** `558f812` — fix: move map above gateway and machine lists (rhinosys)
-- **2026-01-15** `86b73f1` — feat: add gateway monitoring to admin dashboard (rhinosys)
-- **2026-01-15** `0a583f7` — feat: add gateway.essensys.fr route and /api/infos endpoint (rhinosys)
-- **2026-01-14** `b7ea449` — revert: switch back to HTTP only (rhinosys)
-- **2026-01-14** `dc88a00` — chore: add ssl debug script (rhinosys)
-- **2026-01-14** `4330fae` — fix: allow access to .well-known for certbot (rhinosys)
-- **2026-01-14** `097d41c` — feat: add staging option to ssl setup script (rhinosys)
-- **2026-01-14** `9de2646` — feat: newsletter delete button and full subscriber management tab (rhinosys)
-- **2026-01-14** `e9a3ba5` — feat: add link to full installation guide on raspberry pi page (rhinosys)
-- **2026-01-14** `53f2f00` — feat: use user provided infographic for raspberry pi page (rhinosys)
-- **2026-01-14** `bca3807` — feat: redesign raspberry pi page per mockup with glassmorphism (rhinosys)

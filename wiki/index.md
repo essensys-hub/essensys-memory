@@ -34,6 +34,7 @@ Master catalog of all wiki pages. Updated on every ingest.
 - [[Essensys IOS Phone Apps]] — Application iOS native (Swift / SwiftUI) « Essensys » permettant de piloter une installation domotique Essensy…
 - [[Essensys MCP]] — Dépôt destiné à héberger un serveur MCP (Model Context Protocol) pour Essensys, mais actuellement vide hormis …
 - [[Essensys Memory]] — Dépôt prévu pour fournir une mémoire persistante aux agents IA d'Essensys, actuellement réduit à un README d'u…
+- [[Essensys Feature Lifecycle]] — Process Jira SCRUM → OpenSpec → gates CI (gitleaks, Trivy, Dependabot) → remediation subagents → deploy Ansible
 - [[Essensys Mosquitto]] — Broker MQTT (Eclipse Mosquitto) de la gateway Essensys, point d'echange temps reel entre les objets domotiques…
 - [[Essensys N8n]] — Dépôt destiné à héberger l'automatisation de workflows n8n de la plateforme Essensys, actuellement à l'état de…
 - [[Essensys Nginx]] — Serveur web et reverse-proxy interne de la gateway Essensys : sert le frontend React (SPA) et proxifie l'API, …
@@ -63,11 +64,13 @@ Master catalog of all wiki pages. Updated on every ingest.
 - [[Centralized Documentation]] — gouvernance doc centralisée (Phase 0a)
 - [[Install Documentation]] — index procédures install gateway (Phase 0b)
 - [[Secrets Management]] — SOPS + age + Ansible (secrets cloud/gateway, change 2026-06.028)
+- [[Feature Lifecycle]] — process pilotage Jira + OpenSpec + gates CI + deploy
+- [[Security Gate]] — gitleaks + Trivy + Dependabot bloquant PR (Critical/High)
 - [[User Documentation Site]] — facade publique OVH (MkDocs hub)
 
 ## Synthesis
 
-- [[Platform Overview]] — vue d'ensemble domotique Essensys (4 couches, 40 dépôts)
+- [[Platform Overview]] — vue d'ensemble domotique Essensys (4 couches, 41 dépôts)
 - [[Migration Legacy To Modern]] — migration ASP.NET/MQX → Go/React/Raspberry
 - [[Product Roadmap]] — priorités Now / Next / Later (vivante)
 

@@ -1,17 +1,21 @@
 ---
 tags: [timeline, git]
 repo: essensys-user-portal-backend
-updated: 2026-06-21
-total_commits: 18
+updated: 2026-06-26
+total_commits: 22
 shown_commits: 100
 ---
 
 # Timeline — essensys-user-portal-backend
 
-**First commit:** 32851e9 2026-06-14 · **Latest:** d5faa33 2026-06-21 · **Total:** 18
+**First commit:** 32851e9 2026-06-14 · **Latest:** fa15e1c 2026-06-26 · **Total:** 22
 
 ## Commits (newest first, limit 100)
 
+- **2026-06-26** `fa15e1c` — chore: bootstrap feature lifecycle (gates, scripts, rules) (rhinosys)
+- **2026-06-25** `032a806` — security: fail-closed secrets + move OAuth token to URL fragment (rhinosys)
+- **2026-06-25** `90d3953` — feat(admin): interdire, réautoriser et supprimer des utilisateurs (rhinosys)
+- **2026-06-22** `5b6cc31` — feat(portal): dry-run test mode sur inject et scénarios (rhinosys)
 - **2026-06-21** `d5faa33` — feat(scenario): API portail scénarios et profil sync PostgreSQL. (rhinosys)
 - **2026-06-20** `39a7dff` — fix(portal): merge gateway exchange cache on push (rhinosys)
 - **2026-06-20** `16abc4e` — fix(legacyiot): document serverinfos 30-index firmware limit (rhinosys)

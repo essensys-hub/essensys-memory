@@ -2,7 +2,7 @@
 
 > Référentiel d'architecture de la plateforme domotique **Essensys** : du firmware des cartes électroniques jusqu'au cloud, en passant par les passerelles Raspberry, les services Go/React et l'infrastructure Docker.
 
-Cette documentation a été générée à partir de l'exploration des **40 dépôts Git** présents dans `/Users/nrineau/ESSENSYS`. Chaque dépôt dispose d'une fiche détaillée dans [`repos/`](repos/). Ce document fournit la vue d'ensemble et les liens transverses.
+Cette documentation a été générée à partir de l'exploration des **41 dépôts Git** présents dans `/Users/nrineau/ESSENSYS`. Chaque dépôt dispose d'une fiche détaillée dans [`repos/`](repos/). Ce document fournit la vue d'ensemble et les liens transverses.
 
 ---
 
@@ -162,7 +162,8 @@ Le cœur du dialogue armoire ↔ serveur est une **table d'échange indexée** (
 | [essensys-gcc](repos/essensys-gcc.md) | Toolchain libre de build firmware (migration CodeWarrior/MPLAB → GCC) | Docker, m68k-elf-gcc, XC8 |
 | [essensys-utils](repos/essensys-utils.md) | Utilitaires (ex : bruteforce code SC944D via Redis) | Go, Redis |
 | [essensys-mcp](repos/essensys-mcp.md) | ⚠️ **Stub** (serveur MCP pour agents IA prévu) | — |
-| [essensys-memory](repos/essensys-memory.md) | ⚠️ **Stub** (mémoire d'agents IA prévue) | — |
+| [essensys-memory](repos/essensys-memory.md) | Mémoire persistante agents IA (vault Obsidian + MCP) | Markdown, OpenSpec |
+| [essensys-feature-lifecycle](repos/essensys-feature-lifecycle.md) | Process feature Git-first : Jira, gates CI sécurité, bootstrap skills | GitHub Actions, gitleaks, Trivy |
 
 ### Documentation
 | Dépôt | Rôle | Stack |
@@ -223,4 +224,4 @@ Le cœur du dialogue armoire ↔ serveur est une **table d'échange indexée** (
 
 ---
 
-*Documentation générée le 2026-06-16 par exploration automatisée des 40 dépôts. Les fiches reflètent l'état du code à cette date.*
+*Documentation générée le 2026-06-16 par exploration automatisée des dépôts ; mise à jour 2026-06-26 (41 dépôts, feature-lifecycle).*

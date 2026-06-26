@@ -2,7 +2,7 @@
 tags: [entity, repo, migration, infra]
 sources: [essensys-ansible.md]
 created: 2026-06-20
-updated: 2026-06-20
+updated: 2026-06-26
 era: migration
 repo: essensys-ansible
 ---
@@ -15,7 +15,7 @@ repo: essensys-ansible
 |---|---|
 | **Catégorie** | Déploiement / Automatisation |
 | **Stack** | Ansible (playbooks YAML, rôles), collections `community.docker` et `ansible.posix`, Docker Compose, systemd, Go 1.23 / Node 20, Traefik v2.11, Nginx, Certbot/Let's Encrypt, MkDocs (documentation du dépôt) |
-| **Statut** | Actif — versionne `essensys_version V.1.3.0` et `control_plane_version V.1.3.7`, ~40 rôles, doc MkDocs publiée via GitHub Pages |
+| **Statut** | Actif — `essensys_version V.1.3.0`, `control_plane_version V.1.3.7`, playbook `deploy-portal-stack.yml` (2026-06-26) |
 | **Era** | migration |
 
 ## Rôle
@@ -60,7 +60,10 @@ _… voir source complète dans raw/_
 - **Cutover backend cloud :** deux modes coexistent, pilotés par `cloud_backend_consolidated` et `cloud_backend_legacy_mode` (group_vars `main.yml`). `support-site.yml` choisit dynamiquement entre les rôles consolidés (`cloud_backend` / `cloud_nginx`) et legacy (`backend` / `portal_backend` / `portal_nginx`). Vérifier ces flags avant tout déploiement cloud.
 - **Secrets :** `secrets/cloud/essensys.sops.yaml` (SOPS + age, versionné chiffré) ; rôle `sops_load`. Legacy : `group_vars/essensys/vault.yml` (Ansible Vault, gitignored — rollback). Gateway phase 2 : `host_vars/*/secrets.sops.yaml`. Doc : `docs/secrets.md`, [[Secrets Management]].
 - **Étapes manuelles CM5 non automatisables** (cf. `roles/raspberry_gateway_network/README.md`) : flash eMMC via `rpiboot`, activation PCIe/NVMe dans `/boot/firmware/config.txt`, relevé des adresses MAC eth0/eth1 à renseigner dans l'inventaire **avant** le premier run.
-- **Versions hétérogènes :** `install.*.yml` utilisent Go 1.23.4 et `essensys_version V.1.3.0`, mais `update.raspberrypi.yml` référence encore `backend_version V.1.2.2` et Go 1.21.5 — désalignement à surveiller.
+- **Versions hétérogènes (résolu 2026-06-26) :** `update.raspberrypi.yml` aligné sur `V.1.3.0` et Go **1.26** ; pre_task upgrade Go si < 1.25 (requis par `essensys-server-backend` go.mod).
+- **Cloudsync gateway CM5 :** le service systemd doit lancer le binaire avec `-config /opt/data/config/backend/config.yaml` (pas le `config.yaml` par défaut sous `/opt/essensys/backend/` où `cloud.enabled: false`). Corrigé dans le rôle `raspberry_backend` (2026-06-26). Symptôme : commandes portail distant en `pending` sur OVH, éclairage inopérant.
+- **Playbooks déploiement ciblés :** `deploy-portal-stack.yml` (hub + SPA portail, sans certbot), `deploy-security-fix.yml` (backend cloud + SPA support).
+- **Image Docker backend `essensyshub/essensys-backend:V.1.3.0` :** régression arm64 au restart (`exec /usr/local/bin/server: no such file or directory`) — ticket Jira SCRUM-15 ; workaround systemd + binaire git.
 - **Playbooks destructifs** protégés par des gardes (`confirm_uninstall`, `confirm_cm5_uninstall`, `confirm_cm5_nixos_prep`) à passer explici
 
 _… voir source complète dans raw/_
@@ -68,6 +71,8 @@ _… voir source complète dans raw/_
 ## Liens
 
 - [[Platform Overview]]
+- [[Feature Lifecycle]]
+- [[Security Gate]]
 
 ## Source
 

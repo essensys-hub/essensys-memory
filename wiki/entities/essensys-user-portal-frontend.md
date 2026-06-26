@@ -2,7 +2,7 @@
 tags: [entity, repo, modern, frontend]
 sources: [essensys-user-portal-frontend.md]
 created: 2026-06-20
-updated: 2026-06-20
+updated: 2026-06-26
 era: modern
 repo: essensys-user-portal-frontend
 ---
@@ -66,6 +66,9 @@ _… voir source complète dans raw/_
 - **Base Vite figée à `/portal/`** : l'
 
 _… voir source complète dans raw/_
+
+- **[[Feature Lifecycle]] bootstrap (2026-06-26) :** gates CI + security gate **vert** sur `main`. Jumeau [[Essensys Server Frontend]] — toute modif `legacyApi` / indices k/v doit être reportée.
+- **Pilotage éclairage distant (2026-06-26) :** `LightingPage` chevet Petite Chambre 3 (`iptchamb3`) — ON `k=613 v=64`, OFF `k=607 v=64` via `POST /api/portal/inject`. Panne résolue côté gateway : cloudsync désactivé (mauvais `config.yaml` systemd) → actions `pending` sur hub ; fix Ansible `raspberry_backend` `-config` central.
 
 ## Liens
 

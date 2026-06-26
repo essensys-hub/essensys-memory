@@ -1,17 +1,35 @@
 ---
 tags: [timeline, git]
 repo: essensys-ansible
-updated: 2026-06-21
-total_commits: 144
+updated: 2026-06-26
+total_commits: 162
 shown_commits: 100
 ---
 
 # Timeline — essensys-ansible
 
-**First commit:** 8b285cf 2026-01-18 · **Latest:** 902c6a8 2026-06-21 · **Total:** 144
+**First commit:** 8b285cf 2026-01-18 · **Latest:** 7f67038 2026-06-26 · **Total:** 162
 
 ## Commits (newest first, limit 100)
 
+- **2026-06-26** `7f67038` — feat(deploy): playbook portail OVH + fix cloudsync gateway CM5 (rhinosys)
+- **2026-06-26** `13fb382` — feat(backup): sync full ESSENSYS monorepo to Synology (rhinosys)
+- **2026-06-26** `dad7f7d` — fix(backup): include SMB share name in rclone remote path (rhinosys)
+- **2026-06-26** `fd60256` — feat(secrets): SOPS + age cloud deploy and Synology backup (rhinosys)
+- **2026-06-25** `6e8390d` — security: source backend secrets from vault, fail loud if unset (rhinosys)
+- **2026-06-22** `5a61591` — feat(demo): vhost nginx + TLS pour demo.essensys.fr (rhinosys)
+- **2026-06-22** `fa7f423` — fix(ansible): blog-data path prepare script (rhinosys)
+- **2026-06-22** `e3a2e5d` — fix(ansible): creer frontend-files avant copy blog script (rhinosys)
+- **2026-06-22** `8c106a1` — fix(ansible): prepare blog script hors YAML heredoc (rhinosys)
+- **2026-06-22** `5f52286` — feat(ansible): deploy roadmap.essensys.fr + blog prepare (rhinosys)
+- **2026-06-21** `57689f9` — docs(ansible): commentaire inventory OVH dans ansible.cfg (rhinosys)
+- **2026-06-21** `2d903d0` — chore(ansible): versionner ansible.cfg (inventory gateway par defaut) (rhinosys)
+- **2026-06-21** `a90bbbb` — feat(newrelic): alertes et deploiements + simplification cloud_nginx (rhinosys)
+- **2026-06-21** `65b6086` — fix(docs_site): permissions traverse nginx ; retirer docs.essensys.fr du cert prod (rhinosys)
+- **2026-06-21** `f4edd67` — fix(docs_site): handler Reload nginx (rhinosys)
+- **2026-06-21** `994522a` — fix(docs_site): certbot optionnel, HTTPS si cert present (rhinosys)
+- **2026-06-21** `fdbb823` — fix(docs_site): vendor ansible branche V.1.3.0 pour guides install (rhinosys)
+- **2026-06-21** `213161b` — feat(deploy): role docs_site pour docs.essensys.fr sur VPS OVH (rhinosys)
 - **2026-06-21** `902c6a8` — feat(scenario): script deploy local et variables sync scénarios. (rhinosys)
 - **2026-06-16** `7014a6e` — fix(security): externaliser la clé API UniFi vers UNIFI_API_KEY (rhinosys)
 - **2026-06-15** `4ab8d65` — fix(certbot): webroot sans redirect nginx pour préserver HTTP /api/ (rhinosys)
@@ -94,21 +112,3 @@ shown_commits: 100
 - **2026-02-14** `681fa02` — Fix port conflict: change MCP from port 8080 to 8083 (Traefik dashboard uses 8080) (rhinosys)
 - **2026-02-14** `90ab741` — Add port conflict detection and resolution for MCP service (rhinosys)
 - **2026-02-14** `4a35cf0` — Improve MCP service debugging: add RestartSec, StandardOutput/Error, and diagnostic script (rhinosys)
-- **2026-02-14** `35093aa` — Add comprehensive MCP testing guide (rhinosys)
-- **2026-02-14** `c0437ca` — Add missing Restart MCP handler for raspberry_mcp role (rhinosys)
-- **2026-02-14** `07017e5` — version (rhinosys)
-- **2026-02-14** `d85df00` — Add comprehensive MCP debugging guide (rhinosys)
-- **2026-02-10** `66d9f50` — Force git update in raspberry_backend role to ensure code is updated (rhinosys)
-- **2026-02-10** `ec85c72` — Improve git update task with better error handling and verification (rhinosys)
-- **2026-02-10** `00e3395` — Simplify git update task to force update with shell script (rhinosys)
-- **2026-02-10** `d05463c` — Add debug tasks to verify git update and code content (rhinosys)
-- **2026-02-10** `a00e0a5` — Add explicit git fetch and reset to ensure code is updated before compilation (rhinosys)
-- **2026-02-10** `9edfe96` — Add update: yes to git task to ensure code is updated (rhinosys)
-- **2026-02-10** `801ad13` — Add git update task to raspberry_mcp role and include it in update playbook (rhinosys)
-- **2026-02-10** `d88c65b` — Remove UniFi Protect configuration from Ansible (keep only MCP) (rhinosys)
-- **2026-02-05** `b5e77fd` — chore: bump backend version to V.1.2.3 (rhinosys)
-- **2026-02-05** `c35781f` — fix(mcp): add go mod tidy task before build to resolve dependencies (rhinosys)
-- **2026-02-05** `9c57d73` — feat(mcp): migrate MCP installation and configuration to new raspberry_mcp role (rhinosys)
-- **2026-02-04** `cc05f3f` — fix(ansible): force GOTOOLCHAIN=local to avoid toolchain download errors (rhinosys)
-- **2026-02-01** `d9fa5e1` — Ajout guide de diagnostic UniFi Protect (rhinosys)
-- **2026-02-01** `edb8418` — Version V.1.2.2: Ajout configuration UniFi Protect dans Ansible (rhinosys)
