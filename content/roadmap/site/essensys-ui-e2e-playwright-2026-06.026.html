@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Essensys Ui E2e Playwright 2026 06.026 — Essensys Roadmap</title>
+  <link rel="stylesheet" href="/style.css"/>
+</head>
+<body>
+  <header><a href="/">← Roadmap Essensys</a></header>
+  <main><h1>Essensys Ui E2e Playwright 2026 06.026</h1>
+<p><span class="badge badge-active">active</span>
+ · ID <strong>2026-06.026</strong></p>
+<p><strong>Dépôt :</strong> essensys-memory</p>
+<h2>Pourquoi</h2>
+<div class="change-detail"><pre>Les régressions UI (chauffage, scénarios, éclairage, jumeaux local/portail/démo) ne sont pas couvertes par une suite **E2E navigateur** unique. Les scripts Python existants (`test_chb3.py`, `e2e_scenarios_portal.sh`) injectent de vraies actions vers la **file firmware** — risqué sur une installation réelle (armoire SC944D).
+
+Il faut un **mode test** : valider les payloads et les valeurs **reçues** (table d&#x27;échange / API) **sans enqueue** vers l&#x27;armoire, puis des tests **Playwright** rejouables sur **local**, **remote** (portail) et **demo** (mock).
+
+&gt; **Roadmap ID:** 2026-06.026
+&gt; **Horizon:** Now → Next (voir [[OpenSpec Queue 2026 06]])
+&gt; **Depend de:** 006 (scénarios stables), parité jumeaux documentée (rules portal-server-frontend-sync)</pre></div>
+</main>
+  <footer><p>Source : essensys-memory OpenSpec — généré automatiquement</p></footer>
+</body>
+</html>

@@ -3821,3 +3821,12 @@ Pages `/settings/account`, `/settings/users` ; doc install LAN IAM ; note Traefi
 
 ## [2026-06-27] openspec | essensys-lan-iam-2026-06.017 ansible hardening
 Rôle `raspberry_postgresql`, dedupe config YAML, vars monitoring/traefik ; tâche 0.2 validée CM5.
+
+## [2026-06-27] openspec | essensys-ui-multi-device-testing process
+Process Playwright multi-device ajouté côté `essensys-server-frontend/e2e` avec fixture [[UI Multi Device Testing]] no-armoire, captures support desktop/iPhone/iPad/ecran-domo, et rule agent UI multi-device.
+
+## [2026-06-27] roadmap | OpenSpec index updated
+Regenerated `wiki/roadmap/index.md` and change pages from manifest.
+
+## [2026-06-27] update | UI multi-device visual autocritique
+Ajout des critères d’autocritique visuelle support-* et corrections responsive/focus/caméra pour la change OpenSpec essensys-ui-multi-device-testing.

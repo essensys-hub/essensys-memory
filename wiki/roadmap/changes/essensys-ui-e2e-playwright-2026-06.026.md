@@ -2,7 +2,7 @@
 tags: [roadmap, openspec]
 sources: [manifest.json]
 created: 2026-06-22
-updated: 2026-06-22
+updated: 2026-06-27
 status: active
 host_repo: essensys-memory
 ---
@@ -11,23 +11,21 @@ host_repo: essensys-memory
 
 **Host repo:** [[ESSENSYS Memory]]
 **Path:** `essensys-memory/openspec/changes/essensys-ui-e2e-playwright-2026-06.026`
-**Status:** planned
+**Status:** active
 **OpenSpec created:** 2026-06-22
 
 ## Why
 
-Régressions UI non couvertes ; les scripts actuels envoient de vraies actions à l'armoire. Besoin d'un **mode test dry-run** (valider sans enqueue) et d'une suite **Playwright** local / remote / demo.
+Les régressions UI (chauffage, scénarios, éclairage, jumeaux local/portail/démo) ne sont pas couvertes par une suite **E2E navigateur** unique. Les scripts Python existants (`test_chb3.py`, `e2e_scenarios_portal.sh`) injectent de vraies actions vers la **file firmware** — risqué sur une installation réelle (armoire SC944D).
 
-> **Roadmap ID:** 2026-06.026  
-> **Horizon:** Now → Next  
-> **Depend de:** 006
+Il faut un **mode test** : valider les payloads et les valeurs **reçues** (table d'échange / API) **sans enqueue** vers l'armoire, puis des tests **Playwright** rejouables s…
 
 ## Artifacts
 
 - Proposal: ✓
 - Design: ✓
 - Tasks: ✓
-- Specs: `ui-test-mode`, `playwright-e2e`
+- Specs: 2
 
 ## Source files
 

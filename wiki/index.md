@@ -68,6 +68,7 @@ Master catalog of all wiki pages. Updated on every ingest.
 - [[Security Gate]] — gitleaks + Trivy + Dependabot bloquant PR (Critical/High)
 - [[LAN IAM]] — comptes locaux mon.essensys.local, table lan_users, sessions 7j
 - [[User Documentation Site]] — facade publique OVH (MkDocs hub)
+- [[UI Multi Device Testing]] — matrice Playwright multi-device avec garde no-armoire et captures UI
 
 ## Synthesis
 
