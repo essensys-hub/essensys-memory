@@ -31,6 +31,8 @@
 - [x] 2.3 Page `/settings/account` (changement mot de passe)
 - [x] 2.4 Page `/settings/users` (admin LAN)
 - [x] 2.5 Retirer reload Basic Auth navigateur sur 401 (mode LAN IAM)
+- [x] 2.6 Détection runtime LAN IAM via `/health` (sans dépendre uniquement de `VITE_LAN_IAM`)
+- [x] 2.7 Menu Administration **Comptes .local** + actions ban/réactivation UI
 
 ## Phase 3 — Deploy & bootstrap (`essensys-ansible`)
 
@@ -65,7 +67,7 @@ ansible-playbook -i inventory.gateway update.raspberrypi.yml -e lan_iam_enabled=
 
 - [x] Bootstrap `lan_admin` via Ansible sur CM5 vierge (2026-06-27 — admin@essensys.local)
 - [x] Login/logout UI sur `mon.essensys.local` (build `VITE_LAN_IAM=true` sur CM5)
-- [ ] CRUD users admin fonctionnel (API OK ; UI admin 2.4 livrée — validation prod pending)
+- [ ] CRUD users admin fonctionnel (UI 2.7 — redéployer frontend CM5 après merge)
 - [x] Legacy `/api/mystatus` vert sans session (router allowlist)
 - [ ] Security gate vert sur backend + frontend après merge
 - [x] Autocritique + décisions produit archivées dans le change

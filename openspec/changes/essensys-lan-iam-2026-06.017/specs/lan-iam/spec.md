@@ -138,6 +138,28 @@ Un `lan_admin` MUST pouvoir créer, lister, désactiver et réinitialiser le mot
 - **THEN** `disabled_at` est renseigné
 - **AND** les sessions actives sont invalidées
 
+#### Scenario: Réactivation compte banni
+
+- **WHEN** un `lan_admin` envoie `POST /api/admin/lan-users/{id}/enable` sur un compte désactivé
+- **THEN** `disabled_at` est effacé
+- **AND** l'utilisateur peut se reconnecter
+
+### Requirement: UI administration comptes `.local`
+
+Le frontend LAN MUST exposer la gestion des comptes lorsque `/health` indique `lan_iam_enabled: true` (détection runtime, pas uniquement flag build).
+
+#### Scenario: Admin voit la gestion comptes
+
+- **WHEN** un `lan_admin` authentifié ouvre le dashboard LAN IAM
+- **THEN** le menu **Administration** contient **Comptes .local** pointant vers `/settings/users`
+- **AND** la page permet création, bannissement (disable), réactivation et réinitialisation mot de passe
+
+#### Scenario: Utilisateur standard voit Mon compte
+
+- **WHEN** un `lan_user` authentifié ouvre **Paramètres**
+- **THEN** il accède à **Mon compte** pour changer son mot de passe
+- **AND** il ne voit pas **Comptes .local**
+
 ### Requirement: Changement mot de passe self-service
 
 Un utilisateur authentifié MUST pouvoir changer son propre mot de passe.
