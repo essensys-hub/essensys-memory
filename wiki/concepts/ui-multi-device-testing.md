@@ -20,9 +20,9 @@ La matrice UI multi-device ESSENSYS valide les interfaces domotiques et support 
 
 | Cible | URL démo |
 |---|---|
-| local | `https://demo.essensys.local` |
+| local | `https://mon.essensys.fr/demo/dashboard` |
 | support OVH | `https://demo.essensys.fr` |
-| remote portail | `https://demo.portail.essensys.fr` |
+| remote portail | `https://demo.portal.essensys.fr` |
 
 Si une URL démo ne résout pas, le test doit s'arrêter et signaler le DNS manquant. Il ne faut pas remplacer par une IP ou gateway client.
 
