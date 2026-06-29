@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Essensys Ui Multi Device Testing — Essensys Roadmap</title>
+  <link rel="stylesheet" href="/style.css"/>
+</head>
+<body>
+  <header><a href="/">← Roadmap Essensys</a></header>
+  <main><h1>Essensys Ui Multi Device Testing</h1>
+<p><span class="badge badge-active">active</span>
+ · ID <strong>2026-06.029</strong></p>
+<p><strong>Dépôt :</strong> essensys-memory</p>
+<h2>Pourquoi</h2>
+<div class="change-detail"><pre>Les frontends Essensys (support, local CM5/Raspberry, remote portail) sont des **jumeaux React** déployés sur des surfaces très différentes — iPhone, Android, iPad, écran domotique tactile, desktop. Aujourd&#x27;hui, Playwright ne couvre que **Desktop Chrome** sur 3 cibles (`demo` / `local` / `remote`) dans `essensys-server-frontend/e2e/`, sans matrice device ni couverture du support-site.
+
+Les régressions d&#x27;affichage (menu tronqué à 800×480, `BottomTabs` cassé, hero illisible) ne sont pas détectées avant prod. Pire : un test mal conçu pourrait **envoyer une action réelle à l&#x27;armoire SC944D** — inacceptable.
+
+Ce change étend le socle **2026-06.026** (`essensys-ui-e2e-playwright`) avec une **matrice open-source device × cible × feature**, garantie **zéro action armoire** en trois couches, et CI </pre></div>
+</main>
+  <footer><p>Source : essensys-memory OpenSpec — généré automatiquement</p></footer>
+</body>
+</html>

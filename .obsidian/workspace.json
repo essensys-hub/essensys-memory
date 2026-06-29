@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "sce",
+                "query": "roadmap",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -70,7 +70,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -90,6 +91,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "wiki/synthesis/product-roadmap.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +101,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for product-roadmap"
             }
           },
           {
@@ -108,11 +110,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "wiki/synthesis/product-roadmap.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from product-roadmap"
             }
           },
           {
@@ -150,12 +153,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "wiki/synthesis/product-roadmap.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of product-roadmap"
             }
           }
         ]
@@ -178,42 +182,46 @@
   },
   "active": "88dd99fb17cdaacb",
   "lastOpenFiles": [
-    "Untitled 1.canvas",
-    "2026-06-21.md",
-    "Untitled 1.base",
-    "openspec/changes/essensys-scenario-management/proposal.md",
-    "wiki/concepts/scenarios-domotique.md",
-    "openspec/changes/essensys-scenario-management/audit-protocol.md",
-    "openspec/changes/essensys-scenario-management/tasks.md",
-    "openspec/changes/essensys-scenario-management/specs/gateway-exchange-push/spec.md",
-    "openspec/changes/essensys-scenario-management/specs/gateway-exchange-push",
-    "openspec/changes/essensys-cloud-sync-scheduler/tasks.md",
-    "openspec/changes/essensys-scenario-management/specs/sync-profile-config/spec.md",
-    "openspec/changes/essensys-scenario-management/specs/sync-profile-config",
-    "openspec/changes/essensys-scenario-management/specs/scenario-memory-wiki/spec.md",
-    "openspec/changes/essensys-scenario-management/specs/scenario-memory-wiki",
-    "openspec/changes/essensys-scenario-management/specs/scenario-cloud-sync/spec.md",
-    "openspec/changes/essensys-scenario-management/specs/scenario-cloud-sync",
-    "openspec/changes/essensys-scenario-management/specs/scenario-ui-editor/spec.md",
-    "openspec/changes/essensys-scenario-management/specs/scenario-ui-editor",
-    "Untitled.base",
-    "openspec/changes/essensys-scenario-management/specs/scenario-ui-dashboard/spec.md",
-    "openspec/changes/essensys-scenario-management/specs/scenario-ui-dashboard",
-    "openspec/changes/essensys-scenario-management/specs/scenario-crud-api/spec.md",
-    "openspec/changes/essensys-scenario-management/specs/scenario-crud-api",
-    "openspec/changes/essensys-scenario-management/specs/scenario-definition-model/spec.md",
-    "openspec/changes/essensys-scenario-management/specs/scenario-definition-model",
-    "Untitled.canvas",
-    "openspec/changes/essensys-scenario-management/specs/scenario-launch-modes/spec.md",
-    "2026-06-20.md",
-    "openspec/changes/essensys-scenario-management/specs/scenario-protocol-map/spec.md",
-    "openspec/changes/essensys-scenario-management/design.md",
-    "ESSENSYS Memory.md",
-    "raw/architecture/README.md",
+    "okf/concepts/trusted-devices-lan.md",
+    "wiki/concepts/trusted-devices-lan.md",
+    "okf/processes/deployment-perimeters.md",
+    "content/roadmap/site/essensys-kitchen-shutter-test-console-2026-06-031.html",
+    "content/roadmap/site/essensys-okf-discovery-2026-06-029.html",
+    "content/roadmap/site/essensys-ux-matrix-gate-2026-06-030.html",
+    "content/roadmap/site/essensys-support-nav-responsive-2026-06-032.html",
+    "content/roadmap/site/essensys-ui-multi-device-testing.html",
+    "okf/roadmap/essensys-support-nav-responsive-2026-06-032.md",
+    "okf/roadmap/essensys-kitchen-shutter-test-console-2026-06-031.md",
+    "wiki/roadmap/changes/essensys-support-nav-responsive-2026-06-032.md",
+    "wiki/roadmap/changes/essensys-kitchen-shutter-test-console-2026-06-031.md",
+    "wiki/timeline/essensys-api-doc.md",
     "Platform Overview.md",
-    "raw/architecture/repos/client-essensys-legacy.md",
-    "wiki/roadmap/changes/essensys-scenario-management.md",
-    "wiki/entities/essensys-board-SC944D.md",
-    "wiki/entities/essensys-ansible.md"
+    "Untitled 3.base",
+    "Untitled 4.canvas",
+    "okf/protocols/dual-protocol.md",
+    "Table D Echange.md",
+    "wiki/roadmap/changes/essensys-doc-docusaurus-2026-06.021.md",
+    "wiki/concepts/support-site-responsive-nav.md",
+    "wiki/concepts/kitchen-shutter-test-console.md",
+    "okf/processes/essensys-ux-matrix-gate.md",
+    "wiki/concepts/essensys-ux-matrix-gate.md",
+    "okf/roadmap/essensys-ux-matrix-gate-2026-06-030.md",
+    "wiki/roadmap/changes/essensys-ux-matrix-gate-2026-06-030.md",
+    "okf/processes/essensys-okf-memory-sync.md",
+    "wiki/concepts/essensys-okf-memory-sync.md",
+    "output/okf-discovery-coverage-2026-06-28.md",
+    "output/okf-generation-summary.json",
+    "okf/portals/support-site.md",
+    "okf/portals/roadmap-site.md",
+    "okf/portals/lan-local-portal.md",
+    "okf/portals/index.md",
+    "okf/portals/gateway-install-control.md",
+    "okf/portals",
+    "okf/roadmap",
+    "okf/protocols",
+    "Untitled 3.canvas",
+    "Untitled 2.canvas",
+    "Untitled 1.canvas",
+    "Untitled.canvas"
   ]
 }

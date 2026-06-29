@@ -1,17 +1,25 @@
 ---
 tags: [timeline, git]
 repo: essensys-server-backend
-updated: 2026-06-26
-total_commits: 67
+updated: 2026-06-28
+total_commits: 75
 shown_commits: 100
 ---
 
 # Timeline — essensys-server-backend
 
-**First commit:** 5fde95f 2025-12-07 · **Latest:** 432f87e 2026-06-22 · **Total:** 67
+**First commit:** 5fde95f 2025-12-07 · **Latest:** 5805cb5 2026-06-27 · **Total:** 75
 
 ## Commits (newest first, limit 100)
 
+- **2026-06-27** `5805cb5` — feat(lan-iam): add enable endpoint for banned LAN users (rhinosys)
+- **2026-06-27** `d2ecdea` — feat(lan-iam): local user auth, sessions, and admin API (rhinosys)
+- **2026-06-26** `02b2d34` — fix(tests): repair Go test compilation (BasicAuth/NewRouter/AcknowledgeAction/GetFullTable) (SCRUM-9) (#7) (rhinosys)
+- **2026-06-26** `9c19ad5` — fix(deps): remediate residual npm vulnerabilities in simulation/ui (SCRUM-10) (#6) (rhinosys)
+- **2026-06-26** `1f90367` — chore(security): add gitleaks config with allowlist for doc false positives (SCRUM-8) (#5) (rhinosys)
+- **2026-06-26** `d4985fb` — fix(docker): run container as non-root user (Trivy DS-0002, SCRUM-7) (#4) (rhinosys)
+- **2026-06-26** `7d0294d` — fix(deps): bump axios to ^1.16.0 and form-data to ^4.0.6 in simulation/ui (SCRUM-5, SCRUM-6) (#3) (rhinosys)
+- **2026-06-26** `20a62ed` — fix(deps): bump golang.org/x/net to v0.55.0 and buger/jsonparser to v1.1.2 (SCRUM-3, SCRUM-4) (#2) (rhinosys)
 - **2026-06-22** `432f87e` — feat(api): mode test dry-run sans enqueue armoire (rhinosys)
 - **2026-06-21** `75c0d6e` — fix(test): simuler acquittement client legacy dans test_chb3 (rhinosys)
 - **2026-06-21** `563891c` — feat(scenario): API scénarios, sync cloud et package domain. (rhinosys)

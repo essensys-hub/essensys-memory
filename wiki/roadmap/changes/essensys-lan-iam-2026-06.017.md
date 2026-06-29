@@ -2,7 +2,7 @@
 tags: [roadmap, openspec]
 sources: [manifest.json]
 created: 2026-06-21
-updated: 2026-06-25
+updated: 2026-06-28
 status: active
 host_repo: essensys-memory
 ---
@@ -16,11 +16,9 @@ host_repo: essensys-memory
 
 ## Why
 
-Comptes, RBAC LAN au-dela du Basic Auth optionnel.
+Aujourd'hui, l'accès au dashboard sur **`https://mon.essensys.local`** repose sur une **Basic Auth optionnelle en mode passif** (capture seulement, pas de 401) ou sur des identifiants statiques en bordure Traefik. Il n'existe **pas** de gestion multi-utilisateur LAN : pas de création de comptes, pas de reset mot de passe, pas de rôles locaux, pas d'UI d'administration.
 
-> **Roadmap ID:** 2026-06.017  
-> **Horizon:** voir [[OpenSpec Queue 2026 06]]  
-> **Depend de:** —
+Le backend Go embarque déjà une **ébauche legacy** (`UserService`, `/api/auth/login`, hash SHA1) héritée de la migration ASP.NE…
 
 ## Artifacts
 

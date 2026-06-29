@@ -1,17 +1,29 @@
 ---
 tags: [timeline, git]
 repo: essensys-server-frontend
-updated: 2026-06-26
-total_commits: 45
+updated: 2026-06-28
+total_commits: 57
 shown_commits: 100
 ---
 
 # Timeline — essensys-server-frontend
 
-**First commit:** 0669921 2025-12-18 · **Latest:** a7aaccb 2026-06-22 · **Total:** 45
+**First commit:** 0669921 2025-12-18 · **Latest:** 03361fa 2026-06-28 · **Total:** 57
 
 ## Commits (newest first, limit 100)
 
+- **2026-06-28** `03361fa` — feat(ui): kitchen shutter test console and UX matrix gate (rhinosys)
+- **2026-06-28** `ddd7942` — feat(e2e): URLs démo support, portail et dashboard local (rhinosys)
+- **2026-06-27** `6bba60e` — feat(e2e): add no-armoire multi-device UI checks (rhinosys)
+- **2026-06-27** `ce7a471` — feat(ui): add OAuth signup UI on LAN login (providers disabled) (rhinosys)
+- **2026-06-27** `6a47f7b` — fix(ui): make Aurora login variant B the default on LAN (rhinosys)
+- **2026-06-27** `8cccbf4` — feat(ui): align LAN login with mon.essensys.fr — two responsive variants (rhinosys)
+- **2026-06-27** `fb197e9` — fix(lan-iam): add logout button in sidebar footer (rhinosys)
+- **2026-06-27** `db2a480` — feat(lan-iam): runtime detection and admin accounts UI in sidebar (rhinosys)
+- **2026-06-27** `09b2be9` — feat(lan-iam): login gate, account settings, and admin UI (rhinosys)
+- **2026-06-26** `076d5fb` — chore(security): allowlist generated design-system artifacts in gitleaks (SCRUM-12) (#4) (rhinosys)
+- **2026-06-26** `4c1d19f` — fix(docker): run frontend container as non-root (Trivy DS-0002, SCRUM-14) (#3) (rhinosys)
+- **2026-06-26** `74bee2b` — fix(deps): bump react-router to ^7.15.0 (SCRUM-13) (#2) (rhinosys)
 - **2026-06-22** `a7aaccb` — fix(ui): mode test ne bloque plus l'éclairage en silence (rhinosys)
 - **2026-06-22** `9307c7d` — fix(demo): TestModeProvider requis pour MainLayout / page régression (rhinosys)
 - **2026-06-22** `b3e9a23` — fix(regression): tests chevet PC3 dry-run sans scénario Je sors (rhinosys)

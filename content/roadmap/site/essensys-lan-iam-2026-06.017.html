@@ -9,15 +9,17 @@
 <body>
   <header><a href="/">← Roadmap Essensys</a></header>
   <main><h1>Essensys Lan Iam 2026 06.017</h1>
-<p><span class="badge badge-planned">planned</span>
+<p><span class="badge badge-active">active</span>
  · ID <strong>2026-06.017</strong></p>
 <p><strong>Dépôt :</strong> essensys-memory</p>
 <h2>Pourquoi</h2>
-<div class="change-detail"><pre>Comptes, RBAC LAN au-dela du Basic Auth optionnel.
+<div class="change-detail"><pre>Aujourd&#x27;hui, l&#x27;accès au dashboard sur **`https://mon.essensys.local`** repose sur une **Basic Auth optionnelle en mode passif** (capture seulement, pas de 401) ou sur des identifiants statiques en bordure Traefik. Il n&#x27;existe **pas** de gestion multi-utilisateur LAN : pas de création de comptes, pas de reset mot de passe, pas de rôles locaux, pas d&#x27;UI d&#x27;administration.
 
-&gt; **Roadmap ID:** 2026-06.017  
-&gt; **Horizon:** voir [[OpenSpec Queue 2026 06]]  
-&gt; **Depend de:** —</pre></div>
+Le backend Go embarque déjà une **ébauche legacy** (`UserService`, `/api/auth/login`, hash SHA1) héritée de la migration ASP.NET, mais **sans middleware session**, **sans frontend**, et **sans mode strict**.
+
+Ce change formalise l&#x27;**IAM LAN** : comptes email/mot de passe locaux à la gateway, sessions sécurisées, RBAC installateur/propriétaire/invité, sans confondre avec l&#x27;IAM cloud (`mon.essensys.fr`).
+
+&gt; **Roadmap ID:** 20</pre></div>
 </main>
   <footer><p>Source : essensys-memory OpenSpec — généré automatiquement</p></footer>
 </body>

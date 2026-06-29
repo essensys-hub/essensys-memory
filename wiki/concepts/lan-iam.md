@@ -2,7 +2,7 @@
 tags: [concept, security, gateway, lan]
 sources: [essensys-lan-iam-2026-06.017]
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-06-29
 ---
 
 # LAN IAM
@@ -24,6 +24,8 @@ updated: 2026-06-26
 | `lan_admin` | Oui | Oui |
 | `lan_user` | Oui | Non |
 | `lan_guest` | Oui (identique user) | Non |
+
+**Auto-login MAC** : voir [[Trusted Devices LAN]]. Tous les rôles sauf le compte usine `admin@essensys.local` peuvent utiliser les appareils de confiance (`CanUseTrustedDevices()`).
 
 ## OpenSpec
 

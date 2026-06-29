@@ -3830,3 +3830,98 @@ Regenerated `wiki/roadmap/index.md` and change pages from manifest.
 
 ## [2026-06-27] update | UI multi-device visual autocritique
 Ajout des critères d’autocritique visuelle support-* et corrections responsive/focus/caméra pour la change OpenSpec essensys-ui-multi-device-testing.
+
+## [2026-06-28] create | Open Knowledge Format memory
+Création du bundle OKF `okf/` conforme v0.1 pour [[Essensys Memory]] : index/log, concepts initiaux et page [[Open Knowledge Format]].
+
+## [2026-06-28] sync | Sources synchronized
+Architecture docs from `docs/architecture/` and OpenSpec manifest regenerated.
+ESSENSYS_ROOT: `/Users/nrineau/ESSENSYS`
+
+## [2026-06-28] timeline | Git history extracted
+Generated 39 timeline files in `wiki/timeline/` (limit=100 commits each).
+
+## [2026-06-28] roadmap | OpenSpec index updated
+Regenerated `wiki/roadmap/index.md` and change pages from manifest.
+
+## [2026-06-28] update | OKF discovery applied
+Génération de la base OKF complète pour `essensys-okf-discovery-2026-06-029` : dépôts, armoire, protocoles legacy, roadmap, portails et rapport de couverture.
+
+## [2026-06-28] update | ESSENSYS OKF memory sync rule
+Création du skill/rule [[ESSENSYS OKF Memory Sync]] pour forcer la mise à jour `essensys-memory` wiki/OKF dès qu'un dépôt `essensys-hub` est touché.
+
+## [2026-06-28] update | ESSENSYS UX matrix gate
+Ajout de [[ESSENSYS UX Matrix Gate]] : schema `tests.ux_matrix`/`tests.ux_evidence`, checker bloquant desktop+iPhone+iPad, skill/rule et templates CI.
+
+## [2026-06-28] sync | Sources synchronized
+Architecture docs from `docs/architecture/` and OpenSpec manifest regenerated.
+ESSENSYS_ROOT: `/Users/nrineau/ESSENSYS`
+
+## [2026-06-28] timeline | Git history extracted
+Generated 39 timeline files in `wiki/timeline/` (limit=100 commits each).
+
+## [2026-06-28] roadmap | OpenSpec index updated
+Regenerated `wiki/roadmap/index.md` and change pages from manifest.
+
+## [2026-06-28] sync | Sources synchronized
+Architecture docs from `docs/architecture/` and OpenSpec manifest regenerated.
+ESSENSYS_ROOT: `/Users/nrineau/ESSENSYS`
+
+## [2026-06-28] timeline | Git history extracted
+Generated 39 timeline files in `wiki/timeline/` (limit=100 commits each).
+
+## [2026-06-28] roadmap | OpenSpec index updated
+Regenerated `wiki/roadmap/index.md` and change pages from manifest.
+
+## [2026-06-28] ingest | Kitchen Shutter Test Console — feature étalon lifecycle
+Ajout concept [[Kitchen Shutter Test Console]] (feature étalon 2026-06-031).
+Enrichissement [[Table D Echange]] avec détail indices volets par zone (617–622) et note cuisine (619/622, no-armoire gate).
+Ajout entrée dans wiki/index.md.
+Refs : `essensys-server-frontend`, OpenSpec `essensys-kitchen-shutter-test-console-2026-06-031`, [[ESSENSYS UX Matrix Gate]].
+
+## [2026-06-28] sync | Sources synchronized
+Architecture docs from `docs/architecture/` and OpenSpec manifest regenerated.
+ESSENSYS_ROOT: `/Users/nrineau/ESSENSYS`
+
+## [2026-06-28] timeline | Git history extracted
+Generated 39 timeline files in `wiki/timeline/` (limit=100 commits each).
+
+## [2026-06-28] roadmap | OpenSpec index updated
+Regenerated `wiki/roadmap/index.md` and change pages from manifest.
+
+## [2026-06-28] roadmap | OpenSpec index updated
+Regenerated `wiki/roadmap/index.md` and change pages from manifest.
+
+## [2026-06-28] sync | Sources synchronized
+Architecture docs from `docs/architecture/` and OpenSpec manifest regenerated.
+ESSENSYS_ROOT: `/Users/nrineau/ESSENSYS`
+
+## [2026-06-28] timeline | Git history extracted
+Generated 39 timeline files in `wiki/timeline/` (limit=100 commits each).
+
+## [2026-06-28] roadmap | OpenSpec index updated
+Regenerated `wiki/roadmap/index.md` and change pages from manifest.
+
+## [2026-06-29] openspec | essensys-trusted-devices-2026-06.013 implementation + brain
+
+Phases 1–4 : trusted devices LAN (auto-login MAC), tables `trusted_devices` + `lan_login_clients`, UI `/settings/account` et `/settings/users`. Règle : exclusion **`admin@essensys.local` uniquement** ; `lan_admin` locaux éligibles. Wiki [[Trusted Devices LAN]], OKF `okf/concepts/trusted-devices-lan.md`, portails LAN/admin.
+
+## [2026-06-28] sync | Sources synchronized
+Architecture docs from `docs/architecture/` and OpenSpec manifest regenerated.
+ESSENSYS_ROOT: `/Users/nrineau/ESSENSYS`
+
+## [2026-06-28] timeline | Git history extracted
+Generated 39 timeline files in `wiki/timeline/` (limit=100 commits each).
+
+## [2026-06-28] roadmap | OpenSpec index updated
+Regenerated `wiki/roadmap/index.md` and change pages from manifest.
+
+## [2026-06-28] sync | Sources synchronized
+Architecture docs from `docs/architecture/` and OpenSpec manifest regenerated.
+ESSENSYS_ROOT: `/Users/nrineau/ESSENSYS`
+
+## [2026-06-28] timeline | Git history extracted
+Generated 39 timeline files in `wiki/timeline/` (limit=100 commits each).
+
+## [2026-06-28] roadmap | OpenSpec index updated
+Regenerated `wiki/roadmap/index.md` and change pages from manifest.

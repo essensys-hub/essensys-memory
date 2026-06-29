@@ -1,17 +1,23 @@
 ---
 tags: [timeline, git]
 repo: essensys-memory
-updated: 2026-06-26
-total_commits: 15
+updated: 2026-06-28
+total_commits: 21
 shown_commits: 100
 ---
 
 # Timeline — essensys-memory
 
-**First commit:** 0f99f30 2026-05-01 · **Latest:** e58b2b3 2026-06-26 · **Total:** 15
+**First commit:** 0f99f30 2026-05-01 · **Latest:** 9a957b3 2026-06-28 · **Total:** 21
 
 ## Commits (newest first, limit 100)
 
+- **2026-06-28** `9a957b3` — docs: URLs démo Playwright multi-device (rhinosys)
+- **2026-06-27** `0623f4c` — docs(openspec): add UI multi-device testing change (rhinosys)
+- **2026-06-27** `eabf291` — docs(openspec): LAN IAM UI admin accounts spec tasks 2.6-2.7 (rhinosys)
+- **2026-06-27** `4f72f5c` — docs(openspec): mark LAN IAM task 0.2 done and ansible tasks 3.4-3.5 (rhinosys)
+- **2026-06-27** `07c96c6` — docs(openspec): LAN IAM change 2026-06.017 and wiki sync (rhinosys)
+- **2026-06-26** `044c881` — docs(brain): ingest feature lifecycle, security gate et CVE V.1.3.0 (rhinosys)
 - **2026-06-26** `e58b2b3` — docs(brain): OpenSpec 2026-06.028 secrets SOPS + Synology backup (rhinosys)
 - **2026-06-22** `27435ae` — chore(openspec): active 026 — mode test + Playwright phase 1-4 (rhinosys)
 - **2026-06-22** `d5d6d60` — feat(openspec): propose UI E2E Playwright + mode test 2026-06.026 (rhinosys)

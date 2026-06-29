@@ -1,17 +1,22 @@
 ---
 tags: [timeline, git]
 repo: essensys-ansible
-updated: 2026-06-26
-total_commits: 162
+updated: 2026-06-28
+total_commits: 167
 shown_commits: 100
 ---
 
 # Timeline — essensys-ansible
 
-**First commit:** 8b285cf 2026-01-18 · **Latest:** 7f67038 2026-06-26 · **Total:** 162
+**First commit:** 8b285cf 2026-01-18 · **Latest:** 218fb0e 2026-06-28 · **Total:** 167
 
 ## Commits (newest first, limit 100)
 
+- **2026-06-28** `218fb0e` — feat(demo): vhosts demo.essensys.fr support-site et demo.portal.essensys.fr (rhinosys)
+- **2026-06-28** `efbb559` — chore(deploy): allow support site rollback tag override (rhinosys)
+- **2026-06-27** `e2ef769` — chore(ansible): copy login background for LAN IAM frontend build (rhinosys)
+- **2026-06-27** `efa51d9` — fix(ansible): LAN IAM postgres role, config dedupe, gateway vars (rhinosys)
+- **2026-06-27** `c46281c` — feat(ansible): bootstrap LAN IAM admin user on Raspberry deploy (rhinosys)
 - **2026-06-26** `7f67038` — feat(deploy): playbook portail OVH + fix cloudsync gateway CM5 (rhinosys)
 - **2026-06-26** `13fb382` — feat(backup): sync full ESSENSYS monorepo to Synology (rhinosys)
 - **2026-06-26** `dad7f7d` — fix(backup): include SMB share name in rclone remote path (rhinosys)
@@ -107,8 +112,3 @@ shown_commits: 100
 - **2026-02-14** `270d664` — Fix light test: use index 621 (Allumer_CHB_LSB) per official documentation (rhinosys)
 - **2026-02-14** `b4f6a9c` — Fix light test script: use correct index 613 for Allumer_CHB_LSB (rhinosys)
 - **2026-02-14** `fea31e7` — Add MCP test script to control light 'chevet chambre petit 3' (rhinosys)
-- **2026-02-14** `01df7bb` — Fix systemctl status command: use shell instead of command for || true (rhinosys)
-- **2026-02-14** `b6e1293` — Update MCP documentation to use port 8083 instead of 8080 (rhinosys)
-- **2026-02-14** `681fa02` — Fix port conflict: change MCP from port 8080 to 8083 (Traefik dashboard uses 8080) (rhinosys)
-- **2026-02-14** `90ab741` — Add port conflict detection and resolution for MCP service (rhinosys)
-- **2026-02-14** `4a35cf0` — Improve MCP service debugging: add RestartSec, StandardOutput/Error, and diagnostic script (rhinosys)

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Migrate Security Gate To Dependabot — Essensys Roadmap</title>
+  <link rel="stylesheet" href="/style.css"/>
+</head>
+<body>
+  <header><a href="/">← Roadmap Essensys</a></header>
+  <main><h1>Migrate Security Gate To Dependabot</h1>
+<p><span class="badge badge-completed">completed</span>
+</p>
+<p><strong>Dépôt :</strong> essensys-feature-lifecycle</p>
+<h2>Pourquoi</h2>
+<div class="change-detail"><pre>The wise feature lifecycle still wires its security gate to **CodeGuard / Checkmarx One (Cyber AST)** for Software Composition Analysis (SCA) and SAST. CodeGuard is being abandoned, and a GitHub-native model already partially exists in this repo (the `security-gate` workflow plus a `security` block in the feature manifest). The lifecycle assets (skills, rules, templates, schema, docs, scripts) are inconsistent: some still reference `codeguard`/`checkmarx`, no `dependabot.yml` exists yet, and the manifest schema still mandates `codeguard_scan_id` / `codeguard_scan_url`. We must converge the entire lifecycle on **Dependabot alerts + the `security-gate` workflow** so triage, bootstrap, manifests, and docs describe a single, GitHub-native SCA story.</pre></div>
+</main>
+  <footer><p>Source : essensys-memory OpenSpec — généré automatiquement</p></footer>
+</body>
+</html>

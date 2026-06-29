@@ -1,7 +1,20 @@
 {
-  "generated": "2026-06-27",
+  "generated": "2026-06-28",
   "essensys_root": "/Users/nrineau/ESSENSYS",
   "changes": [
+    {
+      "change": "essensys-ux-matrix-gate-2026-06-030",
+      "repo": "essensys-feature-lifecycle",
+      "path": "essensys-feature-lifecycle/openspec/changes/essensys-ux-matrix-gate-2026-06-030",
+      "created": "2026-06-28",
+      "schema": "spec-driven",
+      "artifacts": {
+        "proposal": true,
+        "design": true,
+        "tasks": true,
+        "spec_count": 1
+      }
+    },
     {
       "change": "migrate-security-gate-to-dependabot",
       "repo": "essensys-feature-lifecycle",
@@ -237,6 +250,19 @@
       }
     },
     {
+      "change": "essensys-okf-discovery-2026-06-029",
+      "repo": "essensys-memory",
+      "path": "essensys-memory/openspec/changes/essensys-okf-discovery-2026-06-029",
+      "created": "2026-06-28",
+      "schema": "spec-driven",
+      "artifacts": {
+        "proposal": true,
+        "design": true,
+        "tasks": true,
+        "spec_count": 4
+      }
+    },
+    {
       "change": "essensys-product-roadmap",
       "repo": "essensys-memory",
       "path": "essensys-memory/openspec/changes/essensys-product-roadmap",
@@ -367,6 +393,19 @@
       }
     },
     {
+      "change": "essensys-ui-multi-device-testing",
+      "repo": "essensys-memory",
+      "path": "essensys-memory/openspec/changes/essensys-ui-multi-device-testing",
+      "created": "2026-06-27",
+      "schema": "spec-driven",
+      "artifacts": {
+        "proposal": true,
+        "design": true,
+        "tasks": true,
+        "spec_count": 6
+      }
+    },
+    {
       "change": "essensys-gateway-dual-nic",
       "repo": "essensys-raspberry-gateway",
       "path": "essensys-raspberry-gateway/openspec/changes/essensys-gateway-dual-nic",
@@ -390,6 +429,32 @@
         "design": true,
         "tasks": true,
         "spec_count": 10
+      }
+    },
+    {
+      "change": "essensys-kitchen-shutter-test-console-2026-06-031",
+      "repo": "essensys-server-frontend",
+      "path": "essensys-server-frontend/openspec/changes/essensys-kitchen-shutter-test-console-2026-06-031",
+      "created": "2026-06-28",
+      "schema": "spec-driven",
+      "artifacts": {
+        "proposal": true,
+        "design": true,
+        "tasks": true,
+        "spec_count": 3
+      }
+    },
+    {
+      "change": "essensys-support-nav-responsive-2026-06-032",
+      "repo": "essensys-support-site",
+      "path": "essensys-support-site/openspec/changes/essensys-support-nav-responsive-2026-06-032",
+      "created": "2026-06-28",
+      "schema": "spec-driven",
+      "artifacts": {
+        "proposal": true,
+        "design": true,
+        "tasks": true,
+        "spec_count": 3
       }
     }
   ]

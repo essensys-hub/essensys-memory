@@ -1,17 +1,32 @@
 ---
 tags: [timeline, git]
 repo: essensys-support-site
-updated: 2026-06-26
-total_commits: 161
+updated: 2026-06-28
+total_commits: 176
 shown_commits: 100
 ---
 
 # Timeline — essensys-support-site
 
-**First commit:** 8b77523 2026-01-07 · **Latest:** a4525ab 2026-06-25 · **Total:** 161
+**First commit:** 8b77523 2026-01-07 · **Latest:** be92b00 2026-06-28 · **Total:** 176
 
 ## Commits (newest first, limit 100)
 
+- **2026-06-28** `be92b00` — fix(admin): formatMachineLabel shows IP first (rhinosys)
+- **2026-06-28** `e2f59c1` — fix(admin): clear linked_machine_id when removing armoire-seule link (rhinosys)
+- **2026-06-28** `01d934c` — feat(admin): sélecteur trois modes de liaison (armoire / gateway / serveur) (rhinosys)
+- **2026-06-28** `9f2483e` — feat(admin): allow unlinking gateway and cloud server from user (rhinosys)
+- **2026-06-28** `ef55884` — fix(admin): verrouiller gateway et serveur cloud dans liaison utilisateur (rhinosys)
+- **2026-06-28** `19377c6` — fix(admin): remove duplicate cloudMachineId in UserManager (rhinosys)
+- **2026-06-28** `362b677` — feat(admin): UserManager table Liaisons portail column (rhinosys)
+- **2026-06-28** `750626d` — feat(admin): bouton enlever armoire dans la liste utilisateurs (rhinosys)
+- **2026-06-28** `89c560c` — feat(admin): bouton enlever armoire du user (rhinosys)
+- **2026-06-28** `6066d95` — fix(nav): menus responsive header et onglets admin iPhone/iPad/desktop (rhinosys)
+- **2026-06-28** `f5e6db7` — feat: add responsive support-site nav lifecycle change (rhinosys)
+- **2026-06-28** `2cb77c5` — feat(demo): support-site sur demo.essensys.fr et portail mock demo.portal (rhinosys)
+- **2026-06-27** `bb84d87` — fix(security): refresh demo build and patched dependencies (rhinosys)
+- **2026-06-27** `984f22e` — feat(ui): Aurora login design aligned with mon.essensys.local (rhinosys)
+- **2026-06-27** `ba29920` — feat(ui): disable Google and Apple OAuth buttons on login (rhinosys)
 - **2026-06-25** `a4525ab` — security: fail-closed secrets + move OAuth token to URL fragment (rhinosys)
 - **2026-06-25** `e92c7fb` — feat(admin): UI interdire/supprimer utilisateurs et redirect maintenance (rhinosys)
 - **2026-06-22** `7351c0c` — fix(demo): rebuild après TestModeProvider sur démo statique (rhinosys)
@@ -97,18 +112,3 @@ shown_commits: 100
 - **2026-01-17** `4fc0a71` — Downgrade oauth2 dependency for Go 1.21 compatibility (rhinosys)
 - **2026-01-17** `19d34f0` — Downgrade crypto dependency for Go 1.21 compatibility (rhinosys)
 - **2026-01-17** `e327622` — Implement Role-Based Access Control (RBAC) for Admin/Support (rhinosys)
-- **2026-01-17** `6ca7e5f` — Implement Frontend Authentication UI (Login, Register, Admin protection) (rhinosys)
-- **2026-01-17** `3ac688e` — fix(auth): remove unused imports (rhinosys)
-- **2026-01-17** `8c9f5e4` — fix(auth): fix build errors (undefined GenerateJWT, missing imports) (rhinosys)
-- **2026-01-17** `412038e` — feat(auth): implement user registration, login, and postgres persistence (rhinosys)
-- **2026-01-17** `180ab32` — docs: add mkdocs documentation structure and content (rhinosys)
-- **2026-01-17** `3910094` — docs: add database configuration to .env.template (rhinosys)
-- **2026-01-17** `a4085ac` — fix(ops): update backup retention to 200 days (rhinosys)
-- **2026-01-17** `07222f9` — feat(ops): add postgresql and daily backup configuration to install script (rhinosys)
-- **2026-01-17** `ce82581` — docs: update .env.template with oauth variables (rhinosys)
-- **2026-01-17** `04191f6` — fix(oauth): check http status and log error body for apple token exchange (rhinosys)
-- **2026-01-17** `0c08190` — fix(oauth): use 303 redirect for apple failures and log response body (rhinosys)
-- **2026-01-17** `613684f` — fix(oauth): set lax/secure cookie for apple post and handle missing cookie panic (rhinosys)
-- **2026-01-17** `0039f48` — fix: remove unused ctx variable in apple oauth handler (rhinosys)
-- **2026-01-16** `fb712f0` — config: expose full .well-known for apple verification (rhinosys)
-- **2026-01-16** `00066d0` — feat: add apple sign-in support (rhinosys)

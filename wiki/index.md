@@ -67,8 +67,14 @@ Master catalog of all wiki pages. Updated on every ingest.
 - [[Feature Lifecycle]] — process pilotage Jira + OpenSpec + gates CI + deploy
 - [[Security Gate]] — gitleaks + Trivy + Dependabot bloquant PR (Critical/High)
 - [[LAN IAM]] — comptes locaux mon.essensys.local, table lan_users, sessions 7j
+- [[Trusted Devices LAN]] — auto-login MAC, 60 jours ou permanent, hors admin@essensys.local
 - [[User Documentation Site]] — facade publique OVH (MkDocs hub)
 - [[UI Multi Device Testing]] — matrice Playwright multi-device avec garde no-armoire et captures UI
+- [[Open Knowledge Format]] — format markdown + frontmatter YAML pour mémoire échangeable et agent-friendly
+- [[ESSENSYS OKF Memory Sync]] — skill/rule qui impose la mise à jour wiki/OKF après modification essensys-hub
+- [[ESSENSYS UX Matrix Gate]] — gate lifecycle Playwright desktop/iPhone/iPad obligatoire pour features UI
+- [[Kitchen Shutter Test Console]] — feature étalon lifecycle : console dry-run volets cuisine (indices 619/622, no-armoire)
+- [[Support Site Responsive Nav]] — fix responsive navigation hamburger + page Support (iPhone/iPad/desktop, feature 2026-06-032)
 
 ## Synthesis
 
