@@ -59,6 +59,7 @@ Master catalog of all wiki pages. Updated on every ingest.
 - [[Table D Echange]] — contrat k/v armoire ↔ serveur, propagation firmware/écran/cloud
 - [[Scénarios domotique]] — 8 slots mémorisés (590–919), Mode A/B, sync cloud
 - [[Cloud Relay]] — pilotage distant cloud via polling sortant NAT traversal
+- [[Gateway Armoire Dashboard]] — panneau état armoire sur dashboard gateway (rotation serverinfos + snapshot API)
 - [[Gateway Exchange]] — endpoints /api/gateway/exchange et pending-actions
 - [[Gateway PKI]] — identité gateway mTLS / TPM (conception, non déployé)
 - [[Centralized Documentation]] — gouvernance doc centralisée (Phase 0a)

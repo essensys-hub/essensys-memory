@@ -3925,3 +3925,6 @@ Generated 39 timeline files in `wiki/timeline/` (limit=100 commits each).
 
 ## [2026-06-28] roadmap | OpenSpec index updated
 Regenerated `wiki/roadmap/index.md` and change pages from manifest.
+
+## [2026-06-29] implement | Gateway armoire dashboard (2026-06.033)
+Rotation serverinfos par groupes, `GET /api/admin/armoire/snapshot`, `ArmoireStatusPanel` sur `/dashboard`. Wiki : [[Gateway Armoire Dashboard]].
