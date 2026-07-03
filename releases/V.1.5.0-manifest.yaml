@@ -1,0 +1,102 @@
+# Essensys V.1.5.0 — baseline figée avant DEV 1 audit-trail (OpenSpec 2026-07-034)
+# Date: 2026-07-03
+# Usage Ansible: ansible-playbook ... -e @/path/to/V.1.5.0-manifest.yaml
+
+release_id: V.1.5.0
+release_date: "2026-07-03"
+codename: baseline-pre-audit-trail
+status: frozen
+next_epic: essensys-armoire-audit-trail-2026-07-034
+
+description: >
+  Ligne de base produit avant implémentation immudb / audit-trail.
+  Couvre les trois périmètres Deployment Perimeters : gateway CM5 LAN,
+  hub OVH, Raspberry Pi classique mono-NIC.
+
+perimeters:
+  cm5_gateway:
+    label: Gateway CM5/CM6 — mon.essensys.local
+    docker_stack_tag: V.1.3.0
+    control_plane_tag: V.1.3.7
+    verified_host: essensys@192.168.0.14
+    deployed_backend_src_sha: f577c3c
+    notes: >
+      Images Docker V.1.3.0 ; binaire backend souvent monté depuis git hôte.
+      Aligner sur release_sha server-backend avant nouveaux epics.
+
+  ovh_cloud:
+    label: Hub OVH — mon.essensys.fr
+    cloud_backend_consolidated: true
+    cloud_backend_port: 8080
+    verified_host: ubuntu@test.essensys.fr
+    notes: >
+      essensys-cloud-backend consolidé ; legacyiot + portail + ingest gateway.
+
+  raspberry_classic:
+    label: Raspberry Pi classique — mon.essensys.local
+    docker_stack_tag: V.1.3.0
+    playbook: install.raspberrypi.yml
+    notes: Stack mono-NIC identique V.1.3.0 ; pas de dual-NIC dnsmasq.
+
+git_pins:
+  essensys-server-backend:
+    ref: V.1.5.0
+    sha: bb953d0
+    branch: V.1.3.0
+  essensys-server-frontend:
+    ref: V.1.5.0
+    sha: 25e7649
+    branch: V.1.3.0
+  essensys-user-portal-backend:
+    ref: V.1.5.0
+    sha: 9525a01
+    branch: main
+  essensys-user-portal-frontend:
+    ref: V.1.5.0
+    sha: 974298a
+    branch: main
+  essensys-ansible:
+    ref: V.1.5.0
+  essensys-raspberry-install:
+    ref: V.1.5.0
+    sha: 6baa310
+    branch: V.1.3.0
+  essensys-raspberry-gateway:
+    ref: V.1.5.0
+    sha: 1c6cab3
+    branch: nixos
+  essensys-memory:
+    ref: V.1.5.0
+  essensys-support-site:
+    ref: V.1.5.0
+    sha: 18044c3
+    branch: feat/essensys-support-nav-responsive-2026-06-032
+
+ansible_overrides:
+  essensys_version: V.1.3.0
+  control_plane_version: V.1.3.7
+  backend_version: V.1.3.0
+  frontend_version: V.1.3.0
+  cloud_backend_version: "9525a01"
+  portal_frontend_version: "974298a"
+  cloud_backend_consolidated: true
+  cloud_backend_legacy_mode: false
+
+highlights:
+  - Scénarios domotique V.1.4.0 (UI + sync cloud 591-919)
+  - Sync cloud scheduler V.1.3.1 (profils 3 h)
+  - LAN IAM preview (lan_users, login local)
+  - Inventaire machines stable (machines.id OVH)
+  - Fix MAC armoires UNKNOWN legacyiot OVH (9525a01)
+  - Portail consolidé essensys-cloud-backend :8080
+  - OpenSpec audit-trail 2026-07-034 spécifié — non implémenté
+
+excluded_from_runtime:
+  - essensys-audit-service
+  - immudb
+  - armoire_audit_events
+
+rollback:
+  cm5_gateway: ansible-playbook -i inventory.gateway install.gateway.yml -e essensys_version=V.1.3.0
+  ovh: ansible-playbook -i inventory deploy-portal-stack.yml -e cloud_backend_version=9525a01 -e portal_frontend_version=974298a
+  raspberry: ansible-playbook -i inventory install.raspberrypi.yml -e essensys_version=V.1.3.0
