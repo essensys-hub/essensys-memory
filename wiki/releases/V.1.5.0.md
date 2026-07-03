@@ -24,10 +24,10 @@
 | `essensys-server-frontend` | `V.1.5.0` | `25e7649` | `V.1.3.0` |
 | `essensys-user-portal-backend` | `V.1.5.0` | `9525a01` | `main` |
 | `essensys-user-portal-frontend` | `V.1.5.0` | `974298a` | `main` |
-| `essensys-ansible` | `V.1.5.0` | *(tag sur commit release)* | `V.1.3.0` |
-| `essensys-raspberry-install` | `V.1.5.0` | *(tag sur commit release)* | `V.1.3.0` |
-| `essensys-raspberry-gateway` | `V.1.5.0` | `1c6cab3` | `nixos` |
-| `essensys-memory` | `V.1.5.0` | *(tag sur commit release)* | `main` |
+| `essensys-ansible` | `V.1.5.0` | `8abaf9e` | `V.1.3.0` |
+| `essensys-raspberry-install` | `V.1.5.0` | `0add570` | `V.1.3.0` |
+| `essensys-raspberry-gateway` | `V.1.5.0` | `9abf902` | `nixos` |
+| `essensys-memory` | `V.1.5.0` | `235c4d6` | `main` |
 
 ## Contenu fonctionnel (par rapport à V.1.4.0)
 
