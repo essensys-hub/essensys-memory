@@ -69,7 +69,7 @@ git_pins:
     branch: nixos
   essensys-memory:
     ref: V.1.5.0
-    sha: 235c4d6
+    sha: f37f5e1
   essensys-support-site:
     ref: V.1.5.0
     sha: 18044c3
