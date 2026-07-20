@@ -11,9 +11,9 @@
 
 ## DEV 0 — Prérequis communs (avant DEV 1)
 
-- [ ] 0.1 Whitelist indices auditables (`internal/audit/whitelist.go` stub + doc brain)
-- [ ] 0.2 Spec dépôt **`essensys-audit-service`** (README, API `/v1/audit/*`, CLI `audit-rebuild`)
-- [ ] 0.3 Charte RGPD v1 (texte) + `audit_charter_version` — utilisable LAN puis cloud
+- [x] 0.1 Whitelist indices auditables (`internal/audit/whitelist.go` stub + doc brain)
+- [x] 0.2 Spec dépôt **`essensys-audit-service`** (README, API `/v1/audit/*`, CLI `audit-rebuild`)
+- [x] 0.3 Charte RGPD v1 (texte) + `audit_charter_version` — utilisable LAN puis cloud
 - [ ] 0.4 Page `essensys-doc` : architecture immudb + deux vagues de livraison
 
 ---
@@ -24,47 +24,47 @@
 
 ### 1.1 Infrastructure gateway
 
-- [ ] 1.1.1 Créer dépôt `essensys-audit-service` : `cmd/audit-service`, client immudb, projector PG
-- [ ] 1.1.2 `POST /v1/audit/append`, `POST /v1/audit/batch`, `GET /v1/audit/health`
-- [ ] 1.1.3 Append immudb `armoire/{machine_id}/event/{event_id}` + hash chain SHA-256
-- [ ] 1.1.4 Projector → tables PG gateway (`audit_events_local` ou projection `armoire_audit_events` locale)
-- [ ] 1.1.5 CLI `audit-rebuild` (--source immudb --target postgres --machine-id M --dry-run)
-- [ ] 1.1.6 Ansible `roles/immudb_gateway` + `roles/audit_service_gateway` (Docker Compose CM5/CM6)
-- [ ] 1.1.7 Secrets gateway (immudb + mTLS audit-service) — pas de SOPS OVH en DEV 1
+- [x] 1.1.1 Créer dépôt `essensys-audit-service` : `cmd/audit-service`, client immudb, projector PG
+- [x] 1.1.2 `POST /v1/audit/append`, `POST /v1/audit/batch`, `GET /v1/audit/health`
+- [x] 1.1.3 Append immudb `armoire/{machine_id}/event/{event_id}` + hash chain SHA-256
+- [x] 1.1.4 Projector → tables PG gateway (`audit_events_local` ou projection `armoire_audit_events` locale)
+- [x] 1.1.5 CLI `audit-rebuild` (--source immudb --target postgres --machine-id M --dry-run)
+- [x] 1.1.6 Ansible `roles/immudb_gateway` + `roles/audit_service_gateway` (Docker Compose CM5/CM6)
+- [x] 1.1.7 Secrets gateway (immudb + mTLS audit-service) — pas de SOPS OVH en DEV 1
 - [ ] 1.1.8 Tests : append idempotent, VerifiedGet, rebuild dry-run
 
 ### 1.2 Backend LAN (`essensys-server-backend`)
 
-- [ ] 1.2.1 Package `internal/audit/` : types, `Authorizer` LAN, `Dedup`, client collector
-- [ ] 1.2.2 Package `essensys-audit-collector` : `Emit(ctx, AuditEvent)`, dedup STATE_CHANGE, buffer outbox
-- [ ] 1.2.3 Migration PG gateway `audit_outbox` + `lan_audit_charter_acceptances` (`006_audit_outbox.up.sql`)
-- [ ] 1.2.4 Ansible `lan_iam_migrations.yml` — migration audit gateway
+- [x] 1.2.1 Package `internal/audit/` : types, `Authorizer` LAN, `Dedup`, client collector
+- [x] 1.2.2 Package `essensys-audit-collector` : `Emit(ctx, AuditEvent)`, dedup STATE_CHANGE, buffer outbox
+- [x] 1.2.3 Migration PG gateway `audit_outbox` + `lan_audit_charter_acceptances` (`006_audit_outbox.up.sql`)
+- [x] 1.2.4 Ansible `lan_iam_migrations.yml` — migration audit gateway
 - [ ] 1.2.5 Hooks collector : inject LAN, `ActionService`, IAM login/logout, trusted devices
 - [ ] 1.2.6 Delta exchange (whitelist) → collector → audit-service LAN
-- [ ] 1.2.7 `GET /api/audit/events` (session LAN, RBAC `lan_user` / `lan_admin`, charte signée)
-- [ ] 1.2.8 `GET/POST /api/audit/charter/accept` + export JSON/CSV LAN
+- [x] 1.2.7 `GET /api/audit/events` (session LAN, RBAC `lan_user` / `lan_admin`, charte signée)
+- [x] 1.2.8 `GET/POST /api/audit/charter/accept` + export JSON/CSV LAN
 - [ ] 1.2.9 Tests : dedup ≥ 10 cas, authorizer LAN, POST user → 403, couverture ≥ 85 %
 
 ### 1.3 Intégrité & admin LAN (`essensys-server-backend` + frontend)
 
 - [ ] 1.3.1 Job `audit-integrity-check` gateway ; métrique `audit_integrity_mismatch_total`
-- [ ] 1.3.2 `GET /api/audit/integrity` + rebuild dry-run (LAN `lan_admin`)
+- [x] 1.3.2 `GET /api/audit/integrity` + rebuild dry-run (LAN `lan_admin`)
 - [ ] 1.3.3 `AuditAdminPage` `/settings/audit-admin` : santé services, intégrité, rebuild, logs
 - [ ] 1.3.4 Composants : `AuditServiceHealth`, `AuditIntegrityPanel`, `AuditRebuildPanel`
 
 ### 1.4 IHM utilisateur LAN (`essensys-server-frontend`)
 
-- [ ] 1.4.1 `auditApi.ts`, `useAuditTrail.ts`, `useAuditCharter.ts`
-- [ ] 1.4.2 `AuditTrailPage` + `AuditEventTable` + `AuditFiltersBar` + `AuditEventDetailDrawer`
-- [ ] 1.4.3 `AuditCharterModal` bloquante
-- [ ] 1.4.4 Sidebar « Journal d'activité » + `ControlCard` Settings + carte Dashboard
-- [ ] 1.4.5 Route `/settings/audit` ; recherche `q` + presets date + graphique 7 jours
-- [ ] 1.4.6 Masquage IP `/24` ; export JSON/CSV
+- [x] 1.4.1 `auditApi.ts`, `useAuditTrail.ts`, `useAuditCharter.ts`
+- [x] 1.4.2 `AuditTrailPage` + `AuditEventTable` + `AuditFiltersBar` + `AuditEventDetailDrawer`
+- [x] 1.4.3 `AuditCharterModal` bloquante
+- [x] 1.4.4 Sidebar « Journal d'activité » + `ControlCard` Settings + carte Dashboard
+- [x] 1.4.5 Route `/settings/audit` ; recherche `q` + presets date + graphique 7 jours
+- [x] 1.4.6 Masquage IP `/24` ; export JSON/CSV
 - [ ] 1.4.7 Tests RTL : rôles, charte, lecture seule
 
 ### 1.5 Validation DEV 1 (CM5/CM6)
 
-- [ ] 1.5.1 Deploy Ansible gateway : immudb + audit-service + migrations PG
+- [x] 1.5.1 Deploy Ansible gateway : immudb + audit-service + migrations PG
 - [ ] 1.5.2 Scénario manuel : inject LAN → événement visible `/settings/audit` < 5 s
 - [ ] 1.5.3 Scénario : `audit-rebuild --dry-run` OK ; intégrité PG ↔ immudb OK
 - [ ] 1.5.4 `go test ./internal/audit/...` vert ; `feature-gate` server-backend

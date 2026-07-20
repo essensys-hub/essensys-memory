@@ -1,17 +1,22 @@
 ---
 tags: [timeline, git]
 repo: essensys-memory
-updated: 2026-06-28
-total_commits: 21
+updated: 2026-07-20
+total_commits: 26
 shown_commits: 100
 ---
 
 # Timeline — essensys-memory
 
-**First commit:** 0f99f30 2026-05-01 · **Latest:** 9a957b3 2026-06-28 · **Total:** 21
+**First commit:** 0f99f30 2026-05-01 · **Latest:** 22acfb8 2026-07-03 · **Total:** 26
 
 ## Commits (newest first, limit 100)
 
+- **2026-07-03** `22acfb8` — release: memory manifest SHA f37f5e1 (rhinosys)
+- **2026-07-03** `f37f5e1` — release: pin final SHAs in V.1.5.0 manifest after tagging (rhinosys)
+- **2026-07-03** `235c4d6` — release: V.1.5.0 baseline pré audit-trail + OpenSpec audit-trail 2026-07-034 (rhinosys)
+- **2026-07-01** `27c4a2a` — docs(brain): add OpenSpec change for gateway armoire dashboard (rhinosys)
+- **2026-06-29** `6931f4b` — docs(brain): trusted devices LAN IAM, OKF sync, and roadmap updates (rhinosys)
 - **2026-06-28** `9a957b3` — docs: URLs démo Playwright multi-device (rhinosys)
 - **2026-06-27** `0623f4c` — docs(openspec): add UI multi-device testing change (rhinosys)
 - **2026-06-27** `eabf291` — docs(openspec): LAN IAM UI admin accounts spec tasks 2.6-2.7 (rhinosys)

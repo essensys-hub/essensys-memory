@@ -3,7 +3,7 @@ type: Roadmap Change
 title: Essensys Brain Ingest Auto 2026 06.022
 description: "**Host repo:** [[ESSENSYS Memory]] **Path:** `essensys-memory/openspec/changes/essensys-brain-ingest-auto-2026-06.022` **Status:** active **OpenSpec created:** 2026-06-21"
 tags: [essensys, roadmap, openspec, active, 2026]
-timestamp: 2026-06-28T19:07:32Z
+timestamp: 2026-07-20T18:30:10Z
 status: active
 host_repo: essensys-memory
 horizon_year: 2026

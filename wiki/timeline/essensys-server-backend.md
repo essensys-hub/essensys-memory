@@ -1,17 +1,24 @@
 ---
 tags: [timeline, git]
 repo: essensys-server-backend
-updated: 2026-06-28
-total_commits: 75
+updated: 2026-07-20
+total_commits: 82
 shown_commits: 100
 ---
 
 # Timeline — essensys-server-backend
 
-**First commit:** 5fde95f 2025-12-07 · **Latest:** 5805cb5 2026-06-27 · **Total:** 75
+**First commit:** 5fde95f 2025-12-07 · **Latest:** a9fe47c 2026-07-19 · **Total:** 82
 
 ## Commits (newest first, limit 100)
 
+- **2026-07-19** `a9fe47c` — feat(plugins): Prometheus history for week/month/year (rhinosys)
+- **2026-07-08** `b5195d4` — feat(plugins): gestion du cycle de vie — état persisté et purge Redis (rhinosys)
+- **2026-07-08** `5b5c8f3` — feat(plugins): historisation Redis 48 h des métriques (route /history) (rhinosys)
+- **2026-07-08** `c51a411` — fix(plugins): le store Redis fusionne les séries au lieu d'écraser le snapshot (rhinosys)
+- **2026-07-06** `3eb693e` — feat(plugins): câble le framework de plugins (registre + /api/plugins/*) (Claude)
+- **2026-07-01** `bb953d0` — feat(armoire): gateway dashboard snapshot API and connectivity store (rhinosys)
+- **2026-06-29** `f577c3c` — feat(lan-iam): trusted devices auto-login via MAC and login client log (rhinosys)
 - **2026-06-27** `5805cb5` — feat(lan-iam): add enable endpoint for banned LAN users (rhinosys)
 - **2026-06-27** `d2ecdea` — feat(lan-iam): local user auth, sessions, and admin API (rhinosys)
 - **2026-06-26** `02b2d34` — fix(tests): repair Go test compilation (BasicAuth/NewRouter/AcknowledgeAction/GetFullTable) (SCRUM-9) (#7) (rhinosys)

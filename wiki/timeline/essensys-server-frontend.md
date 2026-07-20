@@ -1,17 +1,25 @@
 ---
 tags: [timeline, git]
 repo: essensys-server-frontend
-updated: 2026-06-28
-total_commits: 57
+updated: 2026-07-20
+total_commits: 65
 shown_commits: 100
 ---
 
 # Timeline — essensys-server-frontend
 
-**First commit:** 0669921 2025-12-18 · **Latest:** 03361fa 2026-06-28 · **Total:** 57
+**First commit:** 0669921 2025-12-18 · **Latest:** aa5e9d3 2026-07-19 · **Total:** 65
 
 ## Commits (newest first, limit 100)
 
+- **2026-07-19** `aa5e9d3` — feat(ui): Sungrow history range chips day/week/month/year (rhinosys)
+- **2026-07-19** `a4e508f` — fix(ui): keep lecture seule visible in plugin header (rhinosys)
+- **2026-07-08** `1758de5` — feat(settings): section Plugins — catalogue, activer/désactiver, désinstaller (rhinosys)
+- **2026-07-08** `e4b3d45` — feat(flow): sync renderer — schéma de flux + bascule Tableau/Schéma (rhinosys)
+- **2026-07-08** `7b2d862` — feat(dashboard): rendu du tableau de bord riche du plugin Solaire (rhinosys)
+- **2026-07-06** `624cad6` — feat(dashboard): tuile plugin Solaire (Sungrow) via renderer partagé (Claude)
+- **2026-07-01** `25e7649` — feat(dashboard): armoire status panel and snapshot hooks on CM5 LAN (rhinosys)
+- **2026-06-29** `446f1e3` — feat(lan-iam): trusted devices UI — admin pairing and 60-day self-service (rhinosys)
 - **2026-06-28** `03361fa` — feat(ui): kitchen shutter test console and UX matrix gate (rhinosys)
 - **2026-06-28** `ddd7942` — feat(e2e): URLs démo support, portail et dashboard local (rhinosys)
 - **2026-06-27** `6bba60e` — feat(e2e): add no-armoire multi-device UI checks (rhinosys)

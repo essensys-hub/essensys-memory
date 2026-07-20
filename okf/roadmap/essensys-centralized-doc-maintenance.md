@@ -3,7 +3,7 @@ type: Roadmap Change
 title: Essensys Centralized Doc Maintenance
 description: "**Host repo:** [[ESSENSYS Memory]] **Path:** `essensys-memory/openspec/changes/essensys-centralized-doc-maintenance` **Status:** completed **OpenSpec created:** 2026-06-21"
 tags: [essensys, roadmap, openspec, completed, 2026]
-timestamp: 2026-06-28T19:07:32Z
+timestamp: 2026-07-20T18:30:10Z
 status: completed
 host_repo: essensys-memory
 horizon_year: 2026

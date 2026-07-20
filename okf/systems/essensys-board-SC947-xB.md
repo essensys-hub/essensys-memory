@@ -4,7 +4,7 @@ title: Essensys Board Sc947 Xb
 description: "Carte détecteur de fuite d'eau (DFE) de la box domotique Essensys : petit capteur autonome à sonde résistive qui remonte une alerte de présence d'eau au système."
 resource: file:///Users/nrineau/ESSENSYS/essensys-board-SC947-xB
 tags: [essensys, repository, firmware, legacy]
-timestamp: 2026-06-28T19:07:32Z
+timestamp: 2026-07-20T18:30:10Z
 repo: essensys-board-SC947-xB
 layer: firmware
 era: legacy

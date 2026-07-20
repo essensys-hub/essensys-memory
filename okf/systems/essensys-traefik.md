@@ -4,7 +4,7 @@ title: Essensys Traefik
 description: Reverse-proxy de bordure de la gateway Essensys, terminaison TLS (Let's Encrypt + CA locale) et filtrage des routes exposees sur le WAN.
 resource: file:///Users/nrineau/ESSENSYS/essensys-traefik
 tags: [essensys, repository, infra, modern]
-timestamp: 2026-06-28T19:07:32Z
+timestamp: 2026-07-20T18:30:10Z
 repo: essensys-traefik
 layer: infra
 era: modern

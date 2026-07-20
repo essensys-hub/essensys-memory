@@ -4,7 +4,7 @@ title: Essensys Board Sc945d
 description: "Carte IHM tactile murale de la box domotique Essensys : écran couleur 2,8\" piloté par un contrôleur graphique 4D Systems PICASO-GFX2, interface utilisateur de l'installation."
 resource: file:///Users/nrineau/ESSENSYS/essensys-board-SC945D
 tags: [essensys, repository, firmware, legacy]
-timestamp: 2026-06-28T19:07:32Z
+timestamp: 2026-07-20T18:30:10Z
 repo: essensys-board-SC945D
 layer: firmware
 era: legacy

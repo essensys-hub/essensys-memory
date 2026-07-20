@@ -3,7 +3,7 @@ type: Architecture Overview
 title: Armoire Architecture
 description: "Vue OKF de l'architecture armoire ESSENSYS : cartes, firmware, table d'échange et protocoles."
 tags: [essensys, architecture, armoire, firmware, legacy]
-timestamp: 2026-06-28T19:07:32Z
+timestamp: 2026-07-20T18:30:10Z
 ---
 <!-- BEGIN GENERATED CONTENT -->
 # Vue d'ensemble

@@ -1,0 +1,505 @@
+{
+  "generated": "2026-07-20T18:30:10Z",
+  "essensys_root": "/Users/nrineau/ESSENSYS",
+  "repository_count": 42,
+  "repositories": [
+    {
+      "name": "client-essensys-legacy",
+      "path": "/Users/nrineau/ESSENSYS/client-essensys-legacy",
+      "layer": "firmware",
+      "era": "legacy",
+      "remote": null,
+      "pointers": [
+        "H/TableEchange.h",
+        "README.md"
+      ]
+    },
+    {
+      "name": "essensys-android-phone-apps",
+      "path": "/Users/nrineau/ESSENSYS/essensys-android-phone-apps",
+      "layer": "tooling",
+      "era": "modern",
+      "remote": null,
+      "pointers": [
+        "README.md"
+      ]
+    },
+    {
+      "name": "essensys-ansible",
+      "path": "/Users/nrineau/ESSENSYS/essensys-ansible",
+      "layer": "infra",
+      "era": "modern",
+      "remote": null,
+      "pointers": [
+        ".venv-ansible/lib/python3.11/site-packages/ansible_collections/community/general/plugins/module_utils/oneandone.py",
+        ".venv-ansible/lib/python3.11/site-packages/ansible_collections/community/general/plugins/modules/oneandone_firewall_policy.py",
+        ".venv-ansible/lib/python3.11/site-packages/ansible_collections/community/general/plugins/modules/oneandone_load_balancer.py",
+        ".venv-ansible/lib/python3.11/site-packages/ansible_collections/community/general/plugins/modules/oneandone_monitoring_policy.py",
+        ".venv-ansible/lib/python3.11/site-packages/ansible_collections/community/general/plugins/modules/oneandone_private_network.py",
+        ".venv-ansible/lib/python3.11/site-packages/ansible_collections/community/general/plugins/modules/oneandone_public_ip.py",
+        ".venv-ansible/lib/python3.11/site-packages/ansible_collections/community/general/plugins/modules/oneandone_server.py",
+        "README.md"
+      ]
+    },
+    {
+      "name": "essensys-api-doc",
+      "path": "/Users/nrineau/ESSENSYS/essensys-api-doc",
+      "layer": "documentation",
+      "era": "modern",
+      "remote": null,
+      "pointers": [
+        "README.md",
+        "data/WireShark/http_mystatus/mystatus",
+        "data/WireShark/http_mystatus/mystatus(1)",
+        "data/WireShark/http_mystatus/mystatus(3)",
+        "data/WireShark/http_mystatus/mystatus(4)",
+        "data/WireShark/http_mystatus/mystatus(5)",
+        "data/WireShark/myactions",
+        "data/WireShark/myactions(1)",
+        "data/WireShark/myactions(2)",
+        "data/WireShark/myactions(3)",
+        "data/WireShark/myactions(4)",
+        "data/WireShark/myactions(5)",
+        "data/WireShark/myactions(6)",
+        "data/WireShark/myactions(7)",
+        "data/WireShark/mystatus",
+        "data/WireShark/mystatus(1)",
+        "data/WireShark/mystatus(2)",
+        "data/WireShark/mystatus(3)",
+        "data/WireShark/mystatus(4)",
+        "data/WireShark/mystatus(5)",
+        "data/WireShark/mystatus(6)",
+        "data/WireShark/mystatus(7)",
+        "data/WireShark/serverinfos",
+        "data/WireShark/serverinfos(1)",
+        "data/WireShark/serverinfos(2)",
+        "data/WireShark/serverinfos(3)",
+        "data/WireShark/serverinfos(4)",
+        "data/WireShark/serverinfos(5)",
+        "data/WireShark/serverinfos(6)",
+        "data/WireShark/serverinfos(7)"
+      ]
+    },
+    {
+      "name": "essensys-base",
+      "path": "/Users/nrineau/ESSENSYS/essensys-base",
+      "layer": "infra",
+      "era": "modern",
+      "remote": null,
+      "pointers": [
+        "Dockerfile",
+        "README.md"
+      ]
+    },
+    {
+      "name": "essensys-board-SC840B",
+      "path": "/Users/nrineau/ESSENSYS/essensys-board-SC840B",
+      "layer": "firmware",
+      "era": "legacy",
+      "remote": null,
+      "pointers": [
+        "README.md"
+      ]
+    },
+    {
+      "name": "essensys-board-SC841A",
+      "path": "/Users/nrineau/ESSENSYS/essensys-board-SC841A",
+      "layer": "firmware",
+      "era": "legacy",
+      "remote": null,
+      "pointers": [
+        "README.md"
+      ]
+    },
+    {
+      "name": "essensys-board-SC843D",
+      "path": "/Users/nrineau/ESSENSYS/essensys-board-SC843D",
+      "layer": "firmware",
+      "era": "legacy",
+      "remote": null,
+      "pointers": [
+        "README.md"
+      ]
+    },
+    {
+      "name": "essensys-board-SC940",
+      "path": "/Users/nrineau/ESSENSYS/essensys-board-SC940",
+      "layer": "firmware",
+      "era": "legacy",
+      "remote": null,
+      "pointers": [
+        "README.md"
+      ]
+    },
+    {
+      "name": "essensys-board-SC941C",
+      "path": "/Users/nrineau/ESSENSYS/essensys-board-SC941C",
+      "layer": "firmware",
+      "era": "legacy",
+      "remote": null,
+      "pointers": [
+        "README.md"
+      ]
+    },
+    {
+      "name": "essensys-board-SC942C",
+      "path": "/Users/nrineau/ESSENSYS/essensys-board-SC942C",
+      "layer": "firmware",
+      "era": "legacy",
+      "remote": null,
+      "pointers": [
+        "README.md"
+      ]
+    },
+    {
+      "name": "essensys-board-SC944D",
+      "path": "/Users/nrineau/ESSENSYS/essensys-board-SC944D",
+      "layer": "firmware",
+      "era": "legacy",
+      "remote": null,
+      "pointers": [
+        "Dockerfile",
+        "README.md",
+        "SC944D/Prog/099-37/BP_MQX_ETH/H/TableEchange.h",
+        "SC944D/Prog/_Archives/095-34/BP_MQX_ETH/H/TableEchange.h",
+        "SC944D/Prog/_Archives/096-35/BP_MQX_ETH/H/TableEchange.h",
+        "SC944D/Prog/_Archives/097-36/BP_MQX_ETH/H/TableEchange.h"
+      ]
+    },
+    {
+      "name": "essensys-board-SC945D",
+      "path": "/Users/nrineau/ESSENSYS/essensys-board-SC945D",
+      "layer": "firmware",
+      "era": "legacy",
+      "remote": null,
+      "pointers": [
+        "README.md",
+        "SC945D/Prog/Main 1.0/IHM_ECHANGES.INC"
+      ]
+    },
+    {
+      "name": "essensys-board-SC946D",
+      "path": "/Users/nrineau/ESSENSYS/essensys-board-SC946D",
+      "layer": "firmware",
+      "era": "legacy",
+      "remote": null,
+      "pointers": [
+        "README.md"
+      ]
+    },
+    {
+      "name": "essensys-board-SC947-xB",
+      "path": "/Users/nrineau/ESSENSYS/essensys-board-SC947-xB",
+      "layer": "firmware",
+      "era": "legacy",
+      "remote": null,
+      "pointers": [
+        "README.md"
+      ]
+    },
+    {
+      "name": "essensys-control-plane",
+      "path": "/Users/nrineau/ESSENSYS/essensys-control-plane",
+      "layer": "gateway-lan",
+      "era": "modern",
+      "remote": null,
+      "pointers": [
+        "Dockerfile",
+        "README.md",
+        "go.mod"
+      ]
+    },
+    {
+      "name": "essensys-doc",
+      "path": "/Users/nrineau/ESSENSYS/essensys-doc",
+      "layer": "documentation",
+      "era": "modern",
+      "remote": null,
+      "pointers": [
+        "README.md"
+      ]
+    },
+    {
+      "name": "essensys-feature-lifecycle",
+      "path": "/Users/nrineau/ESSENSYS/essensys-feature-lifecycle",
+      "layer": "documentation",
+      "era": "modern",
+      "remote": null,
+      "pointers": [
+        ".cursor/rules/github-issue-done-commit-push.mdc",
+        "README.md",
+        "openspec/changes",
+        "scripts/.cursor/rules/github-issue-done-commit-push.mdc"
+      ]
+    },
+    {
+      "name": "essensys-gateway",
+      "path": "/Users/nrineau/ESSENSYS/essensys-gateway",
+      "layer": "gateway-lan",
+      "era": "modern",
+      "remote": null,
+      "pointers": [
+        "README.md"
+      ]
+    },
+    {
+      "name": "essensys-gcc",
+      "path": "/Users/nrineau/ESSENSYS/essensys-gcc",
+      "layer": "tooling",
+      "era": "modern",
+      "remote": null,
+      "pointers": [
+        "Dockerfile",
+        "README.md"
+      ]
+    },
+    {
+      "name": "essensys-homeassitant",
+      "path": "/Users/nrineau/ESSENSYS/essensys-homeassitant",
+      "layer": "tooling",
+      "era": "modern",
+      "remote": null,
+      "pointers": [
+        "README.md"
+      ]
+    },
+    {
+      "name": "essensys-ios-phone-apps",
+      "path": "/Users/nrineau/ESSENSYS/essensys-ios-phone-apps",
+      "layer": "tooling",
+      "era": "modern",
+      "remote": null,
+      "pointers": [
+        "README.md"
+      ]
+    },
+    {
+      "name": "essensys-mcp",
+      "path": "/Users/nrineau/ESSENSYS/essensys-mcp",
+      "layer": "tooling",
+      "era": "modern",
+      "remote": null,
+      "pointers": [
+        "README.md"
+      ]
+    },
+    {
+      "name": "essensys-memory",
+      "path": "/Users/nrineau/ESSENSYS/essensys-memory",
+      "layer": "documentation",
+      "era": "modern",
+      "remote": null,
+      "pointers": [
+        "README.md",
+        "openspec/changes",
+        "raw/protocol/TableEchange.h",
+        "raw/protocol/constants.go"
+      ]
+    },
+    {
+      "name": "essensys-mosquitto",
+      "path": "/Users/nrineau/ESSENSYS/essensys-mosquitto",
+      "layer": "infra",
+      "era": "modern",
+      "remote": null,
+      "pointers": [
+        "Dockerfile"
+      ]
+    },
+    {
+      "name": "essensys-n8n",
+      "path": "/Users/nrineau/ESSENSYS/essensys-n8n",
+      "layer": "tooling",
+      "era": "modern",
+      "remote": null,
+      "pointers": [
+        "README.md"
+      ]
+    },
+    {
+      "name": "essensys-nginx",
+      "path": "/Users/nrineau/ESSENSYS/essensys-nginx",
+      "layer": "infra",
+      "era": "modern",
+      "remote": null,
+      "pointers": [
+        "Dockerfile"
+      ]
+    },
+    {
+      "name": "essensys-plugin-example",
+      "path": "/Users/nrineau/ESSENSYS/essensys-plugin-example",
+      "layer": "system",
+      "era": "modern",
+      "remote": null,
+      "pointers": [
+        "README.md"
+      ]
+    },
+    {
+      "name": "essensys-plugin-framework",
+      "path": "/Users/nrineau/ESSENSYS/essensys-plugin-framework",
+      "layer": "system",
+      "era": "modern",
+      "remote": null,
+      "pointers": [
+        "README.md"
+      ]
+    },
+    {
+      "name": "essensys-plugin-sungrow",
+      "path": "/Users/nrineau/ESSENSYS/essensys-plugin-sungrow",
+      "layer": "system",
+      "era": "modern",
+      "remote": null,
+      "pointers": [
+        "README.md"
+      ]
+    },
+    {
+      "name": "essensys-prometheus",
+      "path": "/Users/nrineau/ESSENSYS/essensys-prometheus",
+      "layer": "infra",
+      "era": "modern",
+      "remote": null,
+      "pointers": [
+        "README.md"
+      ]
+    },
+    {
+      "name": "essensys-raspberry-gateway",
+      "path": "/Users/nrineau/ESSENSYS/essensys-raspberry-gateway",
+      "layer": "gateway-lan",
+      "era": "modern",
+      "remote": null,
+      "pointers": [
+        "README.md",
+        "openspec/changes"
+      ]
+    },
+    {
+      "name": "essensys-raspberry-install",
+      "path": "/Users/nrineau/ESSENSYS/essensys-raspberry-install",
+      "layer": "gateway-lan",
+      "era": "modern",
+      "remote": null,
+      "pointers": [
+        "README.md"
+      ]
+    },
+    {
+      "name": "essensys-redis",
+      "path": "/Users/nrineau/ESSENSYS/essensys-redis",
+      "layer": "infra",
+      "era": "modern",
+      "remote": null,
+      "pointers": [
+        "Dockerfile"
+      ]
+    },
+    {
+      "name": "essensys-server-backend",
+      "path": "/Users/nrineau/ESSENSYS/essensys-server-backend",
+      "layer": "gateway-lan",
+      "era": "modern",
+      "remote": null,
+      "pointers": [
+        "Dockerfile",
+        "README.md",
+        "go.mod",
+        "internal/core/action_service.go",
+        "pkg/protocol/constants.go",
+        "test/test_serverinfos.sh"
+      ]
+    },
+    {
+      "name": "essensys-server-frontend",
+      "path": "/Users/nrineau/ESSENSYS/essensys-server-frontend",
+      "layer": "gateway-lan",
+      "era": "modern",
+      "remote": null,
+      "pointers": [
+        "Dockerfile",
+        "README.md",
+        "openspec/changes",
+        "package.json"
+      ]
+    },
+    {
+      "name": "essensys-support-site",
+      "path": "/Users/nrineau/ESSENSYS/essensys-support-site",
+      "layer": "cloud",
+      "era": "modern",
+      "remote": null,
+      "pointers": [
+        "README.md",
+        "api/serverinfos/index.php",
+        "openspec/changes"
+      ]
+    },
+    {
+      "name": "essensys-traefik",
+      "path": "/Users/nrineau/ESSENSYS/essensys-traefik",
+      "layer": "infra",
+      "era": "modern",
+      "remote": null,
+      "pointers": [
+        "Dockerfile"
+      ]
+    },
+    {
+      "name": "essensys-user-portal-backend",
+      "path": "/Users/nrineau/ESSENSYS/essensys-user-portal-backend",
+      "layer": "cloud",
+      "era": "modern",
+      "remote": null,
+      "pointers": [
+        "README.md",
+        "go.mod",
+        "internal/domain/order_expansion.go"
+      ]
+    },
+    {
+      "name": "essensys-user-portal-frontend",
+      "path": "/Users/nrineau/ESSENSYS/essensys-user-portal-frontend",
+      "layer": "cloud",
+      "era": "modern",
+      "remote": null,
+      "pointers": [
+        "README.md",
+        "package.json"
+      ]
+    },
+    {
+      "name": "essensys-utils",
+      "path": "/Users/nrineau/ESSENSYS/essensys-utils",
+      "layer": "tooling",
+      "era": "modern",
+      "remote": null,
+      "pointers": [
+        ".TableEchange.h",
+        "README.md"
+      ]
+    },
+    {
+      "name": "essensys-web-legacy",
+      "path": "/Users/nrineau/ESSENSYS/essensys-web-legacy",
+      "layer": "legacy",
+      "era": "legacy",
+      "remote": null,
+      "pointers": [
+        "Essensys.Web/Essensys.Web.UI/Controllers/api/DoneController.cs",
+        "Essensys.Web/Essensys.Web.UI/Controllers/api/MyActionsController.cs",
+        "Essensys.Web/Essensys.Web.UI/Controllers/api/MyStatusController.cs",
+        "Essensys.Web/Essensys.Web.UI/Controllers/api/ServerInfosController.cs",
+        "README.md",
+        "docker-compose.yml",
+        "package.json"
+      ]
+    }
+  ],
+  "security_rules": [
+    "Do not read or print .env files, decrypted SOPS material, private keys, tokens, or credentials.",
+    "Use path-level code pointers and wiki citations instead of copying full source code."
+  ]
+}

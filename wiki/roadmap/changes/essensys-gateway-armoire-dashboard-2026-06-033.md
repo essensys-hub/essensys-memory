@@ -2,35 +2,35 @@
 tags: [roadmap, openspec]
 sources: [manifest.json]
 created: 2026-06-29
-updated: 2026-06-29
-status: in-progress
+updated: 2026-07-20
+status: active
 host_repo: essensys-memory
 ---
 
 # Essensys Gateway Armoire Dashboard 2026 06 033
 
-**Host repo:** [[Essensys Server Backend]], [[Essensys Server Frontend]]
+**Host repo:** [[ESSENSYS Memory]]
 **Path:** `essensys-memory/openspec/changes/essensys-gateway-armoire-dashboard-2026-06-033`
-**Status:** in-progress
-**Roadmap ID:** 2026-06.033
+**Status:** active
+**OpenSpec created:** 2026-06-29
 
 ## Why
 
-Visibilité installateur sur l'état armoire SC944D depuis `https://mon.essensys.local/dashboard` sans modifier le firmware ni les endpoints legacy.
+Sur la **gateway CM5** (`https://mon.essensys.local/dashboard`), l'utilisateur ne voit pas si l'armoire SC944D est connectée ni son état système (secouru, alarme, chauffage, défauts BA). Pourtant le firmware remonte déjà des valeurs via `POST /api/mystatus` et la [[Table D Echange]] — elles sont stockées côté backend mais non exposées dans l'UI locale.
+
+> **Roadmap ID:** 2026-06.033  
+> **Horizon:** voir [[Roadmap OpenSpec]]  
+> **Périmètre:** gateway LAN uniquement (pas portail cloud `/portal/`…
 
 ## Artifacts
 
 - Proposal: ✓
 - Design: ✓
 - Tasks: ✓
-- Specs: gateway-armoire-dashboard
-
-## Implémentation
-
-- Backend : rotation `serverinfos`, package `internal/armoire/`, `GET /api/admin/armoire/snapshot`
-- Frontend : `ArmoireStatusPanel`, poll 5 s, mock E2E
-- Doc : [[Gateway Armoire Dashboard]]
+- Specs: 1
 
 ## Source files
 
-- `essensys-memory/openspec/changes/essensys-gateway-armoire-dashboard-2026-06-033/`
+- `essensys-memory/openspec/changes/essensys-gateway-armoire-dashboard-2026-06-033/proposal.md`
+- `essensys-memory/openspec/changes/essensys-gateway-armoire-dashboard-2026-06-033/design.md`
+- `essensys-memory/openspec/changes/essensys-gateway-armoire-dashboard-2026-06-033/tasks.md`

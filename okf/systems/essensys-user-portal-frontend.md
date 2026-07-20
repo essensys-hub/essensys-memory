@@ -4,7 +4,7 @@ title: Essensys User Portal Frontend
 description: Portail cloud React/TypeScript pour l'accès distant utilisateur sur mon.essensys.fr.
 resource: file:///Users/nrineau/ESSENSYS/essensys-user-portal-frontend
 tags: [essensys, repository, cloud, modern]
-timestamp: 2026-06-28T19:07:32Z
+timestamp: 2026-07-20T18:30:10Z
 repo: essensys-user-portal-frontend
 layer: cloud
 era: modern

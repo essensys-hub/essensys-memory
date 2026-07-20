@@ -4,7 +4,7 @@ title: Essensys Support Site
 description: "Portail de support communautaire d'Essensys : SPA React (vitrine + espace utilisateur/admin) doublée d'une documentation MkDocs, autour d'un backend Go aujourd'hui déprécié au profit du hub cloud unifié."
 resource: file:///Users/nrineau/ESSENSYS/essensys-support-site
 tags: [essensys, repository, cloud, modern]
-timestamp: 2026-06-28T19:07:32Z
+timestamp: 2026-07-20T18:30:10Z
 repo: essensys-support-site
 layer: cloud
 era: modern

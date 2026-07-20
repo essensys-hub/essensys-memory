@@ -4,7 +4,7 @@ title: Essensys Nginx
 description: "Serveur web et reverse-proxy interne de la gateway Essensys : sert le frontend React (SPA) et proxifie l'API, le MCP et le control-plane sur le LAN."
 resource: file:///Users/nrineau/ESSENSYS/essensys-nginx
 tags: [essensys, repository, infra, modern]
-timestamp: 2026-06-28T19:07:32Z
+timestamp: 2026-07-20T18:30:10Z
 repo: essensys-nginx
 layer: infra
 era: modern

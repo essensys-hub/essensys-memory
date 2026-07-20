@@ -4,7 +4,7 @@ title: Essensys Server Frontend
 description: Interface web LAN React/TypeScript pour piloter la domotique via le backend local.
 resource: file:///Users/nrineau/ESSENSYS/essensys-server-frontend
 tags: [essensys, repository, gateway-lan, modern]
-timestamp: 2026-06-28T19:07:32Z
+timestamp: 2026-07-20T18:30:10Z
 repo: essensys-server-frontend
 layer: gateway-lan
 era: modern

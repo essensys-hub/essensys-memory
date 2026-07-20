@@ -1,17 +1,20 @@
 ---
 tags: [timeline, git]
 repo: essensys-user-portal-backend
-updated: 2026-06-28
-total_commits: 40
+updated: 2026-07-20
+total_commits: 43
 shown_commits: 100
 ---
 
 # Timeline — essensys-user-portal-backend
 
-**First commit:** 32851e9 2026-06-14 · **Latest:** f8cbed1 2026-06-28 · **Total:** 40
+**First commit:** 32851e9 2026-06-14 · **Latest:** 9525a01 2026-07-02 · **Total:** 43
 
 ## Commits (newest first, limit 100)
 
+- **2026-07-02** `9525a01` — fix(legacyiot): persist MAC for inactive UNKNOWN armoires on OVH (rhinosys)
+- **2026-07-01** `df362ad` — feat(admin): collect and display armoire MAC addresses (rhinosys)
+- **2026-06-29** `6b1cbb3` — fix(inventory): stable merge params and inventory verification scripts (rhinosys)
 - **2026-06-28** `f8cbed1` — fix(admin): show UNKNOWN serial when client_id is portal numeric id (rhinosys)
 - **2026-06-28** `02a9743` — fix(migration): dedupe client_id before machines.id backfill (rhinosys)
 - **2026-06-28** `588341b` — fix(inventory): stable machines.id in database for armoire links (rhinosys)

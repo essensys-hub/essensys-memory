@@ -4,7 +4,7 @@ title: Essensys Board Sc944d
 description: "Carte contrôleur central (« client ») de la box domotique Essensys : cerveau Ethernet sous RTOS MQX qui agrège les boîtiers auxiliaires, dialogue avec le serveur Essensys et distribue les firmwares aux autres cartes."
 resource: file:///Users/nrineau/ESSENSYS/essensys-board-SC944D
 tags: [essensys, repository, firmware, legacy]
-timestamp: 2026-06-28T19:07:32Z
+timestamp: 2026-07-20T18:30:10Z
 repo: essensys-board-SC944D
 layer: firmware
 era: legacy

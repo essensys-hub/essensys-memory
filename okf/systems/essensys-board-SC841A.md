@@ -4,7 +4,7 @@ title: Essensys Board Sc841a
 description: "Carte **banc de test usine** « Banc BP » : teste automatiquement les cartes de type BP (alimentations, alarmes, téléinfo, façade) en production."
 resource: file:///Users/nrineau/ESSENSYS/essensys-board-SC841A
 tags: [essensys, repository, firmware, legacy]
-timestamp: 2026-06-28T19:07:32Z
+timestamp: 2026-07-20T18:30:10Z
 repo: essensys-board-SC841A
 layer: firmware
 era: legacy

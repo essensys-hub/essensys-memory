@@ -4,7 +4,7 @@ title: Essensys Gateway
 description: Dépôt « ombrelle » / réservé de la passerelle Essensys, aujourd'hui réduit à un README stub — le contenu réel (matériel CM5 + déploiement) vit dans `essensys-raspberry-gateway`.
 resource: file:///Users/nrineau/ESSENSYS/essensys-gateway
 tags: [essensys, repository, gateway-lan, modern]
-timestamp: 2026-06-28T19:07:32Z
+timestamp: 2026-07-20T18:30:10Z
 repo: essensys-gateway
 layer: gateway-lan
 era: modern

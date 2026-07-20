@@ -1,17 +1,18 @@
 ---
 tags: [timeline, git]
 repo: essensys-feature-lifecycle
-updated: 2026-06-28
-total_commits: 7
+updated: 2026-07-20
+total_commits: 8
 shown_commits: 100
 ---
 
 # Timeline — essensys-feature-lifecycle
 
-**First commit:** cfd812b 2026-06-26 · **Latest:** c492a58 2026-06-26 · **Total:** 7
+**First commit:** cfd812b 2026-06-26 · **Latest:** e2fe252 2026-06-29 · **Total:** 8
 
 ## Commits (newest first, limit 100)
 
+- **2026-06-29** `e2fe252` — feat(ux-gate): UX matrix regression gate in feature lifecycle schema (rhinosys)
 - **2026-06-26** `c492a58` — chore(ci): bump actions checkout, setup-node/python, github-script, upload-artifact (rhinosys)
 - **2026-06-26** `e42a89b` — Merge pull request #6 from essensys-hub/dependabot/github_actions/aws-actions/configure-aws-credentials-6 (rhinosys)
 - **2026-06-26** `27ac31c` — Merge pull request #4 from essensys-hub/dependabot/github_actions/aquasecurity/trivy-action-0.36.0 (rhinosys)

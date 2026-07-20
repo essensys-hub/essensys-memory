@@ -4,7 +4,7 @@ title: Essensys Redis
 description: Cache et store cle-valeur en memoire de la gateway Essensys, partage par le backend et le serveur MCP.
 resource: file:///Users/nrineau/ESSENSYS/essensys-redis
 tags: [essensys, repository, infra, modern]
-timestamp: 2026-06-28T19:07:32Z
+timestamp: 2026-07-20T18:30:10Z
 repo: essensys-redis
 layer: infra
 era: modern

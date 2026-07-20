@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-28",
+  "generated": "2026-07-20",
   "essensys_root": "/Users/nrineau/ESSENSYS",
   "changes": [
     {
@@ -33,6 +33,19 @@
       "repo": "essensys-memory",
       "path": "essensys-memory/openspec/changes/essensys-admin-user-forbid-delete-2026-06-027",
       "created": "2026-06-25",
+      "schema": "spec-driven",
+      "artifacts": {
+        "proposal": true,
+        "design": true,
+        "tasks": true,
+        "spec_count": 1
+      }
+    },
+    {
+      "change": "essensys-armoire-audit-trail-2026-07-034",
+      "repo": "essensys-memory",
+      "path": "essensys-memory/openspec/changes/essensys-armoire-audit-trail-2026-07-034",
+      "created": "2026-07-01",
       "schema": "spec-driven",
       "artifacts": {
         "proposal": true,
@@ -124,6 +137,19 @@
       "repo": "essensys-memory",
       "path": "essensys-memory/openspec/changes/essensys-doc-site-dns-2026-06.008",
       "created": "2026-06-21",
+      "schema": "spec-driven",
+      "artifacts": {
+        "proposal": true,
+        "design": true,
+        "tasks": true,
+        "spec_count": 1
+      }
+    },
+    {
+      "change": "essensys-gateway-armoire-dashboard-2026-06-033",
+      "repo": "essensys-memory",
+      "path": "essensys-memory/openspec/changes/essensys-gateway-armoire-dashboard-2026-06-033",
+      "created": "2026-06-29",
       "schema": "spec-driven",
       "artifacts": {
         "proposal": true,
@@ -263,6 +289,19 @@
       }
     },
     {
+      "change": "essensys-plugin-framework-2026-07-035",
+      "repo": "essensys-memory",
+      "path": "essensys-memory/openspec/changes/essensys-plugin-framework-2026-07-035",
+      "created": "2026-07-06",
+      "schema": "spec-driven",
+      "artifacts": {
+        "proposal": true,
+        "design": true,
+        "tasks": true,
+        "spec_count": 2
+      }
+    },
+    {
       "change": "essensys-product-roadmap",
       "repo": "essensys-memory",
       "path": "essensys-memory/openspec/changes/essensys-product-roadmap",
@@ -371,6 +410,19 @@
       "repo": "essensys-memory",
       "path": "essensys-memory/openspec/changes/essensys-trusted-devices-2026-06.013",
       "created": "2026-06-21",
+      "schema": "spec-driven",
+      "artifacts": {
+        "proposal": true,
+        "design": true,
+        "tasks": true,
+        "spec_count": 1
+      }
+    },
+    {
+      "change": "essensys-turnstile-registration-2026-07-036",
+      "repo": "essensys-memory",
+      "path": "essensys-memory/openspec/changes/essensys-turnstile-registration-2026-07-036",
+      "created": "2026-07-20",
       "schema": "spec-driven",
       "artifacts": {
         "proposal": true,

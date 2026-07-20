@@ -27,6 +27,9 @@
 * [Essensys Mosquitto](essensys-mosquitto.md) - Broker MQTT (Eclipse Mosquitto) de la gateway Essensys, point d'echange temps reel entre les objets domotiques IoT et le backend.
 * [Essensys N8n](essensys-n8n.md) - Dépôt destiné à héberger l'automatisation de workflows n8n de la plateforme Essensys, actuellement à l'état de squelette vide (réservation de nom).
 * [Essensys Nginx](essensys-nginx.md) - Serveur web et reverse-proxy interne de la gateway Essensys : sert le frontend React (SPA) et proxifie l'API, le MCP et le control-plane sur le LAN.
+* [Essensys Plugin Example](essensys-plugin-example.md) - Dépôt ESSENSYS Essensys Plugin Example.
+* [Essensys Plugin Framework](essensys-plugin-framework.md) - Dépôt ESSENSYS Essensys Plugin Framework.
+* [Essensys Plugin Sungrow](essensys-plugin-sungrow.md) - Dépôt ESSENSYS Essensys Plugin Sungrow.
 * [Essensys Prometheus](essensys-prometheus.md) - Depot stub destine a la supervision Prometheus de la stack Essensys ; actuellement vide, le deploiement reel s'appuie sur l'image upstream `prom/prometheus` configuree par Ansible.
 * [Essensys Raspberry Gateway](essensys-raspberry-gateway.md) - Passerelle Essensys « CM5 Edition » : conception matérielle de la carte (Raspberry Pi Compute Module 5, stack 3 PCB, rail DIN) **et** déploiement déclaratif NixOS de la pile applicative Essensys sur cette passerelle.
 * [Essensys Raspberry Install](essensys-raspberry-install.md) - Provisioning / bootstrap d'installation de la passerelle Essensys sur Raspberry Pi : un script `install.sh` minimal qui pose les prérequis (git, Ansible) puis **délègue tout le déploiement au dépôt `essensys-ansible`** (

@@ -2,7 +2,7 @@
 tags: [roadmap, openspec]
 sources: [manifest.json]
 created: 2026-06-28
-updated: 2026-06-28
+updated: 2026-07-20
 status: active
 host_repo: essensys-support-site
 ---

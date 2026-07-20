@@ -3,7 +3,7 @@ type: Portal
 title: Admin Surfaces
 description: Surfaces d'administration utilisateurs, sécurité et installation.
 tags: [essensys, portal, 2025, 2026]
-timestamp: 2026-06-28T19:07:32Z
+timestamp: 2026-07-20T18:30:10Z
 deployment: LAN + Cloud
 horizon_year: 2025/2026
 ---
@@ -31,20 +31,6 @@ Surfaces d'administration utilisateurs, sécurité et installation.
 
 * [Essensys Admin User Forbid Delete 2026 06 027](/roadmap/essensys-admin-user-forbid-delete-2026-06-027.md)
 * [Essensys Trusted Devices 2026 06 013](/roadmap/essensys-trusted-devices-2026-06.013.md)
-
-* [Essensys Trusted Devices 2026 06 013](/roadmap/essensys-trusted-devices-2026-06.013.md)
-
-# Trusted devices — surface admin
-
-Route **`/settings/users`** (menu **Comptes .local**) :
-
-* CRUD comptes `lan_users`
-* Tableau **connexions récentes** (user + MAC + IP) → **Appairer (permanent)**
-* Gestion appareils actifs : révoquer, promouvoir temporaire → permanent
-
-Règle : seul **`admin@essensys.local`** est exclu de l'auto-login ; les autres `lan_admin` (ex. installateur) peuvent être appairés.
-
-Référence : [Trusted Devices LAN](/concepts/trusted-devices-lan.md).
 
 # APIs et sécurité
 

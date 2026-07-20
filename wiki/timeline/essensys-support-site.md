@@ -1,17 +1,18 @@
 ---
 tags: [timeline, git]
 repo: essensys-support-site
-updated: 2026-06-28
-total_commits: 176
+updated: 2026-07-20
+total_commits: 177
 shown_commits: 100
 ---
 
 # Timeline — essensys-support-site
 
-**First commit:** 8b77523 2026-01-07 · **Latest:** be92b00 2026-06-28 · **Total:** 176
+**First commit:** 8b77523 2026-01-07 · **Latest:** 18044c3 2026-07-01 · **Total:** 177
 
 ## Commits (newest first, limit 100)
 
+- **2026-07-01** `18044c3` — feat(site): split www/mon URLs, admin MAC and account guide (rhinosys)
 - **2026-06-28** `be92b00` — fix(admin): formatMachineLabel shows IP first (rhinosys)
 - **2026-06-28** `e2f59c1` — fix(admin): clear linked_machine_id when removing armoire-seule link (rhinosys)
 - **2026-06-28** `01d934c` — feat(admin): sélecteur trois modes de liaison (armoire / gateway / serveur) (rhinosys)
@@ -111,4 +112,3 @@ shown_commits: 100
 - **2026-01-17** `283b051` — Add Sign up / Log in buttons to Header (rhinosys)
 - **2026-01-17** `4fc0a71` — Downgrade oauth2 dependency for Go 1.21 compatibility (rhinosys)
 - **2026-01-17** `19d34f0` — Downgrade crypto dependency for Go 1.21 compatibility (rhinosys)
-- **2026-01-17** `e327622` — Implement Role-Based Access Control (RBAC) for Admin/Support (rhinosys)

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Essensys Armoire Audit Trail 2026 07 034 — Essensys Roadmap</title>
+  <link rel="stylesheet" href="/style.css"/>
+</head>
+<body>
+  <header><a href="/">← Roadmap Essensys</a></header>
+  <main><h1>Essensys Armoire Audit Trail 2026 07 034</h1>
+<p><span class="badge badge-active">active</span>
+</p>
+<p><strong>Dépôt :</strong> essensys-memory</p>
+<h2>Pourquoi</h2>
+<div class="change-detail"><pre>Les utilisateurs et administrateurs Essensys n&#x27;ont pas aujourd&#x27;hui de **journal d&#x27;audit par armoire** couvrant les actions domotiques, les changements de configuration et les transitions d&#x27;état — seulement un audit **plateforme** (login, rôles) dans `audit_logs` / `portal_audit_log`. Sans trace append-only par `machine_id`, il est impossible de répondre de façon fiable à une demande utilisateur (« qui a fait quoi ? »), de corréler une anomalie ou de détecter une intrusion sur une installation.
+
+Ce change formalise un audit **lecture seule** accessible depuis la gateway LAN (`mon.essensys.local`) et le portail distant (`mon.essensys.fr`), avec résilience offline (outbox gateway) et alignement sur les trois périmètres de déploiement documentés dans [[Deployment Perimeters]].
+
+&gt; **Roadmap ID:</pre></div>
+</main>
+  <footer><p>Source : essensys-memory OpenSpec — généré automatiquement</p></footer>
+</body>
+</html>

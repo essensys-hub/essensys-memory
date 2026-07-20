@@ -1,17 +1,21 @@
 ---
 tags: [timeline, git]
 repo: essensys-user-portal-frontend
-updated: 2026-06-28
-total_commits: 28
+updated: 2026-07-20
+total_commits: 32
 shown_commits: 100
 ---
 
 # Timeline — essensys-user-portal-frontend
 
-**First commit:** b3846d7 2026-06-14 · **Latest:** 3699707 2026-06-28 · **Total:** 28
+**First commit:** b3846d7 2026-06-14 · **Latest:** 35174ed 2026-07-19 · **Total:** 32
 
 ## Commits (newest first, limit 100)
 
+- **2026-07-19** `35174ed` — feat(ui): Sungrow history range chips day/week/month/year (rhinosys)
+- **2026-07-19** `a4588de` — fix(ui): keep lecture seule visible in plugin header (rhinosys)
+- **2026-07-01** `974298a` — feat(portal): serve mon.essensys.fr at root with www login flow (rhinosys)
+- **2026-06-29** `8f8d140` — fix(ui): sync last-action and lighting hooks with server-frontend twin (rhinosys)
 - **2026-06-28** `3699707` — feat(demo): mode mock pour demo.portal.essensys.fr (rhinosys)
 - **2026-06-26** `e377894` — chore: ignore security-gate artifacts locaux (rhinosys)
 - **2026-06-26** `dbc5348` — chore(ci): bump actions checkout/setup-python/upload-artifact (rhinosys)

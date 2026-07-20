@@ -1,17 +1,18 @@
 ---
 tags: [timeline, git]
 repo: essensys-raspberry-install
-updated: 2026-06-28
-total_commits: 294
+updated: 2026-07-20
+total_commits: 295
 shown_commits: 100
 ---
 
 # Timeline — essensys-raspberry-install
 
-**First commit:** 81134ca 2026-01-02 · **Latest:** 6baa310 2026-06-27 · **Total:** 294
+**First commit:** 81134ca 2026-01-02 · **Latest:** 0add570 2026-07-03 · **Total:** 295
 
 ## Commits (newest first, limit 100)
 
+- **2026-07-03** `0add570` — docs: add V.1.5.0 baseline release entry in versions.md (rhinosys)
 - **2026-06-27** `6baa310` — docs(lan-iam): ansible bootstrap flow with raspberry_postgresql (rhinosys)
 - **2026-06-27** `a5cb82d` — docs(lan-iam): update local access and authentication guides (rhinosys)
 - **2026-06-21** `46d8401` — docs(scenario): API/UI scénarios et note version V.1.4.0. (rhinosys)
@@ -111,4 +112,3 @@ shown_commits: 100
 - **2026-01-11** `1bdfe9d` — update ip warninig (rhinosys)
 - **2026-01-11** `909d810` — Docs: Rewrite Network Config (Static IP vs DHCP Reservation) (rhinosys)
 - **2026-01-11** `7319512` — update ip warninig (rhinosys)
-- **2026-01-11** `75ea7d4` — update ip warninig (rhinosys)

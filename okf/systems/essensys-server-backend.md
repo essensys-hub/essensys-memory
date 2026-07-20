@@ -4,7 +4,7 @@ title: Essensys Server Backend
 description: Backend Go LAN qui expose l'API moderne et maintient la compatibilité legacy IoT.
 resource: file:///Users/nrineau/ESSENSYS/essensys-server-backend
 tags: [essensys, repository, gateway-lan, modern]
-timestamp: 2026-06-28T19:07:32Z
+timestamp: 2026-07-20T18:30:10Z
 repo: essensys-server-backend
 layer: gateway-lan
 era: modern

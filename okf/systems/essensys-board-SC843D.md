@@ -4,7 +4,7 @@ title: Essensys Board Sc843d
 description: Module **gradateur** (variateur d'éclairage / dimmer) Essensys SC943D, à base d'un petit PIC 8 broches.
 resource: file:///Users/nrineau/ESSENSYS/essensys-board-SC843D
 tags: [essensys, repository, firmware, legacy]
-timestamp: 2026-06-28T19:07:32Z
+timestamp: 2026-07-20T18:30:10Z
 repo: essensys-board-SC843D
 layer: firmware
 era: legacy

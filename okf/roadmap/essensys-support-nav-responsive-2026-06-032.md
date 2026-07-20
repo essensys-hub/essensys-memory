@@ -3,7 +3,7 @@ type: Roadmap Change
 title: Essensys Support Nav Responsive 2026 06 032
 description: "**Host repo:** [[Essensys Support Site]] **Path:** `essensys-support-site/openspec/changes/essensys-support-nav-responsive-2026-06-032` **Status:** active **OpenSpec created:** 202"
 tags: [essensys, roadmap, openspec, active, 2026]
-timestamp: 2026-06-28T19:07:32Z
+timestamp: 2026-07-20T18:30:10Z
 status: active
 host_repo: essensys-support-site
 horizon_year: 2026
