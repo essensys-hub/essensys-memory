@@ -3928,3 +3928,49 @@ Regenerated `wiki/roadmap/index.md` and change pages from manifest.
 
 ## [2026-06-29] implement | Gateway armoire dashboard (2026-06.033)
 Rotation serverinfos par groupes, `GET /api/admin/armoire/snapshot`, `ArmoireStatusPanel` sur `/dashboard`. Wiki : [[Gateway Armoire Dashboard]].
+
+## [2026-07-04] sync | Sources synchronized
+Architecture docs from `docs/architecture/` and OpenSpec manifest regenerated.
+ESSENSYS_ROOT: `/Users/nrineau/ESSENSYS`
+
+## [2026-07-04] timeline | Git history extracted
+Generated 39 timeline files in `wiki/timeline/` (limit=100 commits each).
+
+## [2026-07-04] roadmap | OpenSpec index updated
+Regenerated `wiki/roadmap/index.md` and change pages from manifest.
+
+## [2026-07-04] sync | Sources synchronized
+Architecture docs from `docs/architecture/` and OpenSpec manifest regenerated.
+ESSENSYS_ROOT: `/Users/nrineau/ESSENSYS`
+
+## [2026-07-04] timeline | Git history extracted
+Generated 39 timeline files in `wiki/timeline/` (limit=100 commits each).
+
+## [2026-07-04] roadmap | OpenSpec index updated
+Regenerated `wiki/roadmap/index.md` and change pages from manifest.
+
+## [2026-07-19] sync | Sources synchronized
+Architecture docs from `docs/architecture/` and OpenSpec manifest regenerated.
+ESSENSYS_ROOT: `/Users/nrineau/ESSENSYS`
+
+## [2026-07-19] timeline | Git history extracted
+Generated 42 timeline files in `wiki/timeline/` (limit=100 commits each).
+
+## [2026-07-19] roadmap | OpenSpec index updated
+Regenerated `wiki/roadmap/index.md` and change pages from manifest.
+
+## [2026-07-20] sync | Sources synchronized
+Architecture docs from `docs/architecture/` and OpenSpec manifest regenerated.
+ESSENSYS_ROOT: `/Users/nrineau/ESSENSYS`
+
+## [2026-07-20] timeline | Git history extracted
+Generated 42 timeline files in `wiki/timeline/` (limit=100 commits each).
+
+## [2026-07-20] roadmap | OpenSpec index updated
+Regenerated `wiki/roadmap/index.md` and change pages from manifest.
+
+## [2026-07-20] apply | Turnstile registration
+OpenSpec `essensys-turnstile-registration-2026-07-036`: Cloudflare Turnstile on public register (portal-backend siteverify, support-site UI, Ansible wiring). Wiki [[Turnstile Registration]]. Ops keys/SOPS/OVH deploy still operator-owned.
+
+## [2026-07-20] roadmap | OpenSpec index updated
+Regenerated `wiki/roadmap/index.md` and change pages from manifest.

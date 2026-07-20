@@ -6,3 +6,6 @@
 ## 2026-06-28
 * **Update**: Applied `essensys-okf-discovery-2026-06-029`; generated repository, firmware, protocol, roadmap, portal, process and synthesis concepts.
 * **Update**: Added ESSENSYS OKF Memory Sync skill/rule process so agents must refresh wiki/OKF when touching essensys-hub repositories.
+
+## 2026-07-20
+* **Update**: Applied OpenSpec `essensys-turnstile-registration-2026-07-036` — Turnstile on public registration (portal-backend + support-site SPA + Ansible templates). Secrets/SOPS values and OVH deploy remain operator steps.

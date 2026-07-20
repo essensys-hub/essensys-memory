@@ -1,21 +1,23 @@
 ---
 tags: [roadmap, openspec, index]
-updated: 2026-06-28
+updated: 2026-07-20
 ---
 
 # Roadmap OpenSpec
 
 Index des changes OpenSpec connus du monorepo ESSENSYS. Regénérer via `scripts/update-roadmap.sh` après sync.
 
-**Dernière mise à jour:** 2026-06-28 · **Changes:** 35
+**Dernière mise à jour:** 2026-07-20 · **Changes:** 39
 
 ## Active
 
 - [[Essensys Admin User Forbid Delete 2026 06 027]] — essensys-memory (active)
+- [[Essensys Armoire Audit Trail 2026 07 034]] — essensys-memory (active)
 - [[Essensys Brain Ingest Auto 2026 06.022]] — essensys-memory (active)
 - [[Essensys Doc Ci Conformance 2026 06.023]] — essensys-memory (active)
 - [[Essensys Doc Docusaurus 2026 06.021]] — essensys-memory (active)
 - [[Essensys Doc Site Dns 2026 06.008]] — essensys-memory (active)
+- [[Essensys Gateway Armoire Dashboard 2026 06 033]] — essensys-memory (active)
 - [[Essensys Gateway Fleet 2026 06.019]] — essensys-memory (active)
 - [[Essensys Gateway Mtls]] — essensys-memory (active)
 - [[Essensys Gateway Prod Decision 2026 06.012]] — essensys-memory (active)
@@ -24,13 +26,14 @@ Index des changes OpenSpec connus du monorepo ESSENSYS. Regénérer via `scripts
 - [[Essensys Install Wizard 2026 06.016]] — essensys-memory (active)
 - [[Essensys Lan Iam 2026 06.017]] — essensys-memory (active)
 - [[Essensys Lan Mcu Panels 2026 06.025]] — essensys-memory (active)
+- [[Essensys Plugin Framework 2026 07 035]] — essensys-memory (active)
 - [[Essensys Remote User Interface 2026 06.015]] — essensys-memory (active)
 - [[Essensys Roadmap Queue 2026 06]] — essensys-memory (active)
 - [[Essensys Roadmap Site 2026 06.005]] — essensys-memory (active)
 - [[Essensys Scenario Management]] — essensys-memory (active)
 - [[Essensys Scenario Pg Cache 2026 06.020]] — essensys-memory (active)
 - [[Essensys Secrets Sops Migration 2026 06 028]] — essensys-memory (active)
-- [[Essensys Trusted Devices 2026 06.013]] — essensys-memory (active)
+- [[Essensys Turnstile Registration 2026 07 036]] — essensys-memory (active)
 - [[Essensys Ui E2e Playwright 2026 06.026]] — essensys-memory (active)
 - [[Essensys Ui Multi Device Testing]] — essensys-memory (active)
 - [[Essensys Gateway Dual Nic]] — essensys-raspberry-gateway (active)
@@ -53,6 +56,7 @@ _Aucun_
 - [[Essensys Okf Discovery 2026 06 029]] — essensys-memory (completed)
 - [[Essensys Product Roadmap]] — essensys-memory (completed)
 - [[Essensys Second Brain]] — essensys-memory (completed)
+- [[Essensys Trusted Devices 2026 06.013]] — essensys-memory (completed)
 - [[Essensys Kitchen Shutter Test Console 2026 06 031]] — essensys-server-frontend (completed)
 
 ## Roadmap produit
