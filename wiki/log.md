@@ -3974,3 +3974,6 @@ OpenSpec `essensys-turnstile-registration-2026-07-036`: Cloudflare Turnstile on 
 
 ## [2026-07-20] roadmap | OpenSpec index updated
 Regenerated `wiki/roadmap/index.md` and change pages from manifest.
+
+## [2026-07-20] docs | Turnstile Cloudflare account ownership
+Documented Cloudflare account `nicolas.rineau@gmail.com` (Verified) as owner of Turnstile verification keys in essensys-doc and support-site ops docs.

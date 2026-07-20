@@ -8,6 +8,8 @@ updated: 2026-07-20
 
 Public email/password registration on Essensys (`POST /api/auth/register`) is protected by **Cloudflare Turnstile** with fail-closed server `siteverify`, plus IP rate-limit and a honeypot field.
 
+**Cloudflare account that owns the widget / keys:** `nicolas.rineau@gmail.com` (profile **Verified**, member since 2024-07-20). See `essensys-doc/archi/turnstile-registration.md`.
+
 ## OpenSpec
 
 - Change: `essensys-turnstile-registration-2026-07-036`
