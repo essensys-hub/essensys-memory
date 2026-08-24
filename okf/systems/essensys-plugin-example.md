@@ -4,7 +4,7 @@ title: Essensys Plugin Example
 description: Dépôt ESSENSYS Essensys Plugin Example.
 resource: file:///Users/nrineau/ESSENSYS/essensys-plugin-example
 tags: [essensys, repository, system, modern]
-timestamp: 2026-07-20T18:30:10Z
+timestamp: 2026-08-24T16:24:50Z
 repo: essensys-plugin-example
 layer: system
 era: modern

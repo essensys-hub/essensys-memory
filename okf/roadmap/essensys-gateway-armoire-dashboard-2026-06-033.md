@@ -3,7 +3,7 @@ type: Roadmap Change
 title: Essensys Gateway Armoire Dashboard 2026 06 033
 description: "**Host repo:** [[ESSENSYS Memory]] **Path:** `essensys-memory/openspec/changes/essensys-gateway-armoire-dashboard-2026-06-033` **Status:** active **OpenSpec created:** 2026-06-29"
 tags: [essensys, roadmap, openspec, active, 2026]
-timestamp: 2026-07-20T18:30:10Z
+timestamp: 2026-08-24T16:24:50Z
 status: active
 host_repo: essensys-memory
 horizon_year: 2026

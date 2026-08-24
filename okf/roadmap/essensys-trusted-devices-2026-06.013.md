@@ -3,7 +3,7 @@ type: Roadmap Change
 title: Essensys Trusted Devices 2026 06.013
 description: "**Host repo:** [[ESSENSYS Memory]] **Path:** `essensys-memory/openspec/changes/essensys-trusted-devices-2026-06.013` **Status:** completed **OpenSpec created:** 2026-06-21"
 tags: [essensys, roadmap, openspec, completed, 2026]
-timestamp: 2026-07-20T18:30:10Z
+timestamp: 2026-08-24T16:24:50Z
 status: completed
 host_repo: essensys-memory
 horizon_year: 2026

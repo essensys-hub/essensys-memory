@@ -3,7 +3,7 @@ type: Architecture Overview
 title: Armoire Architecture
 description: "Vue OKF de l'architecture armoire ESSENSYS : cartes, firmware, table d'échange et protocoles."
 tags: [essensys, architecture, armoire, firmware, legacy]
-timestamp: 2026-07-20T18:30:10Z
+timestamp: 2026-08-24T16:24:50Z
 ---
 <!-- BEGIN GENERATED CONTENT -->
 # Vue d'ensemble
@@ -27,7 +27,10 @@ L'armoire ESSENSYS combine une carte maître, des cartes actionneurs, une IHM, d
 
 ```text
 Utilisateur / portail → backend LAN/cloud → pending actions → Legacy HTTP → SC944D / armoire → Table d'Échange → cartes + IHM
+                                                                                              → Bus I2C BP ↔ BA → relais, variateurs, volets
 ```
+
+Le dernier maillon vers les sorties physiques est le [Bus I2C BP ↔ BA](/protocols/i2c-ba-bus.md).
 
 # Contraintes
 

@@ -1,17 +1,19 @@
 ---
 tags: [timeline, git]
 repo: essensys-doc
-updated: 2026-07-20
-total_commits: 20
+updated: 2026-08-24
+total_commits: 22
 shown_commits: 100
 ---
 
 # Timeline — essensys-doc
 
-**First commit:** a4d821d 2026-02-28 · **Latest:** 8cef2fe 2026-06-21 · **Total:** 20
+**First commit:** a4d821d 2026-02-28 · **Latest:** 0e682d7 2026-07-20 · **Total:** 22
 
 ## Commits (newest first, limit 100)
 
+- **2026-07-20** `0e682d7` — docs(install): clarify Pi vs CM5 vs remote portal choice matrix (rhinosys)
+- **2026-07-20** `29a3402` — docs(archi): document Cloudflare account owning Turnstile (rhinosys)
 - **2026-06-21** `8cef2fe` — feat(skills): ajoute execute-github-project et plan-to-github-tasks (rhinosys)
 - **2026-06-21** `1bdbb96` — fix(docs): site_url mon.essensys.fr/docs/ en attendant DNS docs.essensys.fr (rhinosys)
 - **2026-06-21** `52e284b` — feat(docs): site MkDocs Material pour publication OVH (rhinosys)

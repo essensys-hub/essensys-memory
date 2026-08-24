@@ -3,7 +3,7 @@ type: Roadmap Change
 title: Essensys Plugin Framework 2026 07 035
 description: "**Host repo:** [[ESSENSYS Memory]] **Path:** `essensys-memory/openspec/changes/essensys-plugin-framework-2026-07-035` **Status:** active **OpenSpec created:** 2026-07-06"
 tags: [essensys, roadmap, openspec, active, 2026]
-timestamp: 2026-07-20T18:30:10Z
+timestamp: 2026-08-24T16:24:50Z
 status: active
 host_repo: essensys-memory
 horizon_year: 2026

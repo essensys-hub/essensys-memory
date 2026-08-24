@@ -1,7 +1,7 @@
 {
-  "generated": "2026-07-20T18:30:10Z",
+  "generated": "2026-08-24T16:24:50Z",
   "essensys_root": "/Users/nrineau/ESSENSYS",
-  "repository_count": 42,
+  "repository_count": 43,
   "repositories": [
     {
       "name": "client-essensys-legacy",
@@ -89,6 +89,17 @@
       "pointers": [
         "Dockerfile",
         "README.md"
+      ]
+    },
+    {
+      "name": "essensys-bdm-programmer",
+      "path": "/Users/nrineau/ESSENSYS/essensys-bdm-programmer",
+      "layer": "system",
+      "era": "modern",
+      "remote": null,
+      "pointers": [
+        "README.md",
+        "pyproject.toml"
       ]
     },
     {

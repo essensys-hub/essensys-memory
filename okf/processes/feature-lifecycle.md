@@ -3,7 +3,7 @@ type: Process
 title: Feature Lifecycle
 description: Chaîne Jira SCRUM → OpenSpec → Git/CI → docs → déploiement.
 tags: [essensys, process, jira, openspec, ci]
-timestamp: 2026-07-20T18:30:10Z
+timestamp: 2026-08-24T16:24:50Z
 source_wiki: ../../wiki/concepts/feature-lifecycle.md
 ---
 <!-- BEGIN GENERATED CONTENT -->

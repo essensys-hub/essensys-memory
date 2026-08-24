@@ -4,7 +4,7 @@ title: Essensys Doc
 description: "Référentiel central de documentation technique de l'écosystème Essensys : architecture logicielle (modèle C4), spécifications matérielles, protocoles et guides de déploiement."
 resource: file:///Users/nrineau/ESSENSYS/essensys-doc
 tags: [essensys, repository, documentation, modern]
-timestamp: 2026-07-20T18:30:10Z
+timestamp: 2026-08-24T16:24:50Z
 repo: essensys-doc
 layer: documentation
 era: modern

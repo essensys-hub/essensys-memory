@@ -3,7 +3,7 @@ type: Portal
 title: Gateway Install Control
 description: Surfaces et playbooks de provisioning, installation et contrôle gateway.
 tags: [essensys, portal, 2025, 2026]
-timestamp: 2026-07-20T18:30:10Z
+timestamp: 2026-08-24T16:24:50Z
 deployment: Gateway locale + Ansible
 horizon_year: 2025/2026
 ---

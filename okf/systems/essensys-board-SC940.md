@@ -4,7 +4,7 @@ title: Essensys Board Sc940
 description: "Carte « Boîtier Pièce de Vie » : contrôleur d'actionneurs domotiques (éclairage, variateurs, volets) piloté sur bus I2C par le concentrateur central."
 resource: file:///Users/nrineau/ESSENSYS/essensys-board-SC940
 tags: [essensys, repository, firmware, legacy]
-timestamp: 2026-07-20T18:30:10Z
+timestamp: 2026-08-24T16:24:50Z
 repo: essensys-board-SC940
 layer: firmware
 era: legacy

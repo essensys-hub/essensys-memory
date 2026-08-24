@@ -4,7 +4,7 @@ title: Essensys Web Legacy
 description: Application web legacy ASP.NET MVC/Web API de la plateforme historique.
 resource: file:///Users/nrineau/ESSENSYS/essensys-web-legacy
 tags: [essensys, repository, legacy, legacy]
-timestamp: 2026-07-20T18:30:10Z
+timestamp: 2026-08-24T16:24:50Z
 repo: essensys-web-legacy
 layer: legacy
 era: legacy

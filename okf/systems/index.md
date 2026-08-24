@@ -5,6 +5,7 @@
 * [Essensys Ansible](essensys-ansible.md) - Référentiel Ansible qui automatise l'intégralité du déploiement Essensys : passerelles Raspberry Pi / CM5 sur site (backend, frontend, MQTT, Redis, AdGuard, Traefik, monitoring, assistant IA) et infrastructure cloud OVH 
 * [Essensys Api Doc](essensys-api-doc.md) - Documentation de l'API legacy Essensys (protocole HTTP du firmware ↔ serveur `mon.essensys.fr`), publiée sous forme de site MkDocs Material bilingue FR/EN.
 * [Essensys Base](essensys-base.md) - Image Docker de base commune (Alpine 3.19) partagée par tous les services Essensys déployés sur Raspberry Pi.
+* [Essensys Bdm Programmer](essensys-bdm-programmer.md) - Dépôt ESSENSYS Essensys Bdm Programmer.
 * [Essensys Board Sc840b](essensys-board-SC840B.md) - Carte **banc de test usine** « Banc BA » : teste automatiquement les cartes d'actionneurs (type BA / SC940-SC942) — alimentation, relais et variateurs.
 * [Essensys Board Sc841a](essensys-board-SC841A.md) - Carte **banc de test usine** « Banc BP » : teste automatiquement les cartes de type BP (alimentations, alarmes, téléinfo, façade) en production.
 * [Essensys Board Sc843d](essensys-board-SC843D.md) - Module **gradateur** (variateur d'éclairage / dimmer) Essensys SC943D, à base d'un petit PIC 8 broches.

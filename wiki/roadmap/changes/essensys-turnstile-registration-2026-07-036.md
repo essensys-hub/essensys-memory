@@ -2,8 +2,8 @@
 tags: [roadmap, openspec]
 sources: [manifest.json]
 created: 2026-07-20
-updated: 2026-07-20
-status: active
+updated: 2026-08-24
+status: completed
 host_repo: essensys-memory
 ---
 
@@ -11,7 +11,7 @@ host_repo: essensys-memory
 
 **Host repo:** [[ESSENSYS Memory]]
 **Path:** `essensys-memory/openspec/changes/essensys-turnstile-registration-2026-07-036`
-**Status:** active
+**Status:** completed
 **OpenSpec created:** 2026-07-20
 
 ## Why

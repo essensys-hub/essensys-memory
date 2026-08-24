@@ -4,7 +4,7 @@ title: Essensys N8n
 description: Dépôt destiné à héberger l'automatisation de workflows n8n de la plateforme Essensys, actuellement à l'état de squelette vide (réservation de nom).
 resource: file:///Users/nrineau/ESSENSYS/essensys-n8n
 tags: [essensys, repository, tooling, modern]
-timestamp: 2026-07-20T18:30:10Z
+timestamp: 2026-08-24T16:24:50Z
 repo: essensys-n8n
 layer: tooling
 era: modern

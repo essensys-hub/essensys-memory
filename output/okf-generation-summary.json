@@ -1,11 +1,12 @@
 {
-  "generated": "2026-07-20T18:30:10Z",
+  "generated": "2026-08-24T16:24:50Z",
   "repositories_covered": [
     "client-essensys-legacy",
     "essensys-android-phone-apps",
     "essensys-ansible",
     "essensys-api-doc",
     "essensys-base",
+    "essensys-bdm-programmer",
     "essensys-board-SC840B",
     "essensys-board-SC841A",
     "essensys-board-SC843D",
@@ -44,7 +45,7 @@
     "essensys-utils",
     "essensys-web-legacy"
   ],
-  "repository_count": 42,
+  "repository_count": 43,
   "firmware_concepts": [
     "sc840b",
     "sc841a",
@@ -57,7 +58,7 @@
     "sc946d",
     "sc947-xb"
   ],
-  "roadmap_count": 41,
+  "roadmap_count": 44,
   "portals": [
     "lan-local-portal",
     "cloud-user-portal",
@@ -68,10 +69,10 @@
     "gateway-install-control"
   ],
   "concept_counts": {
-    "systems": 42,
+    "systems": 43,
     "firmware": 10,
-    "protocols": 3,
-    "roadmap": 41,
+    "protocols": 4,
+    "roadmap": 44,
     "portals": 7,
     "processes": 4,
     "synthesis": 2,

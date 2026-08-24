@@ -1,13 +1,13 @@
 ---
 tags: [roadmap, openspec, index]
-updated: 2026-07-20
+updated: 2026-08-24
 ---
 
 # Roadmap OpenSpec
 
 Index des changes OpenSpec connus du monorepo ESSENSYS. Regénérer via `scripts/update-roadmap.sh` après sync.
 
-**Dernière mise à jour:** 2026-07-20 · **Changes:** 39
+**Dernière mise à jour:** 2026-08-24 · **Changes:** 42
 
 ## Active
 
@@ -22,18 +22,20 @@ Index des changes OpenSpec connus du monorepo ESSENSYS. Regénérer via `scripts
 - [[Essensys Gateway Mtls]] — essensys-memory (active)
 - [[Essensys Gateway Prod Decision 2026 06.012]] — essensys-memory (active)
 - [[Essensys Gateway Recovery 2026 06.018]] — essensys-memory (active)
+- [[Essensys I2c Ba Sniffer 2026 07 038]] — essensys-memory (active)
 - [[Essensys Install Doc Ingest 2026 06.014]] — essensys-memory (active)
 - [[Essensys Install Wizard 2026 06.016]] — essensys-memory (active)
 - [[Essensys Lan Iam 2026 06.017]] — essensys-memory (active)
 - [[Essensys Lan Mcu Panels 2026 06.025]] — essensys-memory (active)
+- [[Essensys Password Reset 2026 08 039]] — essensys-memory (active)
 - [[Essensys Plugin Framework 2026 07 035]] — essensys-memory (active)
 - [[Essensys Remote User Interface 2026 06.015]] — essensys-memory (active)
 - [[Essensys Roadmap Queue 2026 06]] — essensys-memory (active)
 - [[Essensys Roadmap Site 2026 06.005]] — essensys-memory (active)
+- [[Essensys Rpi4 Bdm Programmer 2026 07 037]] — essensys-memory (active)
 - [[Essensys Scenario Management]] — essensys-memory (active)
 - [[Essensys Scenario Pg Cache 2026 06.020]] — essensys-memory (active)
 - [[Essensys Secrets Sops Migration 2026 06 028]] — essensys-memory (active)
-- [[Essensys Turnstile Registration 2026 07 036]] — essensys-memory (active)
 - [[Essensys Ui E2e Playwright 2026 06.026]] — essensys-memory (active)
 - [[Essensys Ui Multi Device Testing]] — essensys-memory (active)
 - [[Essensys Gateway Dual Nic]] — essensys-raspberry-gateway (active)
@@ -57,6 +59,7 @@ _Aucun_
 - [[Essensys Product Roadmap]] — essensys-memory (completed)
 - [[Essensys Second Brain]] — essensys-memory (completed)
 - [[Essensys Trusted Devices 2026 06.013]] — essensys-memory (completed)
+- [[Essensys Turnstile Registration 2026 07 036]] — essensys-memory (completed)
 - [[Essensys Kitchen Shutter Test Console 2026 06 031]] — essensys-server-frontend (completed)
 
 ## Roadmap produit

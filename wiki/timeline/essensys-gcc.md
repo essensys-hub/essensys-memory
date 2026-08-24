@@ -1,17 +1,29 @@
 ---
 tags: [timeline, git]
 repo: essensys-gcc
-updated: 2026-07-20
-total_commits: 31
+updated: 2026-08-24
+total_commits: 43
 shown_commits: 100
 ---
 
 # Timeline — essensys-gcc
 
-**First commit:** 92e7e01 2026-03-01 · **Latest:** a7ddf56 2026-03-03 · **Total:** 31
+**First commit:** 92e7e01 2026-03-01 · **Latest:** e647bf7 2026-07-29 · **Total:** 43
 
 ## Commits (newest first, limit 100)
 
+- **2026-07-29** `e647bf7` — docs: headless Docker build evaluation (Piste A/B/C) + ignore session junk (rhinosys)
+- **2026-07-28** `36de4cc` — fix(bp): align flash layout with deployed bootloader contract (#14) (rhinosys)
+- **2026-07-28** `abdc725` — fix(bp): first green SC944D BP build with m68k-elf-gcc (rhinosys)
+- **2026-07-27** `94091de` — fix: ba/Makefile — only error on invalid BOARD, not empty (unblocks make clean) (rhinosys)
+- **2026-07-21** `e72fa59` — fix: Pre-build Docker image to ghcr.io; remove invalid gcov package; drop Slack (rhinosys)
+- **2026-07-20** `d4742e0` — fix: Use Docker for all build steps in GitHub Actions (rhinosys)
+- **2026-07-20** `691fab3` — docs: Add comprehensive pipeline session summary (rhinosys)
+- **2026-07-20** `ccf6bea` — feat: Add minimal test application for pipeline validation (rhinosys)
+- **2026-07-20** `2c7ed13` — fix: Correct bp/Makefile build target dependencies (rhinosys)
+- **2026-07-20** `a689cf9` — fix: Add submodules initialization to all workflow jobs (rhinosys)
+- **2026-07-20** `e8592c8` — fix: Correct GitHub Actions workflow paths and simplify pipeline (rhinosys)
+- **2026-07-20** `e5e4c48` — feat: Add production-grade CI/CD pipeline for SC944D firmware (rhinosys)
 - **2026-03-03** `a7ddf56` — Fix MQX GCC compatibility patches (rhinosys)
 - **2026-03-02** `24ee65c` — fix(bp): add GCC compatible overrides for mqx_assert.h and cf_assert.c (rhinosys)
 - **2026-03-02** `518213e` — fix(build): resolve m68k compilation issues and PIC xc8 syntax (rhinosys)

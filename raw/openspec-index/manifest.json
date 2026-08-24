@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-20",
+  "generated": "2026-08-24",
   "essensys_root": "/Users/nrineau/ESSENSYS",
   "changes": [
     {
@@ -211,6 +211,19 @@
       }
     },
     {
+      "change": "essensys-i2c-ba-sniffer-2026-07-038",
+      "repo": "essensys-memory",
+      "path": "essensys-memory/openspec/changes/essensys-i2c-ba-sniffer-2026-07-038",
+      "created": "2026-08-06",
+      "schema": "spec-driven",
+      "artifacts": {
+        "proposal": true,
+        "design": true,
+        "tasks": true,
+        "spec_count": 4
+      }
+    },
+    {
       "change": "essensys-install-doc-ingest-2026-06.014",
       "repo": "essensys-memory",
       "path": "essensys-memory/openspec/changes/essensys-install-doc-ingest-2026-06.014",
@@ -289,6 +302,19 @@
       }
     },
     {
+      "change": "essensys-password-reset-2026-08-039",
+      "repo": "essensys-memory",
+      "path": "essensys-memory/openspec/changes/essensys-password-reset-2026-08-039",
+      "created": "2026-08-24",
+      "schema": "spec-driven",
+      "artifacts": {
+        "proposal": true,
+        "design": true,
+        "tasks": true,
+        "spec_count": 5
+      }
+    },
+    {
       "change": "essensys-plugin-framework-2026-07-035",
       "repo": "essensys-memory",
       "path": "essensys-memory/openspec/changes/essensys-plugin-framework-2026-07-035",
@@ -345,6 +371,19 @@
       "repo": "essensys-memory",
       "path": "essensys-memory/openspec/changes/essensys-roadmap-site-2026-06.005",
       "created": "2026-06-22",
+      "schema": "spec-driven",
+      "artifacts": {
+        "proposal": true,
+        "design": true,
+        "tasks": true,
+        "spec_count": 2
+      }
+    },
+    {
+      "change": "essensys-rpi4-bdm-programmer-2026-07-037",
+      "repo": "essensys-memory",
+      "path": "essensys-memory/openspec/changes/essensys-rpi4-bdm-programmer-2026-07-037",
+      "created": "2026-07-28",
       "schema": "spec-driven",
       "artifacts": {
         "proposal": true,

@@ -4,7 +4,7 @@ title: Client Essensys Legacy
 description: Client embarqué legacy BP_MQX_ETH compatible protocole HTTP historique.
 resource: file:///Users/nrineau/ESSENSYS/client-essensys-legacy
 tags: [essensys, repository, firmware, legacy]
-timestamp: 2026-07-20T18:30:10Z
+timestamp: 2026-08-24T16:24:50Z
 repo: client-essensys-legacy
 layer: firmware
 era: legacy

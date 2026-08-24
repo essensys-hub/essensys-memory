@@ -3,7 +3,7 @@ type: Roadmap Change
 title: Migrate Security Gate To Dependabot
 description: "**Host repo:** [[Essensys Feature Lifecycle]] **Path:** `essensys-feature-lifecycle/openspec/changes/migrate-security-gate-to-dependabot` **Status:** completed **OpenSpec created:*"
 tags: [essensys, roadmap, openspec, completed, 2026]
-timestamp: 2026-07-20T18:30:10Z
+timestamp: 2026-08-24T16:24:50Z
 status: completed
 host_repo: essensys-feature-lifecycle
 horizon_year: 2026

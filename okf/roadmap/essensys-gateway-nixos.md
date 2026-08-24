@@ -3,7 +3,7 @@ type: Roadmap Change
 title: Essensys Gateway Nixos
 description: "**Host repo:** [[Essensys Raspberry Gateway]] **Path:** `essensys-raspberry-gateway/openspec/changes/essensys-gateway-nixos` **Status:** active **OpenSpec created:** 2026-05-31"
 tags: [essensys, roadmap, openspec, active, 2026]
-timestamp: 2026-07-20T18:30:10Z
+timestamp: 2026-08-24T16:24:50Z
 status: active
 host_repo: essensys-raspberry-gateway
 horizon_year: 2026

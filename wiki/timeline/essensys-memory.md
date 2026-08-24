@@ -1,17 +1,21 @@
 ---
 tags: [timeline, git]
 repo: essensys-memory
-updated: 2026-07-20
-total_commits: 26
+updated: 2026-08-24
+total_commits: 30
 shown_commits: 100
 ---
 
 # Timeline — essensys-memory
 
-**First commit:** 0f99f30 2026-05-01 · **Latest:** 22acfb8 2026-07-03 · **Total:** 26
+**First commit:** 0f99f30 2026-05-01 · **Latest:** aac1263 2026-07-29 · **Total:** 30
 
 ## Commits (newest first, limit 100)
 
+- **2026-07-29** `aac1263` — openspec: BDM programmer change (037) + build/BDM prompts (rhinosys)
+- **2026-07-20** `21d0e34` — chore(memory): refresh OKF, roadmap, and OpenSpec inventory (rhinosys)
+- **2026-07-20** `3abe7cb` — docs(brain): note Cloudflare account for Turnstile registration (rhinosys)
+- **2026-07-20** `0737232` — docs(openspec): add Turnstile registration change 2026-07-036 (rhinosys)
 - **2026-07-03** `22acfb8` — release: memory manifest SHA f37f5e1 (rhinosys)
 - **2026-07-03** `f37f5e1` — release: pin final SHAs in V.1.5.0 manifest after tagging (rhinosys)
 - **2026-07-03** `235c4d6` — release: V.1.5.0 baseline pré audit-trail + OpenSpec audit-trail 2026-07-034 (rhinosys)

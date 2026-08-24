@@ -4,7 +4,7 @@ title: Essensys Plugin Framework
 description: Dépôt ESSENSYS Essensys Plugin Framework.
 resource: file:///Users/nrineau/ESSENSYS/essensys-plugin-framework
 tags: [essensys, repository, system, modern]
-timestamp: 2026-07-20T18:30:10Z
+timestamp: 2026-08-24T16:24:50Z
 repo: essensys-plugin-framework
 layer: system
 era: modern

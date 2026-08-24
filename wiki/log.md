@@ -3977,3 +3977,29 @@ Regenerated `wiki/roadmap/index.md` and change pages from manifest.
 
 ## [2026-07-20] docs | Turnstile Cloudflare account ownership
 Documented Cloudflare account `nicolas.rineau@gmail.com` (Verified) as owner of Turnstile verification keys in essensys-doc and support-site ops docs.
+
+## [2026-08-06] sync | Sources synchronized
+Architecture docs from `docs/architecture/` and OpenSpec manifest regenerated.
+ESSENSYS_ROOT: `/Users/nrineau/ESSENSYS`
+
+## [2026-08-06] timeline | Git history extracted
+Generated 43 timeline files in `wiki/timeline/` (limit=100 commits each).
+
+## [2026-08-06] roadmap | OpenSpec index updated
+Regenerated `wiki/roadmap/index.md` and change pages from manifest.
+
+## [2026-08-06] propose | Sniffer I2C BP ↔ BA
+OpenSpec `essensys-i2c-ba-sniffer-2026-07-038` : proposition d'un sniffer I2C passif (Pico PIO) pour observer le dialogue SC944D ↔ boîtiers auxiliaires, dans un nouveau dépôt `essensys-i2c-ba-sniffer`. Aucune émission sur le bus, aucun impact legacy. Protocole du bus interne consigné dans `okf/protocols/i2c-ba-bus.md`.
+
+## [2026-08-24] propose | Mot de passe oublié portail
+OpenSpec `essensys-password-reset-2026-08-039` : parcours complet de réinitialisation de mot de passe (lien à usage unique 60 min, Turnstile, rate limit IP + compte, réponse uniforme anti-énumération) sur `essensys-support-site` + `essensys-user-portal-backend`, plus action admin d'assistance et confirmation de mot de passe à l'inscription. Déclencheur : compte `users.id=12` bloqué, 25 × `401` sur `/api/auth/login`, aucun endpoint de reset existant malgré le modèle `password_reset` présent en base depuis la migration 006. Aucun impact legacy IoT ni table d'échange.
+
+## [2026-08-24] sync | Sources synchronized
+Architecture docs from `docs/architecture/` and OpenSpec manifest regenerated.
+ESSENSYS_ROOT: `/Users/nrineau/ESSENSYS`
+
+## [2026-08-24] roadmap | OpenSpec index updated
+Regenerated `wiki/roadmap/index.md` and change pages from manifest.
+
+## [2026-08-24] timeline | Git history extracted
+Generated 43 timeline files in `wiki/timeline/` (limit=100 commits each).

@@ -4,7 +4,7 @@ title: Essensys Ios Phone Apps
 description: Application iOS native (Swift / SwiftUI) « Essensys » permettant de piloter une installation domotique Essensys (éclairage, volets, scénarios, chauffage…) depuis un iPhone, en local Wi-Fi ou à distance via WAN.
 resource: file:///Users/nrineau/ESSENSYS/essensys-ios-phone-apps
 tags: [essensys, repository, tooling, modern]
-timestamp: 2026-07-20T18:30:10Z
+timestamp: 2026-08-24T16:24:50Z
 repo: essensys-ios-phone-apps
 layer: tooling
 era: modern

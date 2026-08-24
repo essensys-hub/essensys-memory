@@ -4,7 +4,7 @@ title: Essensys Board Sc941c
 description: "Variante « Boîtier Pièce d'Eau » du contrôleur d'actionneurs domotique : commute lampes, variateurs et volets sur ordre du concentrateur via bus I2C."
 resource: file:///Users/nrineau/ESSENSYS/essensys-board-SC941C
 tags: [essensys, repository, firmware, legacy]
-timestamp: 2026-07-20T18:30:10Z
+timestamp: 2026-08-24T16:24:50Z
 repo: essensys-board-SC941C
 layer: firmware
 era: legacy
