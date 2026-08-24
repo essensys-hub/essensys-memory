@@ -4,7 +4,7 @@ title: Essensys Homeassitant
 description: Intégration personnalisée (custom component) Home Assistant qui expose les équipements domotiques Essensys (éclairages, volets, chauffage) en tant qu'entités HA, en pilotant le backend Essensys via son API d'injection d'
 resource: file:///Users/nrineau/ESSENSYS/essensys-homeassitant
 tags: [essensys, repository, tooling, modern]
-timestamp: 2026-08-24T18:04:33Z
+timestamp: 2026-08-24T18:47:25Z
 repo: essensys-homeassitant
 layer: tooling
 era: modern

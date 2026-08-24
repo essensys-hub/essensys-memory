@@ -3,7 +3,7 @@ type: Roadmap Change
 title: Essensys Gateway Dual Nic
 description: "**Host repo:** [[Essensys Raspberry Gateway]] **Path:** `essensys-raspberry-gateway/openspec/changes/essensys-gateway-dual-nic` **Status:** active **OpenSpec created:** 2026-05-14"
 tags: [essensys, roadmap, openspec, active, 2026]
-timestamp: 2026-08-24T18:04:33Z
+timestamp: 2026-08-24T18:47:25Z
 status: active
 host_repo: essensys-raspberry-gateway
 horizon_year: 2026

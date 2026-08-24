@@ -4033,3 +4033,32 @@ Ajout de tags de rôle à `deploy-portal-stack.yml` pour qu'un changement backen
 
 ## [2026-08-24] security | Secret SMTP en clair dans group_vars
 `essensys-ansible/group_vars/essensys/vault.yml` contient `vault_smtp_pass`, `vault_smtp_user`, `vault_smtp_host` et `vault_smtp_from` en clair malgré le nom du fichier. À faire tourner chez Infomaniak et à déplacer sous SOPS comme `secrets/cloud/essensys.sops.yaml`. Sans lien avec le reset de mot de passe, mais sur le chemin d'inspection du SMTP.
+
+## [2026-08-24] sync | Sources synchronized
+Architecture docs from `docs/architecture/` and OpenSpec manifest regenerated.
+ESSENSYS_ROOT: `/Users/nrineau/ESSENSYS`
+
+## [2026-08-24] timeline | Git history extracted
+Generated 43 timeline files in `wiki/timeline/` (limit=100 commits each).
+
+## [2026-08-24] roadmap | OpenSpec index updated
+Regenerated `wiki/roadmap/index.md` and change pages from manifest.
+
+## [2026-08-24] portal | Self-service password reset published
+`essensys-password-reset-2026-08-039` slices `password-reset-request`,
+`password-reset-notification` and `auth-recovery-ui` shipped (backend `edc9892`,
+support-site `b96409f`). The reset page existed since `7f9ab17` but nothing
+linked to it and no endpoint issued a link, so a user who forgot their password
+still had no route back in.
+
+Added `POST /api/auth/password/forgot` (Turnstile enforced, 5 requests/hour per
+IP, 3 tokens/hour per account, constant `202` body whether or not the address is
+registered), the "Mot de passe oublié ?" link on `/login` carrying the typed
+address, and the `/forgot-password` page. Template rendering and delivery moved
+to `internal/mailtpl`, shared by `admin` and `identity`.
+
+Two corrections worth keeping: reset links were built from `FRONTEND_URL`, which
+points at the portal SPA and has no `/reset-password` route, so the mailed link
+rendered a blank page — they now read `PASSWORD_RESET_BASE_URL`. And
+`notify.Render` left unsupplied `{{markers}}` in outgoing mail, contradicting its
+own long-failing test; it now strips them, so `go test ./...` is green.

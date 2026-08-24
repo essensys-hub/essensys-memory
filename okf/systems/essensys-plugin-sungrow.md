@@ -4,7 +4,7 @@ title: Essensys Plugin Sungrow
 description: Dépôt ESSENSYS Essensys Plugin Sungrow.
 resource: file:///Users/nrineau/ESSENSYS/essensys-plugin-sungrow
 tags: [essensys, repository, system, modern]
-timestamp: 2026-08-24T18:04:33Z
+timestamp: 2026-08-24T18:47:25Z
 repo: essensys-plugin-sungrow
 layer: system
 era: modern

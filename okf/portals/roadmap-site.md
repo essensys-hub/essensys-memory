@@ -3,7 +3,7 @@ type: Portal
 title: Roadmap Site
 description: Publication publique de la roadmap OpenSpec ESSENSYS.
 tags: [essensys, portal, 2025, 2026]
-timestamp: 2026-08-24T18:04:33Z
+timestamp: 2026-08-24T18:47:25Z
 deployment: Site statique public
 horizon_year: 2025/2026
 ---

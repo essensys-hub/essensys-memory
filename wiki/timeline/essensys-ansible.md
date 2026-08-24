@@ -2,16 +2,18 @@
 tags: [timeline, git]
 repo: essensys-ansible
 updated: 2026-08-24
-total_commits: 184
+total_commits: 186
 shown_commits: 100
 ---
 
 # Timeline — essensys-ansible
 
-**First commit:** 8b285cf66 2026-01-18 · **Latest:** a87dfaff 2026-08-24 · **Total:** 184
+**First commit:** 8b285cf66 2026-01-18 · **Latest:** d31ea77c 2026-08-24 · **Total:** 186
 
 ## Commits (newest first, limit 100)
 
+- **2026-08-24** `d31ea77c` — feat(cloud_backend): set PASSWORD_RESET_BASE_URL explicitly (rhinosys)
+- **2026-08-24** `c42b29b6` — fix(frontend): unblock support site clone, tag support-site roles (rhinosys)
 - **2026-08-24** `a87dfaff` — chore(deploy): tag portal stack roles for partial deploys (rhinosys)
 - **2026-07-20** `6558ddcf` — feat(cloud): wire Turnstile secrets and OVH deploy script (rhinosys)
 - **2026-07-08** `886d4a39` — feat(cm5): release V.1.7.0 — gestion des plugins (Paramètres) (rhinosys)
@@ -110,5 +112,3 @@ shown_commits: 100
 - **2026-02-15** `fda84b80` — Remove Caddy from Raspberry deployment and enforce Traefik-only WAN stack. (rhinosys)
 - **2026-02-14** `5b1581f2` — Update MCP tools list to include find_device_index tool (rhinosys)
 - **2026-02-14** `b7c48ced` — Add documentation explaining why Nginx is used instead of Caddy (rhinosys)
-- **2026-02-14** `d8643784` — Add ports configuration verification documentation and script (rhinosys)
-- **2026-02-14** `98b3d441` — Add guide to fix HTTP to HTTPS redirect issue (rhinosys)

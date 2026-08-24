@@ -4,7 +4,7 @@ title: Essensys Mcp
 description: Dépôt destiné à héberger un serveur MCP (Model Context Protocol) pour Essensys, mais actuellement vide hormis un README d'une ligne.
 resource: file:///Users/nrineau/ESSENSYS/essensys-mcp
 tags: [essensys, repository, tooling, modern]
-timestamp: 2026-08-24T18:04:33Z
+timestamp: 2026-08-24T18:47:25Z
 repo: essensys-mcp
 layer: tooling
 era: modern

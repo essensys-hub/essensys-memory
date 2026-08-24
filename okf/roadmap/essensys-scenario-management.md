@@ -3,7 +3,7 @@ type: Roadmap Change
 title: Essensys Scenario Management
 description: "**Host repo:** [[ESSENSYS Memory]] **Path:** `essensys-memory/openspec/changes/essensys-scenario-management` **Status:** active **OpenSpec created:** 2026-06-20"
 tags: [essensys, roadmap, openspec, active, 2026]
-timestamp: 2026-08-24T18:04:33Z
+timestamp: 2026-08-24T18:47:25Z
 status: active
 host_repo: essensys-memory
 horizon_year: 2026

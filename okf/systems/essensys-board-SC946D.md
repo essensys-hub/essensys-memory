@@ -4,7 +4,7 @@ title: Essensys Board Sc946d
 description: "Carte sirène d'alarme de la box domotique Essensys : génère et amplifie les signaux sonores d'alerte via un PIC24 et un amplificateur audio classe D 25 W."
 resource: file:///Users/nrineau/ESSENSYS/essensys-board-SC946D
 tags: [essensys, repository, firmware, legacy]
-timestamp: 2026-08-24T18:04:33Z
+timestamp: 2026-08-24T18:47:25Z
 repo: essensys-board-SC946D
 layer: firmware
 era: legacy

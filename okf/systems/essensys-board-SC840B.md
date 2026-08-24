@@ -4,7 +4,7 @@ title: Essensys Board Sc840b
 description: "Carte **banc de test usine** « Banc BA » : teste automatiquement les cartes d'actionneurs (type BA / SC940-SC942) — alimentation, relais et variateurs."
 resource: file:///Users/nrineau/ESSENSYS/essensys-board-SC840B
 tags: [essensys, repository, firmware, legacy]
-timestamp: 2026-08-24T18:04:33Z
+timestamp: 2026-08-24T18:47:25Z
 repo: essensys-board-SC840B
 layer: firmware
 era: legacy

@@ -2,16 +2,18 @@
 tags: [timeline, git]
 repo: essensys-user-portal-backend
 updated: 2026-08-24
-total_commits: 46
+total_commits: 48
 shown_commits: 100
 ---
 
 # Timeline — essensys-user-portal-backend
 
-**First commit:** 32851e9 2026-06-14 · **Latest:** 36ef04a 2026-08-24 · **Total:** 46
+**First commit:** 32851e9 2026-06-14 · **Latest:** edc9892 2026-08-24 · **Total:** 48
 
 ## Commits (newest first, limit 100)
 
+- **2026-08-24** `edc9892` — fix(auth): build reset links against the support site, not the portal (rhinosys)
+- **2026-08-24** `a1322f0` — feat(auth): self-service password reset request (rhinosys)
 - **2026-08-24** `36ef04a` — fix(auth): default reset links to the support-site origin (rhinosys)
 - **2026-08-24** `905be14` — feat(auth): password reset via single-use token (rhinosys)
 - **2026-07-20** `57b8982` — feat(auth): require Cloudflare Turnstile on public register (rhinosys)

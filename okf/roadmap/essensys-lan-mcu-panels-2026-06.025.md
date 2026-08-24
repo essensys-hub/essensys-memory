@@ -3,7 +3,7 @@ type: Roadmap Change
 title: Essensys Lan Mcu Panels 2026 06.025
 description: "**Host repo:** [[ESSENSYS Memory]] **Path:** `essensys-memory/openspec/changes/essensys-lan-mcu-panels-2026-06.025` **Status:** active **OpenSpec created:** 2026-06-22"
 tags: [essensys, roadmap, openspec, active, 2026]
-timestamp: 2026-08-24T18:04:33Z
+timestamp: 2026-08-24T18:47:25Z
 status: active
 host_repo: essensys-memory
 horizon_year: 2026

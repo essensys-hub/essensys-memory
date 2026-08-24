@@ -3,7 +3,7 @@ type: Roadmap Change
 title: Essensys Kitchen Shutter Test Console 2026 06 031
 description: "**Host repo:** [[Essensys Server Frontend]] **Path:** `essensys-server-frontend/openspec/changes/essensys-kitchen-shutter-test-console-2026-06-031` **Status:** completed **OpenSpec"
 tags: [essensys, roadmap, openspec, completed, 2026]
-timestamp: 2026-08-24T18:04:33Z
+timestamp: 2026-08-24T18:47:25Z
 status: completed
 host_repo: essensys-server-frontend
 horizon_year: 2026

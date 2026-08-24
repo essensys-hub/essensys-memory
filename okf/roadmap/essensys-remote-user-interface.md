@@ -3,7 +3,7 @@ type: Roadmap Change
 title: Essensys Remote User Interface
 description: "**Host repo:** [[Essensys Raspberry Gateway]] **Status:** planned / MVP livré (référencé dans docs, change archivé ou externe) **UI:** [[Essensys User Portal Frontend]] (`/portal/`"
 tags: [essensys, roadmap, openspec, planned, 2026]
-timestamp: 2026-08-24T18:04:33Z
+timestamp: 2026-08-24T18:47:25Z
 status: planned
 host_repo: essensys-raspberry-gateway
 horizon_year: 2026

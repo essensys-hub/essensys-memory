@@ -3,7 +3,7 @@ type: Protocol Contract
 title: Table D Echange
 description: Contrat k/v armoire ↔ serveur au cœur du dialogue firmware, backend, écran et cloud.
 tags: [essensys, protocol, firmware, legacy, armoire]
-timestamp: 2026-08-24T18:04:33Z
+timestamp: 2026-08-24T18:47:25Z
 era: migration
 source_wiki: ../../wiki/concepts/table-d-echange.md
 ---

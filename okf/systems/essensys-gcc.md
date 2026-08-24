@@ -4,7 +4,7 @@ title: Essensys Gcc
 description: Chaîne de compilation (toolchain) libre et reproductible migrant le firmware Essensys de CodeWarrior/MPLAB vers GCC, avec build cross-compile sous Docker, tests host et CI GitHub Actions.
 resource: file:///Users/nrineau/ESSENSYS/essensys-gcc
 tags: [essensys, repository, tooling, modern]
-timestamp: 2026-08-24T18:04:33Z
+timestamp: 2026-08-24T18:47:25Z
 repo: essensys-gcc
 layer: tooling
 era: modern

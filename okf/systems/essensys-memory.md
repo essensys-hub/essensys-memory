@@ -4,7 +4,7 @@ title: Essensys Memory
 description: Mémoire persistante ESSENSYS, wiki Obsidian et bundle OKF agent-friendly.
 resource: file:///Users/nrineau/ESSENSYS/essensys-memory
 tags: [essensys, repository, documentation, modern]
-timestamp: 2026-08-24T18:04:33Z
+timestamp: 2026-08-24T18:47:25Z
 repo: essensys-memory
 layer: documentation
 era: modern

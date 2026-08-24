@@ -4,7 +4,7 @@ title: Essensys Android Phone Apps
 description: Application Android native (Kotlin / Jetpack Compose) « Mon Essensys » permettant de piloter une installation domotique Essensys (éclairage, volets, scénarios) en local Wi-Fi ou à distance.
 resource: file:///Users/nrineau/ESSENSYS/essensys-android-phone-apps
 tags: [essensys, repository, tooling, modern]
-timestamp: 2026-08-24T18:04:33Z
+timestamp: 2026-08-24T18:47:25Z
 repo: essensys-android-phone-apps
 layer: tooling
 era: modern

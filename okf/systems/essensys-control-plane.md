@@ -4,7 +4,7 @@ title: Essensys Control Plane
 description: "Plan de contrôle de la passerelle Essensys : service Go (UI React embarquée) qui orchestre la **flotte de conteneurs Docker** locaux (état, restart, update, rollback, versions), expose le **registre d'échange Redis** des"
 resource: file:///Users/nrineau/ESSENSYS/essensys-control-plane
 tags: [essensys, repository, gateway-lan, modern]
-timestamp: 2026-08-24T18:04:33Z
+timestamp: 2026-08-24T18:47:25Z
 repo: essensys-control-plane
 layer: gateway-lan
 era: modern

@@ -3,7 +3,7 @@ type: Roadmap Change
 title: Essensys Turnstile Registration 2026 07 036
 description: "**Host repo:** [[ESSENSYS Memory]] **Path:** `essensys-memory/openspec/changes/essensys-turnstile-registration-2026-07-036` **Status:** completed **OpenSpec created:** 2026-07-20"
 tags: [essensys, roadmap, openspec, completed, 2026]
-timestamp: 2026-08-24T18:04:33Z
+timestamp: 2026-08-24T18:47:25Z
 status: completed
 host_repo: essensys-memory
 horizon_year: 2026

@@ -3,7 +3,7 @@ type: Portal
 title: LAN Local Portal
 description: Portail local gateway pour pilotage domotique sur le LAN.
 tags: [essensys, portal, 2025, 2026]
-timestamp: 2026-08-24T18:04:33Z
+timestamp: 2026-08-24T18:47:25Z
 deployment: Gateway locale Raspberry/CM5
 horizon_year: 2025/2026
 ---

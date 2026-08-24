@@ -4,7 +4,7 @@ title: Essensys Api Doc
 description: Documentation de l'API legacy Essensys (protocole HTTP du firmware ↔ serveur `mon.essensys.fr`), publiée sous forme de site MkDocs Material bilingue FR/EN.
 resource: file:///Users/nrineau/ESSENSYS/essensys-api-doc
 tags: [essensys, repository, documentation, modern]
-timestamp: 2026-08-24T18:04:33Z
+timestamp: 2026-08-24T18:47:25Z
 repo: essensys-api-doc
 layer: documentation
 era: modern

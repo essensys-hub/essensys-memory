@@ -4,7 +4,7 @@ title: Essensys Mosquitto
 description: Broker MQTT (Eclipse Mosquitto) de la gateway Essensys, point d'echange temps reel entre les objets domotiques IoT et le backend.
 resource: file:///Users/nrineau/ESSENSYS/essensys-mosquitto
 tags: [essensys, repository, infra, modern]
-timestamp: 2026-08-24T18:04:33Z
+timestamp: 2026-08-24T18:47:25Z
 repo: essensys-mosquitto
 layer: infra
 era: modern

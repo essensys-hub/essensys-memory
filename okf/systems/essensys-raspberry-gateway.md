@@ -4,7 +4,7 @@ title: Essensys Raspberry Gateway
 description: "Passerelle Essensys « CM5 Edition » : conception matérielle de la carte (Raspberry Pi Compute Module 5, stack 3 PCB, rail DIN) **et** déploiement déclaratif NixOS de la pile applicative Essensys sur cette passerelle."
 resource: file:///Users/nrineau/ESSENSYS/essensys-raspberry-gateway
 tags: [essensys, repository, gateway-lan, modern]
-timestamp: 2026-08-24T18:04:33Z
+timestamp: 2026-08-24T18:47:25Z
 repo: essensys-raspberry-gateway
 layer: gateway-lan
 era: modern
