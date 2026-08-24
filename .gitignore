@@ -3,3 +3,14 @@
 
 # macOS
 .DS_Store
+
+# Local agent tooling state dropped into prompts/ by the claude-flow and ruflo
+# plugins. Machine-specific and regenerated on demand, and ruvector.db is a
+# 1.5 MB binary that has no business in a text knowledge base.
+prompts/.agents/
+prompts/.claude/
+prompts/.claude-flow/
+prompts/.swarm/
+prompts/.mcp.json
+prompts/CLAUDE.md
+prompts/ruvector.db
