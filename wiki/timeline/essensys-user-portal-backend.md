@@ -2,16 +2,18 @@
 tags: [timeline, git]
 repo: essensys-user-portal-backend
 updated: 2026-08-24
-total_commits: 44
+total_commits: 46
 shown_commits: 100
 ---
 
 # Timeline — essensys-user-portal-backend
 
-**First commit:** 32851e9 2026-06-14 · **Latest:** 57b8982 2026-07-20 · **Total:** 44
+**First commit:** 32851e9 2026-06-14 · **Latest:** 36ef04a 2026-08-24 · **Total:** 46
 
 ## Commits (newest first, limit 100)
 
+- **2026-08-24** `36ef04a` — fix(auth): default reset links to the support-site origin (rhinosys)
+- **2026-08-24** `905be14` — feat(auth): password reset via single-use token (rhinosys)
 - **2026-07-20** `57b8982` — feat(auth): require Cloudflare Turnstile on public register (rhinosys)
 - **2026-07-02** `9525a01` — fix(legacyiot): persist MAC for inactive UNKNOWN armoires on OVH (rhinosys)
 - **2026-07-01** `df362ad` — feat(admin): collect and display armoire MAC addresses (rhinosys)

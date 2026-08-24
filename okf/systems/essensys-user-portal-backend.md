@@ -4,7 +4,7 @@ title: Essensys User Portal Backend
 description: Backend Go cloud/OVH pour portail distant, relais gateway et expansion d'ordres.
 resource: file:///Users/nrineau/ESSENSYS/essensys-user-portal-backend
 tags: [essensys, repository, cloud, modern]
-timestamp: 2026-08-24T16:24:50Z
+timestamp: 2026-08-24T18:04:33Z
 repo: essensys-user-portal-backend
 layer: cloud
 era: modern

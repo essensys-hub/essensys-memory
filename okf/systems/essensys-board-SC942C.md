@@ -4,7 +4,7 @@ title: Essensys Board Sc942c
 description: "Carte auxiliaire « Chambres » de la box domotique Essensys : relais, lampes, volets et variateurs d'éclairage, pilotée en esclave I²C par le contrôleur central."
 resource: file:///Users/nrineau/ESSENSYS/essensys-board-SC942C
 tags: [essensys, repository, firmware, legacy]
-timestamp: 2026-08-24T16:24:50Z
+timestamp: 2026-08-24T18:04:33Z
 repo: essensys-board-SC942C
 layer: firmware
 era: legacy

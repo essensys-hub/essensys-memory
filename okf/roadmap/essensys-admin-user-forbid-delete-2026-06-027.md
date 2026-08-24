@@ -3,7 +3,7 @@ type: Roadmap Change
 title: Essensys Admin User Forbid Delete 2026 06 027
 description: "**Host repo:** [[ESSENSYS Memory]] **Path:** `essensys-memory/openspec/changes/essensys-admin-user-forbid-delete-2026-06-027` **Status:** active **OpenSpec created:** 2026-06-25"
 tags: [essensys, roadmap, openspec, active, 2026]
-timestamp: 2026-08-24T16:24:50Z
+timestamp: 2026-08-24T18:04:33Z
 status: active
 host_repo: essensys-memory
 horizon_year: 2026

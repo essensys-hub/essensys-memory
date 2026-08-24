@@ -4,7 +4,7 @@ title: Essensys Ansible
 description: "Référentiel Ansible qui automatise l'intégralité du déploiement Essensys : passerelles Raspberry Pi / CM5 sur site (backend, frontend, MQTT, Redis, AdGuard, Traefik, monitoring, assistant IA) et infrastructure cloud OVH "
 resource: file:///Users/nrineau/ESSENSYS/essensys-ansible
 tags: [essensys, repository, infra, modern]
-timestamp: 2026-08-24T16:24:50Z
+timestamp: 2026-08-24T18:04:33Z
 repo: essensys-ansible
 layer: infra
 era: modern

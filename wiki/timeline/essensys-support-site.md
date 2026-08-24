@@ -2,16 +2,17 @@
 tags: [timeline, git]
 repo: essensys-support-site
 updated: 2026-08-24
-total_commits: 179
+total_commits: 180
 shown_commits: 100
 ---
 
 # Timeline — essensys-support-site
 
-**First commit:** 8b77523 2026-01-07 · **Latest:** da5abbd 2026-07-20 · **Total:** 179
+**First commit:** 8b77523 2026-01-07 · **Latest:** 7f9ab17 2026-08-24 · **Total:** 180
 
 ## Commits (newest first, limit 100)
 
+- **2026-08-24** `7f9ab17` — feat(auth): reset password page and admin reset action (rhinosys)
 - **2026-07-20** `da5abbd` — docs(turnstile): note Cloudflare account owner for verification keys (rhinosys)
 - **2026-07-20** `373a4b0` — feat(register): add Turnstile widget and bot guards (rhinosys)
 - **2026-07-01** `18044c3` — feat(site): split www/mon URLs, admin MAC and account guide (rhinosys)
@@ -111,4 +112,3 @@ shown_commits: 100
 - **2026-01-17** `6be7a93` — Fix: Add logout button and ensure login/signup visibility (rhinosys)
 - **2026-01-17** `2d5f376` — Add manage.sh script for easy service control (rhinosys)
 - **2026-01-17** `6867619` — Update install/update scripts and rename service file (rhinosys)
-- **2026-01-17** `283b051` — Add Sign up / Log in buttons to Header (rhinosys)

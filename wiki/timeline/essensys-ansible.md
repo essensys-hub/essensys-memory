@@ -2,16 +2,17 @@
 tags: [timeline, git]
 repo: essensys-ansible
 updated: 2026-08-24
-total_commits: 183
+total_commits: 184
 shown_commits: 100
 ---
 
 # Timeline — essensys-ansible
 
-**First commit:** 8b285cf6 2026-01-18 · **Latest:** 6558ddcf 2026-07-20 · **Total:** 183
+**First commit:** 8b285cf66 2026-01-18 · **Latest:** a87dfaff 2026-08-24 · **Total:** 184
 
 ## Commits (newest first, limit 100)
 
+- **2026-08-24** `a87dfaff` — chore(deploy): tag portal stack roles for partial deploys (rhinosys)
 - **2026-07-20** `6558ddcf` — feat(cloud): wire Turnstile secrets and OVH deploy script (rhinosys)
 - **2026-07-08** `886d4a39` — feat(cm5): release V.1.7.0 — gestion des plugins (Paramètres) (rhinosys)
 - **2026-07-08** `b41cc12d` — feat(cm5): release V.1.6.1 — vue schéma de flux du plugin Solaire (rhinosys)
@@ -111,4 +112,3 @@ shown_commits: 100
 - **2026-02-14** `b7c48ced` — Add documentation explaining why Nginx is used instead of Caddy (rhinosys)
 - **2026-02-14** `d8643784` — Add ports configuration verification documentation and script (rhinosys)
 - **2026-02-14** `98b3d441` — Add guide to fix HTTP to HTTPS redirect issue (rhinosys)
-- **2026-02-14** `de48e540` — Fix: Remove HTTP redirect routes from Traefik - port 80 handled by Nginx only (rhinosys)

@@ -4,7 +4,7 @@ title: Essensys Board SC947-xB
 description: Détecteur de fuite d'eau autonome relié à l'écosystème armoire.
 resource: file:///Users/nrineau/ESSENSYS/essensys-board-SC947-xB
 tags: [essensys, firmware, armoire, legacy]
-timestamp: 2026-08-24T16:24:50Z
+timestamp: 2026-08-24T18:04:33Z
 repo: essensys-board-SC947-xB
 layer: firmware
 era: legacy

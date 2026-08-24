@@ -3,7 +3,7 @@ type: Roadmap Change
 title: Essensys Scenario Pg Cache 2026 06.020
 description: "**Host repo:** [[ESSENSYS Memory]] **Path:** `essensys-memory/openspec/changes/essensys-scenario-pg-cache-2026-06.020` **Status:** active **OpenSpec created:** 2026-06-21"
 tags: [essensys, roadmap, openspec, active, 2026]
-timestamp: 2026-08-24T16:24:50Z
+timestamp: 2026-08-24T18:04:33Z
 status: active
 host_repo: essensys-memory
 horizon_year: 2026

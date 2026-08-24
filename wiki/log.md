@@ -4003,3 +4003,33 @@ Regenerated `wiki/roadmap/index.md` and change pages from manifest.
 
 ## [2026-08-24] timeline | Git history extracted
 Generated 43 timeline files in `wiki/timeline/` (limit=100 commits each).
+
+## [2026-08-24] sync | Sources synchronized
+Architecture docs from `docs/architecture/` and OpenSpec manifest regenerated.
+ESSENSYS_ROOT: `/Users/nrineau/ESSENSYS`
+
+## [2026-08-24] roadmap | OpenSpec index updated
+Regenerated `wiki/roadmap/index.md` and change pages from manifest.
+
+## [2026-08-24] sync | Sources synchronized
+Architecture docs from `docs/architecture/` and OpenSpec manifest regenerated.
+ESSENSYS_ROOT: `/Users/nrineau/ESSENSYS`
+
+## [2026-08-24] timeline | Git history extracted
+Generated 43 timeline files in `wiki/timeline/` (limit=100 commits each).
+
+## [2026-08-24] roadmap | OpenSpec index updated
+Regenerated `wiki/roadmap/index.md` and change pages from manifest.
+
+## [2026-08-24] deploy | Reset mot de passe — backend sur OVH
+Tranche `admin-password-reset-assist` de `essensys-password-reset-2026-08-039` déployée sur OVH via `deploy-portal-stack.yml --tags cloud_backend` (commit `36ef04a`, `ok=20 changed=8 failed=0`). Migration 013 appliquée au démarrage : `password_reset_tokens` créée, modèle `password_reset` réécrit autour de `{{reset_url}}` et passé à `enabled=true` (il portait encore `{{temporary_password}}`, soit un secret réutilisable en boîte mail). Endpoints vérifiés en production : `validate` et `reset` répondent `400 invalid_token` sur jeton bidon, `POST /api/admin/users/{id}/password-reset` répond `401` sans JWT admin.
+
+Reste ouvert : la page `/reset-password` du support-site n'est pas déployée (commit `7f9ab17` sur la branche `feat/essensys-support-nav-responsive-2026-06-032`), donc un lien émis maintenant n'aurait pas de page d'atterrissage. Le test d'envoi SMTP réel n'a pas pu être fait : `requireAdminGlobal` exige un JWT `admin_global` et le `ADMIN_TOKEN` statique ne pose pas d'email dans le contexte, ce qui est le bon comportement pour une action tracée. `users.id=12` reste bloqué.
+
+Ajout de tags de rôle à `deploy-portal-stack.yml` pour qu'un changement backend ne rebuild plus le SPA portail depuis `main`.
+
+## [2026-08-24] finding | Répartition des vhosts www / mon
+`www.essensys.fr` sert le build `essensys-support-site` (`<title>site</title>`) et `mon.essensys.fr` le build `essensys-user-portal-frontend` (`<title>Essensys Portail</title>`), sur le même VPS `37.59.106.164` avec `test.essensys.fr` comme troisième alias — l'hôte de l'inventaire Ansible. Conséquence : `FRONTEND_URL=https://www.essensys.fr/` est correct puisque `/reset-password` n'existe que dans le support-site ; le repli de `pwreset.PortalBaseURL()` pointait vers le portail et aurait produit un lien répondant `200` via le fallback SPA sans rien afficher.
+
+## [2026-08-24] security | Secret SMTP en clair dans group_vars
+`essensys-ansible/group_vars/essensys/vault.yml` contient `vault_smtp_pass`, `vault_smtp_user`, `vault_smtp_host` et `vault_smtp_from` en clair malgré le nom du fichier. À faire tourner chez Infomaniak et à déplacer sous SOPS comme `secrets/cloud/essensys.sops.yaml`. Sans lien avec le reset de mot de passe, mais sur le chemin d'inspection du SMTP.

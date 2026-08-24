@@ -3,7 +3,7 @@ type: Protocol Contract
 title: Bus I2C BP ↔ BA
 description: Protocole propriétaire du bus I2C interne armoire entre carte maître SC944D et boîtiers auxiliaires.
 tags: [essensys, protocol, firmware, armoire, i2c, legacy]
-timestamp: 2026-08-24T16:24:50Z
+timestamp: 2026-08-24T18:04:33Z
 era: legacy
 ---
 <!-- BEGIN GENERATED CONTENT -->

@@ -4,7 +4,7 @@ title: Essensys Prometheus
 description: Depot stub destine a la supervision Prometheus de la stack Essensys ; actuellement vide, le deploiement reel s'appuie sur l'image upstream `prom/prometheus` configuree par Ansible.
 resource: file:///Users/nrineau/ESSENSYS/essensys-prometheus
 tags: [essensys, repository, infra, modern]
-timestamp: 2026-08-24T16:24:50Z
+timestamp: 2026-08-24T18:04:33Z
 repo: essensys-prometheus
 layer: infra
 era: modern

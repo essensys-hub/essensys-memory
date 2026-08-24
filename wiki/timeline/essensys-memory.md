@@ -2,16 +2,17 @@
 tags: [timeline, git]
 repo: essensys-memory
 updated: 2026-08-24
-total_commits: 30
+total_commits: 31
 shown_commits: 100
 ---
 
 # Timeline — essensys-memory
 
-**First commit:** 0f99f30 2026-05-01 · **Latest:** aac1263 2026-07-29 · **Total:** 30
+**First commit:** 0f99f30 2026-05-01 · **Latest:** c86aa33 2026-08-24 · **Total:** 31
 
 ## Commits (newest first, limit 100)
 
+- **2026-08-24** `c86aa33` — docs(openspec): add password reset change 2026-08-039 + OKF refresh (rhinosys)
 - **2026-07-29** `aac1263` — openspec: BDM programmer change (037) + build/BDM prompts (rhinosys)
 - **2026-07-20** `21d0e34` — chore(memory): refresh OKF, roadmap, and OpenSpec inventory (rhinosys)
 - **2026-07-20** `3abe7cb` — docs(brain): note Cloudflare account for Turnstile registration (rhinosys)

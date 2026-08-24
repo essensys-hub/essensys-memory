@@ -3,7 +3,7 @@ type: Roadmap Change
 title: Essensys Cloud Backend Consolidation
 description: "**Host repo:** [[Essensys Raspberry Gateway]] **Status:** planned (prompt livré, change OpenSpec à créer) **Prompt:** `prompts/CloudBackendConsolidation.md`"
 tags: [essensys, roadmap, openspec, planned, 2026]
-timestamp: 2026-08-24T16:24:50Z
+timestamp: 2026-08-24T18:04:33Z
 status: planned
 host_repo: essensys-raspberry-gateway
 horizon_year: 2026

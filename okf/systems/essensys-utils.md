@@ -4,7 +4,7 @@ title: Essensys Utils
 description: Boîte à outils de scripts de maintenance pour Essensys ; à ce jour, contient principalement un script Go de bruteforce du code de configuration à 4 chiffres du panneau SC944D via la queue Redis.
 resource: file:///Users/nrineau/ESSENSYS/essensys-utils
 tags: [essensys, repository, tooling, modern]
-timestamp: 2026-08-24T16:24:50Z
+timestamp: 2026-08-24T18:04:33Z
 repo: essensys-utils
 layer: tooling
 era: modern

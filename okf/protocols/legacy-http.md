@@ -3,7 +3,7 @@ type: Protocol Contract
 title: Legacy HTTP
 description: Contrat HTTP historique entre firmware/client embarqué ESSENSYS et backend compatible.
 tags: [essensys, legacy, http, firmware, compatibility]
-timestamp: 2026-08-24T16:24:50Z
+timestamp: 2026-08-24T18:04:33Z
 era: legacy
 ---
 <!-- BEGIN GENERATED CONTENT -->

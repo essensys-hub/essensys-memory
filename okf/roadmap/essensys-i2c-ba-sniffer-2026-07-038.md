@@ -3,7 +3,7 @@ type: Roadmap Change
 title: Essensys I2c Ba Sniffer 2026 07 038
 description: "**Host repo:** [[ESSENSYS Memory]] **Path:** `essensys-memory/openspec/changes/essensys-i2c-ba-sniffer-2026-07-038` **Status:** active **OpenSpec created:** 2026-08-06"
 tags: [essensys, roadmap, openspec, active, 2026]
-timestamp: 2026-08-24T16:24:50Z
+timestamp: 2026-08-24T18:04:33Z
 status: active
 host_repo: essensys-memory
 horizon_year: 2026

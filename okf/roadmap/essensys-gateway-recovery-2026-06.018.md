@@ -3,7 +3,7 @@ type: Roadmap Change
 title: Essensys Gateway Recovery 2026 06.018
 description: "**Host repo:** [[ESSENSYS Memory]] **Path:** `essensys-memory/openspec/changes/essensys-gateway-recovery-2026-06.018` **Status:** active **OpenSpec created:** 2026-06-21"
 tags: [essensys, roadmap, openspec, active, 2026]
-timestamp: 2026-08-24T16:24:50Z
+timestamp: 2026-08-24T18:04:33Z
 status: active
 host_repo: essensys-memory
 horizon_year: 2026

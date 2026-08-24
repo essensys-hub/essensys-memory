@@ -4,7 +4,7 @@ title: Essensys Feature Lifecycle
 description: "Dépôt **source de vérité** du cycle de vie feature Git-first Essensys : skills, rules Cursor, gates CI, manifestes `features/*.json`, orchestration IA/subagents et intégration **Jira SCRUM**."
 resource: file:///Users/nrineau/ESSENSYS/essensys-feature-lifecycle
 tags: [essensys, repository, documentation, modern]
-timestamp: 2026-08-24T16:24:50Z
+timestamp: 2026-08-24T18:04:33Z
 repo: essensys-feature-lifecycle
 layer: documentation
 era: modern

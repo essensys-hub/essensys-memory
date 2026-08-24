@@ -3,7 +3,7 @@ type: Portal
 title: Admin Surfaces
 description: Surfaces d'administration utilisateurs, sécurité et installation.
 tags: [essensys, portal, 2025, 2026]
-timestamp: 2026-08-24T16:24:50Z
+timestamp: 2026-08-24T18:04:33Z
 deployment: LAN + Cloud
 horizon_year: 2025/2026
 ---

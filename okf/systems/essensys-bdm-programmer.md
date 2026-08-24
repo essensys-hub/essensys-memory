@@ -4,7 +4,7 @@ title: Essensys Bdm Programmer
 description: Dépôt ESSENSYS Essensys Bdm Programmer.
 resource: file:///Users/nrineau/ESSENSYS/essensys-bdm-programmer
 tags: [essensys, repository, system, modern]
-timestamp: 2026-08-24T16:24:50Z
+timestamp: 2026-08-24T18:04:33Z
 repo: essensys-bdm-programmer
 layer: system
 era: modern

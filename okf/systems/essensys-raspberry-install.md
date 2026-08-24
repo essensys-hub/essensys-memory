@@ -4,7 +4,7 @@ title: Essensys Raspberry Install
 description: "Provisioning / bootstrap d'installation de la passerelle Essensys sur Raspberry Pi : un script `install.sh` minimal qui pose les prérequis (git, Ansible) puis **délègue tout le déploiement au dépôt `essensys-ansible`** ("
 resource: file:///Users/nrineau/ESSENSYS/essensys-raspberry-install
 tags: [essensys, repository, gateway-lan, modern]
-timestamp: 2026-08-24T16:24:50Z
+timestamp: 2026-08-24T18:04:33Z
 repo: essensys-raspberry-install
 layer: gateway-lan
 era: modern
