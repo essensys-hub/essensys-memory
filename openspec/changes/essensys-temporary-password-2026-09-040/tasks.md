@@ -57,6 +57,6 @@
 
 ## 9. Documentation et mémoire
 
-- [ ] 9.1 Rédiger `docs/features/temporary-password.md` (guide support : comment émettre, comment transmettre par téléphone, que faire à expiration) dans `essensys-user-portal-backend` ou `essensys-doc` selon l'emplacement retenu par le dépôt pour les guides transverses
-- [ ] 9.2 Mettre à jour `essensys-memory` : nouvelle entité liée [[Portal Authentication]] mentionnant le mot de passe temporaire, et mise à jour de la mémoire `prod-deploy-topology` si le parcours de déploiement de cette change diffère de celui déjà documenté
-- [ ] 9.3 Faire passer `essensys-feature-lifecycle/scripts/feature_lifecycle/check_feature_gate.py --strict` sur les deux manifestes (`essensys-user-portal-backend`, `essensys-support-site`) une fois tous les fichiers déclarés créés, et corriger tout écart entre chemins déclarés et chemins réels
+- [x] 9.1 Rédiger `docs/features/temporary-password.md` (guide support : comment émettre, comment transmettre par téléphone, que faire à expiration) dans `essensys-user-portal-backend` ou `essensys-doc` selon l'emplacement retenu par le dépôt pour les guides transverses
+- [x] 9.2 Mettre à jour `essensys-memory` : nouvelle entité liée [[Portal Authentication]] mentionnant le mot de passe temporaire, et mise à jour de la mémoire `prod-deploy-topology` si le parcours de déploiement de cette change diffère de celui déjà documenté
+- [x] 9.3 Faire passer `essensys-feature-lifecycle/scripts/feature_lifecycle/check_feature_gate.py --strict` sur les deux manifestes (`essensys-user-portal-backend`, `essensys-support-site`) une fois tous les fichiers déclarés créés, et corriger tout écart entre chemins déclarés et chemins réels

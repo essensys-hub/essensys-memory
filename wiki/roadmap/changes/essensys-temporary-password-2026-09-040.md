@@ -3,7 +3,7 @@ tags: [roadmap, openspec]
 sources: [manifest.json]
 created: 2026-09-25
 updated: 2026-09-25
-status: active
+status: completed
 host_repo: essensys-memory
 ---
 
@@ -11,7 +11,7 @@ host_repo: essensys-memory
 
 **Host repo:** [[ESSENSYS Memory]]
 **Path:** `essensys-memory/openspec/changes/essensys-temporary-password-2026-09-040`
-**Status:** active
+**Status:** completed
 **OpenSpec created:** 2026-09-25
 
 ## Why
