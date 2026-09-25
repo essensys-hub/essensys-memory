@@ -8,15 +8,15 @@
 
 ## 2. Génération du mot de passe temporaire — essensys-user-portal-backend
 
-- [ ] 2.1 Créer `internal/temppass/temppass.go` : `Generate() (string, error)` sur `crypto/rand`, alphabet de 57 caractères excluant `O`, `0`, `I`, `l`, `1`, longueur 12 (D4) ; vérifier par un test statistique (1000 générations, aucun caractère exclu présent, aucune collision) et par un test d'entropie minimale
-- [ ] 2.2 Ajouter `internal/data/user_store.go` : `SetTemporaryPassword(userID int, hash string, expiresAt time.Time, issuedBy int) error` (un seul `UPDATE` posant `password_hash`, `password_change_required_at = NOW()`, `temp_password_expires_at`, `temp_password_issued_by`) et `ClearPasswordChangeRequired(userID int, hash string) error` (un seul `UPDATE` posant le nouveau `password_hash` et remettant les trois colonnes à `NULL`) ; vérifier par tests utilisant `sqlmock`, sur le patron de `password_reset_store_test.go`
+- [x] 2.1 Créer `internal/temppass/temppass.go` : `Generate() (string, error)` sur `crypto/rand`, alphabet de 57 caractères excluant `O`, `0`, `I`, `l`, `1`, longueur 12 (D4) ; vérifier par un test statistique (1000 générations, aucun caractère exclu présent, aucune collision) et par un test d'entropie minimale
+- [x] 2.2 Ajouter `internal/data/user_store.go` : `SetTemporaryPassword(userID int, hash string, expiresAt time.Time, issuedBy int) error` (un seul `UPDATE` posant `password_hash`, `password_change_required_at = NOW()`, `temp_password_expires_at`, `temp_password_issued_by`) et `ClearPasswordChangeRequired(userID int, hash string) error` (un seul `UPDATE` posant le nouveau `password_hash` et remettant les trois colonnes à `NULL`) ; vérifier par tests utilisant `sqlmock`, sur le patron de `password_reset_store_test.go`
 
 ## 3. Verrou serveur — essensys-user-portal-backend
 
-- [ ] 3.1 Dans `internal/middleware/user_status.go`, ajouter le test `domain.PasswordChangeRequired(user)` → `domain.WritePasswordChangeRequired(w)` dans `enforceActiveUser`, juste après le test `IsUserForbidden` (D2) ; vérifier par un test unitaire de `enforceActiveUser` couvrant les quatre combinaisons (aucun état, interdit seul, changement requis seul, les deux → priorité à interdit)
-- [ ] 3.2 Ajouter `middleware.UserJWTAllowPasswordChange(users ActiveUserStore) func(http.Handler) http.Handler`, copie de `UserJWTWithStore` sans le test 3.1 (D3) ; vérifier par un test qu'un compte marqué passe au travers de cette fonction mais pas de `UserJWTWithStore`
-- [ ] 3.3 Vérifier par test d'intégration que `GET /api/profile` (identity), une route `portal` et une route `admin` répondent toutes `409 password_change_required` pour un compte marqué, y compris quand ce compte porte un rôle administrateur
-- [ ] 3.4 Vérifier par test qu'une session dont le jeton a été émis avant la pose du drapeau reçoit `409` à sa requête suivante (pas d'effet différé)
+- [x] 3.1 Dans `internal/middleware/user_status.go`, ajouter le test `domain.PasswordChangeRequired(user)` → `domain.WritePasswordChangeRequired(w)` dans `enforceActiveUser`, juste après le test `IsUserForbidden` (D2) ; vérifier par un test unitaire de `enforceActiveUser` couvrant les quatre combinaisons (aucun état, interdit seul, changement requis seul, les deux → priorité à interdit)
+- [x] 3.2 Ajouter `middleware.UserJWTAllowPasswordChange(users ActiveUserStore) func(http.Handler) http.Handler`, copie de `UserJWTWithStore` sans le test 3.1 (D3) ; vérifier par un test qu'un compte marqué passe au travers de cette fonction mais pas de `UserJWTWithStore`
+- [x] 3.3 Vérifier par test d'intégration que `GET /api/profile` (identity), une route `portal` et une route `admin` répondent toutes `409 password_change_required` pour un compte marqué, y compris quand ce compte porte un rôle administrateur
+- [x] 3.4 Vérifier par test qu'une session dont le jeton a été émis avant la pose du drapeau reçoit `409` à sa requête suivante (pas d'effet différé)
 
 ## 4. Émission — essensys-user-portal-backend
 
