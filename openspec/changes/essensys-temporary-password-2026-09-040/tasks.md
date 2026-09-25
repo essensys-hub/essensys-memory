@@ -50,10 +50,10 @@
 
 ## 8. Vérification transverse et matrice UX
 
-- [ ] 8.1 Écrire `site/e2e/temporary-password.spec.js` (Playwright) couvrant : émission depuis l'admin, affichage unique, connexion avec mot de passe temporaire, redirection, changement réussi, retour à `/change-password` sur un `409` simulé ; exécuter et vérifier que la suite passe
-- [ ] 8.2 Exécuter la matrice UX (`desktop`, `iphone`, `ipad`) sur la modale d'émission et sur `/change-password`, capturer les captures d'écran requises par `tests.ux_matrix` du manifeste `essensys-support-site`, et vérifier l'absence de défilement horizontal sur iPhone
-- [ ] 8.3 Exécuter `go test ./...` dans `essensys-user-portal-backend` et vérifier qu'aucun test existant ne régresse, en particulier `internal/middleware`, `internal/identity`, `internal/admin`
-- [ ] 8.4 Relire le journal d'audit produit pendant les tests 8.1–8.3 et vérifier qu'aucune entrée `TEMPORARY_PASSWORD_ISSUED` ne contient de mot de passe en clair ni d'empreinte
+- [x] 8.1 Écrire `site/e2e/temporary-password.spec.js` (Playwright) couvrant : émission depuis l'admin, affichage unique, connexion avec mot de passe temporaire, redirection, changement réussi, retour à `/change-password` sur un `409` simulé ; exécuter et vérifier que la suite passe
+- [x] 8.2 Exécuter la matrice UX (`desktop`, `iphone`, `ipad`) sur la modale d'émission et sur `/change-password`, capturer les captures d'écran requises par `tests.ux_matrix` du manifeste `essensys-support-site`, et vérifier l'absence de défilement horizontal sur iPhone
+- [x] 8.3 Exécuter `go test ./...` dans `essensys-user-portal-backend` et vérifier qu'aucun test existant ne régresse, en particulier `internal/middleware`, `internal/identity`, `internal/admin`
+- [x] 8.4 Relire le journal d'audit produit pendant les tests 8.1–8.3 et vérifier qu'aucune entrée `TEMPORARY_PASSWORD_ISSUED` ne contient de mot de passe en clair ni d'empreinte
 
 ## 9. Documentation et mémoire
 
