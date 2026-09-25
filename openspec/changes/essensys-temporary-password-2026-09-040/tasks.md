@@ -20,12 +20,12 @@
 
 ## 4. Émission — essensys-user-portal-backend
 
-- [ ] 4.1 Créer `internal/admin/temporary_password.go` : `IssueTemporaryPassword` — `requireAdminGlobal`, résolution du compte (`404`), test `IsUserForbidden` (`409 account_forbidden`), génération (2.1), hachage bcrypt, `SetTemporaryPassword` (2.2, échéance +72h), `PasswordResetStore.InvalidateForUser` (D6), audit `TEMPORARY_PASSWORD_ISSUED` sans le clair ; vérifier par tests couvrant `403`, `404`, `409`, succès
-- [ ] 4.2 Ajouter l'envoi optionnel : corps `{"send_email": bool}`, si vrai composer et envoyer le modèle `temporary_password` via le service transactionnel existant (`sendTemplateEmailWithVars`), échec d'envoi → `200 {"email_sent": false, "reason": ...}` sans annuler l'émission (D7) ; vérifier par test simulant un envoi en échec
-- [ ] 4.3 Monter `POST /admin/users/{id}/temporary-password` dans `internal/admin/routes.go`, sous le groupe `AdminAuthWithStore` déjà existant ; vérifier par un test de routage que l'endpoint répond
-- [ ] 4.4 Exposer `password_change_required_at` et `temp_password_expires_at` dans la réponse JSON de `internal/admin/handlers.go:GetUsers` (consommé par le badge de la tâche 6.3) ; vérifier par un test que ces deux champs apparaissent pour un compte marqué et sont absents/nuls sinon
-- [ ] 4.5 Vérifier par test qu'aucune ligne de journal applicatif ne contient le mot de passe en clair (grep sur la sortie capturée du logger pendant le test)
-- [ ] 4.6 Vérifier par test qu'émettre un second mot de passe temporaire invalide immédiatement le premier (connexion avec l'ancien échoue)
+- [x] 4.1 Créer `internal/admin/temporary_password.go` : `IssueTemporaryPassword` — `requireAdminGlobal`, résolution du compte (`404`), test `IsUserForbidden` (`409 account_forbidden`), génération (2.1), hachage bcrypt, `SetTemporaryPassword` (2.2, échéance +72h), `PasswordResetStore.InvalidateForUser` (D6), audit `TEMPORARY_PASSWORD_ISSUED` sans le clair ; vérifier par tests couvrant `403`, `404`, `409`, succès
+- [x] 4.2 Ajouter l'envoi optionnel : corps `{"send_email": bool}`, si vrai composer et envoyer le modèle `temporary_password` via le service transactionnel existant (`sendTemplateEmailWithVars`), échec d'envoi → `200 {"email_sent": false, "reason": ...}` sans annuler l'émission (D7) ; vérifier par test simulant un envoi en échec
+- [x] 4.3 Monter `POST /admin/users/{id}/temporary-password` dans `internal/admin/routes.go`, sous le groupe `AdminAuthWithStore` déjà existant ; vérifier par un test de routage que l'endpoint répond
+- [x] 4.4 Exposer `password_change_required_at` et `temp_password_expires_at` dans la réponse JSON de `internal/admin/handlers.go:GetUsers` (consommé par le badge de la tâche 6.3) ; vérifier par un test que ces deux champs apparaissent pour un compte marqué et sont absents/nuls sinon
+- [x] 4.5 Vérifier par test qu'aucune ligne de journal applicatif ne contient le mot de passe en clair (grep sur la sortie capturée du logger pendant le test)
+- [x] 4.6 Vérifier par test qu'émettre un second mot de passe temporaire invalide immédiatement le premier (connexion avec l'ancien échoue)
 
 ## 5. Connexion et changement — essensys-user-portal-backend
 
