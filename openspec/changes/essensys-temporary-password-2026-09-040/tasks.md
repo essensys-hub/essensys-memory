@@ -29,10 +29,10 @@
 
 ## 5. Connexion et changement — essensys-user-portal-backend
 
-- [ ] 5.1 Dans `internal/identity/handlers.go`, après le succès de `bcrypt.CompareHashAndPassword` dans `Login` : si `TempPasswordExpired` → `401 {"error":"temporary_password_expired"}` sans émettre de jeton (D5) ; sinon poursuivre normalement et ajouter `"password_change_required": domain.PasswordChangeRequired(user)` à la réponse de succès ; vérifier par tests couvrant expiré, valide non expiré, compte ordinaire, et l'absence de divulgation d'état sur mot de passe erroné
-- [ ] 5.2 Créer `internal/identity/password_change.go` : `ChangePassword` — email depuis le contexte JWT, décode `{current_password, new_password}`, revérifie `current_password` par bcrypt (`401` sinon), applique `pwreset.MinPasswordLength` (`400` sinon), refuse `new_password == current_password` (`400`), hache et appelle `ClearPasswordChangeRequired` (2.2) dans une transaction unique, audit `PASSWORD_CHANGED_AFTER_TEMPORARY` ; vérifier par tests couvrant chaque rejet et le succès
-- [ ] 5.3 Monter `POST /auth/password/change` dans `internal/identity/routes.go` sous `UserJWTAllowPasswordChange` (3.2), avec un `RateLimiter(10, time.Hour)` sur le patron de `resetLimiter` ; vérifier par test que la route répond `429` au-delà de la limite
-- [ ] 5.4 Vérifier par test d'intégration qu'après un changement réussi, le même jeton JWT (sans réémission) obtient désormais `200` sur une route qui répondait `409` avant le changement
+- [x] 5.1 Dans `internal/identity/handlers.go`, après le succès de `bcrypt.CompareHashAndPassword` dans `Login` : si `TempPasswordExpired` → `401 {"error":"temporary_password_expired"}` sans émettre de jeton (D5) ; sinon poursuivre normalement et ajouter `"password_change_required": domain.PasswordChangeRequired(user)` à la réponse de succès ; vérifier par tests couvrant expiré, valide non expiré, compte ordinaire, et l'absence de divulgation d'état sur mot de passe erroné
+- [x] 5.2 Créer `internal/identity/password_change.go` : `ChangePassword` — email depuis le contexte JWT, décode `{current_password, new_password}`, revérifie `current_password` par bcrypt (`401` sinon), applique `pwreset.MinPasswordLength` (`400` sinon), refuse `new_password == current_password` (`400`), hache et appelle `ClearPasswordChangeRequired` (2.2) dans une transaction unique, audit `PASSWORD_CHANGED_AFTER_TEMPORARY` ; vérifier par tests couvrant chaque rejet et le succès
+- [x] 5.3 Monter `POST /auth/password/change` dans `internal/identity/routes.go` sous `UserJWTAllowPasswordChange` (3.2), avec un `RateLimiter(10, time.Hour)` sur le patron de `resetLimiter` ; vérifier par test que la route répond `429` au-delà de la limite
+- [x] 5.4 Vérifier par test d'intégration qu'après un changement réussi, le même jeton JWT (sans réémission) obtient désormais `200` sur une route qui répondait `409` avant le changement
 
 ## 6. Modale d'émission — essensys-support-site
 
