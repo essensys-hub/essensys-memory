@@ -1,17 +1,18 @@
 ---
 tags: [timeline, git]
 repo: essensys-user-portal-backend
-updated: 2026-08-24
-total_commits: 48
+updated: 2026-09-25
+total_commits: 49
 shown_commits: 100
 ---
 
 # Timeline — essensys-user-portal-backend
 
-**First commit:** 32851e9 2026-06-14 · **Latest:** edc9892 2026-08-24 · **Total:** 48
+**First commit:** 32851e9 2026-06-14 · **Latest:** 513516b 2026-09-25 · **Total:** 49
 
 ## Commits (newest first, limit 100)
 
+- **2026-09-25** `513516b` — feat: add feature manifest for temporary password (backend half) (rhinosys)
 - **2026-08-24** `edc9892` — fix(auth): build reset links against the support site, not the portal (rhinosys)
 - **2026-08-24** `a1322f0` — feat(auth): self-service password reset request (rhinosys)
 - **2026-08-24** `36ef04a` — fix(auth): default reset links to the support-site origin (rhinosys)

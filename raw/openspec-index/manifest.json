@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-24",
+  "generated": "2026-09-25",
   "essensys_root": "/Users/nrineau/ESSENSYS",
   "changes": [
     {
@@ -442,6 +442,19 @@
         "design": true,
         "tasks": true,
         "spec_count": 2
+      }
+    },
+    {
+      "change": "essensys-temporary-password-2026-09-040",
+      "repo": "essensys-memory",
+      "path": "essensys-memory/openspec/changes/essensys-temporary-password-2026-09-040",
+      "created": "2026-09-25",
+      "schema": "spec-driven",
+      "artifacts": {
+        "proposal": true,
+        "design": true,
+        "tasks": true,
+        "spec_count": 4
       }
     },
     {

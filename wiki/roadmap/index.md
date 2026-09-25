@@ -1,13 +1,13 @@
 ---
 tags: [roadmap, openspec, index]
-updated: 2026-08-24
+updated: 2026-09-25
 ---
 
 # Roadmap OpenSpec
 
 Index des changes OpenSpec connus du monorepo ESSENSYS. Regénérer via `scripts/update-roadmap.sh` après sync.
 
-**Dernière mise à jour:** 2026-08-24 · **Changes:** 42
+**Dernière mise à jour:** 2026-09-25 · **Changes:** 43
 
 ## Active
 
@@ -36,6 +36,7 @@ Index des changes OpenSpec connus du monorepo ESSENSYS. Regénérer via `scripts
 - [[Essensys Scenario Management]] — essensys-memory (active)
 - [[Essensys Scenario Pg Cache 2026 06.020]] — essensys-memory (active)
 - [[Essensys Secrets Sops Migration 2026 06 028]] — essensys-memory (active)
+- [[Essensys Temporary Password 2026 09 040]] — essensys-memory (active)
 - [[Essensys Ui E2e Playwright 2026 06.026]] — essensys-memory (active)
 - [[Essensys Ui Multi Device Testing]] — essensys-memory (active)
 - [[Essensys Gateway Dual Nic]] — essensys-raspberry-gateway (active)

@@ -4062,3 +4062,13 @@ points at the portal SPA and has no `/reset-password` route, so the mailed link
 rendered a blank page — they now read `PASSWORD_RESET_BASE_URL`. And
 `notify.Render` left unsupplied `{{markers}}` in outgoing mail, contradicting its
 own long-failing test; it now strips them, so `go test ./...` is green.
+
+## [2026-09-25] sync | Sources synchronized
+Architecture docs from `docs/architecture/` and OpenSpec manifest regenerated.
+ESSENSYS_ROOT: `/Users/nrineau/ESSENSYS`
+
+## [2026-09-25] timeline | Git history extracted
+Generated 43 timeline files in `wiki/timeline/` (limit=100 commits each).
+
+## [2026-09-25] roadmap | OpenSpec index updated
+Regenerated `wiki/roadmap/index.md` and change pages from manifest.

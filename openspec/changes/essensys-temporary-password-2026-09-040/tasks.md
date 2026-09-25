@@ -1,10 +1,10 @@
 ## 1. Socle base de données — essensys-user-portal-backend
 
-- [ ] 1.1 Créer `migrations/014_temporary_password.sql` ajoutant `password_change_required_at`, `temp_password_expires_at`, `temp_password_issued_by` à `users` (D1), avec le commentaire justifiant le revirement vis-à-vis de la migration 013 ; vérifier en appliquant la migration sur une base locale et en contrôlant `\d users`
-- [ ] 1.2 Dans la même migration, insérer le modèle `temporary_password` dans `email_templates` (`enabled = true`, variables `{{temporary_password}}`, `{{expires_in}}`, `{{login_url}}`) ; vérifier par `SELECT slug, enabled, body_html FROM email_templates WHERE slug='temporary_password'`
-- [ ] 1.3 Répliquer les trois `ALTER TABLE ... ADD COLUMN IF NOT EXISTS` dans `UserStore.EnsureTableExists` (convention déjà suivie pour `forbidden_at`) ; vérifier que `go build ./...` passe et que la table créée par un test à vide porte les trois colonnes
-- [ ] 1.4 Ajouter les trois champs à `domain.User` (tags `db`/`json`, `json:"-"` sur `temp_password_issued_by` sauf besoin d'affichage admin) et deux helpers `domain.PasswordChangeRequired(u *User) bool` / `domain.TempPasswordExpired(u *User, now time.Time) bool` ; vérifier par des tests unitaires courts sur les deux helpers (nil, non posé, posé non expiré, posé expiré)
-- [ ] 1.5 Ajouter `domain.WritePasswordChangeRequired(w http.ResponseWriter)` dans `internal/domain/auth.go`, calqué sur `WriteAccountForbidden` (`409`, `{"error":"password_change_required","redirect":"/change-password"}`) ; vérifier par un test de handler HTTP
+- [x] 1.1 Créer `migrations/014_temporary_password.sql` ajoutant `password_change_required_at`, `temp_password_expires_at`, `temp_password_issued_by` à `users` (D1), avec le commentaire justifiant le revirement vis-à-vis de la migration 013 ; vérifier en appliquant la migration sur une base locale et en contrôlant `\d users`
+- [x] 1.2 Dans la même migration, insérer le modèle `temporary_password` dans `email_templates` (`enabled = true`, variables `{{temporary_password}}`, `{{expires_in}}`, `{{login_url}}`) ; vérifier par `SELECT slug, enabled, body_html FROM email_templates WHERE slug='temporary_password'`
+- [x] 1.3 Répliquer les trois `ALTER TABLE ... ADD COLUMN IF NOT EXISTS` dans `UserStore.EnsureTableExists` (convention déjà suivie pour `forbidden_at`) ; vérifier que `go build ./...` passe et que la table créée par un test à vide porte les trois colonnes
+- [x] 1.4 Ajouter les trois champs à `domain.User` (tags `db`/`json`, `json:"-"` sur `temp_password_issued_by` sauf besoin d'affichage admin) et deux helpers `domain.PasswordChangeRequired(u *User) bool` / `domain.TempPasswordExpired(u *User, now time.Time) bool` ; vérifier par des tests unitaires courts sur les deux helpers (nil, non posé, posé non expiré, posé expiré)
+- [x] 1.5 Ajouter `domain.WritePasswordChangeRequired(w http.ResponseWriter)` dans `internal/domain/auth.go`, calqué sur `WriteAccountForbidden` (`409`, `{"error":"password_change_required","redirect":"/change-password"}`) ; vérifier par un test de handler HTTP
 
 ## 2. Génération du mot de passe temporaire — essensys-user-portal-backend
 

@@ -1,17 +1,18 @@
 ---
 tags: [timeline, git]
 repo: essensys-support-site
-updated: 2026-08-24
-total_commits: 181
+updated: 2026-09-25
+total_commits: 182
 shown_commits: 100
 ---
 
 # Timeline — essensys-support-site
 
-**First commit:** 8b77523 2026-01-07 · **Latest:** b96409f 2026-08-24 · **Total:** 181
+**First commit:** 8b77523 2026-01-07 · **Latest:** 05f1f24 2026-09-25 · **Total:** 182
 
 ## Commits (newest first, limit 100)
 
+- **2026-09-25** `05f1f24` — feat: add feature manifest for temporary password (frontend half) (rhinosys)
 - **2026-08-24** `b96409f` — feat(auth): add the missing entry points for password recovery (rhinosys)
 - **2026-08-24** `7f9ab17` — feat(auth): reset password page and admin reset action (rhinosys)
 - **2026-07-20** `da5abbd` — docs(turnstile): note Cloudflare account owner for verification keys (rhinosys)
@@ -111,4 +112,3 @@ shown_commits: 100
 - **2026-01-18** `b08dab0` — fix: align deployment scripts and nginx config to use /opt/essensys (rhinosys)
 - **2026-01-17** `348aeab` — Fix: Add essensys user creation and permission management to deployment scripts (rhinosys)
 - **2026-01-17** `6be7a93` — Fix: Add logout button and ensure login/signup visibility (rhinosys)
-- **2026-01-17** `2d5f376` — Add manage.sh script for easy service control (rhinosys)

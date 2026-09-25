@@ -1,17 +1,19 @@
 ---
 tags: [timeline, git]
 repo: essensys-memory
-updated: 2026-08-24
-total_commits: 33
+updated: 2026-09-25
+total_commits: 35
 shown_commits: 100
 ---
 
 # Timeline — essensys-memory
 
-**First commit:** 0f99f30 2026-05-01 · **Latest:** 9f4a637 2026-08-24 · **Total:** 33
+**First commit:** 0f99f30 2026-05-01 · **Latest:** b99f76d 2026-09-25 · **Total:** 35
 
 ## Commits (newest first, limit 100)
 
+- **2026-09-25** `b99f76d` — openspec: temporary password change 2026-09-040 (rhinosys)
+- **2026-08-24** `dc0f9bd` — memory: self-service password reset shipped, plus two corrections (rhinosys)
 - **2026-08-24** `9f4a637` — chore(memory): untrack agent tooling state swept into prompts/ (rhinosys)
 - **2026-08-24** `022f38c` — docs(memory): record password reset backend deploy on OVH (rhinosys)
 - **2026-08-24** `c86aa33` — docs(openspec): add password reset change 2026-08-039 + OKF refresh (rhinosys)

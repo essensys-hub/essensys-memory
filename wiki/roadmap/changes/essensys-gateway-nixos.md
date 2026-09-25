@@ -2,7 +2,7 @@
 tags: [roadmap, openspec]
 sources: [manifest.json]
 created: 2026-05-31
-updated: 2026-08-24
+updated: 2026-09-25
 status: active
 host_repo: essensys-raspberry-gateway
 ---
