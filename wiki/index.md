@@ -76,6 +76,7 @@ Master catalog of all wiki pages. Updated on every ingest.
 - [[ESSENSYS UX Matrix Gate]] — gate lifecycle Playwright desktop/iPhone/iPad obligatoire pour features UI
 - [[Kitchen Shutter Test Console]] — feature étalon lifecycle : console dry-run volets cuisine (indices 619/622, no-armoire)
 - [[Support Site Responsive Nav]] — fix responsive navigation hamburger + page Support (iPhone/iPad/desktop, feature 2026-06-032)
+- [[Portal Authentication]] — login, reset par lien (039) et mot de passe temporaire admin (040), verrou serveur password_change_required
 
 ## Synthesis
 

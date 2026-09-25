@@ -4072,3 +4072,27 @@ Generated 43 timeline files in `wiki/timeline/` (limit=100 commits each).
 
 ## [2026-09-25] roadmap | OpenSpec index updated
 Regenerated `wiki/roadmap/index.md` and change pages from manifest.
+
+## [2026-09-25] ingest | Essensys Temporary Password 2026 09 040
+New concept page [[Portal Authentication]]: login, the existing link-based
+reset (039), and the new admin-issued temporary password (040) with its
+server-side password_change_required lock — enforced in enforceActiveUser on
+every authenticated request, not deferred to JWT expiry or reissue.
+
+Implementation shipped in essensys-user-portal-backend (backend, sections
+1-5) and essensys-support-site (UI, sections 6-8), both on branch
+feat/essensys-temporary-password-2026-09-040, 36/36 tasks complete. Verified
+against a real local stack (Postgres + actual Go server + Vite), not lint/
+build alone — that pass found and fixed a real self-locking race (admin
+issuing to their own account) and, while producing the UX matrix, two
+pre-existing bugs shared by every modal in UserManager.jsx: a backdrop-filter
+containing-block trap (fixed for the new modal via a React portal) and an
+inherited near-white heading color invisible on a white card (fixed at the
+shared .modal-content level, benefiting every modal, not just the new one).
+
+## [2026-09-25] sync | Sources synchronized
+Architecture docs from `docs/architecture/` and OpenSpec manifest regenerated.
+ESSENSYS_ROOT: `/Users/nrineau/ESSENSYS`
+
+## [2026-09-25] roadmap | OpenSpec index updated
+Regenerated `wiki/roadmap/index.md` and change pages from manifest.
