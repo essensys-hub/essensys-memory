@@ -2,7 +2,7 @@
 tags: [roadmap, openspec]
 sources: [manifest.json]
 created: 2026-06-20
-updated: 2026-09-25
+updated: 2026-09-26
 status: active
 host_repo: essensys-memory
 ---

@@ -4103,3 +4103,29 @@ ESSENSYS_ROOT: `/Users/nrineau/ESSENSYS`
 
 ## [2026-09-25] roadmap | OpenSpec index updated
 Regenerated `wiki/roadmap/index.md` and change pages from manifest.
+
+## [2026-09-25] sync | Sources synchronized
+Architecture docs from `docs/architecture/` and OpenSpec manifest regenerated.
+ESSENSYS_ROOT: `/Users/nrineau/ESSENSYS`
+
+## [2026-09-25] timeline | Git history extracted
+Generated 43 timeline files in `wiki/timeline/` (limit=100 commits each).
+
+## [2026-09-25] roadmap | OpenSpec index updated
+Regenerated `wiki/roadmap/index.md` and change pages from manifest.
+
+## [2026-09-25] deploy | OVH support-site frontend
+Ansible `support-site.yml --tags frontend` on `mon.essensys.fr` (SSH via CM5 ProxyJump `192.168.0.14`; direct TCP/22 from the Mac Mini times out). Built `essensys-support-site` `afc3fca` (merge of PR #2 temporary-password into `feat/essensys-support-nav-responsive-2026-06-032`). Verified `/opt/essensys/repo` HEAD and `https://www.essensys.fr/` Last-Modified 2026-09-25 11:18:02 UTC; `/login` and `/change-password` return 200. Cloud-backend was not redeployed.
+
+## [2026-09-25] ops | OVH cloud-backend down, login 502
+`essensys-cloud-backend` failed on `mon.essensys.fr`; nginx returns 502 for `POST /api/auth/login` (upstream 127.0.0.1:8080 connection refused). Journal: 10:55 UTC new binary `f0240b6` then crash loop `TURNSTILE_SECRET_KEY is required when ENV=production and CONSOLIDATED_MODE=true`; 11:05 UTC last start `database: pq: password authentication failed for user "essensys" (28P01)`; systemd restart limit. Login attempts from 82.67.136.197 for nicolas@rineau.eu are 502, not 401 — account credentials were not evaluated. Port 8080 closed.
+
+## [2026-09-26] sync | Sources synchronized
+Architecture docs from `docs/architecture/` and OpenSpec manifest regenerated.
+ESSENSYS_ROOT: `/Users/nrineau/ESSENSYS`
+
+## [2026-09-26] timeline | Git history extracted
+Generated 43 timeline files in `wiki/timeline/` (limit=100 commits each).
+
+## [2026-09-26] roadmap | OpenSpec index updated
+Regenerated `wiki/roadmap/index.md` and change pages from manifest.

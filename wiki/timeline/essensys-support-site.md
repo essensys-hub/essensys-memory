@@ -1,17 +1,21 @@
 ---
 tags: [timeline, git]
 repo: essensys-support-site
-updated: 2026-09-25
-total_commits: 182
+updated: 2026-09-26
+total_commits: 186
 shown_commits: 100
 ---
 
 # Timeline — essensys-support-site
 
-**First commit:** 8b77523 2026-01-07 · **Latest:** 05f1f24 2026-09-25 · **Total:** 182
+**First commit:** 8b77523 2026-01-07 · **Latest:** b7f76cd 2026-09-25 · **Total:** 186
 
 ## Commits (newest first, limit 100)
 
+- **2026-09-25** `b7f76cd` — feat: mark manifest in-progress — implementation complete, awaiting merge (rhinosys)
+- **2026-09-25** `cf86847` — docs: guide support pour le mot de passe temporaire (spec 040, task 9.1) (rhinosys)
+- **2026-09-25** `7328413` — test(e2e): Playwright coverage + UX matrix for temporary password (spec 040, section 8/9) (rhinosys)
+- **2026-09-25** `4ca6ffe` — feat(admin): temporary password UI + forced change screen (spec 040, sections 6-7/9) (rhinosys)
 - **2026-09-25** `05f1f24` — feat: add feature manifest for temporary password (frontend half) (rhinosys)
 - **2026-08-24** `b96409f` — feat(auth): add the missing entry points for password recovery (rhinosys)
 - **2026-08-24** `7f9ab17` — feat(auth): reset password page and admin reset action (rhinosys)
@@ -108,7 +112,3 @@ shown_commits: 100
 - **2026-01-18** `4200b2e` — fix: remove syntax error in auth.go (rhinosys)
 - **2026-01-18** `f202017` — feat: user profile, device linking, and updated user manager (rhinosys)
 - **2026-01-18** `12ec167` — feat: add user management system in admin dashboard (frontend + backend) (rhinosys)
-- **2026-01-18** `72b1a8a` — feat: show Admin menu link for admin users (rhinosys)
-- **2026-01-18** `b08dab0` — fix: align deployment scripts and nginx config to use /opt/essensys (rhinosys)
-- **2026-01-17** `348aeab` — Fix: Add essensys user creation and permission management to deployment scripts (rhinosys)
-- **2026-01-17** `6be7a93` — Fix: Add logout button and ensure login/signup visibility (rhinosys)

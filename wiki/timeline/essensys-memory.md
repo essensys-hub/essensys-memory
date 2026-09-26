@@ -1,17 +1,25 @@
 ---
 tags: [timeline, git]
 repo: essensys-memory
-updated: 2026-09-25
-total_commits: 35
+updated: 2026-09-26
+total_commits: 43
 shown_commits: 100
 ---
 
 # Timeline — essensys-memory
 
-**First commit:** 0f99f30 2026-05-01 · **Latest:** b99f76d 2026-09-25 · **Total:** 35
+**First commit:** 0f99f30 2026-05-01 · **Latest:** 4cd35f3 2026-09-25 · **Total:** 43
 
 ## Commits (newest first, limit 100)
 
+- **2026-09-25** `4cd35f3` — openspec: essensys-temporary-password-2026-09-040 complete (36/36) (rhinosys)
+- **2026-09-25** `db50018` — memory: add Portal Authentication concept page (spec 040, task 9.2) (rhinosys)
+- **2026-09-25** `4ee3d54` — openspec: check off section 8 (33/36 tasks) (rhinosys)
+- **2026-09-25** `211b18f` — openspec: check off sections 6-7 (29/36 tasks) — UI complete (rhinosys)
+- **2026-09-25** `876a997` — openspec: check off section 5 (21/36 tasks) — backend complete (rhinosys)
+- **2026-09-25** `4a88cb7` — openspec: check off section 4 (17/36 tasks) (rhinosys)
+- **2026-09-25** `e2a5ce9` — openspec: check off sections 2-3 (11/36 tasks) (rhinosys)
+- **2026-09-25** `642c395` — memory: sync vault after temporary-password change (section 1 done) (rhinosys)
 - **2026-09-25** `b99f76d` — openspec: temporary password change 2026-09-040 (rhinosys)
 - **2026-08-24** `dc0f9bd` — memory: self-service password reset shipped, plus two corrections (rhinosys)
 - **2026-08-24** `9f4a637` — chore(memory): untrack agent tooling state swept into prompts/ (rhinosys)

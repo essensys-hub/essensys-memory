@@ -3,7 +3,7 @@ type: Architecture Pattern
 title: Dual Protocol
 description: Coexistence du protocole HTTP legacy IoT et de l'API REST moderne.
 tags: [essensys, protocol, backend, legacy, modern]
-timestamp: 2026-08-24T18:47:25Z
+timestamp: 2026-09-25T11:18:50Z
 source_wiki: ../../wiki/concepts/dual-protocol.md
 ---
 <!-- BEGIN GENERATED CONTENT -->

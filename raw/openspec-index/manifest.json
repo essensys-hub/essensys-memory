@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-25",
+  "generated": "2026-09-26",
   "essensys_root": "/Users/nrineau/ESSENSYS",
   "changes": [
     {
@@ -91,6 +91,19 @@
         "design": true,
         "tasks": true,
         "spec_count": 4
+      }
+    },
+    {
+      "change": "essensys-deploy-secrets-parity-2026-09-042",
+      "repo": "essensys-memory",
+      "path": "essensys-memory/openspec/changes/essensys-deploy-secrets-parity-2026-09-042",
+      "created": "2026-09-26",
+      "schema": "spec-driven",
+      "artifacts": {
+        "proposal": true,
+        "design": true,
+        "tasks": true,
+        "spec_count": 2
       }
     },
     {
@@ -455,6 +468,19 @@
         "design": true,
         "tasks": true,
         "spec_count": 4
+      }
+    },
+    {
+      "change": "essensys-temporary-password-hardening-2026-09-041",
+      "repo": "essensys-memory",
+      "path": "essensys-memory/openspec/changes/essensys-temporary-password-hardening-2026-09-041",
+      "created": "2026-09-26",
+      "schema": "spec-driven",
+      "artifacts": {
+        "proposal": true,
+        "design": true,
+        "tasks": true,
+        "spec_count": 3
       }
     },
     {

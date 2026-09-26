@@ -1,17 +1,24 @@
 ---
 tags: [timeline, git]
 repo: essensys-user-portal-backend
-updated: 2026-09-25
-total_commits: 49
+updated: 2026-09-26
+total_commits: 56
 shown_commits: 100
 ---
 
 # Timeline — essensys-user-portal-backend
 
-**First commit:** 32851e9 2026-06-14 · **Latest:** 513516b 2026-09-25 · **Total:** 49
+**First commit:** 32851e9 2026-06-14 · **Latest:** 48c2401 2026-09-25 · **Total:** 56
 
 ## Commits (newest first, limit 100)
 
+- **2026-09-25** `48c2401` — ci: allowlist dummy JWT/admin-token literals in _test.go files (rhinosys)
+- **2026-09-25** `0a52b4c` — feat: mark manifest in-progress — implementation complete, awaiting merge (rhinosys)
+- **2026-09-25** `fc79fb0` — docs: temporary password API reference (spec 040, task 9.1) (rhinosys)
+- **2026-09-25** `954fcc2` — feat(auth): login gating + change-password endpoint (spec 040, section 5/9) (rhinosys)
+- **2026-09-25** `2ecab48` — feat(auth): admin temporary-password issuance endpoint (spec 040, section 4/9) (rhinosys)
+- **2026-09-25** `6c4646f` — feat(auth): temporary password generation + server-side lock (spec 040, sections 2-3/9) (rhinosys)
+- **2026-09-25** `dcfbd33` — feat(auth): temporary password data model (spec 040, section 1/9) (rhinosys)
 - **2026-09-25** `513516b` — feat: add feature manifest for temporary password (backend half) (rhinosys)
 - **2026-08-24** `edc9892` — fix(auth): build reset links against the support site, not the portal (rhinosys)
 - **2026-08-24** `a1322f0` — feat(auth): self-service password reset request (rhinosys)
