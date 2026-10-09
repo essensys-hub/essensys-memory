@@ -47,6 +47,8 @@ Constantes Go : `IndexScenario=590`, `IndexLightStart=605`, `IndexLightEnd=622`.
 
 > **Note cuisine (feature étalon 2026-06-031)** : lors des tests lifecycle de la console de diagnostic `essensys-kitchen-shutter-test-console`, les indices `619` (ouvrir cuisine) et `622` (fermer cuisine) ont été vérifiés via mock Playwright **sans** déclenchement armoire réelle (no-armoire gate). Voir [[ESSENSYS UX Matrix Gate]].
 
+> **⚠️ Écart à trancher contre le firmware (relevé le 2026-10-09, `android-portal-refresh-2026-10-002`)** : le tableau ci-dessus (ouvrir/fermer alternés 617/618, 619/620, 621/622) **ne correspond pas** au code du portail (`essensys-user-portal-frontend/src/pages/ShuttersPage.tsx`), qui utilise **ouvrir = 617 (salon/SàM/bureau/store) · 618 (chambres) · 619 (cuisine/SdB/store banne)** et **fermer = 620 · 621 · 622** respectivement, masques par volet (1, 2, 4, 8, 16, 32, 64). Le portail est vérifié par la console cuisine (619/622) ; l'app Android v2 suit le portail (`IndexTable`, tests `NR-android-6`). À valider contre `BP_MQX_ETH` puis corriger ce tableau.
+
 ## Règles d'action (firmware BP_MQX_ETH)
 
 1. **`_de67f` en premier** dans la réponse `/api/myactions` (ordre alarme chiffré AES ou `null`)
