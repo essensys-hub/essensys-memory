@@ -4139,3 +4139,13 @@ ESSENSYS_ROOT: `/Users/nrineau/ESSENSYS`
 
 ## [2026-10-10] roadmap | OpenSpec index updated
 Regenerated `wiki/roadmap/index.md` and change pages from manifest.
+
+## [2026-10-10] openspec | report-triage-2026-10-005
+Validation humaine obligatoire (labels `a-valider` / `valide`) des signalements et issues de tiers avant tout travail de Claude : workflow `triage-guard`, gate `triage_gate.py`, hook local. Page [[Feature Lifecycle]] mise à jour (Jira → GitHub Project #6, contradiction notée). Ticket essensys-hub/essensys-feature-lifecycle#18.
+
+## [2026-10-10] sync | Sources synchronized
+Architecture docs from `docs/architecture/` and OpenSpec manifest regenerated.
+ESSENSYS_ROOT: `/Users/nrineau/ESSENSYS`
+
+## [2026-10-10] roadmap | OpenSpec index updated
+Regenerated `wiki/roadmap/index.md` and change pages from manifest.

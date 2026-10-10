@@ -7,12 +7,13 @@ updated: 2026-10-10
 
 Index des changes OpenSpec connus du monorepo ESSENSYS. Regénérer via `scripts/update-roadmap.sh` après sync.
 
-**Dernière mise à jour:** 2026-10-10 · **Changes:** 49
+**Dernière mise à jour:** 2026-10-10 · **Changes:** 50
 
 ## Active
 
 - [[Android Portal Refresh 2026 10 002]] — essensys-android-phone-apps (active)
 - [[Github Project Lifecycle 2026 10 001]] — essensys-feature-lifecycle (active)
+- [[Report Triage 2026 10 005]] — essensys-feature-lifecycle (active)
 - [[Ios Portal Refresh 2026 10 003]] — essensys-ios-phone-apps (active)
 - [[Essensys Admin User Forbid Delete 2026 06 027]] — essensys-memory (active)
 - [[Essensys Armoire Audit Trail 2026 07 034]] — essensys-memory (active)
