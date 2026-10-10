@@ -2,7 +2,7 @@
 tags: [entity, repo, legacy, backend]
 sources: [essensys-user-portal-backend.md]
 created: 2026-06-20
-updated: 2026-06-26
+updated: 2026-10-10
 era: legacy
 repo: essensys-user-portal-backend
 ---
@@ -41,6 +41,7 @@ _… voir source complète dans raw/_
 - **OAuth Google / Apple** : login social via `internal/identity`.
 - **New Relic APM** : app `essensys-cloud-backend`.
 - **Nginx** (sur le VPS) : route `/api/` → backend `:8080` ; sert le frontend statique sous `/portal/`.
+- **GitHub App « Essensys Support »** (2026-10, change `support-reports-2026-10-004`) : `internal/support` crée les issues des signalements faits sur www.essensys.fr. Les bugs vont, anonymisés, dans `essensys-support-site` ; les incidents dans le dépôt privé `essensys-support` ; tous sont ajoutés au Project #6.
 
 ## Structure
 
@@ -61,6 +62,13 @@ internal/
 _… voir source complète dans raw/_
 
 ## Points d'attention
+
+- **Signalements (`/api/support/reports`, table `support_reports`, migration 015)** :
+  - filtre serveur des contenus sensibles (422 sans écho) ;
+  - limite de 5 signalements par 24 h et par compte, comptée en base ;
+  - référence pseudonyme `U-` (HMAC `SUPPORT_PSEUDONYM_KEY`, à ne jamais changer) ;
+  - `payload` vidé une fois l'issue créée ;
+  - sans GitHub App configurée, les signalements restent `pending` et un worker (verrou pg) les relance. Voir [[Essensys Support Site]].
 
 - **Mode dual selon `CONSOLIDATED_MODE`** : à `false`, seuls portail + gateway sont montés (mode staging historique `:8081`) ; à `true`, c'est le hub complet de production. Un mauvais flag fait silencieusement disparaître les routes auth/admin/legacy.
 - **Couplage fort avec le support-site** : même base PostgreSQL et même `JWT_SECRET`. Toute rotation de secret ou migration de schéma doit être coordonnée entre les deux.

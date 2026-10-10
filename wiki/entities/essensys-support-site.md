@@ -2,7 +2,7 @@
 tags: [entity, repo, migration]
 sources: [essensys-support-site.md]
 created: 2026-06-20
-updated: 2026-06-20
+updated: 2026-10-10
 era: migration
 repo: essensys-support-site
 ---
@@ -30,6 +30,7 @@ Le dépôt a dépassé sa phase « conception » initiale : il contient désorma
 - **Protocole legacy :** `essensys-client.md` + `api/serverinfos/index.php` assurent la compatibilité avec le firmware BP_MQX_ETH (`mon.essensys.fr`).
 - **Référence catalogue :** `catalog.md` s'appuie sur la page de debug publiée par `essensys-raspberry-install` (`essensys-hub.github.io/essensys-raspberry-install/maintenance/debug/`).
 - **Apps mobiles :** liens vers `essensys-ios-phone-apps` et `essensys-android-phone-apps`.
+- **Signalements (2026-10, `support-reports-2026-10-004`) :** formulaire `/signaler` réservé aux connectés (avertissement adresse postale et mot de passe), rubrique « Mes signalements » dans le profil. L'API est `/api/support/reports` de [[Essensys User Portal Backend]]. Les utilisateurs n'ont plus besoin de compte GitHub ; les modèles d'issue restent ouverts aux contributeurs.
 - **Cartographie :** Leaflet/react-leaflet (localisation des installations) ; observabilité New Relic.
 
 ## Structure

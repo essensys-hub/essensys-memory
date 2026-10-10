@@ -4129,3 +4129,13 @@ Generated 43 timeline files in `wiki/timeline/` (limit=100 commits each).
 
 ## [2026-09-26] roadmap | OpenSpec index updated
 Regenerated `wiki/roadmap/index.md` and change pages from manifest.
+
+## [2026-10-10] openspec | support-reports-2026-10-004
+Change cross-repo (backend, site, ansible, feature-lifecycle) pour signaler un bug ou un incident sans compte GitHub, via une GitHub App. Pages [[Essensys User Portal Backend]] et [[Essensys Support Site]] mises à jour. Ticket essensys-hub/essensys-feature-lifecycle#15.
+
+## [2026-10-10] sync | Sources synchronized
+Architecture docs from `docs/architecture/` and OpenSpec manifest regenerated.
+ESSENSYS_ROOT: `/Users/nrineau/ESSENSYS`
+
+## [2026-10-10] roadmap | OpenSpec index updated
+Regenerated `wiki/roadmap/index.md` and change pages from manifest.
