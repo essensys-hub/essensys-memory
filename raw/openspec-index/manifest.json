@@ -1,7 +1,20 @@
 {
-  "generated": "2026-09-26",
+  "generated": "2026-10-10",
   "essensys_root": "/Users/nrineau/ESSENSYS",
   "changes": [
+    {
+      "change": "android-portal-refresh-2026-10-002",
+      "repo": "essensys-android-phone-apps",
+      "path": "essensys-android-phone-apps/openspec/changes/android-portal-refresh-2026-10-002",
+      "created": "2026-10-09",
+      "schema": "spec-driven",
+      "artifacts": {
+        "proposal": true,
+        "design": true,
+        "tasks": true,
+        "spec_count": 5
+      }
+    },
     {
       "change": "essensys-ux-matrix-gate-2026-06-030",
       "repo": "essensys-feature-lifecycle",
@@ -16,6 +29,19 @@
       }
     },
     {
+      "change": "github-project-lifecycle-2026-10-001",
+      "repo": "essensys-feature-lifecycle",
+      "path": "essensys-feature-lifecycle/openspec/changes/github-project-lifecycle-2026-10-001",
+      "created": "2026-10-09",
+      "schema": "spec-driven",
+      "artifacts": {
+        "proposal": true,
+        "design": true,
+        "tasks": true,
+        "spec_count": 7
+      }
+    },
+    {
       "change": "migrate-security-gate-to-dependabot",
       "repo": "essensys-feature-lifecycle",
       "path": "essensys-feature-lifecycle/openspec/changes/migrate-security-gate-to-dependabot",
@@ -26,6 +52,19 @@
         "design": true,
         "tasks": true,
         "spec_count": 1
+      }
+    },
+    {
+      "change": "ios-portal-refresh-2026-10-003",
+      "repo": "essensys-ios-phone-apps",
+      "path": "essensys-ios-phone-apps/openspec/changes/ios-portal-refresh-2026-10-003",
+      "created": "2026-10-09",
+      "schema": "spec-driven",
+      "artifacts": {
+        "proposal": true,
+        "design": true,
+        "tasks": true,
+        "spec_count": 5
       }
     },
     {
@@ -533,6 +572,19 @@
         "design": true,
         "tasks": true,
         "spec_count": 6
+      }
+    },
+    {
+      "change": "support-reports-2026-10-004",
+      "repo": "essensys-memory",
+      "path": "essensys-memory/openspec/changes/support-reports-2026-10-004",
+      "created": "2026-10-10",
+      "schema": "spec-driven",
+      "artifacts": {
+        "proposal": true,
+        "design": true,
+        "tasks": true,
+        "spec_count": 2
       }
     },
     {
