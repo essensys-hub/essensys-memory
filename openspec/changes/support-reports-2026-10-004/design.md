@@ -121,14 +121,14 @@ Le refus répond 422 `{error:"sensitive_content", field, category}`. Le texte d�
 
 **D12. Secrets.**
 - Dans le fichier SOPS cloud : `vault_github_app_id`, `vault_github_app_installation_id`, `vault_github_app_private_key_content` et `vault_support_pseudonym_key`.
-- La clé privée est écrite dans `{{ cloud_backend_install_dir }}/secrets/github-app.pem` (dossier 0700, fichier 0600, `no_log`), sur le modèle de `apple_oauth_key.yml`.
+- La clé privée est écrite dans `/opt/essensys/secrets/github/support-app.pem` (dossier 0700, fichier 0600, `no_log`), sur le modèle de `apple_oauth_key.yml`.
 - Le template d'environnement reçoit les nouvelles variables.
 - `vault_support_pseudonym_key` est ajouté à `sops_required_cloud_keys`. Les clés GitHub App ne le sont pas, car la fonction marche sans elles (D9).
 
 ### Tests et non-régression
 
 **D13.**
-- **Go** : tests unitaires `httptest` + `sqlmock`, et un faux serveur GitHub (`httptest.Server`). Les tests de non-régression s'appellent `TestNR_backend_<n>_…`, précédés du commentaire `// NR: NR-backend-<n> essensys-hub/essensys-feature-lifecycle#15`. La CI produit un JUnit avec `go-junit-report`, consolidé par `nonreg_report.py`.
+- **Go** : tests unitaires `httptest` + `sqlmock`, et un faux serveur GitHub (`httptest.Server`). Les tests de non-régression s'appellent `Test_NR_backend_<n>_…`, précédés du commentaire `// NR: NR-backend-<n> essensys-hub/essensys-feature-lifecycle#15`. La CI produit un JUnit avec `go-junit-report`, consolidé par `nonreg_report.py`.
 - **Playwright** : `e2e/support-reports.spec.js`, matrice desktop, iPhone et iPad, API simulée par `page.route` (aucun backend ni armoire réels : c'est le mode `no-armoire`). Les titres de test non-régression portent `NR-site-<n>`.
 - **Manifests** : les schémas du backend et du site sont alignés sur la référence (bloc `github`, `tests.junit`).
 
