@@ -27,7 +27,7 @@
 ## 4. Secrets et déploiement — essensys-ansible (essensys-ansible#4)
 
 - [x] 4.1 Ajouter les variables de D9 à `roles/cloud_backend/templates/cloud-backend.env.j2` et la tâche d'écriture de la clé `github-app.pem` (0700/0600, `no_log`, conditionnelle), sur le modèle de `apple_oauth_key.yml` ; vérifier par `ansible-playbook --syntax-check` et un rendu `--check --diff` qui n'affiche aucun secret
-- [ ] 4.2 Ajouter `vault_support_pseudonym_key` (généré, 64 caractères hexadécimaux) au fichier SOPS cloud et à `sops_required_cloud_keys` ; documenter les clés GitHub App dans `docs/secrets.md` ; vérifier par `sops -d --extract` (présence seulement, sans afficher la valeur)
+- [x] 4.2 Ajouter `vault_support_pseudonym_key` (généré, 64 caractères hexadécimaux) au fichier SOPS cloud et à `sops_required_cloud_keys` ; documenter les clés GitHub App dans `docs/secrets.md` ; vérifier par `sops -d --extract` (présence seulement, sans afficher la valeur)
 
 ## 5. Prérequis GitHub, livraison et documentation — essensys-feature-lifecycle (essensys-feature-lifecycle#16)
 
