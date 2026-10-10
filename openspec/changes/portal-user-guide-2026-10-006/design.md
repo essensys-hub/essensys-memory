@@ -51,7 +51,7 @@ Voir proposal.md (section Why). Ce qui existe aujourd'hui et contraint la concep
 - Les images sont copiées dans `essensys-user-portal-frontend/docs/user-guide/images/` par le script `scripts/sync-guide-screenshots.sh` du site, pour garder une seule source.
 
 **D5. Publication.**
-- Le rôle Ansible `frontend` clone `essensys-user-portal-frontend` à la version `portal_user_guide_version` (défaut : `main`). Ensuite, `prepare_guide_from_portal.py` produit `site/public/guide-data/` avant le build :
+- Le rôle Ansible `frontend` clone `essensys-user-portal-frontend` à la version `portal_user_guide_version` (défaut : `main`). Ensuite, le script du site `site/scripts/prepare_guide.py` produit `site/public/guide-data/` avant le build. C'est le même code qu'en local (`npm run guide:local`), et l'étape est ignorée si la version déployée du site ne contient pas le script :
   - `index.json` (ordre, titres, résumés) ;
   - un fichier `<slug>.md` par page, avec les liens d'images réécrits vers `/guide-data/images/…` ;
   - les images.
