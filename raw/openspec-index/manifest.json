@@ -55,19 +55,6 @@
       }
     },
     {
-      "change": "report-triage-2026-10-005",
-      "repo": "essensys-feature-lifecycle",
-      "path": "essensys-feature-lifecycle/openspec/changes/report-triage-2026-10-005",
-      "created": "2026-10-10",
-      "schema": "spec-driven",
-      "artifacts": {
-        "proposal": true,
-        "design": true,
-        "tasks": true,
-        "spec_count": 1
-      }
-    },
-    {
       "change": "ios-portal-refresh-2026-10-003",
       "repo": "essensys-ios-phone-apps",
       "path": "essensys-ios-phone-apps/openspec/changes/ios-portal-refresh-2026-10-003",
@@ -585,6 +572,19 @@
         "design": true,
         "tasks": true,
         "spec_count": 6
+      }
+    },
+    {
+      "change": "portal-user-guide-2026-10-006",
+      "repo": "essensys-memory",
+      "path": "essensys-memory/openspec/changes/portal-user-guide-2026-10-006",
+      "created": "2026-10-10",
+      "schema": "spec-driven",
+      "artifacts": {
+        "proposal": true,
+        "design": true,
+        "tasks": true,
+        "spec_count": 1
       }
     },
     {
