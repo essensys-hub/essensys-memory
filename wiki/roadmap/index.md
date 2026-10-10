@@ -7,7 +7,7 @@ updated: 2026-10-10
 
 Index des changes OpenSpec connus du monorepo ESSENSYS. Regénérer via `scripts/update-roadmap.sh` après sync.
 
-**Dernière mise à jour:** 2026-10-10 · **Changes:** 50
+**Dernière mise à jour:** 2026-10-10 · **Changes:** 49
 
 ## Active
 
@@ -44,7 +44,6 @@ Index des changes OpenSpec connus du monorepo ESSENSYS. Regénérer via `scripts
 - [[Essensys Temporary Password Hardening 2026 09 041]] — essensys-memory (active)
 - [[Essensys Ui E2e Playwright 2026 06.026]] — essensys-memory (active)
 - [[Essensys Ui Multi Device Testing]] — essensys-memory (active)
-- [[Support Reports 2026 10 004]] — essensys-memory (active)
 - [[Essensys Gateway Dual Nic]] — essensys-raspberry-gateway (active)
 - [[Essensys Gateway Nixos]] — essensys-raspberry-gateway (active)
 - [[Essensys Support Nav Responsive 2026 06 032]] — essensys-support-site (active)

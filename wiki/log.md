@@ -4149,3 +4149,10 @@ ESSENSYS_ROOT: `/Users/nrineau/ESSENSYS`
 
 ## [2026-10-10] roadmap | OpenSpec index updated
 Regenerated `wiki/roadmap/index.md` and change pages from manifest.
+
+## [2026-10-10] sync | Sources synchronized
+Architecture docs from `docs/architecture/` and OpenSpec manifest regenerated.
+ESSENSYS_ROOT: `/Users/nrineau/ESSENSYS`
+
+## [2026-10-10] roadmap | OpenSpec index updated
+Regenerated `wiki/roadmap/index.md` and change pages from manifest.

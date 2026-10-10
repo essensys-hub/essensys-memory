@@ -588,19 +588,6 @@
       }
     },
     {
-      "change": "support-reports-2026-10-004",
-      "repo": "essensys-memory",
-      "path": "essensys-memory/openspec/changes/support-reports-2026-10-004",
-      "created": "2026-10-10",
-      "schema": "spec-driven",
-      "artifacts": {
-        "proposal": true,
-        "design": true,
-        "tasks": true,
-        "spec_count": 2
-      }
-    },
-    {
       "change": "essensys-gateway-dual-nic",
       "repo": "essensys-raspberry-gateway",
       "path": "essensys-raspberry-gateway/openspec/changes/essensys-gateway-dual-nic",
