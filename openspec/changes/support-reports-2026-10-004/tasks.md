@@ -31,7 +31,7 @@
 
 ## 5. Prérequis GitHub, livraison et documentation — essensys-feature-lifecycle (essensys-feature-lifecycle#16)
 
-- [ ] 5.1 Action humaine (admin de l'org) : créer le dépôt privé `essensys-support`, les labels `incident` et `via-portal` dans les deux dépôts, la GitHub App « Essensys Support » (Issues lecture/écriture sur les deux dépôts, Projects lecture/écriture sur l'org, sans webhook), l'installer, ranger App ID, Installation ID et clé dans SOPS ; vérifier par `gh api /orgs/essensys-hub/installations` (App listée)
+- [x] 5.1 Action humaine (admin de l'org) : créer le dépôt privé `essensys-support`, les labels `incident` et `via-portal` dans les deux dépôts, la GitHub App « Essensys Support » (Issues lecture/écriture sur les deux dépôts, Projects lecture/écriture sur l'org, sans webhook), l'installer, ranger App ID, Installation ID et clé dans SOPS ; vérifier par `gh api /orgs/essensys-hub/installations` (App listée)
 - [ ] 5.2 `/checkup support-reports-2026-10-004` vert (build, lint, unitaires, NR, Playwright, feature-gate, security-gate) et rapport posté sur #15
 - [ ] 5.3 Déployer le backend puis le site (tags `prod-ovh-…`) ; vérifier en production avec un compte de test : un bug arrive anonymisé dans `essensys-support-site`, un incident dans `essensys-support`, les deux dans le Project #6, puis l'état « résolu » apparaît dans Mes signalements moins de 15 minutes après la fermeture
 - [x] 5.4 Mettre à jour la politique de confidentialité (`/privacy`) pour mentionner les signalements et la pseudonymisation, et la page support ; vérifier en ligne
