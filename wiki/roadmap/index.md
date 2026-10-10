@@ -13,7 +13,6 @@ Index des changes OpenSpec connus du monorepo ESSENSYS. Regénérer via `scripts
 
 - [[Android Portal Refresh 2026 10 002]] — essensys-android-phone-apps (active)
 - [[Github Project Lifecycle 2026 10 001]] — essensys-feature-lifecycle (active)
-- [[Report Triage 2026 10 005]] — essensys-feature-lifecycle (active)
 - [[Ios Portal Refresh 2026 10 003]] — essensys-ios-phone-apps (active)
 - [[Essensys Admin User Forbid Delete 2026 06 027]] — essensys-memory (active)
 - [[Essensys Armoire Audit Trail 2026 07 034]] — essensys-memory (active)
@@ -44,6 +43,7 @@ Index des changes OpenSpec connus du monorepo ESSENSYS. Regénérer via `scripts
 - [[Essensys Temporary Password Hardening 2026 09 041]] — essensys-memory (active)
 - [[Essensys Ui E2e Playwright 2026 06.026]] — essensys-memory (active)
 - [[Essensys Ui Multi Device Testing]] — essensys-memory (active)
+- [[Portal User Guide 2026 10 006]] — essensys-memory (active)
 - [[Essensys Gateway Dual Nic]] — essensys-raspberry-gateway (active)
 - [[Essensys Gateway Nixos]] — essensys-raspberry-gateway (active)
 - [[Essensys Support Nav Responsive 2026 06 032]] — essensys-support-site (active)
