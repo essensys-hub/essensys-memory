@@ -2,7 +2,7 @@
 tags: [entity, repo, legacy, backend]
 sources: [essensys-user-portal-backend.md]
 created: 2026-06-20
-updated: 2026-10-10
+updated: 2026-10-11
 era: legacy
 repo: essensys-user-portal-backend
 ---
@@ -42,6 +42,8 @@ _… voir source complète dans raw/_
 - **New Relic APM** : app `essensys-cloud-backend`.
 - **Nginx** (sur le VPS) : route `/api/` → backend `:8080` ; sert le frontend statique sous `/portal/`.
 - **GitHub App « Essensys Support »** (2026-10, change `support-reports-2026-10-004`) : `internal/support` crée les issues des signalements faits sur www.essensys.fr. Les bugs vont, anonymisés, dans `essensys-support-site` ; les incidents dans le dépôt privé `essensys-support` ; tous sont ajoutés au Project #6.
+
+- **Fusion des commandes en attente (2026-10, `portal-action-merge-2026-10-007`, #33) :** `GET /api/myactions` fusionne chaque suite consécutive d'actions purement lumières/volets (590 + 605–622) en une seule action, par **OU bit à bit** avec **dernière intention par équipement** (index opposés : éteindre `605+i` ↔ allumer `611+i`, ouvrir `617–619` ↔ fermer `620–622`) ; les autres actions sont livrées telles quelles, dans l'ordre. Avant ce correctif, la fusion gardait la dernière valeur par index : « Tout allumer » n'allumait qu'une lampe (constaté chez le premier pilote le 2026-10-07). Test `NR-backend-9`. Spec [[portal-command-delivery]] dans `openspec/specs/`.
 
 ## Structure
 

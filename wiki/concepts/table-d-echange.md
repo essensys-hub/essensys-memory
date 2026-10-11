@@ -2,7 +2,7 @@
 tags: [concept, firmware, protocol, legacy]
 sources: [exchange-table.md, mcp-device-index-reference.md, TableEchange.h, constants.go]
 created: 2026-06-20
-updated: 2026-06-20
+updated: 2026-10-11
 era: migration
 ---
 
@@ -53,7 +53,7 @@ Constantes Go : `IndexScenario=590`, `IndexLightStart=605`, `IndexLightEnd=622`.
 
 1. **`_de67f` en premier** dans la réponse `/api/myactions` (ordre alarme chiffré AES ou `null`)
 2. **Bloc complet 605–622 + 590=`"1"`** même si une seule lampe change — le serveur complète via `ActionService.AddAction()` / `ExpandLegacyScenarioBlock`
-3. **Fusion OR bitwise** (`|`) si plusieurs actions sur le même index
+3. **Fusion OR bitwise** (`|`) si plusieurs actions sur le même index. Le hub cloud l'applique depuis le 2026-10-11 (`portal-action-merge-2026-10-007`), avec en plus la dernière intention par équipement : poser un bit retire le même bit de l'index opposé (éteindre `605+i` ↔ allumer `611+i` ; volets ouvrir `617/618/619` ↔ fermer `620/621/622`, appariement du portail retenu en attendant la vérification firmware ci-dessus)
 4. Ordre MCP/Redis **sans** expansion → comportement différent du web (voir [[Dual Protocol]])
 
 ## Flux ordre valide
