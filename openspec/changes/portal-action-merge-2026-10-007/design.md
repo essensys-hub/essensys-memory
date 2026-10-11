@@ -41,9 +41,9 @@ Voir proposal.md (section Why). État actuel dans [[Essensys User Portal Backend
 
 **D3. Séparer le bloc lumières/volets des autres commandes.**
 - Une action est « bloc » si elle contient au moins un index 605–622. Son 590 sert alors de déclencheur et n'est pas fusionné (D1).
-- Les actions bloc sont fusionnées en **une** action de 19 paramètres (590 et 605–622), sous le GUID de la dernière action bloc.
+- Une action est « bloc pure » si elle ne contient que 590 et des index 605–622 (cas de `/inject`). Chaque **suite consécutive** d'actions bloc pures est fusionnée en **une** action de 19 paramètres (590 et 605–622), sous le GUID de la dernière action de la suite. Ne fusionner que des suites consécutives garantit l'ordre : une commande intercalée n'est jamais doublée.
+- Une action bloc qui porte aussi d'autres index (morceau d'un `/inject/batch` mixte) est livrée telle quelle, comme les autres actions. Elle respecte déjà la limite de 30 paramètres.
 - Les autres actions (lancement de scénario 590 = `"2"`…`"8"`, écriture de scénario, chauffage…) sont livrées **telles quelles, une par une, dans l'ordre**, sans fusion. C'est ainsi que se comporte le serveur legacy. Chacune respecte déjà la limite de 30 paramètres à l'émission (`ChunkExchangeParams`).
-- L'action bloc fusionnée est placée à la position de la dernière action bloc dans l'ordre d'émission.
 - *Alternative écartée : tout fusionner en « dernière valeur ».* On risque de dépasser 30 paramètres (scénarios de 41 octets) et de mêler un lancement de scénario au déclencheur des lumières.
 
 **D4. Acquittement.** On garde `MarkActionDone` tel quel : il passe déjà en `done` toutes les actions `delivered` de la machine. Un test le vérifie pour une livraison de plusieurs actions.
