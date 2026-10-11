@@ -220,7 +220,7 @@ Le protocole définit 5 endpoints principaux:
 **Requête**:
 ```http
 GET /api/serverinfos HTTP/1.1
-Host: 192.168.0.1
+Host: 192.0.2.1
 Connection: close
 ```
 
@@ -254,7 +254,7 @@ Content-Type: application/json ;charset=UTF-8
 **Requête**:
 ```http
 POST /api/mystatus HTTP/1.1
-Host: 192.168.0.1
+Host: 192.0.2.1
 Content-Length: 87
 Content-Type: application/json
 Connection: close
@@ -301,7 +301,7 @@ Content-Type: application/json ;charset=UTF-8
 **Requête**:
 ```http
 GET /api/myactions HTTP/1.1
-Host: 192.168.0.1
+Host: 192.0.2.1
 Connection: close
 ```
 
@@ -360,7 +360,7 @@ Content-Type: application/json ;charset=UTF-8
 **Requête**:
 ```http
 POST /api/done/abc-123-def-456 HTTP/1.1
-Host: 192.168.0.1
+Host: 192.0.2.1
 Content-Length: 0
 Connection: close
 ```
@@ -388,7 +388,7 @@ Content-Type: application/json ;charset=UTF-8
 **Requête**:
 ```http
 POST /api/admin/inject HTTP/1.1
-Host: 192.168.0.1
+Host: 192.0.2.1
 Content-Type: application/json
 Content-Length: 45
 Connection: close

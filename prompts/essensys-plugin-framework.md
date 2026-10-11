@@ -42,7 +42,7 @@ Relecture du cadrage contre `okf/` (systems, processes, protocols, portals, conc
 | **E4** | UI dupliquée sur les 2 frontends | `docs/WORKFLOW.md` §2 + règle mémoire jumeaux (17) : `server-frontend` ↔ `user-portal-frontend` **sync obligatoire** | **Server-driven UI + renderer générique partagé** (package TS commun) : le plugin fournit **un** descripteur ; les deux frontends rendent le même composant. Élimine la dérive des jumeaux **par construction**. |
 | **E5** | UI plugin sans preuve UX | [UX Matrix Gate](/okf/processes/essensys-ux-matrix-gate.md) : gate **bloquante** — Playwright **desktop + iPhone + iPad**, screenshots, visual regression, `no_armoire_required` pour UI domotique | Le framework livre un **harnais de test UI** : le renderer générique est testé **une fois** sur la matrice ; chaque plugin fournit fixtures + snapshots. UI plugin doit **bloquer/mocker** toute mutation armoire (`/api/admin/inject`, `/api/portal/inject`, `/api/web/actions`, `/scenarios/*/launch`) sauf dry-run. |
 | **E6** | Manifest plugin ad hoc | [Feature Lifecycle](/okf/processes/feature-lifecycle.md) : `features/<id>.json` = **source de vérité**, gates sécurité **bloquantes** ; `essensys-feature-lifecycle` existe | `plugin.manifest.json` **étend** le schéma feature (`features/schema/feature.schema.json`) — ne pas créer un système de manifest parallèle. `check_feature_gate.py` doit reconnaître les plugins. |
-| **E7** | Secrets plugin en clair | Prompt audit §0-bis.3 + `okf/roadmap/essensys-secrets-sops-migration-*` | Identifiants plugin (ex. WiNet-S `user`/`pw1111`, clés API cloud) via **SOPS**, jamais en clair dans le manifest ni le repo. Le manifest **référence** un secret, ne le contient pas. |
+| **E7** | Secrets plugin en clair | Prompt audit §0-bis.3 + `okf/roadmap/essensys-secrets-sops-migration-*` | Identifiants plugin (ex. identifiants locaux du dongle WiNet-S, clés API cloud) via **SOPS**, jamais en clair dans le manifest ni le repo. Le manifest **référence** un secret, ne le contient pas. |
 | **E8** | Repo hôte du change flou | `openspec/config.yaml` : « OpenSpec = roadmap », change dans le **dépôt hôte** ; le framework touche **5 dépôts** | **Repo hôte primaire = `essensys-plugin-framework`** (nouveau dépôt : SDK Go + package TS + schéma manifest + plugin exemple). Les 4 apps reçoivent des **changes-satellites** liés, ou le change primaire liste les tâches par dépôt. À trancher explicitement en §0-ter. |
 
 ### 0 bis.2 Écarts majeurs (design)
@@ -70,7 +70,7 @@ Relecture du cadrage contre `okf/` (systems, processes, protocols, portals, conc
 
 | Périmètre OKF | Collecteur (device LAN) | Adaptateur backend | UI | Métriques |
 |---------------|-------------------------|--------------------|----|-----------|
-| **CM5 / Pi LAN** | ✅ sur CM5 (accès device 192.168.1.x) | `server-backend :7070` | LAN + cloud (via cloudsync) | Prometheus gateway → push/relay OVH |
+| **CM5 / Pi LAN** | ✅ sur CM5 (accès device sur le LAN) | `server-backend :7070` | LAN + cloud (via cloudsync) | Prometheus gateway → push/relay OVH |
 | **Hub + gateway cloudsync** | ✅ sur gateway | LAN + `user-portal-backend :8080` (relai) | LAN + portail | Idem + agrégation OVH |
 | **Armoire seule WAN** | ❌ pas de backend LAN, device non joignable | `user-portal-backend` uniquement (plugins **cloud-only**) | Portail cloud seulement | OVH direct |
 
@@ -129,7 +129,7 @@ Chaque décision : **recommandation par défaut ci-dessus**, mais l'agent OpenSp
 
 ## 3. Plugin de référence `sungrow-solar` (preuve du framework)
 
-Réutiliser `~/ESSENSYS/sungrow_winet_collector.py` (API locale `wss://<ip>/ws/home/overview`, login `user`/`pw1111`, ~30 métriques). Le transformer en **collecteur MQTT** conforme au contrat. Métriques exposées : `pv_power`, `load_power`, `grid_export_power`, `grid_import_power`, `battery_soc`, `battery_soh`, `battery_temp`, énergies journalières/totales. UI : tuile « Solaire » (flux instantané) + page détail (historique Prometheus). Zéro mutation armoire.
+Réutiliser `~/ESSENSYS/sungrow_winet_collector.py` (API locale `wss://<ip>/ws/home/overview`, identifiants locaux via SOPS, ~30 métriques). Le transformer en **collecteur MQTT** conforme au contrat. Métriques exposées : `pv_power`, `load_power`, `grid_export_power`, `grid_import_power`, `battery_soc`, `battery_soh`, `battery_temp`, énergies journalières/totales. UI : tuile « Solaire » (flux instantané) + page détail (historique Prometheus). Zéro mutation armoire.
 
 ---
 

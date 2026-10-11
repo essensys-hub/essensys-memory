@@ -54,7 +54,7 @@ essensys-ansible/
 |---|---|---|
 | `inventory` | `essensys` | `test.essensys.fr` (cloud OVH, user `ubuntu`) |
 | `inventory` | `raspberrypi` | `localhost` (exécution locale sur la passerelle) |
-| `inventory.gateway` | `raspberrypi` | `gateway-essensys` @ `192.168.0.14`, profil double NIC (eth0 LAN / eth1 armoire `10.0.1.1/24`) + DHCP serveur (`10.0.1.100-200`) + NVMe (`/dev/nvme0n1` → `/mnt/nvme`) |
+| `inventory.gateway` | `raspberrypi` | `gateway-essensys` @ `<ip-gateway>`, profil double NIC (eth0 LAN / eth1 armoire `10.0.1.1/24`) + DHCP serveur (`10.0.1.100-200`) + NVMe (`/dev/nvme0n1` → `/mnt/nvme`) |
 
 ### Playbooks → ce qu'ils installent
 
