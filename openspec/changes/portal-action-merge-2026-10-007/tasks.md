@@ -12,6 +12,6 @@
 ## 3. Livraison — essensys-user-portal-backend, essensys-memory (essensys-user-portal-backend#36)
 
 - [x] 3.1 Manifest `features/portal-action-merge-2026-10-007.json` (backend) ; vérifier `validate_feature_manifests.py` et `check_feature_gate.py --strict`
-- [ ] 3.2 `/checkup portal-action-merge-2026-10-007` vert (build, `go test ./...`, `go vet`, NR, feature-gate, security-gate) et rapport posté sur #33
+- [x] 3.2 `/checkup portal-action-merge-2026-10-007` vert (build, `go test ./...`, `go vet`, NR, feature-gate, security-gate) et rapport posté sur #33
 - [ ] 3.3 Déploiement du backend (`deploy-backend.yml`, lancé par le mainteneur) ; vérifier dans les journaux qu'un « Tout allumer » de test, fait par le mainteneur ou par l'utilisateur pilote, donne une livraison acquittée et les lampes allumées
 - [ ] 3.4 Mettre à jour essensys-memory : [[Essensys User Portal Backend]] (fusion des commandes), [[Table D Echange]] (règle 3 appliquée au cloud, appariement des volets retenu), `wiki/log.md`
