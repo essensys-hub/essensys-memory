@@ -1,8 +1,8 @@
 ---
 tags: [entity, repo, modern, firmware, hardware]
-sources: [essensys-board-SC940.md]
+sources: [essensys-board-SC940.md, incidents/2026-08-foudre-bus-i2c/rapport-analyse.md]
 created: 2026-06-20
-updated: 2026-06-20
+updated: 2026-10-11
 era: modern
 repo: essensys-board-SC940
 ---
@@ -59,7 +59,31 @@ _… voir source complète dans raw/_
 - **Mapping d'entrées figé à la compilation** : une entrée physiquement câblée n'est vue que si elle figure dans les tables de mapping.
 - **EEPROM versionnée** : tout changement de mapping impose d'incrémenter `VERSION_EEPROM` sous peine d'états corrompus.
 - **Commentaires source en français encodé Latin-1** (caractères accentués altérés) ; MCU 8 bits ancien et compilateur Hi-Tech C historique.
-- Le module RF « Cœur » SC943-0C est documenté comme « probable » : protocole RF exact non confirmé dans ce dépôt.
+- Le module RF « Cœur » SC943-0C est documenté comme « probable » : protocole RF exact non confirmé dans ce dépôt (source : essensys-board-SC940.md, d'après `docs/Architecture_Overview.md`). **Contredit** par [[Rapport Analyse Foudre Bus I2C 2026 08]] (annexe E) : le SC943 est un module variateur à IGBT (voir [[Essensys Board Sc843d]]), et non un module RF. La doc du dépôt est à corriger (tâche 8.9 du change i2c-surge-protection-2026-10-007).
+
+## Incident foudre 2026-08
+
+- **SC940D (pièces de vie, 0x11) en bout de chaîne sur le site touché.**
+  - Son seuil d'équilibrage est environ 3 fois plus bas que celui du SC942C.
+  - Cela ne le désigne pas pour autant comme la carte défaillante.
+- **R1/R2 = 0 Ω.**
+  - La diode interne du PIC16F946 (RC7/RC6) conduit vers 5,5 V, avant que D1/D2 (SMF5V0A) ne claquent à 6,4 V, et sans aucune limite de courant.
+  - Retouche prévue : 47 Ω anti-impulsion, ou 33 Ω selon l'écart de masse mesuré.
+- **Rail « +12V » (14,3 V) sans TVS.**
+  - C2 tient 16 V, D6 20 V et U1 (LMR12010) 24 V.
+  - Le fil +15 V du bus peut porter U1 à 24 V dès un écart de masse d'environ 10 V.
+  - Retouche prévue : C2 en 35 V, D6 en 40 V, PTC puis TVS après R79.
+- **Isolement 230 V / TBT.** J1/J2 sont estimés à 2-3 mm du relais K1 (« Entrée »), et la varistance VR1 est voisine de J2. Un essai d'isolement à 500 V est obligatoire.
+- **Firmware BA v1.7.**
+  - Watchdog désactivé (`main.c:17`), et branche `else;` sans traitement d'erreur SSP (`slavenode.c:361`).
+  - Un PIC bloqué tient SCL basse jusqu'à une coupure d'alimentation.
+  - Ces points sont prévus en BA 1.8.
+- **Réparation.**
+  - D1/D2 se commandent en SMF5V0A-E3-08 (le suffixe GS08 n'est plus commandable).
+  - Le PIC16F946 (U4) est en approvisionnement tendu : passer par Microchip en direct et constituer un stock.
+  - Avant de remplacer un PIC qui répond encore, lire son EEPROM (bit CPD à vérifier). Après un changement de PIC, les variateurs repartent en mode gradateur par défaut.
+- **Documentation.** Le rapport contredit la mention d'un module RF SC943 (voir « Points d'attention » plus haut).
+- Voir [[Incident Foudre Bus I2C 2026 08]] et [[Ilots TBTS Et Equipotentialite]].
 
 ## Liens
 

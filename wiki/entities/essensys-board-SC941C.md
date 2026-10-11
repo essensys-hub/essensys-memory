@@ -1,8 +1,8 @@
 ---
 tags: [entity, repo, modern, firmware, hardware]
-sources: [essensys-board-SC941C.md]
+sources: [essensys-board-SC941C.md, incidents/2026-08-foudre-bus-i2c/rapport-analyse.md]
 created: 2026-06-20
-updated: 2026-06-20
+updated: 2026-10-11
 era: modern
 repo: essensys-board-SC941C
 ---
@@ -49,6 +49,21 @@ _… voir source complète dans raw/_
 - **EEPROM versionnée** : incrémenter `VERSION_EEPROM` à tout changement de mapping.
 - Docs `architecture.md` et `schematics.md` partiellement à compléter (sections « à insérer »).
 - Commentaires source en français encodé Latin-1 (accents altérés) ; MCU 8 bits + toolchain Hi-Tech C historique.
+
+## Incident foudre 2026-08
+
+- **Mêmes faiblesses que les autres BA.**
+  - Résistances série SDA/SCL de 0 Ω (ici **R1/R3**, et non R1/R2).
+  - Le PIC16F946 conduit avant les TVS D1/D2.
+  - Le rail « +12V » n'a pas de TVS : C2 tient 16 V, U1 (LMR12010) 24 V.
+  - Désignateurs D1/D2, C2 et U1 relevés sur le SC940D : à vérifier sur le schéma DM de cette carte.
+- **Dessert les salles de bains.**
+  - Son essai d'isolement à 500 V se fait **en premier**. En dessous de 10 MΩ, la carte n'est pas remise en service.
+  - Si des boutons sont en volumes 1 ou 2, la §701 de la NF C 15-100 n'y admet que la TBTS (à confirmer par l'électricien, annexe C n° 9 du rapport). Raison supplémentaire d'exclure tout éclateur entre le 0 V et la terre.
+- **Désignateurs utiles.** PIC U4, pull-ups R43/R44, 0 Ω VBUS/GNDBUS R93/R94, empreinte C40 pour la TVS de +Vin, ICSP J97. Adresse 0x13 (PDE).
+- **Génération 3 (RS-485).** Le signal DE est absent sur cette carte, qui demande un montage à direction automatique.
+- **Réparation.** PIC16F946 (U4) en approvisionnement tendu (Microchip en direct, stock) ; TVS en SMF5V0A-E3-08 ; lire l'EEPROM avant de remplacer le PIC. Détails sur [[Essensys Board Sc940]].
+- Voir [[Incident Foudre Bus I2C 2026 08]] et [[Protection Surtension Bus I2C]].
 
 ## Liens
 
