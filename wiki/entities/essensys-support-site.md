@@ -2,7 +2,7 @@
 tags: [entity, repo, migration]
 sources: [essensys-support-site.md]
 created: 2026-06-20
-updated: 2026-10-10
+updated: 2026-10-11
 era: migration
 repo: essensys-support-site
 ---
@@ -31,6 +31,7 @@ Le dépôt a dépassé sa phase « conception » initiale : il contient désorma
 - **Référence catalogue :** `catalog.md` s'appuie sur la page de debug publiée par `essensys-raspberry-install` (`essensys-hub.github.io/essensys-raspberry-install/maintenance/debug/`).
 - **Apps mobiles :** liens vers `essensys-ios-phone-apps` et `essensys-android-phone-apps`.
 - **Signalements (2026-10, `support-reports-2026-10-004`) :** formulaire `/signaler` réservé aux connectés (avertissement adresse postale et mot de passe), rubrique « Mes signalements » dans le profil. L'API est `/api/support/reports` de [[Essensys User Portal Backend]]. Les utilisateurs n'ont plus besoin de compte GitHub ; les modèles d'issue restent ouverts aux contributeurs.
+- **Guide du portail (2026-10, `portal-user-guide-2026-10-006`) :** pages `/guide` (sommaire) et `/guide/:slug` (13 pages), réservées aux connectés : un visiteur voit l'invitation à se connecter (retour par `?return=`) et aucun fichier du guide n'est chargé. Le contenu vient de `docs/user-guide/` de [[Essensys User Portal Frontend]] : au déploiement, le rôle `frontend` de [[Essensys Ansible]] clone le portail et lance `site/scripts/prepare_guide.py`, qui produit `site/public/guide-data/` (index JSON, Markdown, captures). Nginx sert `/guide-data/` en `noindex` avec 1 h de cache ; `robots.txt` exclut `/guide`. Les fichiers restent techniquement publics (contenu fictif, décision D6) ; une route backend protégée est possible plus tard. Tests `NR-site-6` à `NR-site-8`. En production depuis le tag `prod-ovh-portal-guide-20261011`.
 - **Cartographie :** Leaflet/react-leaflet (localisation des installations) ; observabilité New Relic.
 
 ## Structure

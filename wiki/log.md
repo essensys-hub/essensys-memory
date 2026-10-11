@@ -4156,3 +4156,6 @@ ESSENSYS_ROOT: `/Users/nrineau/ESSENSYS`
 
 ## [2026-10-10] roadmap | OpenSpec index updated
 Regenerated `wiki/roadmap/index.md` and change pages from manifest.
+
+## [2026-10-11] openspec | portal-user-guide-2026-10-006
+Guide utilisateur du portail (13 pages, captures reproductibles en mode démo) dans essensys-user-portal-frontend `docs/user-guide/`, publié sur www.essensys.fr/guide pour les connectés (tag `prod-ovh-portal-guide-20261011`). Pages [[Essensys Support Site]] et [[Essensys User Portal Frontend]] mises à jour. Ticket essensys-hub/essensys-feature-lifecycle#26.

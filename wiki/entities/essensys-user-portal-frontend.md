@@ -2,7 +2,7 @@
 tags: [entity, repo, modern, frontend]
 sources: [essensys-user-portal-frontend.md]
 created: 2026-06-20
-updated: 2026-06-26
+updated: 2026-10-11
 era: modern
 repo: essensys-user-portal-frontend
 ---
@@ -35,6 +35,14 @@ Utilisateurs cibles : propriétaires d'armoires Essensys souhaitant un pilotage 
 - **Auth support-site** : JWT partagé (mêmes clés de stockage que `Login.jsx` du support-site) ; redirect login/logout vers `/login?return=/portal/`.
 - **UniFi Protect** (`services/unifiApi.ts`) : proxy backend (URL configurable, défaut `http://localhost:7070`, endpoint `/api/unifi/cameras`) pour les caméras (page `UniFiProtectPage`).
 - **New Relic Browser** : app `essensys-user-portal-frontend` (ID `538864961`), distincte du support-site (`538864962`).
+
+## Guide utilisateur
+
+- `docs/user-guide/` (2026-10, `portal-user-guide-2026-10-006`) : `index.yml` et 13 pages Markdown (Premiers pas, Connexion, Tableau de bord, Éclairage, Volets, Chauffage, Chauffe-eau, Arrosage, Scénarios, Sécurité, Notifications, Réglages, Profil et signalements), chacune avec une capture annotée de repères numérotés.
+- `npm run docs:screenshots` : build en mode démo à la racine (`VITE_DEMO_MODE`, `VITE_DEMO_ROOT`), Playwright desktop et iPhone 14, horloge figée, toute requête hors localhost refusée. Les repères sont déclarés dans `screens.ts` : si un élément cité disparaît, la CI (job `guide-screenshots`) échoue et le guide doit être mis à jour.
+- `npm run docs:check` : chaque page a autant d'éléments numérotés que de repères. Les écrans du site (connexion, profil, signalement) sont capturés par [[Essensys Support Site]] et copiés ici.
+- Publié sur `www.essensys.fr/guide` pour les connectés, voir [[Essensys Support Site]].
+- Bugs connus trouvés pendant le travail : logo en 404 en production (#27), menu Administration visible par tous (#28).
 
 ## Structure
 
