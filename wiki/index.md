@@ -8,6 +8,7 @@ Master catalog of all wiki pages. Updated on every ingest.
 - [[Migration Plan Source]] — plan migration legacy (`raw/plans/MIGRATION_PLAN.md`)
 - [[Exchange Table Protocol]] — table d'échange legacy BP_MQX_ETH
 - [[MCP Device Index Reference]] — mapping équipements → indices k/v
+- [[Rapport Analyse Foudre Bus I2C 2026 08]] — rapport d'incident foudre, bus I2C BP ↔ BA (9 août 2026), v2
 
 ## Entities
 
@@ -77,12 +78,15 @@ Master catalog of all wiki pages. Updated on every ingest.
 - [[Kitchen Shutter Test Console]] — feature étalon lifecycle : console dry-run volets cuisine (indices 619/622, no-armoire)
 - [[Support Site Responsive Nav]] — fix responsive navigation hamburger + page Support (iPhone/iPad/desktop, feature 2026-06-032)
 - [[Portal Authentication]] — login, reset par lien (039) et mot de passe temporaire admin (040), verrou serveur password_change_required
+- [[Protection Surtension Bus I2C]] — limitation série, écrêtage coordonné, ordre connecteur→TVS→R→écrêteur→CI, pièges
+- [[Ilots TBTS Et Equipotentialite]] — îlots flottants, bus = pont R + (L−M), équipotentialité/isolement, 0 V ≠ PE
 
 ## Synthesis
 
 - [[Platform Overview]] — vue d'ensemble domotique Essensys (4 couches, 41 dépôts)
 - [[Migration Legacy To Modern]] — migration ASP.NET/MQX → Go/React/Raspberry
 - [[Product Roadmap]] — priorités Now / Next / Later (vivante)
+- [[Incident Foudre Bus I2C 2026 08]] — foudre du 9 août 2026 : mécanisme, décisions, actions, leçons (SC944D#1)
 
 ## Roadmap
 

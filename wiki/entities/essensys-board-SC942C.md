@@ -1,8 +1,8 @@
 ---
 tags: [entity, repo, modern, firmware, hardware]
-sources: [essensys-board-SC942C.md]
+sources: [essensys-board-SC942C.md, incidents/2026-08-foudre-bus-i2c/rapport-analyse.md]
 created: 2026-06-20
-updated: 2026-06-20
+updated: 2026-10-11
 era: modern
 repo: essensys-board-SC942C
 ---
@@ -53,6 +53,18 @@ _… voir source complète dans raw/_
 - `VERSION_EEPROM` doit être incrémentée à chaque changement de mapping EEPROM, sinon l'état stocké devient incohérent.
 - Base PIC ancienne (HI-TECH PICC, commentaires Latin-1 mal encodés) ; toolchain à figer pour reproduire les builds.
 - `slavenode.c` dérive d'un exemple Microchip pour PIC16C72A — vérifier l'adéquation registres SSP avec le 16F946.
+
+## Incident foudre 2026-08
+
+- **Premier BA après le BP sur le site touché.** Il n'est relié que par un seul tronçon de 33 cm, d'environ 0,12 Ω en onde 8/20. Son seuil d'équilibrage est donc le plus haut des trois BA.
+- **Mêmes faiblesses que les autres BA.**
+  - Résistances série R1/R2 de 0 Ω : le PIC16F946 écrête avant les TVS D1/D2.
+  - Rail « +12V » sans TVS : C2 tient 16 V, U1 24 V.
+  - Désignateurs D1/D2, C2 et U1 relevés sur le SC940D : à vérifier sur le schéma DM de cette carte, qui diffère sur plusieurs repères (U5, U4, C42, R84/R85).
+- **Désignateurs utiles.** PIC **U5**, NCP803 U4, pull-ups R51/R52, 0 Ω VBUS/GNDBUS R84/R85, empreinte **C42** pour la TVS de +Vin, ICSP J92. Adresse 0x12 (CHB).
+- **Réparation.** PIC16F946 (U5) en approvisionnement tendu (Microchip en direct, stock) ; TVS en SMF5V0A-E3-08 ; lire l'EEPROM avant de remplacer le PIC. Détails sur [[Essensys Board Sc940]].
+- **Firmware BA 1.8 prévu.** Chien de garde, gestion des erreurs SSP, NACK quand `CmdBuf` est occupé, octet d'état rétrocompatible.
+- Voir [[Incident Foudre Bus I2C 2026 08]] et [[Ilots TBTS Et Equipotentialite]].
 
 ## Liens
 

@@ -1,8 +1,8 @@
 ---
 tags: [entity, repo, legacy, firmware, hardware]
-sources: [client-essensys-legacy.md]
+sources: [client-essensys-legacy.md, incidents/2026-08-foudre-bus-i2c/rapport-analyse.md]
 created: 2026-06-20
-updated: 2026-06-20
+updated: 2026-10-11
 era: legacy
 repo: client-essensys-legacy
 ---
@@ -72,6 +72,25 @@ _… voir source complète dans raw/_
 - **Dépendance toolchain obsolète** : MQX (NXP, 
 
 _… voir source complète dans raw/_
+
+## Incident foudre 2026-08
+
+- **Pas de récupération d'un bus I2C bloqué.**
+  - Le firmware n'envoie pas les 9 coups d'horloge.
+  - La reprise se limite à `fclose`/`fopen`, jusqu'à 50 fois.
+  - Le pointeur de fichier est périmé après une réinitialisation (`C/ba_i2c.c:86`, `98`, `180`), et la mémoire fuit quand `fclose` échoue.
+- **Commandes abandonnées.**
+  - Au-delà de 21 échecs, la commande est abandonnée et **marquée acquittée** (`C/ba.c:202-209`, `313-316`).
+  - Les trames de configuration perdues ne sont jamais renvoyées. Après une panne, il faut donc renvoyer les configurations de **tous** les BA.
+- **Index 12 (`comm_faults`) mis à jour seulement après une commande** vers le BA concerné.
+  - Bits : 0x04 pour PDV, 0x08 pour CHB, 0x10 pour PDE. La valeur 28 signifie que les trois BA sont en défaut.
+  - Une sonde de présence périodique est prévue.
+- **Relance des BA sans ouvrir l'armoire.**
+  - Couper le secteur du BP pendant 13 s au moins (20 s par marge) : le +15VSP est coupé au bout d'environ 12 s sur batterie (`C/Hard.c:879-945`), puis rétabli environ 1 s après le retour du secteur.
+  - Prérequis : batterie présente, cavalier J58 fermé, `Mode_Test` = 0.
+  - Effet de bord : les relais monostables retombent.
+- **Le pilote I2C MQX à attentes bornées est à reconstituer dans essensys-gcc** avant tout nouveau build. Le protocole HTTP legacy IoT reste inchangé.
+- Voir [[Incident Foudre Bus I2C 2026 08]].
 
 ## Liens
 
