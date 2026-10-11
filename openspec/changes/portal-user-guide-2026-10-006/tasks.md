@@ -28,6 +28,6 @@
 
 ## 5. Livraison — essensys-feature-lifecycle (essensys-feature-lifecycle#27)
 
-- [ ] 5.1 `/checkup portal-user-guide-2026-10-006` vert et rapport posté sur #26
-- [ ] 5.2 Déployer le site (tag `prod-ovh-…`) ; vérifier en ligne : déconnecté (invitation, aucune capture), connecté (sommaire et 13 pages), mobile
-- [ ] 5.3 Mettre à jour essensys-memory : wiki [[Essensys Support Site]] (pages `/guide`), [[Essensys User Portal Frontend]] (guide et captures), `log.md` et roadmap
+- [x] 5.1 `/checkup portal-user-guide-2026-10-006` vert et rapport posté sur #26
+- [x] 5.2 Déployer le site (tag `prod-ovh-…`) ; vérifier en ligne : déconnecté (invitation, aucune capture), connecté (sommaire et 13 pages), mobile
+- [x] 5.3 Mettre à jour essensys-memory : wiki [[Essensys Support Site]] (pages `/guide`), [[Essensys User Portal Frontend]] (guide et captures), `log.md` et roadmap
