@@ -4164,3 +4164,6 @@ Guide utilisateur du portail (13 pages, captures reproductibles en mode démo) d
 Source `raw/incidents/2026-08-foudre-bus-i2c/rapport-analyse.md` (rapport v2 anonymisé, foudre du 9 août 2026 sur le bus I2C BP ↔ BA). Pages créées : [[Rapport Analyse Foudre Bus I2C 2026 08]], [[Incident Foudre Bus I2C 2026 08]], [[Protection Surtension Bus I2C]] et [[Ilots TBTS Et Equipotentialite]].
 Section « Incident foudre 2026-08 » ajoutée à [[Essensys Board Sc944d]], [[Essensys Board Sc940]], [[Essensys Board Sc941c]], [[Essensys Board Sc942c]] et [[Client Essensys Legacy]]. Index mis à jour.
 Ticket essensys-hub/essensys-board-SC944D#1, change OpenSpec i2c-surge-protection-2026-10-007 (essensys-board-SC944D).
+
+## [2026-10-12] update | Carte N2 etoile 0 V
+Page créée : [[Essensys I2C Etoile 0v]] (dépôt public essensys-i2c-etoile-0v, tâche 4.1 du change i2c-surge-protection-2026-10-007). Liens ajoutés depuis [[Incident Foudre Bus I2C 2026 08]] et [[Ilots TBTS Et Equipotentialite]]. Index mis à jour.
