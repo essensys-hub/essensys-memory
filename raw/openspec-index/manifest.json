@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-10",
+  "generated": "2026-10-12",
   "essensys_root": "/Users/nrineau/ESSENSYS",
   "changes": [
     {
@@ -13,6 +13,19 @@
         "design": true,
         "tasks": true,
         "spec_count": 5
+      }
+    },
+    {
+      "change": "i2c-surge-protection-2026-10-007",
+      "repo": "essensys-board-SC944D",
+      "path": "essensys-board-SC944D/openspec/changes/i2c-surge-protection-2026-10-007",
+      "created": "2026-10-11",
+      "schema": "spec-driven",
+      "artifacts": {
+        "proposal": true,
+        "design": true,
+        "tasks": true,
+        "spec_count": 3
       }
     },
     {
@@ -52,6 +65,19 @@
         "design": true,
         "tasks": true,
         "spec_count": 1
+      }
+    },
+    {
+      "change": "n2-esp32-spy-alarm-2026-10-008",
+      "repo": "essensys-i2c-etoile-0v",
+      "path": "essensys-i2c-etoile-0v/openspec/changes/n2-esp32-spy-alarm-2026-10-008",
+      "created": "2026-10-12",
+      "schema": "spec-driven",
+      "artifacts": {
+        "proposal": true,
+        "design": true,
+        "tasks": true,
+        "spec_count": 5
       }
     },
     {

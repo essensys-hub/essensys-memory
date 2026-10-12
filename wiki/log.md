@@ -4167,3 +4167,12 @@ Ticket essensys-hub/essensys-board-SC944D#1, change OpenSpec i2c-surge-protectio
 
 ## [2026-10-12] update | Carte N2 etoile 0 V
 Page créée : [[Essensys I2C Etoile 0v]] (dépôt public essensys-i2c-etoile-0v, tâche 4.1 du change i2c-surge-protection-2026-10-007). Liens ajoutés depuis [[Incident Foudre Bus I2C 2026 08]] et [[Ilots TBTS Et Equipotentialite]]. Index mis à jour.
+
+## [2026-10-12] sync | Sources synchronized
+Architecture docs from `docs/architecture/` and OpenSpec manifest regenerated.
+
+## [2026-10-12] roadmap | OpenSpec index updated
+Regenerated `wiki/roadmap/index.md` and change pages from manifest.
+
+## [2026-10-12] update | Module N2 ESP32
+Page [[Essensys I2C Etoile 0v]] enrichie de la révision B : module ESP32 (écoute passive, santé du bus, surtensions, alarme sur batterie, MQTT signé), points à relire avant fabrication, lien avec [[Essensys I2c Ba Sniffer 2026 07 038]]. Roadmap : [[I2c Surge Protection 2026 10 007]] et [[N2 Esp32 Spy Alarm 2026 10 008]] ajoutés par update-roadmap. [[Incident Foudre Bus I2C 2026 08]] (retex publié, module) et [[Ilots TBTS Et Equipotentialite]] mis à jour.

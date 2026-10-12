@@ -58,7 +58,7 @@ Ce concept décrit comment les cartes d'une armoire Essensys se comportent, éle
 | **N2**, étoile 0 V doublée | Petite carte passive sur rail DIN. Chaque BA y est relié par J1 et J2 (AWG20, 15 cm au plus). Elle loge aussi la PTC et la TVS du +15 V de chaque port, et un cavalier pour retirer un BA | ≈ 173 A, puis ≈ 79 A |
 | **Fond de panier** | Carte d'interconnexion équipotentielle, avec un plot 0 V sur les BA rév. E | ≈ 875 A, puis ≈ 292 A |
 
-La carte N2 est conçue dans [[Essensys I2C Etoile 0v]] (révision A).
+La carte N2 est conçue dans [[Essensys I2C Etoile 0v]]. La révision B y ajoute un module ESP32 ([[N2 Esp32 Spy Alarm 2026 10 008]]) dont la masse rejoint le 0 V en un seul point, sans aucune liaison au PE ; il mesure l'écart de 0 V de chaque port et en horodate les dépassements.
 
 N2 est la seule mesure de court terme qui garde son efficacité sur un front raide : le gain de N1 tombe de ×5 à moins de ×2. Au-delà du seuil, les TVS conduisent encore : la [[Protection Surtension Bus I2C]] des circuits intégrés reste nécessaire.
 

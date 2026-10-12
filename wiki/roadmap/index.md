@@ -1,18 +1,20 @@
 ---
 tags: [roadmap, openspec, index]
-updated: 2026-10-10
+updated: 2026-10-12
 ---
 
 # Roadmap OpenSpec
 
 Index des changes OpenSpec connus du monorepo ESSENSYS. Regénérer via `scripts/update-roadmap.sh` après sync.
 
-**Dernière mise à jour:** 2026-10-10 · **Changes:** 49
+**Dernière mise à jour:** 2026-10-12 · **Changes:** 51
 
 ## Active
 
 - [[Android Portal Refresh 2026 10 002]] — essensys-android-phone-apps (active)
+- [[I2c Surge Protection 2026 10 007]] — essensys-board-SC944D (active)
 - [[Github Project Lifecycle 2026 10 001]] — essensys-feature-lifecycle (active)
+- [[N2 Esp32 Spy Alarm 2026 10 008]] — essensys-i2c-etoile-0v (active)
 - [[Ios Portal Refresh 2026 10 003]] — essensys-ios-phone-apps (active)
 - [[Essensys Admin User Forbid Delete 2026 06 027]] — essensys-memory (active)
 - [[Essensys Armoire Audit Trail 2026 07 034]] — essensys-memory (active)
