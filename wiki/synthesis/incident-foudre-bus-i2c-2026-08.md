@@ -2,7 +2,7 @@
 tags: [synthesis, essensys, domotique, firmware, hardware, incident, foudre, i2c, cem, retex]
 sources: [incidents/2026-08-foudre-bus-i2c/rapport-analyse.md]
 created: 2026-10-11
-updated: 2026-10-11
+updated: 2026-10-12
 era: legacy
 ---
 
@@ -19,6 +19,7 @@ era: legacy
 | Retour d'expérience public | Page **à publier** dans [[Essensys DOC]] (tâches 8.1 à 8.3 du change), chemin à fixer : synthèse, analyse experte, procédure de remise en service |
 | Source | [[Rapport Analyse Foudre Bus I2C 2026 08]] (rapport v2 du 2026-10-11) |
 | Concepts | [[Ilots TBTS Et Equipotentialite]] et [[Protection Surtension Bus I2C]] |
+| Carte N2 « étoile 0 V » (tâche 4.1) | [[Essensys I2C Etoile 0v]] : dépôt dédié, révision A conçue, essais 4.2 à 4.4 à faire |
 | Tests de non-régression | `NR-essensys-board-SC944D-1` à `-13`, prévus par le change, sur banc uniquement (voir [[Feature Lifecycle]]) |
 
 ## Récit

@@ -2,7 +2,7 @@
 tags: [concept, essensys, hardware, installation, cem, foudre, tbts, equipotentialite]
 sources: [incidents/2026-08-foudre-bus-i2c/rapport-analyse.md]
 created: 2026-10-11
-updated: 2026-10-11
+updated: 2026-10-12
 ---
 
 # Ilots TBTS Et Equipotentialite
@@ -58,6 +58,8 @@ Ce concept décrit comment les cartes d'une armoire Essensys se comportent, éle
 | **N2**, étoile 0 V doublée | Petite carte passive sur rail DIN. Chaque BA y est relié par J1 et J2 (AWG20, 15 cm au plus). Elle loge aussi la PTC et la TVS du +15 V de chaque port, et un cavalier pour retirer un BA | ≈ 173 A, puis ≈ 79 A |
 | **Fond de panier** | Carte d'interconnexion équipotentielle, avec un plot 0 V sur les BA rév. E | ≈ 875 A, puis ≈ 292 A |
 
+La carte N2 est conçue dans [[Essensys I2C Etoile 0v]] (révision A).
+
 N2 est la seule mesure de court terme qui garde son efficacité sur un front raide : le gain de N1 tombe de ×5 à moins de ×2. Au-delà du seuil, les TVS conduisent encore : la [[Protection Surtension Bus I2C]] des circuits intégrés reste nécessaire.
 
 ### Entre bâtiments ou coffrets distincts : isoler
@@ -95,6 +97,7 @@ N2 est la seule mesure de court terme qui garde son efficacité sur un front rai
 
 ## Voir aussi
 
+- [[Essensys I2C Etoile 0v]]
 - [[Protection Surtension Bus I2C]]
 - [[Incident Foudre Bus I2C 2026 08]]
 - [[Rapport Analyse Foudre Bus I2C 2026 08]]
