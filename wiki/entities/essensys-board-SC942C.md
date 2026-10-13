@@ -2,7 +2,7 @@
 tags: [entity, repo, modern, firmware, hardware]
 sources: [essensys-board-SC942C.md, incidents/2026-08-foudre-bus-i2c/rapport-analyse.md]
 created: 2026-06-20
-updated: 2026-10-11
+updated: 2026-10-13
 era: modern
 repo: essensys-board-SC942C
 ---
@@ -65,6 +65,12 @@ _… voir source complète dans raw/_
 - **Réparation.** PIC16F946 (U5) en approvisionnement tendu (Microchip en direct, stock) ; TVS en SMF5V0A-E3-08 ; lire l'EEPROM avant de remplacer le PIC. Détails sur [[Essensys Board Sc940]].
 - **Firmware BA 1.8 prévu.** Chien de garde, gestion des erreurs SSP, NACK quand `CmdBuf` est occupé, octet d'état rétrocompatible.
 - Voir [[Incident Foudre Bus I2C 2026 08]] et [[Ilots TBTS Et Equipotentialite]].
+
+## Identité I2C
+
+- Adresse **0x12**, figée à la compilation (`TYPE_CHAMBRES` dans `hard.h`). L'image `.hex` v1.7 du type a été vérifiée.
+- Aucune configuration, aucun appairage. Les trois dépôts BA ont `hard.h` réglé sur `TYPE_CHAMBRES` : recompiler en vérifiant le type, ou ne flasher que le `.hex` livré.
+- Voir [[Espion I2C Passif]].
 
 ## Liens
 

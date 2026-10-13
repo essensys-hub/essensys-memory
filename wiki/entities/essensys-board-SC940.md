@@ -2,7 +2,7 @@
 tags: [entity, repo, modern, firmware, hardware]
 sources: [essensys-board-SC940.md, incidents/2026-08-foudre-bus-i2c/rapport-analyse.md]
 created: 2026-06-20
-updated: 2026-10-11
+updated: 2026-10-13
 era: modern
 repo: essensys-board-SC940
 ---
@@ -84,6 +84,12 @@ _… voir source complète dans raw/_
   - Avant de remplacer un PIC qui répond encore, lire son EEPROM (bit CPD à vérifier). Après un changement de PIC, les variateurs repartent en mode gradateur par défaut.
 - **Documentation.** Le rapport contredit la mention d'un module RF SC943 (voir « Points d'attention » plus haut).
 - Voir [[Incident Foudre Bus I2C 2026 08]] et [[Ilots TBTS Et Equipotentialite]].
+
+## Identité I2C
+
+- Adresse **0x11**, figée à la compilation (`TYPE_PIECES_DE_VIE` dans `hard.h`). L'image `.hex` v1.7 du type a été vérifiée.
+- Aucune configuration, aucun appairage. Les trois dépôts BA ont `hard.h` réglé sur `TYPE_CHAMBRES` : recompiler en vérifiant le type, ou ne flasher que le `.hex` livré.
+- Voir [[Espion I2C Passif]].
 
 ## Liens
 
