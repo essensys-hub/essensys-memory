@@ -9,6 +9,7 @@ Master catalog of all wiki pages. Updated on every ingest.
 - [[Exchange Table Protocol]] — table d'échange legacy BP_MQX_ETH
 - [[MCP Device Index Reference]] — mapping équipements → indices k/v
 - [[Rapport Analyse Foudre Bus I2C 2026 08]] — rapport d'incident foudre, bus I2C BP ↔ BA (9 août 2026), v2
+- [[Analyse Cle Acces Distance 2026 10]] — clé d'accès à distance du BP vs exécution des actions, diagnostic gateway (2026-10-13)
 
 ## Entities
 
@@ -81,6 +82,7 @@ Master catalog of all wiki pages. Updated on every ingest.
 - [[Portal Authentication]] — login, reset par lien (039) et mot de passe temporaire admin (040), verrou serveur password_change_required
 - [[Protection Surtension Bus I2C]] — limitation série, écrêtage coordonné, ordre connecteur→TVS→R→écrêteur→CI, pièges
 - [[Ilots TBTS Et Equipotentialite]] — îlots flottants, bus = pont R + (L−M), équipotentialité/isolement, 0 V ≠ PE
+- [[Cle Acces Distance]] — clé 32 chiffres du BP : Basic Auth MD5 + AES alarme ; bloquait sous ASP.NET, sans effet avec la gateway CM5
 
 ## Synthesis
 
@@ -88,6 +90,7 @@ Master catalog of all wiki pages. Updated on every ingest.
 - [[Migration Legacy To Modern]] — migration ASP.NET/MQX → Go/React/Raspberry
 - [[Product Roadmap]] — priorités Now / Next / Later (vivante)
 - [[Incident Foudre Bus I2C 2026 08]] — foudre du 9 août 2026 : mécanisme, décisions, actions, leçons (SC944D#1)
+- [[Ajout BP Gateway CM5]] — ajouter/remplacer un BP sur gateway CM5 : clé facultative, config d'usine, BA à reconfigurer, acquitté ≠ exécuté (doc#7)
 
 ## Roadmap
 
