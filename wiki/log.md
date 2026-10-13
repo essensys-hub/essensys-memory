@@ -4176,3 +4176,8 @@ Regenerated `wiki/roadmap/index.md` and change pages from manifest.
 
 ## [2026-10-12] update | Module N2 ESP32
 Page [[Essensys I2C Etoile 0v]] enrichie de la révision B : module ESP32 (écoute passive, santé du bus, surtensions, alarme sur batterie, MQTT signé), points à relire avant fabrication, lien avec [[Essensys I2c Ba Sniffer 2026 07 038]]. Roadmap : [[I2c Surge Protection 2026 10 007]] et [[N2 Esp32 Spy Alarm 2026 10 008]] ajoutés par update-roadmap. [[Incident Foudre Bus I2C 2026 08]] (retex publié, module) et [[Ilots TBTS Et Equipotentialite]] mis à jour.
+
+## [2026-10-13] ingest | Analyse Cle Acces Distance 2026 10
+Source `raw/analyses/2026-10-cle-acces-distance/analyse.md` (anonymisée) : rôle de la clé d'accès à distance du BP, et pourquoi elle ne bloque pas les actions avec la gateway CM5. Diagnostic : actions acquittées, mais BA CHB et PDE en défaut (index 12 = 0x18).
+Pages créées : [[Analyse Cle Acces Distance 2026 10]], [[Cle Acces Distance]], [[Ajout BP Gateway CM5]]. Pages mises à jour : [[Essensys Board Sc944d]], [[Essensys WEB Legacy]], [[Incident Foudre Bus I2C 2026 08]]. Index mis à jour.
+Tickets essensys-hub/essensys-doc#7 et essensys-hub/essensys-board-SC944D#2.

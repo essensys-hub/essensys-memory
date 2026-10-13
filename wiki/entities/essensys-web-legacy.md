@@ -2,7 +2,7 @@
 tags: [entity, repo, legacy]
 sources: [essensys-web-legacy.md]
 created: 2026-06-20
-updated: 2026-06-20
+updated: 2026-10-13
 era: legacy
 repo: essensys-web-legacy
 ---
@@ -66,6 +66,10 @@ _… voir source complète dans raw/_
 - **Contrat protocole figé** : codes `201 Created`, en-tête `Content-Type` à espace, single-packet TCP, JSON à clés non quotées, ordre du champ `_de67f`, table d'échange complète + index 590 — **toutes ces particularités doivent être reproduites à l'identique** par le backend Go tant que des boîtiers BP_MQX_ETH sont e
 
 _… voir source complète dans raw/_
+
+## Clé d'accès à distance
+
+Le site générait la [[Cle Acces Distance]] de chaque compte et refusait (401) tout BP dont l'empreinte MD5 était inconnue. Depuis sa disparition, la gateway CM5 n'applique plus ce contrôle. Voir [[Analyse Cle Acces Distance 2026 10]].
 
 ## Liens
 

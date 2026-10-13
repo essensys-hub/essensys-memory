@@ -2,7 +2,7 @@
 tags: [entity, repo, legacy, firmware, hardware]
 sources: [essensys-board-SC944D.md, incidents/2026-08-foudre-bus-i2c/rapport-analyse.md]
 created: 2026-06-20
-updated: 2026-10-11
+updated: 2026-10-13
 era: legacy
 repo: essensys-board-SC944D
 ---
@@ -68,6 +68,14 @@ _… voir source complète dans raw/_
 - **Ne jamais reflasher le BP avec un nouveau build.** Le BSP I2C de production est perdu. On sauvegarde par BDM, puis on ne flashe que l'image `.S19` 099-37.
 - **La console « Espion » est compilée dans le firmware 099-37.** Pour l'utiliser, il faut souder R109/R110 et J102 sur l'UART2. Elle distingue un NACK d'un bus bloqué.
 - Voir [[Incident Foudre Bus I2C 2026 08]] et [[Protection Surtension Bus I2C]].
+
+## Remplacement du BP et clé d'accès à distance
+
+- Un BP neuf démarre en configuration d'usine. Les paramètres `RWS` sont en flash, le code alarme et la [[Cle Acces Distance]] en EEPROM : tout cela reste dans l'ancien BP.
+- La clé n'est plus nécessaire avec la gateway CM5. Elle bloquait les actions seulement avec l'ASP.NET (401).
+- Le BP acquitte `/api/done` avant l'envoi I2C aux BA, donc un acquittement ne prouve pas l'exécution.
+- Il ne renvoie pas la configuration des BA au démarrage.
+- Procédure : [[Ajout BP Gateway CM5]]. Analyse : [[Analyse Cle Acces Distance 2026 10]].
 
 ## Liens
 
