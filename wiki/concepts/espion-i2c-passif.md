@@ -55,5 +55,6 @@ Les logements de l'embase ont chacun un coin abattu, qui sert de détrompeur.
 
 ## Voir aussi
 
+- [[Analyse Demarrage BP BA 2026 10]] : signatures attendues (NACK ou réponse `55 55`) et contrôles à faire sans espion
 - [[Protection Surtension Bus I2C]]
 - [[Essensys I2c Ba Sniffer 2026 07 038]] : phase 2 sur Pico

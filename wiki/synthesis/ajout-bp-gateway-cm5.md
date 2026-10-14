@@ -2,7 +2,7 @@
 tags: [synthesis, essensys, installation, gateway, firmware, exploitation]
 sources: [analyses/2026-10-cle-acces-distance/analyse.md]
 created: 2026-10-13
-updated: 2026-10-13
+updated: 2026-10-14
 era: legacy
 ---
 
@@ -36,8 +36,11 @@ Après l'[[Incident Foudre Bus I2C 2026 08]], le BP et le SC940D ont été rempl
 
 Le 2026-10-13, l'entrée (BA PDV, [[Essensys Board Sc940]] neuf) s'allume, mais les sorties des BA CHB et PDE ne répondent toujours pas (index 12 = 0x18). La saisie d'une clé n'y change rien. L'identité des BA est figée dans leur firmware, sans appairage : voir [[Espion I2C Passif]]. Pour trancher entre un BA absent, une trame rejetée et un bus bloqué, utiliser l'outil [[Essensys I2C BA Sniffer]]. Suivi : essensys-hub/essensys-board-SC944D#2.
 
+Le 2026-10-14, [[Analyse Demarrage BP BA 2026 10]] montre que le code ne connaît ni appairage ni préférence pour les cartes neuves. Le SC940D, en bout de chaîne, prouve que le bus est sain. Restent deux causes possibles, propres aux deux anciens BA : un dégât de la foudre (le plus probable) ou un firmware antérieur à la v1.5. La LED DL1 et la console Espion du BP permettent de trancher.
+
 ## Voir aussi
 
 - [[Analyse Cle Acces Distance 2026 10]]
+- [[Analyse Demarrage BP BA 2026 10]]
 - [[Protection Surtension Bus I2C]]
 - [[Essensys Server Backend]]
