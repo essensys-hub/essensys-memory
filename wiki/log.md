@@ -4181,3 +4181,11 @@ Page [[Essensys I2C Etoile 0v]] enrichie de la révision B : module ESP32 (écou
 Source `raw/analyses/2026-10-cle-acces-distance/analyse.md` (anonymisée) : rôle de la clé d'accès à distance du BP, et pourquoi elle ne bloque pas les actions avec la gateway CM5. Diagnostic : actions acquittées, mais BA CHB et PDE en défaut (index 12 = 0x18).
 Pages créées : [[Analyse Cle Acces Distance 2026 10]], [[Cle Acces Distance]], [[Ajout BP Gateway CM5]]. Pages mises à jour : [[Essensys Board Sc944d]], [[Essensys WEB Legacy]], [[Incident Foudre Bus I2C 2026 08]]. Index mis à jour.
 Tickets essensys-hub/essensys-doc#7 et essensys-hub/essensys-board-SC944D#2.
+
+## [2026-10-13] update | Espion I2C passif
+Pages créées : [[Essensys I2C BA Sniffer]] (dépôt public, feature i2c-ba-sniffer-2026-10-009) et [[Espion I2C Passif]] (identité des BA figée à la compilation, protocole observé, règles). Section « Identité I2C » ajoutée à [[Essensys Board Sc940]], [[Essensys Board Sc942c]] et [[Essensys Board Sc941c]]. [[Ajout BP Gateway CM5]] mis à jour : l'entrée fonctionne, CHB et PDE restent muets. Le change [[Essensys I2c Ba Sniffer 2026 07 038]] devient la phase 2 (Pico). Index mis à jour.
+Tickets essensys-hub/essensys-feature-lifecycle#29 et essensys-hub/essensys-memory#16.
+
+## [2026-10-14] update | Espion I2C : avancement
+[[Essensys I2C BA Sniffer]] : section « Avancement » ajoutée. Schémas corrigés, doc publiée, boîtier J1 imprimable (PR essensys-i2c-ba-sniffer#9). Analyseur FX2 retenu, liste Farnell des composants de la sonde. Le travail est en pause jusqu'à la réception des pièces ; les étapes suivantes sont le banc avec ADS1115, la sonde et la capture réelle. [[Espion I2C Passif]] : brochage J1/J2 confirmé dans `SI940D.PcbDoc` (+15 V en diagonale de la broche 1, côté rampe).
+Ticket essensys-hub/essensys-memory#16.

@@ -34,7 +34,7 @@ Après l'[[Incident Foudre Bus I2C 2026 08]], le BP et le SC940D ont été rempl
 - Les 15 visaient les BA CHB ([[Essensys Board Sc942c]]) et PDE ([[Essensys Board Sc941c]]), qui sont en défaut (index 12 = 0x18).
 - Le symptôme « aucune action exécutée » vient de l'I2C, pas de la clé.
 
-Reste à faire : essayer une commande vers le BA PDV ([[Essensys Board Sc940]]). Suivi : essensys-hub/essensys-board-SC944D#2.
+Le 2026-10-13, l'entrée (BA PDV, [[Essensys Board Sc940]] neuf) s'allume, mais les sorties des BA CHB et PDE ne répondent toujours pas (index 12 = 0x18). La saisie d'une clé n'y change rien. L'identité des BA est figée dans leur firmware, sans appairage : voir [[Espion I2C Passif]]. Pour trancher entre un BA absent, une trame rejetée et un bus bloqué, utiliser l'outil [[Essensys I2C BA Sniffer]]. Suivi : essensys-hub/essensys-board-SC944D#2.
 
 ## Voir aussi
 

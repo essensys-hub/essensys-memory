@@ -2,7 +2,7 @@
 tags: [entity, repo, modern, firmware, hardware]
 sources: [essensys-board-SC941C.md, incidents/2026-08-foudre-bus-i2c/rapport-analyse.md]
 created: 2026-06-20
-updated: 2026-10-11
+updated: 2026-10-13
 era: modern
 repo: essensys-board-SC941C
 ---
@@ -64,6 +64,12 @@ _… voir source complète dans raw/_
 - **Génération 3 (RS-485).** Le signal DE est absent sur cette carte, qui demande un montage à direction automatique.
 - **Réparation.** PIC16F946 (U4) en approvisionnement tendu (Microchip en direct, stock) ; TVS en SMF5V0A-E3-08 ; lire l'EEPROM avant de remplacer le PIC. Détails sur [[Essensys Board Sc940]].
 - Voir [[Incident Foudre Bus I2C 2026 08]] et [[Protection Surtension Bus I2C]].
+
+## Identité I2C
+
+- Adresse **0x13**, figée à la compilation (`TYPE_PIECES_D_EAU` dans `hard.h`). L'image `.hex` v1.7 du type a été vérifiée.
+- Aucune configuration, aucun appairage. Les trois dépôts BA ont `hard.h` réglé sur `TYPE_CHAMBRES` : recompiler en vérifiant le type, ou ne flasher que le `.hex` livré.
+- Voir [[Espion I2C Passif]].
 
 ## Liens
 
