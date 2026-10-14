@@ -432,8 +432,8 @@ Le système MUST masquer les adresses IP en affichage IHM (masque `/24` ou équi
 
 #### Scenario: Affichage IP masquée
 
-- **WHEN** un `lan_user` consulte une ligne d'audit avec `actor_ip=192.168.1.42`
-- **THEN** l'IHM affiche `192.168.1.0/24` ou `192.168.1.x`
+- **WHEN** un `lan_user` consulte une ligne d'audit avec `actor_ip=192.0.2.42`
+- **THEN** l'IHM affiche `192.0.2.0/24` ou `192.0.2.x`
 
 ### Requirement: Anonymisation à la suppression de compte
 

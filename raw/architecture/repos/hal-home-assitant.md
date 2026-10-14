@@ -20,7 +20,7 @@ Le dossier contient aussi d'autres dépôts HAL non couverts ici (`hal-orchestra
 - **`hal-docs`** : Markdown pur (architecture, spec MQTT, setup, wiring).
 - **`hal-esp32-node-firmware`** : **C++ Arduino** compilé via **PlatformIO** (`platform = espressif32`, `board = esp32dev`). Libs : `ArduinoJson@^7.3.1`, `PubSubClient@^2.8` (MQTT), `ESP8266Audio@^1.9.7` (lecture audio). Environnement Python `.venv` embarqué pour PlatformIO.
 - **Services référencés (hébergés dans d'autres dépôts)** : FastAPI (orchestrateur), `whisper.cpp` (STT), Piper (TTS), OpenClaw (intent), Mosquitto (broker MQTT).
-- **Cible d'infra** : cluster **Turing Pi 2** à `192.168.0.37` pour l'IA et l'orchestration ; Mac mini comme poste opérateur / UI de contrôle local.
+- **Cible d'infra** : cluster **Turing Pi 2** (`<ip-cluster>`) pour l'IA et l'orchestration ; Mac mini comme poste opérateur / UI de contrôle local.
 
 ## Structure du dépôt (et sous-projets éventuels)
 
@@ -89,7 +89,7 @@ Firmware d'un **nœud de pièce** : connexion WiFi + MQTT avec reconnexion, capt
   2. `scripts/load_env.py` (extra_script PlatformIO) convertit le `.env` en `build_flags`.
   3. Compiler/flasher : `pio run` → `pio run --target upload` → `pio device monitor`.
   4. Accéder à l'UI du nœud sur `http://<esp32-ip>/`.
-- **Déploiement plateforme** : services IA + orchestrateur + broker via Docker (cf. `hal-infra-docker` / `hal-home-intercom`), cible cluster Turing Pi 2 `192.168.0.37` ; nœuds ESP32 sur le même LAN WiFi pointant vers les services du cluster.
+- **Déploiement plateforme** : services IA + orchestrateur + broker via Docker (cf. `hal-infra-docker` / `hal-home-intercom`), cible cluster Turing Pi 2 (`<ip-cluster>`) ; nœuds ESP32 sur le même LAN WiFi pointant vers les services du cluster.
 
 ## Intégrations (Home Assistant, ESP32, MQTT, backend...)
 
@@ -104,6 +104,6 @@ Firmware d'un **nœud de pièce** : connexion WiFi + MQTT avec reconnexion, capt
 - **Dossier ≠ dépôt unique** : `hal-home-assitant` est un workspace local agrégeant plusieurs dépôts Git indépendants (organisation `hal-home-assitant`). Chaque sous-projet a son propre cycle de vie ; l'ADR 0001 assume ce découpage multi-dépôts (cadences firmware/IA/infra différentes).
 - **Redondance avec `hal-home-intercom`** : l'implémentation complète et exécutable (server FastAPI + firmware + docker) vit dans le dépôt sœur `hal-home-intercom`. Risque de divergence entre le firmware de `hal-esp32-node-firmware` et celui embarqué dans `hal-home-intercom/esp32/firmware`. Clarifier lequel fait foi.
 - **Maturité POC** : déploiement LAN-only, modèle de sécurité minimal (réseau de confiance, auth MQTT user/password partagée, UI nœud sans authentification sur port 80). Pistes recommandées par la doc : credentials MQTT par appareil, certificats clients, bind loopback de l'UI, registre d'enrôlement.
-- **Cible d'infra mouvante** : migration en cours du Mac mini vers le cluster Turing Pi 2 (`192.168.0.37`) ; les ports/IP sont codés dans les `.env` et la doc, à maintenir cohérents.
+- **Cible d'infra mouvante** : migration en cours du Mac mini vers le cluster Turing Pi 2 (`<ip-cluster>`) ; les ports/IP sont codés dans les `.env` et la doc, à maintenir cohérents.
 - **Secrets** : `Config.h` et `.env` réels sont (volontairement) ignorés par git ; seuls les `.example` et des `.env.home/fablab.nodeXXX` (potentiellement avec mots de passe par défaut `change-me`) sont versionnés — vérifier qu'aucun secret réel n'a fuité.
 - **Anglais vs français** : la doc et le code HAL sont en anglais et orientés langue EN (`en_US-lessac-medium`, intents « call the children »…), alors que le parc Essensys est francophone — point à anticiper pour une éventuelle convergence.

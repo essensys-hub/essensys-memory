@@ -27,7 +27,7 @@
 ## Phase 4 — Déploiement & doc
 
 - [x] 4.1 Variables Ansible : profils seed, `scheduled_sync_enabled`
-- [x] 4.2 Déployer OVH + gateway pilote (192.168.0.14)
+- [x] 4.2 Déployer OVH + gateway pilote (CM5 LAN)
 - [x] 4.3 Vérifier portail `/portal/heating` SDB1 après run planifié (pilote)
 - [x] 4.4 Mettre à jour `essensys-memory` : [[Gateway Exchange]], roadmap index, `wiki/roadmap/changes/essensys-cloud-sync-scheduler.md`
 - [x] 4.5 Entrée `essensys-raspberry-gateway/docs/versions.md`
