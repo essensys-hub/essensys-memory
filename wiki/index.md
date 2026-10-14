@@ -10,6 +10,7 @@ Master catalog of all wiki pages. Updated on every ingest.
 - [[MCP Device Index Reference]] — mapping équipements → indices k/v
 - [[Rapport Analyse Foudre Bus I2C 2026 08]] — rapport d'incident foudre, bus I2C BP ↔ BA (9 août 2026), v2
 - [[Analyse Cle Acces Distance 2026 10]] — clé d'accès à distance du BP vs exécution des actions, diagnostic gateway (2026-10-13)
+- [[Analyse Demarrage BP BA 2026 10]] — démarrage BP/BA, protocole I2C par version, pourquoi seuls les boîtiers neufs répondent
 
 ## Entities
 

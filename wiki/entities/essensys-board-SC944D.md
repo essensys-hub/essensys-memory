@@ -2,7 +2,7 @@
 tags: [entity, repo, legacy, firmware, hardware]
 sources: [essensys-board-SC944D.md, incidents/2026-08-foudre-bus-i2c/rapport-analyse.md]
 created: 2026-06-20
-updated: 2026-10-13
+updated: 2026-10-14
 era: legacy
 repo: essensys-board-SC944D
 ---
@@ -76,6 +76,14 @@ _… voir source complète dans raw/_
 - Le BP acquitte `/api/done` avant l'envoi I2C aux BA, donc un acquittement ne prouve pas l'exécution.
 - Il ne renvoie pas la configuration des BA au démarrage.
 - Procédure : [[Ajout BP Gateway CM5]]. Analyse : [[Analyse Cle Acces Distance 2026 10]].
+
+## Démarrage et dialogue avec les BA
+
+- **Le BP alimente les BA** (`+15VSP`, port TE2). Il active cette sortie environ 1,6 s après son démarrage et la coupe en mode secouru, 12 s après la perte du secteur.
+- **I2C maître à 50 kHz**, adresse `0x10`. Chaque BA est appelé à son adresse fixe `0x11 + n`, sans présentation ni négociation de version.
+- **Aucune configuration envoyée au démarrage.** Le bus reste silencieux jusqu'au premier ordre, et l'index 12 ne signale un BA en défaut qu'après un ordre qui le vise (plus de 5 échecs). Après 20 échecs, il n'y a plus qu'un essai par nouvel ordre.
+- **Tous les BP archivés (095-34 à 099-37) parlent en CRC16.** Ils sont incompatibles avec les BA antérieurs à la v1.5, qui utilisent une somme de contrôle 8 bits.
+- Analyse détaillée : [[Analyse Demarrage BP BA 2026 10]].
 
 ## Liens
 

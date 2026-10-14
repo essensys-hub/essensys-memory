@@ -4189,3 +4189,8 @@ Tickets essensys-hub/essensys-feature-lifecycle#29 et essensys-hub/essensys-memo
 ## [2026-10-14] update | Espion I2C : avancement
 [[Essensys I2C BA Sniffer]] : section « Avancement » ajoutée. Schémas corrigés, doc publiée, boîtier J1 imprimable (PR essensys-i2c-ba-sniffer#9). Analyseur FX2 retenu, liste Farnell des composants de la sonde. Le travail est en pause jusqu'à la réception des pièces ; les étapes suivantes sont le banc avec ADS1115, la sonde et la capture réelle. [[Espion I2C Passif]] : brochage J1/J2 confirmé dans `SI940D.PcbDoc` (+15 V en diagonale de la broche 1, côté rampe).
 Ticket essensys-hub/essensys-memory#16.
+
+## [2026-10-14] ingest | Analyse Demarrage BP BA 2026 10
+Source `raw/analyses/2026-10-demarrage-bp-ba/analyse.md` (anonymisée). Elle décrit le démarrage du BP (alimentation des BA par `+15VSP`, aucune configuration envoyée au démarrage, défaut levé après 5 échecs) et celui des BA (aucune attente du BP, LED indépendante de l'I2C, pas de watchdog). Elle retrace aussi le protocole selon les versions : somme de contrôle 8 bits jusqu'à la 1.4, CRC16 à partir de la 1.5, pas d'I2C en 1.10. Le bus est sain jusqu'au SC940D, en bout de chaîne. Restent deux causes possibles sur les anciens CHB et PDE : un dégât de la foudre, ou un firmware antérieur à la 1.5.
+Page créée : [[Analyse Demarrage BP BA 2026 10]]. Pages mises à jour : [[Essensys Board Sc944d]], [[Essensys Board Sc940]], [[Essensys Board Sc941c]], [[Essensys Board Sc942c]], [[Ajout BP Gateway CM5]], [[Espion I2C Passif]]. Index mis à jour.
+Ticket essensys-hub/essensys-board-SC944D#2.
