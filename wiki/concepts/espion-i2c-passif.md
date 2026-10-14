@@ -2,7 +2,7 @@
 tags: [concept, i2c, debug, firmware, hardware, securite]
 sources: [analyses/2026-10-cle-acces-distance/analyse.md]
 created: 2026-10-13
-updated: 2026-10-13
+updated: 2026-10-14
 era: legacy
 ---
 
@@ -31,6 +31,18 @@ Observer le bus I2C BP ↔ BA de l'armoire **sans jamais y émettre**, pour savo
 | CRC | CRC-16/MODBUS (`crc.c`), confirmé dans le code BP et BA |
 | Réponse | `[écho code][écho CRC][CRC des 3 octets]` ; écho `00 00` si le BA a rejeté le CRC |
 | Répétitions | défaut dans l'index 12 après 5 échecs, abandon après 20, puis un seul essai par nouvel ordre |
+
+## Connecteur J1/J2 des BA
+
+Würth 66200421122 (WR-MPC3 2×2, pas de 3 mm). Le boîtier femelle correspondant est le Würth 662004113322.
+
+Brochage relu dans le fichier PCB d'origine (`SI940D.PcbDoc`) :
+- 1 SDA, pastille carrée ;
+- 2 SCL, à côté de la 1 ;
+- 3 0 V (`GNDBUS`), sous la 1 ;
+- 4 +15 V (`+VBUS`), **en diagonale de la 1, du côté de la rampe de verrouillage**.
+
+Les logements de l'embase ont chacun un coin abattu, qui sert de détrompeur.
 
 ## Règles
 
