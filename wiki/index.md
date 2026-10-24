@@ -12,6 +12,7 @@ Master catalog of all wiki pages. Updated on every ingest.
 - [[Analyse Cle Acces Distance 2026 10]] — clé d'accès à distance du BP vs exécution des actions, diagnostic gateway (2026-10-13)
 - [[Analyse Demarrage BP BA 2026 10]] — démarrage BP/BA, protocole I2C par version, pourquoi seuls les boîtiers neufs répondent
 - [[Analyse Etudes Remplacement Armoire 2026 10]] — études V1, conseil, V2 filaire d'abord, banc deux lumières
+- [[Analyse Solutions Marche Armoire 2026 10]] — onze solutions du marché face à l'exigence de résilience, seules et en dérivation (doc#20)
 
 ## Entities
 
@@ -88,6 +89,7 @@ Master catalog of all wiki pages. Updated on every ingest.
 - [[Espion I2C Passif]] — observer le bus BP↔BA sans émettre ; identité des BA figée à la compilation (0x11/0x12/0x13)
 - [[Cle Acces Distance]] — clé 32 chiffres du BP : Basic Auth MD5 + AES alarme ; bloquait sous ASP.NET, sans effet avec la gateway CM5
 - [[Filaire D Abord Domotique En Derivation]] — bouton → organe bistable ; domotique en parallèle, relais de garde
+- [[Grille Evaluation Resilience Domotique]] — règle 1 à trois niveaux, huit causes communes, deux configurations, hors contrainte
 
 ## Synthesis
 
@@ -97,6 +99,7 @@ Master catalog of all wiki pages. Updated on every ingest.
 - [[Incident Foudre Bus I2C 2026 08]] — foudre du 9 août 2026 : mécanisme, décisions, actions, leçons (SC944D#1)
 - [[Ajout BP Gateway CM5]] — ajouter/remplacer un BP sur gateway CM5 : clé facultative, config d'usine, BA à reconfigurer, acquitté ≠ exécuté (doc#7)
 - [[Reponse Resilience Armoire]] — boutons sans calculateur, domotique sacrifiable : la réponse à la foudre
+- [[Comparatif Solutions Marche Armoire]] — KNX et dix autres : aucune ne tient la règle 1 ; en dérivation, Modbus ≈ 430 € puis KNX ≈ 3 100 € HT
 
 ## Roadmap
 
