@@ -1,8 +1,8 @@
 ---
 tags: [synthesis, migration, legacy, roadmap]
-sources: [MIGRATION_PLAN.md, README.md, essensys-server-backend.md]
+sources: [MIGRATION_PLAN.md, README.md, essensys-server-backend.md, analyses/2026-10-etudes-remplacement-armoire/analyse.md]
 created: 2026-06-20
-updated: 2026-06-20
+updated: 2026-10-24
 era: migration
 ---
 
@@ -42,6 +42,8 @@ Contraintes client imposées par [[Client Essensys Legacy]] :
 ## Firmware armoire (hors migration serveur)
 
 Les cartes [[Essensys Board SC944D]] (maîtresse) et esclaves PIC restent en production ; la passerelle Raspberry remplace le rôle **réseau** du boîtier legacy, pas les cartes I²C.
+
+Volet matériel : depuis la foudre d'août 2026, le remplacement des cartes elles-mêmes est étudié sous la forme d'une armoire « filaire d'abord, domotique en dérivation », où la domotique devient une couche ajoutée qui peut tomber sans couper un bouton ([[Reponse Resilience Armoire]]).
 
 ## Cloud
 

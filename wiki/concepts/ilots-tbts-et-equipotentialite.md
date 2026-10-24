@@ -1,8 +1,8 @@
 ---
 tags: [concept, essensys, hardware, installation, cem, foudre, tbts, equipotentialite]
-sources: [incidents/2026-08-foudre-bus-i2c/rapport-analyse.md]
+sources: [incidents/2026-08-foudre-bus-i2c/rapport-analyse.md, analyses/2026-10-etudes-remplacement-armoire/analyse.md]
 created: 2026-10-11
-updated: 2026-10-12
+updated: 2026-10-24
 ---
 
 # Ilots TBTS Et Equipotentialite
@@ -94,6 +94,17 @@ N2 est la seule mesure de court terme qui garde son efficacité sur un front rai
   2. consignation selon la NF C 18-510, installation photovoltaïque comprise ;
   3. essai d'isolement à 500 V continu sur **chaque** carte : plus de 100 MΩ attendu ; de 10 à 100 MΩ, nettoyer, sécher et refaire l'essai ; moins de 10 MΩ interdit la remise en service ;
   4. nouvelle mesure 0 V–PE en LoZ à la remise sous tension.
+
+## Application : armoire filaire d'abord
+
+L'armoire de remplacement étudiée en octobre 2026 ([[Reponse Resilience Armoire]]) applique ces règles par construction :
+
+- deux îlots TBTS distincts, l'un pour les boutons, l'autre pour la domotique, sans fil commun ;
+- leurs 0 V ne sont jamais reliés au PE : ni liaison, ni varistance, ni TVS, ni éclateur ;
+- une barrière d'au moins 4 kV et 8 mm à chaque passage d'îlot (télérupteur, relais de couplage, relais de garde, optocoupleurs, isolateur Ethernet) ;
+- une source 24 V de classe II par zone, homologuée EN 61558-2-16.
+
+Voir [[Filaire D Abord Domotique En Derivation]].
 
 ## Voir aussi
 
