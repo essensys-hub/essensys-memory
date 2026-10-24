@@ -1,8 +1,8 @@
 ---
 tags: [entity, repo, modern, firmware, hardware]
-sources: [essensys-board-SC940.md, incidents/2026-08-foudre-bus-i2c/rapport-analyse.md]
+sources: [essensys-board-SC940.md, incidents/2026-08-foudre-bus-i2c/rapport-analyse.md, analyses/2026-10-etudes-remplacement-armoire/analyse.md]
 created: 2026-06-20
-updated: 2026-10-14
+updated: 2026-10-24
 era: modern
 repo: essensys-board-SC940
 ---
@@ -91,6 +91,10 @@ _… voir source complète dans raw/_
 - Aucune configuration, aucun appairage. Les trois dépôts BA ont `hard.h` réglé sur `TYPE_CHAMBRES` : recompiler en vérifiant le type, ou ne flasher que le `.hex` livré.
 - Voir [[Espion I2C Passif]].
 - **Versions du firmware** : de 1.30 à 1.4, somme de contrôle 8 bits, incompatible avec le BP 099-37 ; CRC16 à partir de la v1.5. L'adresse ne change pas d'une version à l'autre. Au démarrage, le BA n'attend rien du BP, et sa LED DL1 clignote indépendamment de l'I2C. Voir [[Analyse Demarrage BP BA 2026 10]].
+
+## Remplacement envisagé (2026-10)
+
+- Pièces de vie (20 poussoirs, 5 éclairages, 6 volets, 3 variateurs) : basculées en dernier vers l'armoire « filaire d'abord » (estimé en janvier 2027), ce qui met fin au bus I2C. Voir [[Reponse Resilience Armoire]].
 
 ## Liens
 

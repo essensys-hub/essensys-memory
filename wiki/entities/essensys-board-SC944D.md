@@ -1,8 +1,8 @@
 ---
 tags: [entity, repo, legacy, firmware, hardware]
-sources: [essensys-board-SC944D.md, incidents/2026-08-foudre-bus-i2c/rapport-analyse.md]
+sources: [essensys-board-SC944D.md, incidents/2026-08-foudre-bus-i2c/rapport-analyse.md, analyses/2026-10-etudes-remplacement-armoire/analyse.md]
 created: 2026-06-20
-updated: 2026-10-14
+updated: 2026-10-24
 era: legacy
 repo: essensys-board-SC944D
 ---
@@ -84,6 +84,10 @@ _… voir source complète dans raw/_
 - **Aucune configuration envoyée au démarrage.** Le bus reste silencieux jusqu'au premier ordre, et l'index 12 ne signale un BA en défaut qu'après un ordre qui le vise (plus de 5 échecs). Après 20 échecs, il n'y a plus qu'un essai par nouvel ordre.
 - **Tous les BP archivés (095-34 à 099-37) parlent en CRC16.** Ils sont incompatibles avec les BA antérieurs à la v1.5, qui utilisent une somme de contrôle 8 bits.
 - Analyse détaillée : [[Analyse Demarrage BP BA 2026 10]].
+
+## Remplacement envisagé (2026-10)
+
+- Armoire « filaire d'abord, domotique en dérivation » : voir [[Reponse Resilience Armoire]]. SC942C (chambres) et SC941C (pièces d'eau) d'abord, SC940D (pièces de vie) ensuite ; le BP est retiré en dernier, fonction par fonction (alarme, délestage, écran).
 
 ## Liens
 

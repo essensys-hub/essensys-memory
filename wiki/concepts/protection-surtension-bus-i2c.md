@@ -1,8 +1,8 @@
 ---
 tags: [concept, essensys, hardware, firmware, i2c, cem, foudre, protection]
-sources: [incidents/2026-08-foudre-bus-i2c/rapport-analyse.md]
+sources: [incidents/2026-08-foudre-bus-i2c/rapport-analyse.md, analyses/2026-10-etudes-remplacement-armoire/analyse.md]
 created: 2026-10-11
-updated: 2026-10-11
+updated: 2026-10-24
 ---
 
 # Protection Surtension Bus I2C
@@ -95,6 +95,9 @@ Un composant hors marge en fonctionnement normal cède au premier transitoire. D
 | Rail « +12V » des BA | C2 en 16 V, D6 en 20 V | C2 en 35 V, D6 en 40 V ; protection partielle, U1 (24 V) reste exposé | LMR16006 (60 V), C2 en 50 V |
 
 Ces retouches sont suivies dans le change OpenSpec `i2c-surge-protection-2026-10-007`, capacité `i2c-bus-surge-protection`, du dépôt essensys-board-SC944D.
+
+> [!note] Remplacement des cartes (2026-10)
+> L'architecture V2 étudiée pour remplacer les cartes ([[Reponse Resilience Armoire]]) coupe le chemin de l'onde au lieu de l'écrêter : îlots TBTS séparés par des barrières de 4 kV. Elle met fin au bus I2C à la bascule des pièces de vie (estimée en janvier 2027). D'ici là, les protections de cette page restent valables pour l'armoire en service.
 
 ## Voir aussi
 

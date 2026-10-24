@@ -1,8 +1,8 @@
 ---
 tags: [entity, repo, modern]
-sources: [essensys-doc.md]
+sources: [essensys-doc.md, analyses/2026-10-etudes-remplacement-armoire/analyse.md]
 created: 2026-06-20
-updated: 2026-06-20
+updated: 2026-10-24
 era: modern
 repo: essensys-doc
 ---
@@ -27,6 +27,7 @@ Il couvre notamment :
 - La **table d'échange** (953 indices) qui constitue le modèle de données central partagé entre le firmware legacy et le backend moderne.
 - Le **pattern Bridge / Anti-Corruption Layer** qui relie le backend Go moderne au protocole legacy.
 - Le matériel : 4 cartes (SC944D boîtier principal, SC940D/SC941C/SC942C boîtiers auxiliaires).
+- Les **études** (`docs/etudes/`, depuis octobre 2026) : la réponse à l'exigence de résilience (`resilience.md`), l'étude V2 « filaire d'abord », le verdict du conseil d'autocritique, l'autocritique des V1 et les sections de câbles (`remplacement-armoire/v2/`), le banc deux lumières (`banc-deux-lumieres.md`) et les trois études V1 figées le 2026-10-21 (Revolution Pi, Arduino Opta, Raspberry Pi et Ethernet). Voir [[Reponse Resilience Armoire]].
 
 ## Intégrations
 
