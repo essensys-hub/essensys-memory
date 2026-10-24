@@ -106,7 +106,7 @@ Le change **017** ne part **pas de zéro** : il hérite d'une **moitié de migra
 - [x] Spec `lan-iam` ≥ 8 scénarios testables
 - [x] Design validé (D1–D9 + décisions produit)
 - [x] Accord produit : register fermé v1
-- [ ] Spike : PG présent sur CM5 prod (192.168.0.14)
+- [ ] Spike : PG présent sur CM5 prod (`<ip-gateway>`)
 - [ ] Lien explicite change **016** (wizard) pour bootstrap UX
 
 ## 7. Prochaine itération doc

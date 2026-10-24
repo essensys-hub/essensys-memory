@@ -55,7 +55,7 @@ flowchart LR
 |---------|--------|
 | Playbook install | `essensys-ansible/install.gateway.yml` |
 | Playbook update | `essensys-ansible/update.raspberrypi.yml` avec `-i inventory.gateway` |
-| Inventaire | `essensys-ansible/inventory.gateway` (`ansible_host` ex. `192.168.0.14`, user `essensys`) |
+| Inventaire | `essensys-ansible/inventory.gateway` (`ansible_host` = IP LAN de la gateway, user `essensys`) |
 | Binaire backend | `/opt/essensys/backend/server` (conteneur `essensys-backend`, port **7070**) |
 | Static frontend | `/opt/data/frontend/` |
 | Compose | `/opt/data/docker-compose.yml` |
@@ -66,14 +66,14 @@ flowchart LR
 ```bash
 # Backend
 rsync -az --exclude .git --exclude node_modules \
-  essensys-server-backend/ essensys@192.168.0.14:~/essensys-server-backend/
-ssh essensys@192.168.0.14 'cd ~/essensys-server-backend && \
+  essensys-server-backend/ essensys@<ip-gateway>:~/essensys-server-backend/
+ssh essensys@<ip-gateway> 'cd ~/essensys-server-backend && \
   PATH=/usr/local/go/bin:$PATH go build -o /opt/essensys/backend/server ./cmd/server && \
   docker restart essensys-backend'
 
 # Frontend (build local → push dist)
 cd essensys-server-frontend && npm run build
-rsync -az --delete dist/ essensys@192.168.0.14:/opt/data/frontend/
+rsync -az --delete dist/ essensys@<ip-gateway>:/opt/data/frontend/
 ```
 
 Script tout-en-un (OVH + CM5) : `essensys-ansible/scripts/deploy-scenarios-local.sh` (étapes 4–6 = CM5).

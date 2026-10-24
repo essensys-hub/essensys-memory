@@ -63,9 +63,9 @@ essensys-raspberry-gateway/
 
 - `nix flake check` valide l'évaluation (workflow CI `nixos-flake-check.yml`).
 - Build/déploiement type : `nixos-rebuild switch --flake .#gateway-cm5` (sur la cible aarch64) ou build d'image puis flash.
-- L'hôte de référence (`nix/hosts/gateway-cm5/default.nix`) reflète une passerelle réelle (CM5 relevé à `192.168.0.14`, 2026-05-31) :
+- L'hôte de référence (`nix/hosts/gateway-cm5/default.nix`) reflète une passerelle réelle (CM5 relevée le 2026-05-31) :
   - `services.essensys.enable = true`, `platform.cm5.enable = true` ;
-  - `gateway.enable` avec `eth0` LAN (`192.168.0.14`), `eth1` armoire (`10.0.1.1/24`), DHCP armoire `10.0.1.100–200`, hostname `mon.essensys.fr` rabattu sur `eth1` ;
+  - `gateway.enable` avec `eth0` LAN (`<ip-gateway>`), `eth1` armoire (`10.0.1.1/24`), DHCP armoire `10.0.1.100–200`, hostname `mon.essensys.fr` rabattu sur `eth1` ;
   - `nvme.enable` (partition de données ext4 montée sur `/mnt/nvme`, `required = true` → boot échoue si NVMe absent) ;
   - services activés : `nginx`, `frontend`, `redis`, `mosquitto` ; **désactivés** : `backend` (en attente d'image), `traefik` (en attente ACME/secrets).
 

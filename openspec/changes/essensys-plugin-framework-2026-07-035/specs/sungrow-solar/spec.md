@@ -1,7 +1,7 @@
 ## ADDED Requirements
 
 ### Requirement: Collecteur Sungrow WiNet-S sur MQTT
-Le plugin SHALL fournir un collecteur dérivé de `sungrow_winet_collector.py` qui interroge l'API locale WiNet-S (`wss://<ip>/ws/home/overview`, login `user`/`pw1111` référencé via SOPS) et publie les métriques sur Mosquitto selon le contrat collecteur, avec heartbeat. Le collecteur MUST s'exécuter sur le périmètre où le device est joignable (CM5/gateway).
+Le plugin SHALL fournir un collecteur dérivé de `sungrow_winet_collector.py` qui interroge l'API locale WiNet-S (`wss://<ip>/ws/home/overview`, identifiants locaux du dongle référencés via SOPS) et publie les métriques sur Mosquitto selon le contrat collecteur, avec heartbeat. Le collecteur MUST s'exécuter sur le périmètre où le device est joignable (CM5/gateway).
 
 #### Scenario: Publication des métriques temps réel
 - **WHEN** le collecteur lit une trame temps réel de l'onduleur SH6.0RS

@@ -40,5 +40,5 @@
 
 ## 7. Déploiement gateway (hors git automatique)
 
-- [x] 7.1 Build + deploy backend/frontend sur CM5 dev (`192.168.42.119`)
+- [x] 7.1 Build + deploy backend/frontend sur CM5 dev (`<ip-cm5-dev>`)
 - [x] 7.2 Vérifier rotation : logs `mystatus` contiennent indices groupe A/B/C sur ~10 s

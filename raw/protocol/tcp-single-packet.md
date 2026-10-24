@@ -77,13 +77,13 @@ Paquet TCP 1: HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 96\r\nCont
 
 ```bash
 # Capturer les paquets TCP du client BP_MQX_ETH
-sudo tcpdump -i any -s 0 -A 'tcp port 80 and host 192.168.0.151' -w capture.pcap
+sudo tcpdump -i any -s 0 -A 'tcp port 80 and host 192.0.2.151' -w capture.pcap
 
 # Afficher en temps réel avec contenu ASCII
-sudo tcpdump -i any -s 0 -A 'tcp port 80 and host 192.168.0.151'
+sudo tcpdump -i any -s 0 -A 'tcp port 80 and host 192.0.2.151'
 
 # Compter les paquets par connexion
-sudo tcpdump -i any -s 0 'tcp port 80 and host 192.168.0.151' | grep "length"
+sudo tcpdump -i any -s 0 'tcp port 80 and host 192.0.2.151' | grep "length"
 ```
 
 ### Analyse Comparative
@@ -310,7 +310,7 @@ Après implémentation de la solution, le client BP_MQX_ETH fonctionne parfaitem
 
 ```bash
 # Observer les appels du client
-sudo tcpdump -i any -s 0 -A 'tcp port 80 and host 192.168.0.151'
+sudo tcpdump -i any -s 0 -A 'tcp port 80 and host 192.0.2.151'
 
 # Résultat attendu:
 # - serverinfos toutes les ~20 secondes
@@ -336,7 +336,7 @@ curl -X POST http://localhost:8080/api/admin/inject \
 
 ```bash
 # Compter les paquets TCP par réponse
-sudo tcpdump -i any 'tcp port 80 and host 192.168.0.151' | \
+sudo tcpdump -i any 'tcp port 80 and host 192.0.2.151' | \
   grep "length" | \
   awk '{print $NF}'
 
@@ -369,16 +369,16 @@ sudo yum install tcpdump      # RedHat/CentOS
 
 ```bash
 # Capturer tout le trafic du client
-sudo tcpdump -i any -s 0 -A 'tcp port 80 and host 192.168.0.151'
+sudo tcpdump -i any -s 0 -A 'tcp port 80 and host 192.0.2.151'
 
 # Sauvegarder dans un fichier pour analyse
-sudo tcpdump -i any -s 0 -w capture.pcap 'tcp port 80 and host 192.168.0.151'
+sudo tcpdump -i any -s 0 -w capture.pcap 'tcp port 80 and host 192.0.2.151'
 
 # Afficher uniquement les headers HTTP
-sudo tcpdump -i any -s 0 -A 'tcp port 80 and host 192.168.0.151' | grep -A 10 "HTTP"
+sudo tcpdump -i any -s 0 -A 'tcp port 80 and host 192.0.2.151' | grep -A 10 "HTTP"
 
 # Compter les paquets par connexion
-sudo tcpdump -i any -s 0 'tcp port 80 and host 192.168.0.151' -c 100 | \
+sudo tcpdump -i any -s 0 'tcp port 80 and host 192.0.2.151' -c 100 | \
   grep "length" | wc -l
 ```
 
@@ -405,7 +405,7 @@ sudo apt-get install wireshark  # Debian/Ubuntu
 #### Utilisation
 
 1. Ouvrir le fichier `.pcap` capturé avec tcpdump
-2. Filtrer par IP: `ip.addr == 192.168.0.151`
+2. Filtrer par IP: `ip.addr == 192.0.2.151`
 3. Suivre le stream TCP: Clic droit → Follow → TCP Stream
 4. Observer le nombre de paquets par réponse HTTP
 
@@ -413,7 +413,7 @@ sudo apt-get install wireshark  # Debian/Ubuntu
 
 ```
 # Filtrer par IP du client
-ip.addr == 192.168.0.151
+ip.addr == 192.0.2.151
 
 # Filtrer les requêtes HTTP
 http.request
@@ -429,7 +429,7 @@ http.request.uri contains "/api/mystatus"
 
 ```bash
 # Analyser un fichier pcap
-tshark -r capture.pcap -Y "ip.addr == 192.168.0.151"
+tshark -r capture.pcap -Y "ip.addr == 192.0.2.151"
 
 # Extraire les requêtes HTTP
 tshark -r capture.pcap -Y "http.request" -T fields -e http.request.uri
@@ -444,7 +444,7 @@ tshark -r capture.pcap -z conv,tcp
 #!/bin/bash
 # diagnose_client.sh - Diagnostiquer le client BP_MQX_ETH
 
-CLIENT_IP="192.168.0.151"
+CLIENT_IP="192.0.2.151"
 CAPTURE_FILE="client_capture.pcap"
 DURATION=60  # secondes
 
@@ -480,10 +480,10 @@ echo "Done. Review $CAPTURE_FILE with Wireshark for detailed analysis."
 
 ```bash
 # Capturer le trafic avec server.sample (référence)
-sudo tcpdump -i any -s 0 -w reference.pcap 'tcp port 80 and host 192.168.0.151'
+sudo tcpdump -i any -s 0 -w reference.pcap 'tcp port 80 and host 192.0.2.151'
 
 # Capturer le trafic avec votre serveur
-sudo tcpdump -i any -s 0 -w test.pcap 'tcp port 80 and host 192.168.0.151'
+sudo tcpdump -i any -s 0 -w test.pcap 'tcp port 80 and host 192.0.2.151'
 
 # Comparer le nombre de paquets par réponse
 echo "Reference server:"

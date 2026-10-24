@@ -41,7 +41,7 @@ _Voir dépôt source._
 - **Dossier ≠ dépôt unique** : `hal-home-assitant` est un workspace local agrégeant plusieurs dépôts Git indépendants (organisation `hal-home-assitant`). Chaque sous-projet a son propre cycle de vie ; l'ADR 0001 assume ce découpage multi-dépôts (cadences firmware/IA/infra différentes).
 - **Redondance avec `hal-home-intercom`** : l'implémentation complète et exécutable (server FastAPI + firmware + docker) vit dans le dépôt sœur `hal-home-intercom`. Risque de divergence entre le firmware de `hal-esp32-node-firmware` et celui embarqué dans `hal-home-intercom/esp32/firmware`. Clarifier lequel fait foi.
 - **Maturité POC** : déploiement LAN-only, modèle de sécurité minimal (réseau de confiance, auth MQTT user/password partagée, UI nœud sans authentification sur port 80). Pistes recommandées par la doc : credentials MQTT par appareil, certificats clients, bind loopback de l'UI, registre d'enrôlement.
-- **Cible d'infra mouvante** : migration en cours du Mac mini vers le cluster Turing Pi 2 (`192.168.0.37`) ; les ports/IP sont codés dans les `.env` et la doc, à maintenir cohérents.
+- **Cible d'infra mouvante** : migration en cours du Mac mini vers le cluster Turing Pi 2 (`<ip-cluster>`) ; les ports/IP sont codés dans les `.env` et la doc, à maintenir cohérents.
 - **Secrets** : `Config.h` et `.env` réels sont (volontairement) ignorés par git ; seuls les `.example` et des
 
 _… voir source complète dans raw/_
