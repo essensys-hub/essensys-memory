@@ -1,6 +1,6 @@
 ---
 tags: [synthesis, essensys, domotique, firmware, hardware, incident, foudre, i2c, cem, retex]
-sources: [incidents/2026-08-foudre-bus-i2c/rapport-analyse.md, analyses/2026-10-etudes-remplacement-armoire/analyse.md]
+sources: [incidents/2026-08-foudre-bus-i2c/rapport-analyse.md, analyses/2026-10-etudes-remplacement-armoire/analyse.md, analyses/2026-10-solutions-marche-armoire/analyse.md]
 created: 2026-10-11
 updated: 2026-10-24
 era: legacy
@@ -23,6 +23,7 @@ era: legacy
 | Module ESP32 de la carte N2 | [[N2 Esp32 Spy Alarm 2026 10 008]] : écoute passive du bus, BA muet et ligne collée, +15 V et PTC, journal horodaté des surtensions, alarme intrusion sur batterie ; doc publique `install/module-n2-esp32` |
 | Tests de non-régression | `NR-essensys-board-SC944D-1` à `-13`, prévus par le change, sur banc uniquement (voir [[Feature Lifecycle]]) |
 | Remplacement des cartes | Réponse de résilience → [[Reponse Resilience Armoire]] ; pages publiques `docs/etudes/` d'[[Essensys DOC]] |
+| Couche domotique de l'armoire V2 | [[Comparatif Solutions Marche Armoire]] (2026-10-24) : onze solutions du marché, aucune ne tient la règle 1 seule ; en dérivation, serveur d'E/S Modbus puis KNX à chiffrer ; pages publiques `docs/etudes/remplacement-armoire/marche/` |
 
 - **2026-10-13 — après remplacement du BP et du SC940D.** Le BP dialogue normalement avec la gateway. 15 actions de test ont été acquittées, et toutes visaient les BA CHB et PDE. L'index 12 vaut 0x18 : SC942C et SC941C sont en défaut, le SC940D répond. Les actions sont perdues sur l'I2C ; la clé d'accès à distance n'est pas en cause. Voir [[Analyse Cle Acces Distance 2026 10]] et [[Ajout BP Gateway CM5]].
 

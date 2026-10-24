@@ -1,6 +1,6 @@
 ---
 tags: [concept, essensys, hardware, architecture, resilience, domotique, tbts, foudre]
-sources: [analyses/2026-10-etudes-remplacement-armoire/analyse.md]
+sources: [analyses/2026-10-etudes-remplacement-armoire/analyse.md, analyses/2026-10-solutions-marche-armoire/analyse.md]
 created: 2026-10-24
 updated: 2026-10-24
 ---
@@ -41,7 +41,12 @@ Chaque fonction a un état de repli décidé à la conception et essayé à la r
 - L'isolation renforcée des organes doit être attestée par écrit par le fabricant, sinon il faut un relais de couplage de plus par circuit.
 - Ce qui n'a pas d'organe autonome (alarme, sirènes, délestage sans délesteur dédié) reste dépendant de la couche domotique.
 
+## Quelle couche domotique en dérivation ?
+
+Le motif ne fixe pas la technologie de la couche. Le [[Comparatif Solutions Marche Armoire]] (2026-10) l'a chiffrée pour onze solutions du marché : en dérivation, la couche n'a qu'à fermer des contacts secs, lire des recopies et battre le cœur du relais de garde, et les critères qui comptent deviennent le prix par voie, l'ouverture du protocole, la place et l'absence de logiciel du projet dans l'armoire. Les mieux placées sont un serveur d'E/S Modbus piloté par la passerelle (≈ 430 € HT en grand public, 3 000 à 3 900 € HT en industriel) et KNX TP (≈ 3 100 € HT) ; la Revolution Pi Connect 5 reste la troisième voie. Le même comparatif montre qu'aucune solution du marché ne tient la règle 1 seule : celles qui s'en approchent mettent un microcontrôleur par poussoir ou par zone. La grille est dans [[Grille Evaluation Resilience Domotique]].
+
 ## Voir aussi
 
 - [[Analyse Etudes Remplacement Armoire 2026 10]]
 - [[Incident Foudre Bus I2C 2026 08]]
+- [[Comparatif Solutions Marche Armoire]]

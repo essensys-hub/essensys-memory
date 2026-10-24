@@ -1,6 +1,6 @@
 ---
 tags: [synthesis, essensys, hardware, armoire, resilience, foudre, tbts, migration]
-sources: [analyses/2026-10-etudes-remplacement-armoire/analyse.md, incidents/2026-08-foudre-bus-i2c/rapport-analyse.md]
+sources: [analyses/2026-10-etudes-remplacement-armoire/analyse.md, incidents/2026-08-foudre-bus-i2c/rapport-analyse.md, analyses/2026-10-solutions-marche-armoire/analyse.md]
 created: 2026-10-24
 updated: 2026-10-24
 era: legacy
@@ -77,6 +77,18 @@ Restent deux défauts latents : la batterie de l'alarme et l'isolement qui se d�
 - Couche domotique : Revolution Pi Connect 5 ou serveur d'E/S léger.
 - Calendrier : poser après les essais, ou dès novembre.
 
+## Couche domotique : candidates chiffrées (2026-10-24)
+
+L'étude [[Comparatif Solutions Marche Armoire]] a passé onze solutions du marché au crible de la [[Grille Evaluation Resilience Domotique]]. Aucune ne tient la règle 1 seule : la V2 reste la seule réponse qui la tient. En dérivation sur le filaire, deux candidates s'ajoutent au désaccord « Revolution Pi Connect 5 ou serveur d'E/S léger » :
+
+| Candidate | Couche HT | Ce qu'elle apporte |
+| --- | --- | --- |
+| Serveur d'E/S Modbus piloté par la passerelle | ≈ 430 € en modules grand public ; ≈ 3 000 à 3 900 € en modules industriels | Aucune logique dans l'armoire, protocole ouvert ; chien de garde de communication sur les modules industriels seulement. À chiffrer en premier |
+| KNX TP | ≈ 3 100 € | Norme à 500 fabricants, aucun Linux ni logiciel du projet sur le chemin des contacts ; ETS à acheter et apprendre |
+| Revolution Pi Connect 5 | ≈ 581 € nue, modules d'E/S non chiffrés | La voie de la V1, candidate de trois conseillers |
+
+Estimations d'octobre 2026 par des agents d'IA, à confirmer par un électricien, des devis, les fabricants et des essais. L'étude ne tranche pas et ne modifie pas la V2.
+
 ## Feuille de route (estimations)
 
 | Quand | Étape |
@@ -116,3 +128,4 @@ Dans [[Essensys DOC]] :
 - [[Protection Surtension Bus I2C]]
 - [[Migration Legacy To Modern]]
 - [[Product Roadmap]]
+- [[Comparatif Solutions Marche Armoire]] : onze solutions du marché face à l'exigence, seules et en dérivation

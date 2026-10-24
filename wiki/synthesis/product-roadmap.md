@@ -1,6 +1,6 @@
 ---
 tags: [synthesis, roadmap, product]
-sources: [product-roadmap-rubric.md, platform-overview.md, migration-legacy-to-modern.md, analyses/2026-10-etudes-remplacement-armoire/analyse.md]
+sources: [product-roadmap-rubric.md, platform-overview.md, migration-legacy-to-modern.md, analyses/2026-10-etudes-remplacement-armoire/analyse.md, analyses/2026-10-solutions-marche-armoire/analyse.md]
 created: 2026-06-21
 updated: 2026-10-24
 era: modern
@@ -34,7 +34,7 @@ Priorisation produit **vivante** — delta par rapport à [[Platform Overview]] 
 | Install particulier | Ansible `install-gateway.md` | — | Wizard UX | > [!todo] `essensys-install-wizard` | Non techniciens bloqués |
 | Recovery gateway | API `gateways/register` | — | UX remplacement | Later (après install-wizard) | Support coûteux |
 | Observabilité | New Relic partiel | Prometheus stub | Fleet health | Later | Pannes silencieuses |
-| **Armoire résiliente** | Études V1/V2, conseil, banc deux lumières | — | Relevé électricien, attestations, essai de choc, pose par zones | [[Reponse Resilience Armoire]] | Boutons morts à la prochaine panne d'un BA |
+| **Armoire résiliente** | Études V1/V2, conseil, banc deux lumières, comparatif de onze solutions du marché | — | Relevé électricien, attestations, essai de choc, pose par zones, devis de la couche domotique (Modbus ou KNX) | [[Reponse Resilience Armoire]], [[Comparatif Solutions Marche Armoire]] | Boutons morts à la prochaine panne d'un BA |
 
 ## Now (0–3 mois)
 
