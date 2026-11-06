@@ -16,11 +16,16 @@ Le système SHALL connaître un catalogue fixe d'objets nommables, identiques su
 - **THEN** il l'ignore sans erreur
 
 ### Requirement: Nom affiché
-Le nom affiché d'un objet SHALL être, par ordre de priorité : le nom forcé de l'objet ; sinon le patron de l'objet rempli avec le nom de sa pièce, quand l'objet a une pièce ; sinon son nom d'origine. Le nom d'une pièce SHALL être son nom personnalisé, ou son nom d'origine. Les noms d'origine et les patrons MUST reproduire les libellés actuels des clients.
+Le nom affiché d'un objet SHALL être, par ordre de priorité : le nom forcé de l'objet ; sinon le patron de l'objet rempli avec le nom de sa pièce, quand l'objet a une pièce ; sinon son nom d'origine. Le nom d'une pièce SHALL être son nom personnalisé, ou son nom d'origine. Les noms d'origine et les patrons MUST reproduire les libellés actuels des clients, à une exception près : les zones de chauffage des salles de bain suivent le nom de leur pièce, donc elles affichent la casse de la pièce (« Salle de Bain 1 » et non « Salle de bain 1 »).
 
 #### Scenario: Aucun nom personnalisé
 - **WHEN** aucun nom n'a été saisi
 - **THEN** chaque objet s'affiche avec son libellé actuel, par exemple « Volet Petite Chambre 3 »
+
+#### Scenario: Zone de chauffage d'une salle de bain
+- **GIVEN** la pièce « Salle de Bain 1 » renommée « Douche »
+- **WHEN** un client affiche la zone de chauffage de cette pièce
+- **THEN** la zone s'affiche « Douche »
 
 #### Scenario: Nom de pièce
 - **GIVEN** la pièce « Petite Chambre 3 » renommée « Chambre de Nico »
