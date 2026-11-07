@@ -4214,3 +4214,8 @@ Ticket essensys-hub/essensys-feature-lifecycle#45, sous-ticket essensys-hub/esse
 Synthèse de la feature `noms-lumieres-2026-11-004` à partir du contrat du change OpenSpec : droits administrateur d'armoire, catalogue des 33 lumières, fusion dernier-écrit-gagne cloud/gateway, stockage cloud et fichier gateway, une armoire par compte.
 Page créée : [[Noms Personnalises Lumieres]]. Page mise à jour : [[Lumieres Temporisees]]. Index mis à jour. Aucun fichier de raw/ modifié ; les scripts sync-sources, extract-git-history et update-roadmap n'ont pas été lancés (ils écrivent des adresses du réseau local).
 Ticket essensys-hub/essensys-feature-lifecycle#41, sous-ticket essensys-hub/essensys-memory#26.
+
+## [2026-11-07] synthesis | Noms Personnalises Volets
+Synthèse de la feature `noms-volets-2026-11-005` à partir du contrat du change OpenSpec : catalogue des 16 volets et stores, routes jumelles `/shutters/names`, section `shutters` du même fichier gateway (même clé `light_names.path`, donc Raspberry Pi et Ansible non concernés), fusion dernier-écrit-gagne, risque de retour arrière.
+Page créée : [[Noms Personnalises Volets]]. Page mise à jour : [[Noms Personnalises Lumieres]]. Index mis à jour. Aucun fichier de raw/ modifié ; les scripts sync-sources, extract-git-history et update-roadmap n'ont pas été lancés (ils écrivent des adresses du réseau local).
+Ticket essensys-hub/essensys-feature-lifecycle#52, sous-ticket essensys-hub/essensys-memory#28.
