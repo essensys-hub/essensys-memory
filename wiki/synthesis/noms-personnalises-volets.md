@@ -51,3 +51,5 @@ Cloud, puis gateway CM5 (SHA épinglés), puis portails ; APK 2.7.0 sur le site 
 ## Suivi
 
 Process : [[Feature Lifecycle]]. Clients : [[Essensys User Portal Frontend]], [[Essensys Server Frontend]], [[Essensys Android Phone Apps]], [[Essensys IOS Phone Apps]]. Doc publique : page « Renommer un volet ou un store » et page « Fichier des noms (gateway) » ([[Essensys DOC]]).
+
+L'activation et l'ordre d'affichage des objets : voir [[Affichage Objets]].

@@ -102,6 +102,7 @@ Master catalog of all wiki pages. Updated on every ingest.
 - [[Lumieres Temporisees]] — régler depuis portails et apps l'extinction automatique de six lumières (clés 521, 555-557, 561, 562 ; 0 à 255 min)
 - [[Noms Personnalises Lumieres]] — nom choisi par l'administrateur pour chacune des 33 lumières : droits, fusion dernier-écrit-gagne cloud/gateway, stockage, une armoire par compte
 - [[Noms Personnalises Volets]] — nom choisi par l'administrateur pour chacun des 16 volets et stores : routes jumelles des lumières, section `shutters` du même fichier gateway, fusion dernier-écrit-gagne, retour arrière
+- [[Affichage Objets]] — désactiver et ordonner les 33 lumières et 16 volets et stores : un document par genre, routes jumelles `/layout`, sections `lights_layout`/`shutters_layout` du même fichier gateway, fusion du document entier, règle de repli
 - [[Comparatif Solutions Marche Armoire]] — KNX et dix autres : aucune ne tient la règle 1 ; en dérivation, Modbus ≈ 430 € puis KNX ≈ 3 100 € HT
 
 ## Roadmap

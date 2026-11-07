@@ -50,3 +50,5 @@ Les clients (deux portails, Android, iPhone) identifiaient déjà les 33 lumièr
 Process : [[Feature Lifecycle]]. Clients : [[Essensys User Portal Frontend]], [[Essensys Server Frontend]], [[Essensys Android Phone Apps]], [[Essensys IOS Phone Apps]]. Doc publique : page « Renommer une lumière » et page « Fichier des noms de lumières (gateway) » ([[Essensys DOC]]).
 
 Les volets et stores ont la même fonction : voir [[Noms Personnalises Volets]].
+
+L'activation et l'ordre d'affichage des objets : voir [[Affichage Objets]].

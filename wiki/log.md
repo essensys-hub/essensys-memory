@@ -4219,3 +4219,8 @@ Ticket essensys-hub/essensys-feature-lifecycle#41, sous-ticket essensys-hub/esse
 Synthèse de la feature `noms-volets-2026-11-005` à partir du contrat du change OpenSpec : catalogue des 16 volets et stores, routes jumelles `/shutters/names`, section `shutters` du même fichier gateway (même clé `light_names.path`, donc Raspberry Pi et Ansible non concernés), fusion dernier-écrit-gagne, risque de retour arrière.
 Page créée : [[Noms Personnalises Volets]]. Page mise à jour : [[Noms Personnalises Lumieres]]. Index mis à jour. Aucun fichier de raw/ modifié ; les scripts sync-sources, extract-git-history et update-roadmap n'ont pas été lancés (ils écrivent des adresses du réseau local).
 Ticket essensys-hub/essensys-feature-lifecycle#52, sous-ticket essensys-hub/essensys-memory#28.
+
+## [2026-11-07] synthesis | Affichage Objets
+Synthèse de la feature `affichage-objets-2026-11-006` à partir du contrat du change OpenSpec : un document de disposition par armoire et par genre, routes jumelles `/layout`, deux sections objets (`lights_layout`, `shutters_layout`) du même fichier gateway (même clé `light_names.path`, donc Raspberry Pi et Ansible non concernés), fusion du document entier, règle de repli des clients, risque d'une gateway restée en #41/#52.
+Page créée : [[Affichage Objets]]. Pages mises à jour : [[Noms Personnalises Lumieres]], [[Noms Personnalises Volets]]. Index mis à jour. Aucun fichier de raw/ modifié ; les scripts sync-sources, extract-git-history et update-roadmap n'ont pas été lancés (ils écrivent des adresses du réseau local).
+Ticket essensys-hub/essensys-feature-lifecycle#55, sous-ticket essensys-hub/essensys-memory#30.
