@@ -29,3 +29,5 @@ L'armoire éteint déjà certaines lumières après un délai : le BP le garde d
 ## Suivi
 
 Process : [[Feature Lifecycle]]. Doc publique : page « Régler l'extinction automatique des lumières » ([[Essensys DOC]]).
+
+Les lumières affichent leurs noms personnalisés : voir [[Noms Personnalises Lumieres]].

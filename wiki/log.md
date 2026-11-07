@@ -4209,3 +4209,8 @@ Pages publiques : essensys-doc `docs/etudes/remplacement-armoire/marche/` (PR es
 Relevé du code du BP 099-37 (`TableEchange.h`) et du boîtier SC942C (`uc_EteintLampe`, `C_TPS_EXTINCTION`) pour la feature `lumieres-temporisees-2026-11-003` : six lumières à délai réglable (521, 555, 556, 557, 561, 562), octet 0 à 255 minutes, 0 = jamais, compteur minutes x 60 x 0,994 s, écran de l armoire limité à 15 min, 30 min, 1 h, Jamais.
 Page créée : [[Lumieres Temporisees]]. Pages mises à jour : [[Essensys Board Sc942c]], [[Table D Echange]]. Index mis à jour. Aucun fichier de raw/ modifié ; les scripts sync-sources, extract-git-history et update-roadmap seront lancés plus tard.
 Ticket essensys-hub/essensys-feature-lifecycle#45, sous-ticket essensys-hub/essensys-memory#24.
+
+## [2026-11-07] synthesis | Noms Personnalises Lumieres
+Synthèse de la feature `noms-lumieres-2026-11-004` à partir du contrat du change OpenSpec : droits administrateur d'armoire, catalogue des 33 lumières, fusion dernier-écrit-gagne cloud/gateway, stockage cloud et fichier gateway, une armoire par compte.
+Page créée : [[Noms Personnalises Lumieres]]. Page mise à jour : [[Lumieres Temporisees]]. Index mis à jour. Aucun fichier de raw/ modifié ; les scripts sync-sources, extract-git-history et update-roadmap n'ont pas été lancés (ils écrivent des adresses du réseau local).
+Ticket essensys-hub/essensys-feature-lifecycle#41, sous-ticket essensys-hub/essensys-memory#26.
