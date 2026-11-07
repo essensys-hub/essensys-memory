@@ -100,6 +100,7 @@ Master catalog of all wiki pages. Updated on every ingest.
 - [[Ajout BP Gateway CM5]] — ajouter/remplacer un BP sur gateway CM5 : clé facultative, config d'usine, BA à reconfigurer, acquitté ≠ exécuté (doc#7)
 - [[Reponse Resilience Armoire]] — boutons sans calculateur, domotique sacrifiable : la réponse à la foudre
 - [[Lumieres Temporisees]] — régler depuis portails et apps l'extinction automatique de six lumières (clés 521, 555-557, 561, 562 ; 0 à 255 min)
+- [[Noms Personnalises Lumieres]] — nom choisi par l'administrateur pour chacune des 33 lumières : droits, fusion dernier-écrit-gagne cloud/gateway, stockage, une armoire par compte
 - [[Comparatif Solutions Marche Armoire]] — KNX et dix autres : aucune ne tient la règle 1 ; en dérivation, Modbus ≈ 430 € puis KNX ≈ 3 100 € HT
 
 ## Roadmap
