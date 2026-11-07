@@ -2,7 +2,7 @@
 tags: [entity, repo, modern, firmware, hardware]
 sources: [essensys-board-SC942C.md, incidents/2026-08-foudre-bus-i2c/rapport-analyse.md, analyses/2026-10-etudes-remplacement-armoire/analyse.md]
 created: 2026-06-20
-updated: 2026-10-24
+updated: 2026-11-07
 era: modern
 repo: essensys-board-SC942C
 ---
@@ -76,6 +76,16 @@ _… voir source complète dans raw/_
 ## Remplacement envisagé (2026-10)
 
 - Chambres (21 poussoirs, 7 éclairages, 5 volets, 4 variateurs) : basculées en premier, avec les pièces d'eau, vers l'armoire « filaire d'abord » (estimé en novembre-décembre 2026). Le SC940D suit, le BP est retiré en dernier. Voir [[Reponse Resilience Armoire]].
+
+## Temporisation d'extinction par lampe (2026-11)
+
+Relevé dans le code du boîtier (`traitement.c`, `uc_EteintLampe` ; `slavenode.c`, `C_TPS_EXTINCTION`) et la table d'échange du BP 099-37 (`TableEchange.h`, [[Table D Echange]]) :
+
+- **Une valeur par lampe**, un octet non signé de 0 à 255 minutes ; **0 = jamais** (la lumière reste allumée). Le BP la pousse au boîtier par l'I²C et le boîtier la garde en EEPROM.
+- **Compteur** : `minutes × 60 × 0,994` secondes, soit environ 894 s pour 15 min.
+- **Cases** : `Lampes_PDV_Temps` 518, `Lampes_CHB_Temps` 534, `Lampes_PDE_Temps` 550 ; la case d'une lampe est la base de son boîtier plus l'index de sa sortie. Les commentaires du BP marquent PDV/CHB « non utilisé », mais le code du boîtier applique le délai à ses 13 relais (à confirmer au banc).
+- **Six lumières réglables** retenues par la feature [[Lumieres Temporisees]] : Dressing 521 (518 + 3, pièces de vie), WC 1 555, WC 2 556, Service (buanderie) 557, Annexe 1 561 et Annexe 2 562 (550 + 5, 6, 7, 11, 12, pièces d'eau). Aucune lumière de ce boîtier Chambres (534 à 549) n'est réglable aujourd'hui.
+- **Écran de l'armoire** : il propose 15 min, 30 min, 1 h et Jamais (comparaison avec 15, 30, 60 et 0, lue dans le binaire `StpEclT.4FN`, à confirmer au banc). Une valeur libre n'est cochée sur aucune case et pourrait être écrasée à la validation.
 
 ## Liens
 

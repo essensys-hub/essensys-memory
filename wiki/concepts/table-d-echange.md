@@ -2,7 +2,7 @@
 tags: [concept, firmware, protocol, legacy]
 sources: [exchange-table.md, mcp-device-index-reference.md, TableEchange.h, constants.go]
 created: 2026-06-20
-updated: 2026-06-20
+updated: 2026-11-07
 era: migration
 ---
 
@@ -30,9 +30,22 @@ Contrat central armoire ↔ serveur : paires **k** (indice) / **v** (valeur). C�
 | **617–622** | Ouvrir / fermer volets par zone (PDV, CHB, PDE — voir détail ci-dessous) |
 | **591–919** | Scénarios mémorisés (8×41 octets) — voir [[Scénarios domotique]] |
 | **409–411** | État / contrôle alarme |
+| **518–565** | Temps d'extinction des lampes : bases 518 (PDV), 534 (CHB), 550 (PDE) ; six cases utiles 521, 555, 556, 557, 561, 562 (voir ci-dessous) |
 | **566–589** | Temps de course volets (push cloud, 2026-06) |
 
 Constantes Go : `IndexScenario=590`, `IndexLightStart=605`, `IndexLightEnd=622`.
+
+### Temps d'extinction des lampes (518–565)
+
+Trois blocs de 16 cases, un octet par lampe : 0 à 255 minutes, **0 = jamais**. Valeurs compilées de `TableEchange.h` (BP 099-37) : `Lampes_PDV_Temps` = **518**, `Lampes_CHB_Temps` = **534**, `Lampes_PDE_Temps` = **550** ; `Volets_PDV_Temps` suit à 566. Le boîtier arme `minutes × 60 × 0,994` secondes ([[Essensys Board Sc942c]]).
+
+| Case | Lumière | Calcul |
+|------|---------|--------|
+| **521** | Dressing | 518 + 3 |
+| **555** / **556** / **557** | WC 1 / WC 2 / Service (buanderie) | 550 + 5 / 6 / 7 |
+| **561** / **562** | Annexe 1 / Annexe 2 | 550 + 11 / 12 |
+
+Écriture par une action à une seule clé, hors plage 605–622 : aucun complément de bloc. Réglage depuis les portails et apps : [[Lumieres Temporisees]].
 
 ### Détail indices volets par zone
 
