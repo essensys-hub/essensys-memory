@@ -52,3 +52,5 @@ Process : [[Feature Lifecycle]]. Clients : [[Essensys User Portal Frontend]], [[
 Les volets et stores ont la même fonction : voir [[Noms Personnalises Volets]].
 
 L'activation et l'ordre d'affichage des objets : voir [[Affichage Objets]].
+
+La sonnette UniFi (vidéo et clignotement de lumières choisies) : voir [[Sonnette Unifi]].

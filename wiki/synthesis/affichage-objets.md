@@ -53,3 +53,5 @@ Document entier, sans fusion champ par champ : on compare `(updated_at, version,
 ## Suivi
 
 Process : [[Feature Lifecycle]]. Clients : [[Essensys User Portal Frontend]], [[Essensys Server Frontend]], [[Essensys Android Phone Apps]], [[Essensys IOS Phone Apps]]. Doc publique : page « Masquer et ordonner les lumières et les volets » et page « Fichier des noms (gateway) » ([[Essensys DOC]]).
+
+La sonnette UniFi (vidéo et clignotement de lumières choisies) : voir [[Sonnette Unifi]].

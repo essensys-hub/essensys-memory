@@ -4224,3 +4224,8 @@ Ticket essensys-hub/essensys-feature-lifecycle#52, sous-ticket essensys-hub/esse
 Synthèse de la feature `affichage-objets-2026-11-006` à partir du contrat du change OpenSpec : un document de disposition par armoire et par genre, routes jumelles `/layout`, deux sections objets (`lights_layout`, `shutters_layout`) du même fichier gateway (même clé `light_names.path`, donc Raspberry Pi et Ansible non concernés), fusion du document entier, règle de repli des clients, risque d'une gateway restée en #41/#52.
 Page créée : [[Affichage Objets]]. Pages mises à jour : [[Noms Personnalises Lumieres]], [[Noms Personnalises Volets]]. Index mis à jour. Aucun fichier de raw/ modifié ; les scripts sync-sources, extract-git-history et update-roadmap n'ont pas été lancés (ils écrivent des adresses du réseau local).
 Ticket essensys-hub/essensys-feature-lifecycle#55, sous-ticket essensys-hub/essensys-memory#30.
+
+## [2026-11-08] synthesis | Sonnette Unifi
+Synthèse de la feature `sonnette-unifi-2026-11-007` à partir du contrat du change OpenSpec : événement de sonnette (écoute, repli par interrogation), vidéo en instantanés, clignotement des lumières finissant allumées (pas de restauration : l'état réel est illisible), section `doorbell` du même fichier gateway (aucune nouvelle clé), routes gateway, limites.
+Page créée : [[Sonnette Unifi]]. Pages mises à jour : [[Noms Personnalises Lumieres]], [[Affichage Objets]]. Index mis à jour. Aucun fichier de raw/ modifié ; les scripts sync-sources, extract-git-history et update-roadmap n'ont pas été lancés (ils écrivent des adresses du réseau local).
+Ticket essensys-hub/essensys-feature-lifecycle#58, sous-ticket essensys-hub/essensys-memory#32.
