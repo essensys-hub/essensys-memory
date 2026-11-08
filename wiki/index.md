@@ -115,4 +115,4 @@ Master catalog of all wiki pages. Updated on every ingest.
 ## Timeline
 
 Historique Git par dépôt dans `wiki/timeline/` (regénérer via `scripts/extract-git-history.sh`).
-- [[Sonnette Unifi]] — sonnette UniFi sur la CM5 : événement `ring` (repli par interrogation), vidéo en instantanés (~1 image/s), clignotement de lumières finissant allumées (pas de restauration), section `doorbell` du même fichier gateway, limites
+- [[Sonnette Unifi]] — sonnette UniFi sur la CM5 : événement `ring` (repli par interrogation), vidéo en instantanés (~1 image/s), clignotement de lumières finissant allumées (pas de restauration), section `doorbell` du même fichier gateway, limites ; #61 : plages horaires 7×24 et fuseau, signalement gateway vers cloud, notifications push FCM/APNs (`push_devices`), `gateway_state`, option « Sonnette » des apps, pas de garantie de livraison
