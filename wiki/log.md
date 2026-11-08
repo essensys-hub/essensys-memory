@@ -4229,3 +4229,8 @@ Ticket essensys-hub/essensys-feature-lifecycle#55, sous-ticket essensys-hub/esse
 Synthèse de la feature `sonnette-unifi-2026-11-007` à partir du contrat du change OpenSpec : événement de sonnette (écoute, repli par interrogation), vidéo en instantanés, clignotement des lumières finissant allumées (pas de restauration : l'état réel est illisible), section `doorbell` du même fichier gateway (aucune nouvelle clé), routes gateway, limites.
 Page créée : [[Sonnette Unifi]]. Pages mises à jour : [[Noms Personnalises Lumieres]], [[Affichage Objets]]. Index mis à jour. Aucun fichier de raw/ modifié ; les scripts sync-sources, extract-git-history et update-roadmap n'ont pas été lancés (ils écrivent des adresses du réseau local).
 Ticket essensys-hub/essensys-feature-lifecycle#58, sous-ticket essensys-hub/essensys-memory#32.
+
+## [2026-11-08] synthesis | Sonnette Unifi (plages et push)
+Mise à jour de la synthèse à partir du contrat du change OpenSpec `sonnette-plages-push-2026-11-008` : plages horaires 7×24 et fuseau (la gateway décide, le cloud relaie), signalement gateway vers cloud (`POST /api/gateway/doorbell/ring`), notifications push FCM et APNs depuis le cloud, table `push_devices` (migration 022), `gateway_state` (none, offline, online), option « Sonnette » des apps (opt-in par appareil), fenêtre vidéo locale active hors plage, limites (pas de garantie de livraison).
+Page mise à jour : [[Sonnette Unifi]]. Index mis à jour. Aucun fichier de raw/ modifié ; les scripts sync-sources, extract-git-history et update-roadmap n'ont pas été lancés (ils écrivent des adresses du réseau local).
+Ticket essensys-hub/essensys-feature-lifecycle#61, sous-ticket essensys-hub/essensys-memory#34.
