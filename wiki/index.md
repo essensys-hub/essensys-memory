@@ -115,3 +115,4 @@ Master catalog of all wiki pages. Updated on every ingest.
 ## Timeline
 
 Historique Git par dépôt dans `wiki/timeline/` (regénérer via `scripts/extract-git-history.sh`).
+- [[Sonnette Unifi]] — sonnette UniFi sur la CM5 : événement `ring` (repli par interrogation), vidéo en instantanés (~1 image/s), clignotement de lumières puis restauration, section `doorbell` du même fichier gateway, limites
