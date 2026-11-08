@@ -7,7 +7,7 @@ updated: 2026-11-08
 
 # Sonnette Unifi
 
-> Feature `sonnette-unifi-2026-11-007` (ticket essensys-hub/essensys-feature-lifecycle#58, sous-ticket essensys-hub/essensys-memory#32) : quand la sonnette UniFi est pressée, le portail local de la CM5 affiche la vidéo de la caméra et la gateway fait clignoter des lumières choisies, puis les restaure. Prolonge [[Noms Personnalises Lumieres]] (#41) et [[Affichage Objets]] (#55).
+> Feature `sonnette-unifi-2026-11-007` (ticket essensys-hub/essensys-feature-lifecycle#58, sous-ticket essensys-hub/essensys-memory#32) : quand la sonnette UniFi est pressée, le portail local de la CM5 affiche la vidéo de la caméra et la gateway fait clignoter des lumières choisies, qui finissent allumées. Prolonge [[Noms Personnalises Lumieres]] (#41) et [[Affichage Objets]] (#55).
 
 ## Constat
 
@@ -21,9 +21,9 @@ Source : l'API d'intégration UniFi Protect (clé d'API déjà supportée) ; la 
 
 Le navigateur ne lit pas le RTSPS. Version 1 : suite d'**instantanés, environ une image par seconde**, servie par la gateway (`GET /api/doorbell/stream`, `GetCameraSnapshot`) derrière l'authentification ; la clé d'API ne quitte jamais la gateway. Un transcodage ffmpeg vers HLS serait préférable mais hors de ce ticket.
 
-## Clignotement et restauration
+## Clignotement, sans restauration
 
-Pour chaque lumière choisie : lecture de l'état courant, alternance allumé et éteint `blinks` fois (phase d'au moins 2 s, car l'armoire lit les ordres lentement), puis **restauration de l'état d'origine**. Une seule séquence à la fois ; une pression dans les 30 s qui suivent le début d'une séquence réaffiche la vidéo sans relancer le clignotement. Une commande manuelle sur une lumière en cours de clignotement l'exclut de la séquence (la restauration n'écrase pas l'ordre de l'utilisateur). `ringing` reste vrai 60 s.
+Décision de Nicolas : la gateway ne peut pas lire l'état réel des lumières, donc **pas de restauration**. Pour chaque lumière choisie : alternance éteint puis allumé `blinks` fois (1 à 10, phase d'au moins 2 s car l'armoire lit les ordres lentement), et la séquence **termine allumée**. Limite assumée : une lumière éteinte avant la sonnerie reste allumée. Aucune autre lumière ni aucun volet n'est touché. Une seule séquence à la fois ; une pression pendant une séquence met à jour `ringing` et `last_ring_at` sans relancer de clignotement, de même dans les 30 s qui suivent son début. Une commande manuelle sur une lumière en cours de clignotement l'exclut de la séquence (son ordre n'est pas écrasé). `ringing` reste vrai 60 s.
 
 ## Réglages dans le fichier existant
 
@@ -33,7 +33,8 @@ Section `doorbell` du fichier de `light_names.path` : `{"enabled","camera_id","l
 
 - Utilisateur authentifié (ouvert si l'IAM LAN est désactivé) : `GET /api/doorbell/status` (`enabled`, `available`, `ringing`, `ringing_until`, `last_ring_at`), `GET /api/doorbell/stream`.
 - Administrateur : `GET/PUT /api/admin/doorbell/settings`, `POST /api/admin/doorbell/test` (essai à sec avec l'en-tête `X-Essensys-Test-Mode: dry-run`, aucune écriture dans l'armoire).
-- Erreurs : `unknown_light`, `unknown_camera`, `invalid_blinks`, 503 `names_unavailable`, 503 `doorbell_unavailable`.
+- `POST .../test` répond `{"status":"started"|"dry_run","ringing","ringing_until","sequence","lights"}` ; un essai à sec n'arme pas l'anti-rafale. La réponse administrateur des réglages contient `updated_by`, pas celles de `lan_user`. Le flux est une image affichable par `<img>` (le portail ajoute `?ring=<clé>`, ignoré par la gateway).
+- Erreurs : 400 `invalid_settings` (corps illisible ou sans `enabled`, `camera_id`, `lights`), 400 `invalid_blinks` (absent, mal typé, hors 1 à 10), `unknown_light`, `unknown_camera`, 503 `names_unavailable`, 503 `doorbell_unavailable`.
 
 Le portail interroge l'état toutes les 2 s fenêtre ouverte, 5 s sinon ([[Essensys Server Frontend]]).
 

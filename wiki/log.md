@@ -4226,6 +4226,6 @@ Page créée : [[Affichage Objets]]. Pages mises à jour : [[Noms Personnalises 
 Ticket essensys-hub/essensys-feature-lifecycle#55, sous-ticket essensys-hub/essensys-memory#30.
 
 ## [2026-11-08] synthesis | Sonnette Unifi
-Synthèse de la feature `sonnette-unifi-2026-11-007` à partir du contrat du change OpenSpec : événement de sonnette (écoute, repli par interrogation), vidéo en instantanés, clignotement puis restauration des lumières, section `doorbell` du même fichier gateway (aucune nouvelle clé), routes gateway, limites.
+Synthèse de la feature `sonnette-unifi-2026-11-007` à partir du contrat du change OpenSpec : événement de sonnette (écoute, repli par interrogation), vidéo en instantanés, clignotement des lumières finissant allumées (pas de restauration : l'état réel est illisible), section `doorbell` du même fichier gateway (aucune nouvelle clé), routes gateway, limites.
 Page créée : [[Sonnette Unifi]]. Pages mises à jour : [[Noms Personnalises Lumieres]], [[Affichage Objets]]. Index mis à jour. Aucun fichier de raw/ modifié ; les scripts sync-sources, extract-git-history et update-roadmap n'ont pas été lancés (ils écrivent des adresses du réseau local).
 Ticket essensys-hub/essensys-feature-lifecycle#58, sous-ticket essensys-hub/essensys-memory#32.
