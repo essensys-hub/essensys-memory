@@ -2,7 +2,7 @@
 tags: [entity, repo, modern, firmware, hardware]
 sources: [essensys-board-SC840B.md]
 created: 2026-06-20
-updated: 2026-06-20
+updated: 2026-11-11
 era: modern
 repo: essensys-board-SC840B
 ---
@@ -55,6 +55,7 @@ _… voir source complète dans raw/_
 
 ## Liens
 
+- [[Essensys Test Banc BoitierSecondaire]] — archives d'étude du banc (dépôt privé) ; synthèse : [[Banc Test BA 2026 11]]
 - [[Platform Overview]]
 
 ## Source

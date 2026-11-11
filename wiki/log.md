@@ -4239,3 +4239,12 @@ Ticket essensys-hub/essensys-feature-lifecycle#61, sous-ticket essensys-hub/esse
 Source `raw/analyses/2026-11-banc-test-bp/synthese.md` (anonymisée) : banc de test de production du BP retrouvé avec ses archives de 2014-2015. Séquence automatique, 74 points de test, carte d'interface SI841A ; code du logiciel de test absent.
 Pages créées : [[Banc Test BP 2026 11]], [[Essensys Test Banc SC944D]]. Page mise à jour : [[Essensys Board Sc944d]]. Index mis à jour.
 Ticket essensys-hub/essensys-doc#36. Les archives restent dans le dépôt privé `essensys-test-banc-SC944D`.
+
+## [2026-11-11] ingest | Banc Test BA 2026 11
+Source `raw/analyses/2026-11-banc-test-ba/synthese.md` (anonymisée) : banc de test de production des BA (SC940, SC941, SC942), établi à partir des archives et du code de [[Essensys Board SC840B]].
+Pages créées : [[Banc Test BA 2026 11]], [[Essensys Test Banc BoitierSecondaire]]. Pages mises à jour : [[Essensys Board SC840B]], [[Essensys Board SC841A]]. Index mis à jour.
+Ticket essensys-hub/essensys-doc#38.
+
+## [2026-11-11] correction | Banc Test BP 2026 11
+L'ingestion du même jour affirmait que la SI841A n'était pas la SC841A et que le logiciel du banc BP était perdu. C'est faux : [[Essensys Board SC841A]] contient le projet Altium, les Gerber et le logiciel `Banc_BP_V2_FAST`. Source `raw/analyses/2026-11-banc-test-bp/synthese.md` remplacée par sa version corrigée ; [[Banc Test BP 2026 11]] et [[Essensys Test Banc SC944D]] corrigées.
+Ticket essensys-hub/essensys-doc#38.

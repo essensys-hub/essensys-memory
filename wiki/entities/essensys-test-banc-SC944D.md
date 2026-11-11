@@ -36,8 +36,8 @@ Contrôler une carte BP à la sortie de fabrication : alimentations sous secteur
 
 ## À savoir
 
-- La **SI841A** (carte d'interface du banc) n'est pas la SC841A de [[Essensys Board SC841A]].
-- Le code du dsPIC33 du banc n'est pas archivé : seule la spécification existe.
+- La **SI841A** (carte d'interface du banc) est la carte de [[Essensys Board SC841A]], qui porte le projet Altium, les Gerber et le logiciel de test. Ce dépôt privé ne les recopie pas : il apporte la spécification, la mécanique, les points de test, les croquis et les photos.
+- Banc cousin pour les BA : [[Essensys Test Banc BoitierSecondaire]].
 - Ne rien copier de ce dépôt vers un dépôt public sans vérifier les droits.
 
 ## Source
