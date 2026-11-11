@@ -18,7 +18,7 @@ era: legacy
 | Date | 2026-11-11 |
 | Déclencheur | Le banc de test de production du BP et ses archives d'étude ont été retrouvés |
 | Périmètre | Banc de test de la carte BP ([[Essensys Board Sc944d]]) : interface à lit de clous, carte d'interface SI841A, spécification du logiciel de test v4 |
-| Méthode | Lecture des documents et extraction du texte des PDF ; aucun binaire à analyser |
+| Méthode | Lecture des documents, puis du code source C du logiciel de test dans [[Essensys Board SC841A]] |
 | Suivi | essensys-hub/essensys-doc#36 ; archives dans [[Essensys Test Banc SC944D]] (dépôt privé) |
 
 ## Affirmations clés
@@ -28,17 +28,21 @@ era: legacy
 - Il vérifie le pilotage du +15VSP (coupure en secouru, attendue en 6,5 s avec le firmware 092-31 en mode test) et son forçage par un strap que l'opérateur met puis retire.
 - Il vérifie les alimentations des deux détecteurs de présence, des deux sirènes et du bus BA, puis répond aux trames I2C du BA « pièces de vie » : c'est le BP qui juge la communication et l'affiche.
 - 74 points de test, plus l'Ethernet et 10 perçages de réserve pour la programmation.
-- La carte d'interface SI841A porte un dsPIC33FJ256GP710 ; elle reste en reset tant que la presse est ouverte.
-- **Le code du logiciel de test n'est pas dans les archives**, ni les fichiers de conception de la SI841A, ni une notice, ni le plan de câblage du lit de clous.
+- La carte d'interface SI841A porte un dsPIC33FJ256GP710A ; elle reste en reset tant que la presse est ouverte.
+- **La SI841A est la carte de [[Essensys Board SC841A]]** : projet Altium, Gerber et logiciel `Banc_BP_V2_FAST` (source et binaire) y sont publiés. Les seuils de mesure sont dans `Banc_BP.h`. Le logiciel demande un BP 091-30 ou plus récent.
+- Il manque seulement une notice et le plan de câblage du lit de clous.
+- *Correction du 2026-11-11 :* la première version de cette page disait à tort que le logiciel et les fichiers de conception étaient perdus.
 
 ## Points ouverts
 
 - Vérifier sur le banc que le 230 V du test fil pilote est bien coupé presse ouverte.
 - Les plans des points de test portent l'indice C ; validité pour l'indice D non établie.
-- Tableau manuscrit des seuils de mesure à retranscrire.
+- Vérifier que le logiciel chargé dans le banc est celui du dépôt public.
 
 ## Liens
 
+- [[Essensys Board SC841A]]
+- [[Banc Test BA 2026 11]]
 - [[Essensys Test Banc SC944D]]
 - [[Essensys Board Sc944d]]
 - [[Essensys DOC]] — page « Banc de test du BP » (`debug/banc-de-test-bp`)

@@ -2,7 +2,7 @@
 tags: [entity, repo, modern, firmware, hardware]
 sources: [essensys-board-SC841A.md]
 created: 2026-06-20
-updated: 2026-06-20
+updated: 2026-11-11
 era: modern
 repo: essensys-board-SC841A
 ---
@@ -43,6 +43,7 @@ _… voir source complète dans raw/_
 ## Points d'attention
 
 - **Banc de test de production**, pas un équipement déployé chez le client.
+- **Précision (2026-11-11)** : les schémas du dépôt sont ceux de la **carte d'interface du banc** (SI841A), pas ceux de la carte BP ; chaque folio simule ou mesure une fonction du BP.
 - Le dépôt mêle la conception de la **carte BP** (nombreux schémas fonctionnels : alarme, téléinfo, Ethernet, arrosage, écran…) et le **firmware du banc** qui la teste — bien distinguer les deux.
 - Variante `V2_FAST` (séquence accélérée) ; vérifier l'existence/cohérence d'une version « non fast » si besoin de tests plus complets.
 - Toolchain et MCU identiques au SC840B (dsPIC33FJ256GP710A) — bancs cousins.
@@ -50,6 +51,7 @@ _… voir source complète dans raw/_
 
 ## Liens
 
+- [[Essensys Test Banc SC944D]] — archives d'étude du banc (dépôt privé) ; synthèse : [[Banc Test BP 2026 11]]
 - [[Platform Overview]]
 
 ## Source

@@ -11,6 +11,7 @@ Master catalog of all wiki pages. Updated on every ingest.
 - [[Rapport Analyse Foudre Bus I2C 2026 08]] — rapport d'incident foudre, bus I2C BP ↔ BA (9 août 2026), v2
 - [[Analyse Cle Acces Distance 2026 10]] — clé d'accès à distance du BP vs exécution des actions, diagnostic gateway (2026-10-13)
 - [[Banc Test BP 2026 11]] — banc de test de production du BP : séquence, points de test, manques (2026-11-11)
+- [[Banc Test BA 2026 11]] — banc de test de production des BA : trois plaques, séquence, seuils, console série (2026-11-11)
 - [[Analyse Demarrage BP BA 2026 10]] — démarrage BP/BA, protocole I2C par version, pourquoi seuls les boîtiers neufs répondent
 - [[Analyse Etudes Remplacement Armoire 2026 10]] — études V1, conseil, V2 filaire d'abord, banc deux lumières
 - [[Analyse Solutions Marche Armoire 2026 10]] — onze solutions du marché face à l'exigence de résilience, seules et en dérivation (doc#20)
@@ -40,6 +41,7 @@ Master catalog of all wiki pages. Updated on every ingest.
 - [[Essensys I2C BA Sniffer]] — espion I2C passif (sigrok + décodeur Python, sonde KiCad/Fritzing), feature 009
 - [[Essensys I2C Etoile 0v]] — carte N2 « étoile 0 V » + module ESP32 espion, alarme, surtensions (rév. B)
 - [[Essensys Test Banc SC944D]] — archives et doc du banc de test du BP (dépôt privé)
+- [[Essensys Test Banc BoitierSecondaire]] — archives et doc du banc de test des BA (dépôt privé)
 - [[Essensys IOS Phone Apps]] — Application iOS native (Swift / SwiftUI) « Essensys » permettant de piloter une installation domotique Essensy…
 - [[Essensys MCP]] — Dépôt destiné à héberger un serveur MCP (Model Context Protocol) pour Essensys, mais actuellement vide hormis …
 - [[Essensys Memory]] — Dépôt prévu pour fournir une mémoire persistante aux agents IA d'Essensys, actuellement réduit à un README d'u…

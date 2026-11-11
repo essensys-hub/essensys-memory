@@ -1,16 +1,18 @@
 ---
-title: Banc de test du BP SC944 — synthèse des archives
+title: Banc de test du BP SC944 — synthèse des archives (corrigée)
 date: 2026-11-11
-origine: dépôt privé essensys-hub/essensys-test-banc-SC944D (archives 2014-2015), synthèse anonymisée
-suivi: essensys-hub/essensys-doc#36
+origine: dépôt privé essensys-hub/essensys-test-banc-SC944D et dépôt public essensys-board-SC841A, synthèse anonymisée
+suivi: essensys-hub/essensys-doc#36, corrigé par #38
 ---
 
 # Banc de test du boîtier principal (BP)
 
 Le banc de test de production du BP (carte SC944) a été retrouvé en novembre 2026 avec ses archives d'étude. Cette page en donne la synthèse.
 
-!!! info "Où sont les archives"
-    Les plans, le schéma et la spécification sont dans le dépôt privé `essensys-hub/essensys-test-banc-SC944D`. Il reste privé parce qu'il contient des plans du fabricant de l'interface mécanique et des documents de fabricants. Suivi : [essensys-doc#36](https://github.com/essensys-hub/essensys-doc/issues/36).
+!!! info "Où trouver les documents"
+    - **Carte d'interface et logiciel** : dépôt public [`essensys-board-SC841A`](https://github.com/essensys-hub/essensys-board-SC841A) (projet Altium, Gerber, nomenclature, code source et binaire du logiciel de test).
+    - **Archives d'étude** (spécification, plans des points de test, mécanique, croquis, photos) : dépôt privé `essensys-hub/essensys-test-banc-SC944D`. Il reste privé parce qu'il contient des plans du fabricant de l'interface mécanique et des documents de fabricants.
+    - Suivi : [essensys-doc#36](https://github.com/essensys-hub/essensys-doc/issues/36), corrigé par [#38](https://github.com/essensys-hub/essensys-doc/issues/38).
 
 
 ## À quoi il sert
@@ -29,7 +31,7 @@ Le banc contrôle une carte BP à la sortie de fabrication. L'opérateur pose la
 | Élément | Description |
 |---|---|
 | Interface mécanique | Coffret à presse et lit de clous, réalisé sur mesure par un fabricant d'interfaces de test ; plaque porte-carte « 944-BP » |
-| Carte d'interface SI841A | Carte de façade : écran, boutons, voyants bicolores, microcontrôleur dsPIC33FJ256GP710. Schéma de 19 folios |
+| Carte d'interface SI841A | Carte de façade : écran, boutons, voyants bicolores, microcontrôleur dsPIC33FJ256GP710A. Schéma de 19 folios |
 | Points de test | 74 clous sur la carte, plus la prise Ethernet et 10 perçages de réserve pour la programmation |
 | Alimentations | Trois alimentations rail DIN : 24 V, 12 V et 5 V |
 | Réseau | Un routeur, relié directement à la prise Ethernet de la carte |
@@ -37,8 +39,7 @@ Le banc contrôle une carte BP à la sortie de fabrication. L'opérateur pose la
 
 L'étude date de juillet 2014 à février 2015.
 
-!!! warning "Ne pas confondre"
-    La **SI841A** est la carte d'interface du banc. Ce n'est pas la SC841A.
+Le banc des boîtiers auxiliaires est décrit sur la page [Banc de test des BA](banc-de-test-ba.md).
 
 ## Séquence automatique
 
@@ -60,6 +61,8 @@ Vert : mesure bonne. Rouge : mesure mauvaise.
 
 Lors d'un changement d'alimentation, le banc applique toujours la nouvelle tension avant de couper l'ancienne.
 
+Les seuils de chaque mesure sont dans le fichier `Banc_BP.h` du logiciel. D'après ses notes de version, le logiciel publié (`Banc_BP_V2_FAST`) suit la spécification v4 et demande un BP en version 091-30 ou plus récente.
+
 Les autres fonctions se testent ensuite à la main depuis la façade : détecteur d'ouverture, signal et fraude des détecteurs et des sirènes, fuite d'eau, pluie, vent, bouton magique, arrosage, fil pilote (zones jour et nuit, deux salles de bain), machines à laver, prises de sécurité, cumulus.
 
 ## Sécurité
@@ -71,13 +74,13 @@ Les autres fonctions se testent ensuite à la main depuis la façade : détecteu
 
 | Manque | Conséquence |
 |---|---|
-| Code source et binaire du logiciel du banc | Seule la spécification (v4, février 2015) est connue. Le logiciel ne peut pas être reconstruit à partir des archives |
-| Fichiers de conception de la SI841A | Le schéma n'existe qu'en PDF ; le routage final est absent |
-| Notice d'utilisation | Le mode opératoire est déduit de la spécification |
+| Notice d'utilisation | Le mode opératoire est déduit de la spécification et du code |
 | Plan de câblage lit de clous → carte d'interface | La correspondance clou → connecteur n'est pas documentée |
 
 ## Points ouverts
 
-- La temporisation de 6,5 s a été réglée pour le firmware 092-31 en mode test. Elle peut ne pas convenir à une version plus récente.
+- Vérifier que le logiciel chargé dans le banc est bien celui du dépôt `essensys-board-SC841A`.
 - Les plans des points de test portent l'indice C de la carte. Leur validité pour l'indice D n'est pas établie.
-- Le tableau manuscrit des seuils de mesure n'est pas encore retranscrit.
+
+!!! note "Correction du 11 novembre 2026"
+    La première version de cette page disait que la SI841A n'était pas la SC841A et que le logiciel du banc était perdu. C'était faux : tout est dans `essensys-board-SC841A`.
