@@ -1,8 +1,8 @@
 ---
 tags: [entity, repo, legacy, firmware, hardware]
-sources: [essensys-board-SC944D.md, incidents/2026-08-foudre-bus-i2c/rapport-analyse.md, analyses/2026-10-etudes-remplacement-armoire/analyse.md]
+sources: [essensys-board-SC944D.md, incidents/2026-08-foudre-bus-i2c/rapport-analyse.md, analyses/2026-10-etudes-remplacement-armoire/analyse.md, analyses/2026-11-banc-test-bp/synthese.md]
 created: 2026-06-20
-updated: 2026-10-24
+updated: 2026-11-11
 era: legacy
 repo: essensys-board-SC944D
 ---
@@ -89,8 +89,13 @@ _… voir source complète dans raw/_
 
 - Armoire « filaire d'abord, domotique en dérivation » : voir [[Reponse Resilience Armoire]]. SC942C (chambres) et SC941C (pièces d'eau) d'abord, SC940D (pièces de vie) ensuite ; le BP est retiré en dernier, fonction par fonction (alarme, délestage, écran).
 
+## Banc de test de production (2026-11)
+
+- Le banc de test du BP a été retrouvé : lit de clous de 74 points, carte d'interface SI841A, séquence automatique (alimentations, +15VSP, alarme, bus BA). Archives dans [[Essensys Test Banc SC944D]] (dépôt privé), synthèse dans [[Banc Test BP 2026 11]].
+
 ## Liens
 
+- [[Essensys Test Banc SC944D]]
 - [[Table D Echange]]
 - [[Essensys Board SC945D]]
 - [[Client Essensys Legacy]]
