@@ -4234,3 +4234,8 @@ Ticket essensys-hub/essensys-feature-lifecycle#58, sous-ticket essensys-hub/esse
 Mise à jour de la synthèse à partir du contrat du change OpenSpec `sonnette-plages-push-2026-11-008` : plages horaires 7×24 et fuseau (la gateway décide, le cloud relaie), signalement gateway vers cloud (`POST /api/gateway/doorbell/ring`), notifications push FCM et APNs depuis le cloud, table `push_devices` (migration 022), `gateway_state` (none, offline, online), option « Sonnette » des apps (opt-in par appareil), fenêtre vidéo locale active hors plage, limites (pas de garantie de livraison).
 Page mise à jour : [[Sonnette Unifi]]. Index mis à jour. Aucun fichier de raw/ modifié ; les scripts sync-sources, extract-git-history et update-roadmap n'ont pas été lancés (ils écrivent des adresses du réseau local).
 Ticket essensys-hub/essensys-feature-lifecycle#61, sous-ticket essensys-hub/essensys-memory#34.
+
+## [2026-11-11] ingest | Banc Test BP 2026 11
+Source `raw/analyses/2026-11-banc-test-bp/synthese.md` (anonymisée) : banc de test de production du BP retrouvé avec ses archives de 2014-2015. Séquence automatique, 74 points de test, carte d'interface SI841A ; code du logiciel de test absent.
+Pages créées : [[Banc Test BP 2026 11]], [[Essensys Test Banc SC944D]]. Page mise à jour : [[Essensys Board Sc944d]]. Index mis à jour.
+Ticket essensys-hub/essensys-doc#36. Les archives restent dans le dépôt privé `essensys-test-banc-SC944D`.
