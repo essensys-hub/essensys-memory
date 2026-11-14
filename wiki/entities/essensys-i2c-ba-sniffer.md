@@ -67,6 +67,11 @@ Le plan [[Essensys I2c Ba Sniffer 2026 07 038]] reste une référence historique
   `0x3FF2` (FOSC=2, MCLRE=1, CP=1, CPD=1). PIC16F946 sans LVP, VPP 10..12 V,
   VDD-first compatible avec ces images. Le MCLR rejoint RESET du NCP803 par
   1 kΩ ; le montage usine et les tensions/courants doivent être établis avant VPP.
+  L'utilisateur confirme le 2026-11-14 que l'interface PICkit → BA comporte des
+  composants électroniques. Leurs références et fonctions restent inconnues ;
+  rechercher le schéma ou des photos recto/verso lisibles avant de concevoir
+  l'équivalent sur la carte Pico. La présence de composants ne prouve pas une
+  protection particulière de VPP.
 - Contacts TOP : SC940D J83, SC941C J97, SC942C J92. TOP4=CLK, TOP5=DAT ; le
   format PICkit est PGD=4, PGC=5 : croiser 4/5 dans l'adaptateur. Les cinq contacts
   BOT sont NC ; la géométrie du contacteur n'est pas encore qualifiée.

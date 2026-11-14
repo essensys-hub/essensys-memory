@@ -4260,3 +4260,10 @@ la fabrication et la validation sur banc restent ouvertes.
 Les scripts sync-sources, extract-git-history et update-roadmap ont été exécutés
 dans un espace de synchronisation isolé (77 changes, 44 historiques). Intégration
 sémantique ciblée de cette évolution ; aucune publication automatique du site.
+
+## [2026-11-14] précision utilisateur | Interface de programmation BA
+
+L'interface PICkit → BA comporte des composants électroniques, selon la réponse
+explicite de l'utilisateur. [[Essensys I2C BA Sniffer]] conserve cette information
+sans présumer la fonction de ces composants. Schéma ou photos recto/verso avec
+marquages lisibles encore nécessaires ; qualification MCLR/VPP toujours ouverte.
