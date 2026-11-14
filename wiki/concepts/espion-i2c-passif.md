@@ -63,7 +63,7 @@ USB. SDA/SCL occupent deux voies d'analyse, les six autres sont proposées sur
 points de test internes. Le rôle de la nappe FC14P reste à réconcilier.
 Le mode de capture reste passif. La programmation ICSP des BA est un mode actif
 distinct, sur banc ; elle reste indisponible tant que le chemin MCLR/NCP803
-n'est pas qualifié. Le BDM du BP est une interface distincte à implémenter ;
+n'est pas qualifié. Le moteur BDM du BP est développé en lecture, avec interface matérielle à qualifier ;
 une seule cible est active à la fois et aucune VPP ICSP ne rejoint le port BP. L'ancien schéma à module Pico et son firmware PIO sont des
 prototypes antérieurs ; ils ne valident pas la nouvelle carte intégrée.
 

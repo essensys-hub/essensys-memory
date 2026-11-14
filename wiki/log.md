@@ -4286,3 +4286,22 @@ avec adaptations distinctes, une cible active à la fois et aucune VPP sur le BP
 La connectique compte cinq prises avec USB et J1/J2 I2C. Cible et nombre de ports
 sont tranchés ; brochages, détrompages et adaptateurs FC14P restent à qualifier.
 Entité, concept et page de roadmap historique actualisés ; aucune nouvelle Feature.
+
+## [2026-11-14] développement | Carte intégrée R0 et moteurs de programmation
+
+[[Essensys I2C BA Sniffer]] et [[Espion I2C Passif]] suivent le lot développé
+sur la Task #10 : étude KiCad de 169 composants, moteurs C ICSP et BDM en
+lecture, préparation HEX et diagnostic USB sans activation cible. Validation :
+216 tests logiciels, 18 tests netlist/ERC, compilation Arm et documentation
+stricte. L'ERC conserve cinq avertissements connus ; PCB, VPP BA, qualification
+USB/FC14P, écriture flash BP et banc restent ouverts. Aucun prototype programmé.
+
+Les trois scripts de synchronisation ont été rejoués dans l'espace isolé :
+77 changes et 44 historiques. Intégration sémantique ciblée, sans recopier de
+sources privées ni publier le site.
+
+Correction de l'entrée « Interface de programmation BA » ci-dessus : la réponse
+« Oui » à la question de connaissance de l'interface ne confirme pas la présence
+de composants. Câble ou adaptation électronique restent à déterminer. L'entité,
+la documentation et l'OpenSpec rétablissent cette incertitude ; le blocage de
+qualification MCLR/NCP803 demeure.

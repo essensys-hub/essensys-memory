@@ -60,7 +60,7 @@ Le plan [[Essensys I2c Ba Sniffer 2026 07 038]] reste une référence historique
   test internes. **Deux ports de programmation confirmés par l’utilisateur** :
   BP SC944D en BDM et boîtier secondaire BA en ICSP. Cinq prises extérieures
   avec USB et J1/J2 ; adaptations distinctes, une cible active à la fois,
-  aucune VPP vers le BP. Le transport BDM RP2350 reste à développer/qualifier.
+  aucune VPP vers le BP. Le moteur BDM de lecture est développé ; son adaptation GPIO reste à qualifier.
 - La nappe Sourcingmap FC14P 14 contacts, 1 m reste une contrainte à réconcilier
   avec les adaptateurs des deux ports. L'ancien mapping d'analyse huit voies/six masses ne doit pas
   devenir implicitement un brochage JTAG ou ICSP. Le connecteur dix contacts
@@ -68,18 +68,23 @@ Le plan [[Essensys I2c Ba Sniffer 2026 07 038]] reste une référence historique
 - **Étude antérieure conservée** : module Pico 2, firmware PIO/DMA (capture
   bornée 256 Kio puis USB CRC32), CLI `essensys-pico`, inspecteur HEX ; 113 tests
   verts avec rejeu sigrok. Schéma de capture seule : ERC 0 et netlist vérifiée.
-  Ces résultats ne valident pas la nouvelle carte FX2/RP2350, dont le schéma,
-  le PCB et les fichiers de fabrication restent à produire. Aucun prototype
+  Ces résultats ne valident pas la nouvelle carte FX2/RP2350 ; le schéma complet,
+  le PCB et les fichiers de fabrication restent à terminer. Aucun prototype
   validé ni performance 24 MHz acquise.
+- **Nouveau lot intégré** : schéma KiCad numérique/capture et adaptation BP,
+  avec frontière BA ouverte et avertissements ERC explicitement suivis. Moteurs
+  C ICSP (lecture/programmation/vérification) et BDM (lecture, sans écriture flash),
+  testés sur l'hôte avec défauts injectés. Préparation d'image HEX dense ; UF2
+  diagnostic USB distinct, sans activation cible. Aucun essai physique acquis.
 - Blocage de l'ICSP : les trois HEX BA v1.7 ont CONFIG brut `0xFFF2`, 14 bits
   `0x3FF2` (FOSC=2, MCLRE=1, CP=1, CPD=1). PIC16F946 sans LVP, VPP 10..12 V,
   VDD-first compatible avec ces images. Le MCLR rejoint RESET du NCP803 par
   1 kΩ ; le montage usine et les tensions/courants doivent être établis avant VPP.
-  L'utilisateur confirme le 2026-11-14 que l'interface PICkit → BA comporte des
-  composants électroniques. Leurs références et fonctions restent inconnues ;
-  rechercher le schéma ou des photos recto/verso lisibles avant de concevoir
-  l'équivalent sur la carte Pico. La présence de composants ne prouve pas une
-  protection particulière de VPP.
+  La réponse « Oui » du 2026-11-14 ne tranche pas entre câble et adaptation
+  électronique, contrairement à l'interprétation consignée précédemment.
+  Constitution et fonctions restent inconnues : rechercher le schéma ou des
+  photos recto/verso lisibles avant de concevoir l'équivalent sur la carte Pico.
+  Aucune protection particulière de VPP n'est démontrée.
 - Contacts TOP : SC940D J83, SC941C J97, SC942C J92. TOP4=CLK, TOP5=DAT ; le
   format PICkit est PGD=4, PGC=5 : croiser 4/5 dans l'adaptateur. Les cinq contacts
   BOT sont NC ; la géométrie du contacteur n'est pas encore qualifiée.
@@ -88,8 +93,14 @@ Source de la révision : [ADR-001](https://github.com/essensys-hub/essensys-i2c-
 
 Sources : [dossier matériel et rapport SHA256 des trois images](https://github.com/essensys-hub/essensys-i2c-ba-sniffer/tree/feat/pico2-pcb-10/hardware/pico2),
 [firmware et limites](https://github.com/essensys-hub/essensys-i2c-ba-sniffer/blob/feat/pico2-pcb-10/firmware/README.md).
-La programmation est indisponible dans ce premier firmware. Les mesures de banc,
+La programmation reste indisponible dans les UF2 publiés ; les moteurs C ne sont pas reliés à des callbacks matériels actifs. Les mesures de banc,
 la carte complète et la fabrication restent des tâches ouvertes du ticket #10.
+
+## Code pointers
+
+- `essensys-i2c-ba-sniffer/hardware/integrated/` : schéma, contrat de nets/GPIO et rapport d'étude.
+- `essensys-i2c-ba-sniffer/firmware/programmer/` : ICSP, BDM et diagnostic USB.
+- `essensys-i2c-ba-sniffer/decoder/essensys_pico/ba_plan.py` : préparation d'image dense hors matériel.
 
 ## État historique au 2026-10-14 (sonde FX2)
 
