@@ -9,7 +9,7 @@ host_repo: essensys-memory
 
 # Essensys I2c Ba Sniffer 2026 07 038
 
-**Host repo:** [[ESSENSYS Memory]]
+**Host repo:** [[Essensys Memory]]
 **Path:** `essensys-memory/openspec/changes/essensys-i2c-ba-sniffer-2026-07-038`
 **Status:** active
 **OpenSpec created:** 2026-08-06
