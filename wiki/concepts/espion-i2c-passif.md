@@ -1,8 +1,8 @@
 ---
 tags: [concept, i2c, debug, firmware, hardware, securite]
-sources: [analyses/2026-10-cle-acces-distance/analyse.md]
+sources: [analyses/2026-10-cle-acces-distance/analyse.md, "https://github.com/essensys-hub/essensys-i2c-ba-sniffer/issues/10"]
 created: 2026-10-13
-updated: 2026-10-14
+updated: 2026-11-14
 era: legacy
 ---
 
@@ -46,7 +46,7 @@ Les logements de l'embase ont chacun un coin abattu, qui sert de détrompeur.
 
 ## Règles
 
-- **Passif** : entrées seulement, 1 kΩ en série, aucune pull-up, jamais le +15 V. La position 4 du connecteur reste vide.
+- **Sonde FX2 historique** : entrées seulement, 1 kΩ en série, aucune pull-up, jamais le +15 V. La position 4 du connecteur reste vide.
 - **Aucun pont de masse** : hôte sur batterie, en Wi-Fi seulement, ou isolateur USB. Voir [[Ilots TBTS Et Equipotentialite]].
 - **Hors tension** pour brancher, par une personne habilitée.
 - **Ce qui ne prouve rien** :
@@ -54,6 +54,18 @@ Les logements de l'embase ont chacun un coin abattu, qui sert de détrompeur.
   - « trame validée CRC » ne veut pas dire « sortie commutée ».
 
 ## Voir aussi
+
+L'extension du 2026-11-14 est portée par le même change 009 et la Task #10
+de [[Essensys I2C BA Sniffer]]. La cible révisée intègre FX2 et RP2350 nu sur un
+PCB, avec hub interne pour une prise USB, traversée J1/J2 et deux ports de
+programmation dédiés confirmés : BP/BDM et boîtier secondaire BA/ICSP. Le +15 V reste en traversée ; l'instrument est alimenté par
+USB. SDA/SCL occupent deux voies d'analyse, les six autres sont proposées sur
+points de test internes. Le rôle de la nappe FC14P reste à réconcilier.
+Le mode de capture reste passif. La programmation ICSP des BA est un mode actif
+distinct, sur banc ; elle reste indisponible tant que le chemin MCLR/NCP803
+n'est pas qualifié. Le moteur BDM du BP est développé en lecture, avec interface matérielle à qualifier ;
+une seule cible est active à la fois et aucune VPP ICSP ne rejoint le port BP. L'ancien schéma à module Pico et son firmware PIO sont des
+prototypes antérieurs ; ils ne valident pas la nouvelle carte intégrée.
 
 - [[Analyse Demarrage BP BA 2026 10]] : signatures attendues (NACK ou réponse `55 55`) et contrôles à faire sans espion
 - [[Protection Surtension Bus I2C]]

@@ -1,8 +1,8 @@
 ---
 tags: [entity, repo, outil, debug, i2c, sigrok, python, kicad, fritzing]
-sources: [analyses/2026-10-cle-acces-distance/analyse.md]
+sources: [analyses/2026-10-cle-acces-distance/analyse.md, "https://github.com/essensys-hub/essensys-i2c-ba-sniffer/issues/10"]
 created: 2026-10-13
-updated: 2026-10-14
+updated: 2026-11-14
 era: modern
 repo: essensys-i2c-ba-sniffer
 ---
@@ -42,7 +42,67 @@ Il rapproche aussi les journaux du backend CM5 (`Sending Actions` / `Action ackn
 - **Fritzing** : les pièces sont dessinées par le générateur et embarquées dans le `.fzz` (90 px par pouce). Les fils passent toujours au-dessus des pièces : les jonctions soudées sont dessinées dans la plaque. Fritzing affiche le texte des notes en HTML, donc pas de `<->` dedans.
 - **J2 de la sonde** : 1 +3,3 V, 2 SCL vers D0, 3 SDA vers D1, 4 0 V. Le +3,3 V vient de la broche 1 du GPIO du Pi, car l'analyseur en boîtier n'en fournit pas.
 
-## Avancement au 2026-10-14
+## Carte intégrée au 2026-11-14
+
+L'utilisateur a lancé la [Task #10](https://github.com/essensys-hub/essensys-i2c-ba-sniffer/issues/10),
+sous-issue de la Feature #29. Pas de nouvelle Feature : ajout de la capacité
+`sniffer-pcb-card` au change `i2c-ba-sniffer-2026-10-009`, groupe 9. La Phase 1
+du Project est conservée ; « phase 2 Pico » désigne l'évolution technique.
+Le plan [[Essensys I2c Ba Sniffer 2026 07 038]] reste une référence historique.
+
+- Cible révisée par l'utilisateur : **une carte unique avec RP2350 nu et puce
+  d'analyseur intégrée**, sans module Pico enfiché ni analyseur externe requis.
+  FX2LP candidat pour les huit voies ; RP2350 pour la programmation. Un hub USB
+  High-Speed interne est proposé pour une seule prise USB ; le flux FX2 ne
+  traverse pas le RP2350. Références et bilan d'alimentation à qualifier.
+- Deux connecteurs J1/J2 traversent SDA/SCL/0 V/+15 V, avec instrument alimenté
+  par USB. Capture SDA/SCL protégée ; six autres voies proposées sur points de
+  test internes. **Deux ports de programmation confirmés par l’utilisateur** :
+  BP SC944D en BDM et boîtier secondaire BA en ICSP. Cinq prises extérieures
+  avec USB et J1/J2 ; adaptations distinctes, une cible active à la fois,
+  aucune VPP vers le BP. Le moteur BDM de lecture est développé ; son adaptation GPIO reste à qualifier.
+- La nappe Sourcingmap FC14P 14 contacts, 1 m reste une contrainte à réconcilier
+  avec les adaptateurs des deux ports. L'ancien mapping d'analyse huit voies/six masses ne doit pas
+  devenir implicitement un brochage JTAG ou ICSP. Le connecteur dix contacts
+  de l'analyseur de référence reste distinct.
+- **Étude antérieure conservée** : module Pico 2, firmware PIO/DMA (capture
+  bornée 256 Kio puis USB CRC32), CLI `essensys-pico`, inspecteur HEX ; 113 tests
+  verts avec rejeu sigrok. Schéma de capture seule : ERC 0 et netlist vérifiée.
+  Ces résultats ne valident pas la nouvelle carte FX2/RP2350 ; le schéma complet,
+  le PCB et les fichiers de fabrication restent à terminer. Aucun prototype
+  validé ni performance 24 MHz acquise.
+- **Nouveau lot intégré** : schéma KiCad numérique/capture et adaptation BP,
+  avec frontière BA ouverte et avertissements ERC explicitement suivis. Moteurs
+  C ICSP (lecture/programmation/vérification) et BDM (lecture, sans écriture flash),
+  testés sur l'hôte avec défauts injectés. Préparation d'image HEX dense ; UF2
+  diagnostic USB distinct, sans activation cible. Aucun essai physique acquis.
+- Blocage de l'ICSP : les trois HEX BA v1.7 ont CONFIG brut `0xFFF2`, 14 bits
+  `0x3FF2` (FOSC=2, MCLRE=1, CP=1, CPD=1). PIC16F946 sans LVP, VPP 10..12 V,
+  VDD-first compatible avec ces images. Le MCLR rejoint RESET du NCP803 par
+  1 kΩ ; le montage usine et les tensions/courants doivent être établis avant VPP.
+  La réponse « Oui » du 2026-11-14 ne tranche pas entre câble et adaptation
+  électronique, contrairement à l'interprétation consignée précédemment.
+  Constitution et fonctions restent inconnues : rechercher le schéma ou des
+  photos recto/verso lisibles avant de concevoir l'équivalent sur la carte Pico.
+  Aucune protection particulière de VPP n'est démontrée.
+- Contacts TOP : SC940D J83, SC941C J97, SC942C J92. TOP4=CLK, TOP5=DAT ; le
+  format PICkit est PGD=4, PGC=5 : croiser 4/5 dans l'adaptateur. Les cinq contacts
+  BOT sont NC ; la géométrie du contacteur n'est pas encore qualifiée.
+
+Source de la révision : [ADR-001](https://github.com/essensys-hub/essensys-i2c-ba-sniffer/blob/feat/pico2-pcb-10/hardware/pico2/ADR-001-carte-integree.md).
+
+Sources : [dossier matériel et rapport SHA256 des trois images](https://github.com/essensys-hub/essensys-i2c-ba-sniffer/tree/feat/pico2-pcb-10/hardware/pico2),
+[firmware et limites](https://github.com/essensys-hub/essensys-i2c-ba-sniffer/blob/feat/pico2-pcb-10/firmware/README.md).
+La programmation reste indisponible dans les UF2 publiés ; les moteurs C ne sont pas reliés à des callbacks matériels actifs. Les mesures de banc,
+la carte complète et la fabrication restent des tâches ouvertes du ticket #10.
+
+## Code pointers
+
+- `essensys-i2c-ba-sniffer/hardware/integrated/` : schéma, contrat de nets/GPIO et rapport d'étude.
+- `essensys-i2c-ba-sniffer/firmware/programmer/` : ICSP, BDM et diagnostic USB.
+- `essensys-i2c-ba-sniffer/decoder/essensys_pico/ba_plan.py` : préparation d'image dense hors matériel.
+
+## État historique au 2026-10-14 (sonde FX2)
 
 **En pause** en attendant les composants. 27 tâches sur 35 sont faites ; la feature est « En cours ».
 

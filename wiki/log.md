@@ -4248,3 +4248,60 @@ Ticket essensys-hub/essensys-doc#38.
 ## [2026-11-11] correction | Banc Test BP 2026 11
 L'ingestion du même jour affirmait que la SI841A n'était pas la SC841A et que le logiciel du banc BP était perdu. C'est faux : [[Essensys Board SC841A]] contient le projet Altium, les Gerber et le logiciel `Banc_BP_V2_FAST`. Source `raw/analyses/2026-11-banc-test-bp/synthese.md` remplacée par sa version corrigée ; [[Banc Test BP 2026 11]] et [[Essensys Test Banc SC944D]] corrigées.
 Ticket essensys-hub/essensys-doc#38.
+
+## [2026-11-14] architecture | Pico 2 huit voies et ICSP BA — Task #10
+
+Extension du change existant i2c-ba-sniffer-2026-10-009 (Feature #29), sans
+nouvelle Feature. [[Essensys I2C BA Sniffer]] et [[Espion I2C Passif]] décrivent
+le premier lot capture PIO/DMA, l’IDC14 FC14P 1 m, le rapport des trois HEX v1.7,
+le schéma d’étude et le blocage MCLR/NCP803 avant ICSP. La carte complète,
+la fabrication et la validation sur banc restent ouvertes.
+
+Les scripts sync-sources, extract-git-history et update-roadmap ont été exécutés
+dans un espace de synchronisation isolé (77 changes, 44 historiques). Intégration
+sémantique ciblée de cette évolution ; aucune publication automatique du site.
+
+## [2026-11-14] précision utilisateur | Interface de programmation BA
+
+L'interface PICkit → BA comporte des composants électroniques, selon la réponse
+explicite de l'utilisateur. [[Essensys I2C BA Sniffer]] conserve cette information
+sans présumer la fonction de ces composants. Schéma ou photos recto/verso avec
+marquages lisibles encore nécessaires ; qualification MCLR/VPP toujours ouverte.
+
+## [2026-11-14] architecture | Analyseur et RP2350 sur un seul PCB
+
+Précision utilisateur intégrée à la Task #10, sans nouvelle Feature : puce
+FX2 candidate pour l'analyse huit voies, RP2350 nu pour la programmation et
+hub USB interne proposé pour une seule prise. Deux traversées I2C et un port
+cible ; distinction BA/ICSP et BP/BDM encore à clarifier. Le rôle de la nappe
+FC14P reste à figer. [[Essensys I2C BA Sniffer]], [[Espion I2C Passif]] et l'index
+sont mis à jour ; l'ADR-001 du dépôt documente la décision. L'étude Pico/PIO
+antérieure n'est pas présentée comme le schéma final de cette architecture.
+
+## [2026-11-14] précision utilisateur | Deux ports de programmation BP et BA
+
+L'utilisateur demande deux connecteurs dédiés : un pour le BP, un pour le
+boîtier secondaire BA. Le ticket #10 et l'ADR-001 retiennent BP/BDM et BA/ICSP,
+avec adaptations distinctes, une cible active à la fois et aucune VPP sur le BP.
+La connectique compte cinq prises avec USB et J1/J2 I2C. Cible et nombre de ports
+sont tranchés ; brochages, détrompages et adaptateurs FC14P restent à qualifier.
+Entité, concept et page de roadmap historique actualisés ; aucune nouvelle Feature.
+
+## [2026-11-14] développement | Carte intégrée R0 et moteurs de programmation
+
+[[Essensys I2C BA Sniffer]] et [[Espion I2C Passif]] suivent le lot développé
+sur la Task #10 : étude KiCad de 169 composants, moteurs C ICSP et BDM en
+lecture, préparation HEX et diagnostic USB sans activation cible. Validation :
+216 tests logiciels, 18 tests netlist/ERC, compilation Arm et documentation
+stricte. L'ERC conserve cinq avertissements connus ; PCB, VPP BA, qualification
+USB/FC14P, écriture flash BP et banc restent ouverts. Aucun prototype programmé.
+
+Les trois scripts de synchronisation ont été rejoués dans l'espace isolé :
+77 changes et 44 historiques. Intégration sémantique ciblée, sans recopier de
+sources privées ni publier le site.
+
+Correction de l'entrée « Interface de programmation BA » ci-dessus : la réponse
+« Oui » à la question de connaissance de l'interface ne confirme pas la présence
+de composants. Câble ou adaptation électronique restent à déterminer. L'entité,
+la documentation et l'OpenSpec rétablissent cette incertitude ; le blocage de
+qualification MCLR/NCP803 demeure.
