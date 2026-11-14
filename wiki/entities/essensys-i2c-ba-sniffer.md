@@ -1,8 +1,8 @@
 ---
 tags: [entity, repo, outil, debug, i2c, sigrok, python, kicad, fritzing]
-sources: [analyses/2026-10-cle-acces-distance/analyse.md]
+sources: [analyses/2026-10-cle-acces-distance/analyse.md, "https://github.com/essensys-hub/essensys-i2c-ba-sniffer/issues/10"]
 created: 2026-10-13
-updated: 2026-10-14
+updated: 2026-11-14
 era: modern
 repo: essensys-i2c-ba-sniffer
 ---
@@ -42,7 +42,41 @@ Il rapproche aussi les journaux du backend CM5 (`Sending Actions` / `Action ackn
 - **Fritzing** : les pièces sont dessinées par le générateur et embarquées dans le `.fzz` (90 px par pouce). Les fils passent toujours au-dessus des pièces : les jonctions soudées sont dessinées dans la plaque. Fritzing affiche le texte des notes en HTML, donc pas de `<->` dedans.
 - **J2 de la sonde** : 1 +3,3 V, 2 SCL vers D0, 3 SDA vers D1, 4 0 V. Le +3,3 V vient de la broche 1 du GPIO du Pi, car l'analyseur en boîtier n'en fournit pas.
 
-## Avancement au 2026-10-14
+## Extension Pico 2 au 2026-11-14
+
+L'utilisateur a lancé la [Task #10](https://github.com/essensys-hub/essensys-i2c-ba-sniffer/issues/10),
+sous-issue de la Feature #29. Pas de nouvelle Feature : ajout de la capacité
+`sniffer-pcb-card` au change `i2c-ba-sniffer-2026-10-009`, groupe 9. La Phase 1
+du Project est conservée ; « phase 2 Pico » désigne l'évolution technique.
+Le plan [[Essensys I2c Ba Sniffer 2026 07 038]] reste une référence historique.
+
+- Objectif : Pico 2 analyseur huit voies et programmateur des BA, avec modes
+  distincts. Le Pico programme lui-même les PIC ; ce n'est pas un simple port
+  pour PICkit externe.
+- Traversée J1/J2 à quatre conducteurs SDA/SCL/0 V/+15 V, alimentation Pico USB,
+  huit entrées protégées par quatre SP0502 et quatre SN74LVC2G17.
+- Nappe Sourcingmap FC14P femelle/femelle 14 contacts, 1 m : huit voies et six
+  masses. Le FX2 de référence est marqué « 24MHz8CH » avec connecteur 10 contacts,
+  donc adaptateur distinct si la nappe doit y être raccordée. Aucune équivalence
+  de performance 24 MHz n'est acquise pour le Pico.
+- Premier lot : firmware PIO/DMA compilé en UF2, capture bornée 256 Kio puis USB
+  avec CRC32, CLI `essensys-pico`, inspecteur HEX hors matériel ; 113 tests verts
+  avec rejeu sigrok. Schéma d'étude capture seule : ERC 0 et netlist vérifiée.
+  Aucun PCB complet, fichier de fabrication final ou prototype validé.
+- Blocage de l'ICSP : les trois HEX BA v1.7 ont CONFIG brut `0xFFF2`, 14 bits
+  `0x3FF2` (FOSC=2, MCLRE=1, CP=1, CPD=1). PIC16F946 sans LVP, VPP 10..12 V,
+  VDD-first compatible avec ces images. Le MCLR rejoint RESET du NCP803 par
+  1 kΩ ; le montage usine et les tensions/courants doivent être établis avant VPP.
+- Contacts TOP : SC940D J83, SC941C J97, SC942C J92. TOP4=CLK, TOP5=DAT ; le
+  format PICkit est PGD=4, PGC=5 : croiser 4/5 dans l'adaptateur. Les cinq contacts
+  BOT sont NC ; la géométrie du contacteur n'est pas encore qualifiée.
+
+Sources : [dossier matériel et rapport SHA256 des trois images](https://github.com/essensys-hub/essensys-i2c-ba-sniffer/tree/feat/pico2-pcb-10/hardware/pico2),
+[firmware et limites](https://github.com/essensys-hub/essensys-i2c-ba-sniffer/blob/feat/pico2-pcb-10/firmware/README.md).
+La programmation est indisponible dans ce premier firmware. Les mesures de banc,
+la carte complète et la fabrication restent des tâches ouvertes du ticket #10.
+
+## État historique au 2026-10-14 (sonde FX2)
 
 **En pause** en attendant les composants. 27 tâches sur 35 sont faites ; la feature est « En cours ».
 

@@ -4248,3 +4248,15 @@ Ticket essensys-hub/essensys-doc#38.
 ## [2026-11-11] correction | Banc Test BP 2026 11
 L'ingestion du même jour affirmait que la SI841A n'était pas la SC841A et que le logiciel du banc BP était perdu. C'est faux : [[Essensys Board SC841A]] contient le projet Altium, les Gerber et le logiciel `Banc_BP_V2_FAST`. Source `raw/analyses/2026-11-banc-test-bp/synthese.md` remplacée par sa version corrigée ; [[Banc Test BP 2026 11]] et [[Essensys Test Banc SC944D]] corrigées.
 Ticket essensys-hub/essensys-doc#38.
+
+## [2026-11-14] architecture | Pico 2 huit voies et ICSP BA — Task #10
+
+Extension du change existant i2c-ba-sniffer-2026-10-009 (Feature #29), sans
+nouvelle Feature. [[Essensys I2C BA Sniffer]] et [[Espion I2C Passif]] décrivent
+le premier lot capture PIO/DMA, l’IDC14 FC14P 1 m, le rapport des trois HEX v1.7,
+le schéma d’étude et le blocage MCLR/NCP803 avant ICSP. La carte complète,
+la fabrication et la validation sur banc restent ouvertes.
+
+Les scripts sync-sources, extract-git-history et update-roadmap ont été exécutés
+dans un espace de synchronisation isolé (77 changes, 44 historiques). Intégration
+sémantique ciblée de cette évolution ; aucune publication automatique du site.

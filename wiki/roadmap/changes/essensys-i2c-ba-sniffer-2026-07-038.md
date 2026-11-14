@@ -2,7 +2,7 @@
 tags: [roadmap, openspec]
 sources: [manifest.json]
 created: 2026-08-06
-updated: 2026-10-10
+updated: 2026-11-14
 status: active
 host_repo: essensys-memory
 ---
@@ -36,3 +36,10 @@ propriétaire, mais aucun outil ne permet de **voir ce qui circule réellement s
 - `essensys-memory/openspec/changes/essensys-i2c-ba-sniffer-2026-07-038/proposal.md`
 - `essensys-memory/openspec/changes/essensys-i2c-ba-sniffer-2026-07-038/design.md`
 - `essensys-memory/openspec/changes/essensys-i2c-ba-sniffer-2026-07-038/tasks.md`
+
+## Mise en œuvre Pico au 2026-11-14
+
+La réalisation Pico 2 huit voies et ICSP est maintenant portée par la Task #10
+du dépôt [[Essensys I2C BA Sniffer]], sous-issue de la Feature #29 et extension
+du change `i2c-ba-sniffer-2026-10-009`. Ce plan 038 est conservé comme historique ;
+il ne constitue pas une deuxième Feature à exécuter. Voir [[Espion I2C Passif]].
