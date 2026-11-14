@@ -46,4 +46,5 @@ il ne constitue pas une deuxième Feature à exécuter. Voir [[Espion I2C Passif
 
 La cible matérielle révisée utilise les puces directement sur le PCB ; le module
 Pico et la capture PIO restent une étude antérieure. Voir l’ADR-001 du dépôt
-sniffer pour le hub USB proposé et le port de programmation à clarifier.
+sniffer pour le hub USB proposé et les deux ports de programmation confirmés :
+BP/BDM et boîtier secondaire BA/ICSP, avec brochages/adaptateurs à qualifier.

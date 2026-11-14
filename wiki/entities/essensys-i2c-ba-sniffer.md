@@ -57,10 +57,12 @@ Le plan [[Essensys I2c Ba Sniffer 2026 07 038]] reste une référence historique
   traverse pas le RP2350. Références et bilan d'alimentation à qualifier.
 - Deux connecteurs J1/J2 traversent SDA/SCL/0 V/+15 V, avec instrument alimenté
   par USB. Capture SDA/SCL protégée ; six autres voies proposées sur points de
-  test internes. Un seul port de programmation cible : BA/ICSP, BP/BDM ou les
-  deux à clarifier. Le périmètre BA initial reste requis en attendant.
+  test internes. **Deux ports de programmation confirmés par l’utilisateur** :
+  BP SC944D en BDM et boîtier secondaire BA en ICSP. Cinq prises extérieures
+  avec USB et J1/J2 ; adaptations distinctes, une cible active à la fois,
+  aucune VPP vers le BP. Le transport BDM RP2350 reste à développer/qualifier.
 - La nappe Sourcingmap FC14P 14 contacts, 1 m reste une contrainte à réconcilier
-  avec ce port. L'ancien mapping d'analyse huit voies/six masses ne doit pas
+  avec les adaptateurs des deux ports. L'ancien mapping d'analyse huit voies/six masses ne doit pas
   devenir implicitement un brochage JTAG ou ICSP. Le connecteur dix contacts
   de l'analyseur de référence reste distinct.
 - **Étude antérieure conservée** : module Pico 2, firmware PIO/DMA (capture

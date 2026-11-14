@@ -4277,3 +4277,12 @@ cible ; distinction BA/ICSP et BP/BDM encore à clarifier. Le rôle de la nappe
 FC14P reste à figer. [[Essensys I2C BA Sniffer]], [[Espion I2C Passif]] et l'index
 sont mis à jour ; l'ADR-001 du dépôt documente la décision. L'étude Pico/PIO
 antérieure n'est pas présentée comme le schéma final de cette architecture.
+
+## [2026-11-14] précision utilisateur | Deux ports de programmation BP et BA
+
+L'utilisateur demande deux connecteurs dédiés : un pour le BP, un pour le
+boîtier secondaire BA. Le ticket #10 et l'ADR-001 retiennent BP/BDM et BA/ICSP,
+avec adaptations distinctes, une cible active à la fois et aucune VPP sur le BP.
+La connectique compte cinq prises avec USB et J1/J2 I2C. Cible et nombre de ports
+sont tranchés ; brochages, détrompages et adaptateurs FC14P restent à qualifier.
+Entité, concept et page de roadmap historique actualisés ; aucune nouvelle Feature.
