@@ -55,13 +55,17 @@ Les logements de l'embase ont chacun un coin abattu, qui sert de détrompeur.
 
 ## Voir aussi
 
-L'extension Pico 2 du 2026-11-14 est portée par le même change 009 et la Task #10
-de [[Essensys I2C BA Sniffer]]. Elle prévoit une traversée du +15 V entre J1/J2,
-sans alimentation du Pico par cette ligne, et huit voies d'analyse sur IDC14.
-Le mode de capture reste passif. La programmation ICSP est un mode actif
-distinct, sur BA isolé sur banc ; elle reste indisponible tant que le chemin
-MCLR/NCP803 n'est pas qualifié. Le schéma d'étude de capture ne vaut pas PCB
-complet ni validation électrique.
+L'extension du 2026-11-14 est portée par le même change 009 et la Task #10
+de [[Essensys I2C BA Sniffer]]. La cible révisée intègre FX2 et RP2350 nu sur un
+PCB, avec hub interne pour une prise USB, traversée J1/J2 et un port de
+programmation cible. Le +15 V reste en traversée ; l'instrument est alimenté par
+USB. SDA/SCL occupent deux voies d'analyse, les six autres sont proposées sur
+points de test internes. Le rôle de la nappe FC14P reste à réconcilier.
+Le mode de capture reste passif. La programmation ICSP des BA est un mode actif
+distinct, sur banc ; elle reste indisponible tant que le chemin MCLR/NCP803
+n'est pas qualifié. Le BDM du BP est une interface différente, dont l'inclusion
+reste à clarifier. L'ancien schéma à module Pico et son firmware PIO sont des
+prototypes antérieurs ; ils ne valident pas la nouvelle carte intégrée.
 
 - [[Analyse Demarrage BP BA 2026 10]] : signatures attendues (NACK ou réponse `55 55`) et contrôles à faire sans espion
 - [[Protection Surtension Bus I2C]]

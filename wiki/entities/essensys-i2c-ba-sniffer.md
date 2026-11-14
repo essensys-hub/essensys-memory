@@ -42,7 +42,7 @@ Il rapproche aussi les journaux du backend CM5 (`Sending Actions` / `Action ackn
 - **Fritzing** : les pièces sont dessinées par le générateur et embarquées dans le `.fzz` (90 px par pouce). Les fils passent toujours au-dessus des pièces : les jonctions soudées sont dessinées dans la plaque. Fritzing affiche le texte des notes en HTML, donc pas de `<->` dedans.
 - **J2 de la sonde** : 1 +3,3 V, 2 SCL vers D0, 3 SDA vers D1, 4 0 V. Le +3,3 V vient de la broche 1 du GPIO du Pi, car l'analyseur en boîtier n'en fournit pas.
 
-## Extension Pico 2 au 2026-11-14
+## Carte intégrée au 2026-11-14
 
 L'utilisateur a lancé la [Task #10](https://github.com/essensys-hub/essensys-i2c-ba-sniffer/issues/10),
 sous-issue de la Feature #29. Pas de nouvelle Feature : ajout de la capacité
@@ -50,19 +50,25 @@ sous-issue de la Feature #29. Pas de nouvelle Feature : ajout de la capacité
 du Project est conservée ; « phase 2 Pico » désigne l'évolution technique.
 Le plan [[Essensys I2c Ba Sniffer 2026 07 038]] reste une référence historique.
 
-- Objectif : Pico 2 analyseur huit voies et programmateur des BA, avec modes
-  distincts. Le Pico programme lui-même les PIC ; ce n'est pas un simple port
-  pour PICkit externe.
-- Traversée J1/J2 à quatre conducteurs SDA/SCL/0 V/+15 V, alimentation Pico USB,
-  huit entrées protégées par quatre SP0502 et quatre SN74LVC2G17.
-- Nappe Sourcingmap FC14P femelle/femelle 14 contacts, 1 m : huit voies et six
-  masses. Le FX2 de référence est marqué « 24MHz8CH » avec connecteur 10 contacts,
-  donc adaptateur distinct si la nappe doit y être raccordée. Aucune équivalence
-  de performance 24 MHz n'est acquise pour le Pico.
-- Premier lot : firmware PIO/DMA compilé en UF2, capture bornée 256 Kio puis USB
-  avec CRC32, CLI `essensys-pico`, inspecteur HEX hors matériel ; 113 tests verts
-  avec rejeu sigrok. Schéma d'étude capture seule : ERC 0 et netlist vérifiée.
-  Aucun PCB complet, fichier de fabrication final ou prototype validé.
+- Cible révisée par l'utilisateur : **une carte unique avec RP2350 nu et puce
+  d'analyseur intégrée**, sans module Pico enfiché ni analyseur externe requis.
+  FX2LP candidat pour les huit voies ; RP2350 pour la programmation. Un hub USB
+  High-Speed interne est proposé pour une seule prise USB ; le flux FX2 ne
+  traverse pas le RP2350. Références et bilan d'alimentation à qualifier.
+- Deux connecteurs J1/J2 traversent SDA/SCL/0 V/+15 V, avec instrument alimenté
+  par USB. Capture SDA/SCL protégée ; six autres voies proposées sur points de
+  test internes. Un seul port de programmation cible : BA/ICSP, BP/BDM ou les
+  deux à clarifier. Le périmètre BA initial reste requis en attendant.
+- La nappe Sourcingmap FC14P 14 contacts, 1 m reste une contrainte à réconcilier
+  avec ce port. L'ancien mapping d'analyse huit voies/six masses ne doit pas
+  devenir implicitement un brochage JTAG ou ICSP. Le connecteur dix contacts
+  de l'analyseur de référence reste distinct.
+- **Étude antérieure conservée** : module Pico 2, firmware PIO/DMA (capture
+  bornée 256 Kio puis USB CRC32), CLI `essensys-pico`, inspecteur HEX ; 113 tests
+  verts avec rejeu sigrok. Schéma de capture seule : ERC 0 et netlist vérifiée.
+  Ces résultats ne valident pas la nouvelle carte FX2/RP2350, dont le schéma,
+  le PCB et les fichiers de fabrication restent à produire. Aucun prototype
+  validé ni performance 24 MHz acquise.
 - Blocage de l'ICSP : les trois HEX BA v1.7 ont CONFIG brut `0xFFF2`, 14 bits
   `0x3FF2` (FOSC=2, MCLRE=1, CP=1, CPD=1). PIC16F946 sans LVP, VPP 10..12 V,
   VDD-first compatible avec ces images. Le MCLR rejoint RESET du NCP803 par
@@ -75,6 +81,8 @@ Le plan [[Essensys I2c Ba Sniffer 2026 07 038]] reste une référence historique
 - Contacts TOP : SC940D J83, SC941C J97, SC942C J92. TOP4=CLK, TOP5=DAT ; le
   format PICkit est PGD=4, PGC=5 : croiser 4/5 dans l'adaptateur. Les cinq contacts
   BOT sont NC ; la géométrie du contacteur n'est pas encore qualifiée.
+
+Source de la révision : [ADR-001](https://github.com/essensys-hub/essensys-i2c-ba-sniffer/blob/feat/pico2-pcb-10/hardware/pico2/ADR-001-carte-integree.md).
 
 Sources : [dossier matériel et rapport SHA256 des trois images](https://github.com/essensys-hub/essensys-i2c-ba-sniffer/tree/feat/pico2-pcb-10/hardware/pico2),
 [firmware et limites](https://github.com/essensys-hub/essensys-i2c-ba-sniffer/blob/feat/pico2-pcb-10/firmware/README.md).

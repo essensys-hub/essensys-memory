@@ -4267,3 +4267,13 @@ L'interface PICkit → BA comporte des composants électroniques, selon la répo
 explicite de l'utilisateur. [[Essensys I2C BA Sniffer]] conserve cette information
 sans présumer la fonction de ces composants. Schéma ou photos recto/verso avec
 marquages lisibles encore nécessaires ; qualification MCLR/VPP toujours ouverte.
+
+## [2026-11-14] architecture | Analyseur et RP2350 sur un seul PCB
+
+Précision utilisateur intégrée à la Task #10, sans nouvelle Feature : puce
+FX2 candidate pour l'analyse huit voies, RP2350 nu pour la programmation et
+hub USB interne proposé pour une seule prise. Deux traversées I2C et un port
+cible ; distinction BA/ICSP et BP/BDM encore à clarifier. Le rôle de la nappe
+FC14P reste à figer. [[Essensys I2C BA Sniffer]], [[Espion I2C Passif]] et l'index
+sont mis à jour ; l'ADR-001 du dépôt documente la décision. L'étude Pico/PIO
+antérieure n'est pas présentée comme le schéma final de cette architecture.
